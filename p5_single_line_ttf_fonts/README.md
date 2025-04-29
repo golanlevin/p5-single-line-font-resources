@@ -10,7 +10,7 @@ This directory contains the following:
 1. Some of the TTFs provided here are actually *double-line* fonts. These are similar to outline fonts, but have infinitely thin bodies (i.e. no "fill"). They have twice as much data as necessary (clockwise and counter-clockwise contours), and if you use these fonts as paths for cutting or plotting, you will see them double back on themselves. A demonstration of this can be found [here](https://editor.p5js.org/golan/sketches/WULnyBSQ5).
 2. Unlike Hershey fonts, many of these TTFs are constructed in part from quadratic Bézier segments, and thus have actual, proper curves instead of polylines. 
 3. Unfortunately, inconsistencies in certain single-line TTF fonts require special case handling for certain closed characters (e.g., `B`,`D`,`O`,`Q`,`a`,`o`,`8`,`0`). You can find the case handling code [here](sketch.js#L146). This varies on a per-font basis; YMMV.
-4. Certain fonts (MACHTGDR.TTF, MACHTHSC.TTF, MACHTSCR.TTF) do not use standard ASCII/unicode codepoints (e.g. `A`=65), but instead use unicode codepoints in the [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas) (Private Use Area) range. These have been corrected for in the code [here](sketch.js#L84).
+4. Certain fonts (MACHTGDR.TTF, MACHTHSC.TTF, MACHTSCR.TTF) do not use standard ASCII/unicode codepoints (e.g. `A`=65), but instead use unicode codepoints in the [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas) (Private Use Area) range. These have been corrected for in the code [here](sketch.js#L84). The font VeriBestGerber1.ttf, intended for Cyrillic use, has related issues.
 5. The p5.js program makes use of [opentype.js](https://opentype.js.org/).
 
 
@@ -50,13 +50,15 @@ This directory contains the following:
 
 **MACHTSCR.TTF** - by Engineering Geometry Systems, from [here](http://www.imajeenyus.com/computer/20150110_single_line_fonts/machine_tool_font.zip). True single-stroke font.![MACHTSCR](img/MACHTSCR.TTF_demo.png)
 
-**MACHTSCR.TTF** - by Engineering Geometry Systems, from [here](http://www.imajeenyus.com/computer/20150110_single_line_fonts/machine_tool_font.zip). True single-stroke font.![machtssr-gm](img/machtssr-gm.ttf_demo.png)
-
 **MecSoft_Font.ttf** - by Robert McNeel & Associates, from [here](https://wiki.mcneel.com/rhino/engravingfonts). True single-stroke font. ![MecSoft_Font](img/MecSoft_Font.ttf_demo.png)
 
 **ORTE1LTT.TTF** - (Orach Technic) by Unknown, from [here](https://graviranje.rs/Engraving_PORTAL/fonts/One_Line_Fonts.htm). True single-stroke font. ![Orach Technic](img/ORTE1LTT.TTF_demo.png)
 
+**ReliefSingleLine-Regular.ttf** - Relief SingleLine, by students of the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse / isdaT (Élisa Garzelli & Noëlie Dayma), under the direction of Prof. François Chastanet, from [here](https://github.com/isdat-type/Relief-SingleLine/tree/main).
+![Orach Technic](img/ReliefSingleLine-Regular.ttf_demo.png)
+
 **RhSS.ttf** - by Robert McNeel & Associates, from [here](https://discourse.mcneel.com/t/wish-list-item-single-stroke-font/10467/9). True single-stroke font. ![RhSS](img/RhSS.ttf_demo.png)
 
-
+**VeriBestGerber1.ttf** (Cyrillic) - by J. Suiter, VeriBest (now Mentor Graphics), 2004. *Note*: This TTF has character mapping issues. Cyrillic characters start at ASCII codepoint 192 in this TTF file. May not display properly without some tweaking.
+![veribest_gerber_cyrillic.png](img/veribest_gerber_cyrillic.png)
 

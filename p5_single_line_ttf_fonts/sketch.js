@@ -71,7 +71,9 @@ function draw() {
 }
 
 function keyPressed(){
-  save(ttfFontName + "_demo.png"); 
+  if (key == 's'){
+    save(ttfFontName + "_demo.png"); 
+  }
 }
 
 

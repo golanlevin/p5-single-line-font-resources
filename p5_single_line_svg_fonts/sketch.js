@@ -11,6 +11,7 @@ function preload() {
   //// Here are some SVG fonts to try:
   // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheySans1.svg");
   // mySvgFont = new SvgFont("single_line_svg_fonts/EMS/EMSReadabilityItalic.svg");
+  
   mySvgFont = new SvgFont("single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg");
 }
 
