@@ -28,6 +28,7 @@ function preload() {
   let dir = "single_stroke_ttf_fonts/"; 
   // Choose a single-stroke TTF from the dir directory.
   // Call the async function and wait for it to load.
+  // Some options are commented out below.
   
   ttfFontName = "ReliefSingleLine-Regular.ttf";
   // ttfFontName = "1CamBam_Stick_9.ttf"; // 1-9

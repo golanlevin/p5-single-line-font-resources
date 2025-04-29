@@ -135,6 +135,7 @@ function drawString(str, x, y, size) {
 
 
 function draw(){
+  createCanvas(800, 240);
   background(0);
   stroke(255);
   strokeWeight(1); 

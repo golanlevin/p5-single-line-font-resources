@@ -132,7 +132,7 @@ function draw() {
   strokeJoin(ROUND); 
   
   push(); 
-  translate(80,60); 
+  translate(80,80); 
   const gridSize = 16;
   const cellSize = 40;
   for (let i=0; i<126; i++){
@@ -145,5 +145,5 @@ function draw() {
   }
   pop(); 
   
-  hpLineFont.drawString("Hello World", 80,400); 
+  hpLineFont.drawString("Hello World (inline font)", 80,420); 
 }

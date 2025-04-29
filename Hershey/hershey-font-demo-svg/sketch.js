@@ -22,7 +22,7 @@ function setup() {
 function keyPressed() {
   if (key == 's'){
     bDoExportSvg = true;
-    save(); 
+    save("hershey-font-demo.png"); 
   }
 }
 
@@ -34,7 +34,7 @@ function draw() {
   strokeWeight(1);
   
   if (bDoExportSvg){
-    beginRecordSVG(this, "hershey-font-demo-svg.svg");
+    beginRecordSVG(this, "hershey-font-demo.svg");
   }
 
   

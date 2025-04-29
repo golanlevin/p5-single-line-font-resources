@@ -6,7 +6,7 @@
 // All of the (x,y) values in minf's glyph coordinates are stored in 2 bits.
 // Therefore the alphabet is defined by 26*8*2 = 416 bits = 52 bytes of data. 
 // In practice it is convenient to store this in a base-64 encoded string. 
-// This expands the storage somewhat to the 72-byte string,
+// This expands the complete font storage somewhat, to the 72-byte string:
 // +T4D0dE+zy1tG4Mdw/oDnxm/CLLTDwR/Nd8x/R1xMNL8HhNd0vOLHRvfF50X/R/TBcMdPw==
 
 let minf; 

@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(0);
   stroke(255); 
-  jsFont.drawString("ABCDEFGHIJKLM", 50,70, 0.2); 
+  jsFont.drawString("ABCDEFGHIJKLM", 50, 70, 0.2); 
   jsFont.drawString("NOPQRSTUVWXYZ", 50,110, 0.2); 
   jsFont.drawString("1234567890,.",  50,150, 0.2); 
   jsFont.drawString("Hello World",   50,190, 0.2); 
