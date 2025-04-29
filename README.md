@@ -16,6 +16,7 @@
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
 * [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
+* [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
 * [*minf*, an Ultra-Minimal Procedural Monoline Font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional Resources](#additional-resources)
 * [Some Inspirational Media](#some-inspirational-media)
