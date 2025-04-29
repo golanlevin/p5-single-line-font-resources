@@ -159,7 +159,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 Hoff provides two sample fonts: one ("original") which is exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments. Note that Hoff's fonts only support lowercase.
 
 * [Original Python code by Anders Hoff](https://github.com/inconvergent/gridfont)
-* [p5.js JavaScript port](sketch.js) (in this repository)
+* [p5.js JavaScript port](hoff_gridfont/sketch.js) (in this repository)
 * [p5.js JavaScript port](https://editor.p5js.org/golan/sketches/EGWs_gTbR) (at editor.p5js.org)
 
 
