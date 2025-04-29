@@ -156,7 +156,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 *GridFont* is a grid-based system for designing simple symbols and fonts, designed by [Anders Hoff](https://inconvergent.net/) in 2019. It is mainly intended for plotter drawings, and uses a turtle-graphics-like method for defining stroke paths in the glyphs. This p5.js port is adapted from [his repo here](https://github.com/inconvergent/gridfont), with permission. 
 
-Hoff provides two sample fonts: one ("original") which is exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments, but is still poly-linear. Note that Hoff's demo fonts do not contain capital letters.
+Hoff provides two sample fonts: one ("original") which is almost exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments, but is still poly-linear. Note that Hoff's demo fonts do not contain capital letters.
 
 * [Original Python code by Anders Hoff](https://github.com/inconvergent/gridfont)
 * [p5.js JavaScript port](hoff_gridfont/sketch.js) (in this repository)
