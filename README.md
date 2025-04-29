@@ -151,6 +151,21 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ---
 
+### p5.js port of Anders Hoff's *GridFont*
+
+*GridFont* is a grid-based system for designing simple symbols and fonts, designed by [Anders Hoff](https://inconvergent.net/) in 2019. It is mainly intended for plotter drawings, and uses a turtle-graphics-like method for defining stroke paths in the glyphs. This p5.js port is adapted from [his repo here](https://github.com/inconvergent/gridfont), with permission. 
+
+Hoff provides two sample fonts: one ("original") which is exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments. Note that Hoff's fonts only support lowercase.
+
+* [Original Python code by Anders Hoff](https://github.com/inconvergent/gridfont)
+* [p5.js JavaScript port](sketch.js) (in this repository)
+* [p5.js JavaScript port](https://editor.p5js.org/golan/sketches/EGWs_gTbR) (at editor.p5js.org)
+
+
+[![Anders Hoff's GridFont in p5.js](hoff_gridfont/hoff_screenshot.png)](https://editor.p5js.org/golan/sketches/EGWs_gTbR)
+
+---
+
 ### *minf*, an Ultra-Minimal Procedural Monoline Font
 
 **minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, grid-based, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in type-golfing. All *minf* glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous line segments. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about the attractiveness, legibility, or utility of *minf* (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
@@ -187,7 +202,6 @@ Here are some inspirational artworks that make use of single-line fonts.
 
 ### Todo 
 
-* Adapt [Gridfont](https://github.com/inconvergent/gridfont) by Anders Hoff, 2019
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * [Letter Spirit fonts](img/hofstadter_letter_spirit.png) by Douglas Hofstadter, *Fluid Concepts and Creative Analogies*, 1987; Use as the basis for creating an SVG 1.1 Font *exporter*.
 
@@ -195,4 +209,4 @@ Here are some inspirational artworks that make use of single-line fonts.
 
 ### Keywords
 
-single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, pen plotting, #plotterTwitter, creative coding, p5.js, JavaScript, Processing. 
+single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, pen plotting, #plotterTwitter, creative coding, p5.js, JavaScript, Processing. 
