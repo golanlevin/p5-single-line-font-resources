@@ -14,6 +14,7 @@
 * [Minimal SVG Font, Inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
+* [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
 * [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
@@ -129,6 +130,23 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 
 ---
 
+### p5.js port of JT Nimoy's *Textension* font
+
+This repository presents is a p5.js recovery of the handcoded monoline font from [*Textension: Word Processor Variations*](https://jtnimoy.cc/item.php%3Fhandle=14882287-textension-word-processor-variations.html) (1999), an interactive Windows 95/98/XP program developed by JT Nimoy at the Aesthetics & Computation Group of the MIT Media Laboratory. A screen recording of *Textension* can be found [here](https://player.vimeo.com/video/6121230). Nimoy wrote: 
+
+> *"Textension was a collection of 10 interactive experiments in making creative variations of word processing applications. It was my response as an artist to the way programmers always use the typewriter metaphor when they are creating a typesetting application. Textension combines the metaphor of the typewriter with that of other things in the physical world, such as the act of blowing soap bubbles."*
+
+* In [this repository](nimoy_textension/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/D4hUCWZk7)
+
+![nimoy_textension.png](nimoy_textension/nimoy_textension.png)
+
+[JT Nimoy](https://jtnimoy.cc/)<sup>†</sup> (1979–2020) was a prolific software artist and creative technologist, known for her work as part of the CGI team behind *TRON: Legacy*, as well as her voluminous body of experimental creative coding projects spanning more than two decades.
+
+Kyle McDonald assisted in the recovery of the Textension font data by decompiling the [Textension.exe executable](https://acid-play.com/download/textension) with Hex-Rays. [The decompiled C++](textension_windows_app_1999/textension_decompiled.cpp) was ported to p5.js by Golan Levin.
+
+---
+
 ### p5.js port of Jared Schiffman's Font
 
 Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
@@ -210,4 +228,4 @@ Here are some inspirational artworks that make use of single-line fonts.
 
 ### Keywords
 
-single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, pen plotting, #plotterTwitter, creative coding, p5.js, JavaScript, Processing. 
+single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing. 
