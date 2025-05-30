@@ -1,0 +1,169 @@
+/* CSS files add styling rules to your content */
+
+body {
+    font-family: helvetica, arial, sans-serif;
+    margin:0px;
+    overflow:hidden;
+  
+  
+  }
+  
+  input:focus{
+    
+    outline:none;
+  }
+  textarea:focus{
+    
+    outline:none;
+  }
+  
+  
+  .hoverinv{
+    background:white;
+    cursor:pointer;
+  }
+  .hoverinv:hover{
+    filter:invert(100%);
+  }
+  
+  .hoverinvbord{
+    background:white;
+    border: 1px solid black;
+    cursor:pointer;
+  }
+  .hoverinvbord:hover{
+    border: 1px solid white;
+    filter:invert(100%);
+  }
+  
+  ::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 10px;
+    height:10px;
+  }
+  ::-webkit-scrollbar-track {
+    border-left:1px solid black;
+    
+  /*   background:
+          linear-gradient(90deg, white 2px, transparent 1%) center,
+          linear-gradient(white 2px, transparent 1%) center, black;
+      background-size: 3px 3px;
+    background-position: 0.5px 1px; */
+  }
+  
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 0px;
+    border:1px solid black;
+    border-right:none;
+    background:white;
+  
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background:black;
+  }
+  
+  ::-webkit-scrollbar-track:horizontal {
+    border-top:1px solid black;
+    border-left:none;
+  
+  }
+  ::-webkit-scrollbar-thumb:horizontal {
+    border-bottom:none;
+    border-right: 1px solid black;
+  
+  }
+  
+  
+  #paper::-webkit-scrollbar-track {
+    background:
+          linear-gradient(90deg, white 3px, transparent 1%) center,
+          linear-gradient(white 3px, transparent 1%) center, black;
+      background-size: 4px 4px;
+    background-position: 0.5px 1px;
+  }
+  
+  
+  #encinp::-webkit-scrollbar {
+    -webkit-appearance: none;
+    display:none;
+  }
+  
+  button{
+    font-size:10px;
+    border:1px solid black;
+    border-radius:2px;
+    background:white;
+    outline:none;
+    cursor:pointer;
+  }
+  button:hover{
+    border: 1px solid white;
+    filter:invert(100%);
+  }
+  
+  
+  
+  /* The slider itself */
+  .slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    background: white;
+    outline: none; /* Remove outline */
+    border: 1px solid black;
+  
+  }
+  
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 10px; /* Set a specific slider handle width */
+    height: 20px; /* Slider handle height */
+    background: white;
+    border:1px solid black;
+    border-radius:3px;
+    cursor: pointer; /* Cursor on hover */
+  }
+  
+  
+  .slider::-webkit-slider-thumb:hover{
+    border: 1px solid white;
+    filter:invert(100%);
+  }
+  
+  .rule:hover {
+    font-weight:bold;
+  }
+  .rule > div {
+    display:none;
+  }
+  .rule:hover > div {
+    display: block;
+  }
+  
+  .hoverblack:hover {
+    fill:black;
+    background:black;
+  }
+  
+  .toolitemsel{
+    border: 1px solid black;
+    border-radius:3px;
+  }
+  .toolitemsel::after{
+    content: ' ';
+    width:28px;
+    height:28px;
+    position:absolute;
+    left:-3px;
+    top:-3px;
+    border: 1px solid black;
+    border-radius:3px;
+  }
+  
+  .toolitemsel:hover::after{
+    border: 1px solid white;
+  }

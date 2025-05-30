@@ -91,7 +91,7 @@ This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.o
 
 Also noteworthy are these additional Hershey+p5 resources:
 
-* A helpful [Hershey Font Editor](https://hfedit.glitch.me/), by Lingdong Huang.
+* Lingdong Huang has made a helpful [Hershey Font Editor](https://hfedit.glitch.me/). A backup of this project has been archived [here](lingdong_hfedit/index.html).
 * [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
 
 ---
