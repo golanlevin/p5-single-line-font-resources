@@ -1,5 +1,7 @@
 ## p5.js Parser/Renderer for Single-Line TTF Fonts
 
+![ttf_font_animations.gif](img/ttf_font_animations.gif)
+
 This directory contains the following: 
 
 * An [archive](single_stroke_ttf_fonts/) of single-line¹ TTF fonts, with resources suggested by [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml)
@@ -12,7 +14,6 @@ This directory contains the following:
 3. Unfortunately, inconsistencies in certain single-line TTF fonts require special case handling for certain closed characters (e.g., `B`,`D`,`O`,`Q`,`a`,`o`,`8`,`0`). You can find the case handling code [here](sketch.js#L146). This varies on a per-font basis; YMMV.
 4. Certain fonts (MACHTGDR.TTF, MACHTHSC.TTF, MACHTSCR.TTF) do not use standard ASCII/unicode codepoints (e.g. `A`=65), but instead use unicode codepoints in the [PUA](https://en.wikipedia.org/wiki/Private_Use_Areas) (Private Use Area) range. These have been corrected for in the code [here](sketch.js#L84). The font VeriBestGerber1.ttf, intended for Cyrillic use, has related issues.
 5. The p5.js program makes use of [opentype.js](https://opentype.js.org/).
-
 
 
 ![all_ttf_single_stroke_fonts.png](img/all_ttf_single_stroke_fonts.png)
@@ -59,6 +60,6 @@ This directory contains the following:
 
 **RhSS.ttf** - by Robert McNeel & Associates, from [here](https://discourse.mcneel.com/t/wish-list-item-single-stroke-font/10467/9). True single-stroke font. ![RhSS](img/RhSS.ttf_demo.png)
 
-**VeriBestGerber1.ttf** (Cyrillic) - by J. Suiter, VeriBest (now Mentor Graphics), 2004. *Note*: This TTF has character mapping issues. Cyrillic characters start at ASCII codepoint 192 in this TTF file. May not display properly without some tweaking.
+**VeriBestGerber1.ttf** (Cyrillic) - by J. Suiter, VeriBest (now Mentor Graphics), 2004. *Note*: This TTF has character mapping issues. Cyrillic characters start at ASCII codepoint 192 in this TTF file. This font may not display properly without some tweaking.
 ![veribest_gerber_cyrillic.png](img/veribest_gerber_cyrillic.png)
 

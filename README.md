@@ -222,7 +222,7 @@ Here are some inspirational artworks that make use of single-line fonts.
 ### Todo 
 
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
-* [Letter Spirit fonts](img/hofstadter_letter_spirit.png) by Douglas Hofstadter, *Fluid Concepts and Creative Analogies*, 1987; Use as the basis for creating an SVG 1.1 Font *exporter*.
+* [Letter Spirit fonts](hofstadter_letter_spirit_fonts/img/hofstadter_alphabets_1993.png) by Douglas Hofstadter, 1993
 
 ---
 
