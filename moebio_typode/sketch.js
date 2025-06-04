@@ -4,6 +4,7 @@
 
 let follow_mouseX = 0;
 let follow_mouseY = 0;
+
 let TYPODE_MAX_TEXT_WIDTH = 650;
 let TYPODE_LINE_SPACING = 30;
 let TYPODE_SPACE = 3;
@@ -35,7 +36,7 @@ function draw() {
   theText += "font by Santiago Ortiz / Moebio.\n";
   theText += "ABCDEFGHIJKLMNOPQRSTUVWXYZ\n";
   theText += "abcdefghijklmnopqrstuvwxyz\n";
-  theText += "0123456789 [,.;:+*()<>/\\\"'=%$].\n"
+  theText += "0123456789 [,.;:+*()<>/\\\"'=%$&].\n"
   theText += "Click to shift transformation!";
 
   drawTypodeString(theText, 75,60, TYPODE_SCALE); 
@@ -217,13 +218,14 @@ const typodeFont = {
 	"ç":[ [[2,1],[0,1],[0,3],[2,3]], [[1,3],[1,3.4],[1.6, 3.4],[1.6, 4],[1, 4]] ],
 	"Ç":[ [[2,0],[0,0],[0,3],[2,3]], [[1,3],[1,3.4],[1.6, 3.4],[1.6, 4],[1, 4]] ],
 	
+  
 	"symbols":[
 		["=", "%", "<", ">", ":", ",", ";", ".", "[", "]", "(", ")", 
-          "+", "-", "*", "?", "!", "\"", "'", "/", "\\", "$", " "],
+          "+", "-", "*", "?", "!", "\"", "'", "/", "\\", "$",  "&"," "],
 		["equal", "percentage", "lower", "greater", "colon", "comma", 
          "semicolon", "period", "openbracket", "closebracket", "openparenthesis", 
          "closeparenthesis", "plus", "minus", "asterisk", "question", "exclamation", 
-         "quote", "singlequote", "slash", "backslash", "dollar", "space"]
+         "quote", "singlequote", "slash", "backslash", "dollar","and", "space"]
 	],
 	
 	"equal":[ [[0,2],[2,2]], [[0,3],[2,3]] ],
@@ -248,5 +250,6 @@ const typodeFont = {
 	"slash":[ [[0,3],[2,0]] ],
 	"backslash":[ [[0,0],[2,3]]],
 	"dollar":[ [[2,0],[0,0],[0,1],[2,1],[2,3],[0,3]], [[1,-0.5],[1,3.5]] ],
-	"space":[]
+	"space":[],
+    "and": [[[2,3],[0,1],[0.5,0.5],[1,0], [1.5,0.5],[1,1],[0,2],[1,3],[2,2]]]
 }
