@@ -136,7 +136,7 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 
 Douglas Hofstadter’s *Letter Spirit* project (c.1987-1996) explores how abstract concepts like "style" and "analogy" underpin both perception and creativity. It models the human capacity to perceive coherence and invent variation within constraints, proposing that the essence of intelligence lies in fluid, context-sensitive pattern recognition rather than rigid rule-following.
 
-The code in this directory implements some of the *Letter Spirit* gridfonts devised by Hofstadter and Gary McGraw in [*Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style*](hofstadter_letter_spirit_fonts/1993-hofstadter.pdf) (1993). In these fonts, each glyph consists of an array of strokes, and each stroke connects points in a 3x7 design lattice.
+The code in this directory implements some of the *Letter Spirit* gridfonts devised by Hofstadter and Gary McGraw in [*Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style*](hofstadter_letter_spirit_fonts/1993-hofstadter.pdf) (1993). In these fonts, each glyph consists of an array of strokes, and each stroke connects points in a 3x7 design lattice. More information can be found [here](hofstadter_letter_spirit_fonts/readme.md), and code is available: 
 
 * In [this repository](hofstadter_letter_spirit_fonts/letter_spirit_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/_sQ_9xkI4)
