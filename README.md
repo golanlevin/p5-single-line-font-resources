@@ -2,7 +2,7 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.5](https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js).*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. Such fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.5](https://cdn.jsdelivr.net/npm/p5@1.11.5/lib/p5.js). The fonts draw from a wide range of creative projects, obsolete technologies, and other sources.*
 
 ---
 
@@ -14,6 +14,7 @@
 * [Minimal SVG Font, Inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
+* [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
 * [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
@@ -45,7 +46,7 @@ SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.or
 
 ![HersheySans1_svg_font.png](p5_single_line_svg_fonts/img/p5_svg_fonts_screenshot.png)
 
-Shown above is the [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
+Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
 
 A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. All of these fonts are supported by the p5.js project here. 
 
@@ -127,6 +128,21 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/OmiU51Gdm)
 
 ![asteroids_screenshot.png](Asteroids_single_line_font/asteroids_screenshot.png)
+
+
+---
+
+### p5.js port of Hofstadter's *Letter Spirit* gridfonts
+
+Douglas Hofstadter’s *Letter Spirit* project (c.1987-1996) explores how abstract concepts like "style" and "analogy" underpin both perception and creativity. It models the human capacity to perceive coherence and invent variation within constraints, proposing that the essence of intelligence lies in fluid, context-sensitive pattern recognition rather than rigid rule-following.
+
+The code in this directory implements some of the *Letter Spirit* gridfonts devised by Hofstadter and Gary McGraw in [*Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style*](hofstadter_letter_spirit_fonts/1993-hofstadter.pdf) (1993). In these fonts, each glyph consists of an array of strokes, and each stroke connects points in a 3x7 design lattice.
+
+* In [this repository](hofstadter_letter_spirit_fonts/letter_spirit_fonts/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/_sQ_9xkI4)
+
+![Letter Spirit Gridfonts](hofstadter_letter_spirit_fonts/img/hofstadfter_letter_spirit_gridfonts.png)
+
 
 ---
 
@@ -222,7 +238,6 @@ Here are some inspirational artworks that make use of single-line fonts.
 ### Todo 
 
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
-* [Letter Spirit fonts](hofstadter_letter_spirit_fonts/img/hofstadter_alphabets_1993.png) by Douglas Hofstadter, 1993
 
 ---
 
