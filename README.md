@@ -23,7 +23,7 @@
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
 * [*minf*, an Ultra-Minimal Procedural Monoline Font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional Resources](#additional-resources)
-* [Some Inspirational Media](#some-inspirational-media)
+* [Some Inspirational Artworks](#some-inspirational-artworks)
 
 ---
 
@@ -207,7 +207,13 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 **minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, grid-based, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in type-golfing. All *minf* glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous line segments. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about the attractiveness, legibility, or utility of *minf* (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
 
-Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total storage of the minf font to [a 72-byte string](minf/sketch.js#L15). A p5.js program to load and render *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total complete storage of the minf font to [a 72-byte string](minf/sketch.js#L15): 
+
+```
++T4D0dE+zy1tG4Mdw/oDnxm/CLLTDwR/Nd8x/R1xMNL8HhNd0vOLHRvfF50X/R/TBcMdPw==
+```
+
+A p5.js program to load and render *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
 
@@ -225,15 +231,15 @@ Each of the `x` and `y` coordinate values in minf's glyph control points are sto
 
 ### Some Inspirational Artworks
 
-Here are some inspirational artworks that make use of single-line fonts.
+Here are some inspirational works that make use of single-line fonts.
 
-* [Textension: Word Processor Variations](https://vimeo.com/6121230) by JT Nimoy, 1999.
-* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by Jürg Lehni, 2002-2014.
-* [Typode](https://moebio.com/research/typode/) interactive demo by Santiago Ortiz, 2013.
-* [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by Lingdong Huang, 2018.
-* [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019.
-* [Letterform Variations](https://letterformvariations.com/book/) by Nigel Cottier, 2021.
-* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by Andreas Gysin, 2024.
+* [Textension: Word Processor Variations](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
+* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
+* [Typode](https://moebio.com/research/typode/) interactive demo by [Santiago Ortiz](https://moebio.com/), 2013.
+* [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by [Lingdong Huang](https://lingdong.works/), 2018.
+* [Leon Sans](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
+* [Letterform Variations](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
+* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
 
 ---
 
@@ -245,4 +251,4 @@ Here are some inspirational artworks that make use of single-line fonts.
 
 ### Keywords
 
-single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG Fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing. 
+*Single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing.*
