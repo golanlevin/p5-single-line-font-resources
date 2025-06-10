@@ -13,4 +13,4 @@ The code in this directory implements some of the *Letter Spirit* gridfonts devi
 
 Some additional *Letter Spirit* fonts, not all of which have been encoded into JavaScript, can be seen below. 
 
-![hofstadter_alphabets_1993.png](img/hofstadter_alphabets_1993.png)
+![hofstadter_letter_spirit.png](img/hofstadter_letter_spirit.png)
