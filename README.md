@@ -13,17 +13,18 @@
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
-* [Minimal SVG Font, Inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
+* [Minimal SVG font, inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
+* [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
 * [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
-* [*minf*, an Ultra-Minimal Procedural Monoline Font](#minf-an-ultra-minimal-procedural-monoline-font)
-* [Additional Resources](#additional-resources)
-* [Some Inspirational Artworks](#some-inspirational-artworks)
+* [*minf*, an ultra-minimal procedural monoline font](#minf-an-ultra-minimal-procedural-monoline-font)
+* [Additional resources](#additional-resources)
+* [Some inspirational artworks](#some-inspirational-artworks)
 
 ---
 
@@ -99,7 +100,7 @@ Also noteworthy are these additional Hershey+p5 resources:
 
 ---
 
-### Minimal SVG Font, Inlined in p5.js
+### Minimal SVG font, inlined in p5.js
 
 *This minimal program presents a SVG font inlined in p5.js, with no loading of external resources.*
 
@@ -130,6 +131,18 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/OmiU51Gdm)
 
 ![asteroids_screenshot.png](Asteroids_single_line_font/asteroids_screenshot.png)
+
+---
+
+### p5.js implementation of multi-segment display fonts
+
+An implementation of 7 segment, 14 segment, and 16 segment LED displays. Based on glyph encodings from Dave Madison's [Segmented LED Display - ASCII Library](https://github.com/dmadison/LED-Segment-ASCII/), under MIT license. Note that full 7-bit ASCII character sets (from codepoints 32 through 127) are supported, though legibility may vary. Designs are based on e.g. the HP/Siemens/Litronix DL-2416 17-segment alphanumeric LED display, etc.
+
+* In [this repository](multisegment_display_fonts/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/kLbqPpqwL)
+
+![multisegment_display.png](multisegment_display_fonts/multisegment_display.png)
+
 
 
 ---
@@ -220,7 +233,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ---
 
-### Additional Resources
+### Additional resources
 
 * [*Drawing with Machines* Typography resources](https://github.com/golanlevin/DrawingWithMachines/blob/main/lectures/topics/type/README.md) by Golan Levin
 * [Summary of single-line fonts (10/01/15)](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml), compiled by [Lindsay Robert Wilson](imajeenyus.com).
@@ -230,7 +243,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ---
 
-### Some Inspirational Artworks
+### Some inspirational artworks
 
 Here are some inspirational works that make use of single-line fonts.
 
@@ -252,4 +265,4 @@ Here are some inspirational works that make use of single-line fonts.
 
 ### Keywords
 
-*Single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing.*
+*Single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
