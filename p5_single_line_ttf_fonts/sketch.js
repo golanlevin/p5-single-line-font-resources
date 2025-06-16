@@ -28,7 +28,6 @@ function preload() {
   let dir = "single_stroke_ttf_fonts/"; 
   // Choose a single-stroke TTF from the dir directory.
   // Call the async function and wait for it to load.
-  // Some options are commented out below.
   
   ttfFontName = "ReliefSingleLine-Regular.ttf";
   // ttfFontName = "1CamBam_Stick_9.ttf"; // 1-9
@@ -41,6 +40,7 @@ function preload() {
   // ttfFontName = "MACHTSCR.TTF";
   // ttfFontName = "machtgth.ttf";
   // ttfFontName = "machtssr-gm.ttf";
+  // ttfFontName = "VBest1_cyrillic.ttf"; 
   
   ttfFontData = loadFontAndExtractOutlines(dir + ttfFontName); 
 }
@@ -71,9 +71,7 @@ function draw() {
 }
 
 function keyPressed(){
-  if (key == 's'){
-    save(ttfFontName + "_demo.png"); 
-  }
+  save(ttfFontName + "_demo.png"); 
 }
 
 
@@ -98,6 +96,13 @@ async function loadFontAndExtractOutlines(fontPath) {
         // Example remapping: `U+F041` → `U+0041` 
         glyph.unicode = 0x0041 + (glyph.unicode - 0xF041); 
       }
+      
+      // Special fix for the 'VeriBest Gerber 1' font
+      if ((glyph.name === ".null") &&
+          (glyph.unicode >= 33 && glyph.unicode <= 255)){
+        glyph.name = String.fromCharCode(glyph.unicode);
+      }
+      
     });
 
     // Extract glyph outlines into a usable structure
@@ -137,8 +142,8 @@ function drawTTFString(str, x, y, s) {
 
   ttfFontData.then((data) => {
     for (let i = 0; i < str.length; i++) {
-      const char = str[i];
-      unicodeValue = char.charCodeAt(0);
+      const chr = str[i];
+      unicodeValue = chr.charCodeAt(0);
       
       // Find the glyph by matching the unicode 
       let glyphData = null;
@@ -156,7 +161,7 @@ function drawTTFString(str, x, y, s) {
         // Special case closed glyph handling (fml)
         // NOTE: add "a" to use 1CamBam_Stick_1.ttf
         const specialCase = ["B","D","d","O","o","Q","8","0"];
-        let bClosed = specialCase.includes(char); 
+        let bClosed = specialCase.includes(chr); 
         bClosed = bClosed & bDoSpecialCaseForClosedGlyphs; 
         
         drawGlyphData(glyphData, cursorX, y, s, bClosed);
