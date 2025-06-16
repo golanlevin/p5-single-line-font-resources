@@ -118,15 +118,15 @@ function drawString(str, x, y, size) {
   str = str.toUpperCase();
   let xOffset = 0; // Horizontal offset for character spacing
 
-  for (let char of str) {
+  for (let chr of str) {
     // Skip if character is not in the font table
-    if (!AsteroidsFont[char]) {
+    if (!AsteroidsFont[chr]) {
       xOffset += 12 * size; // Default spacing for unknown characters
       continue;
     }
 
     // Draw the character at the current position
-    drawChar(char, x + xOffset, y, size);
+    drawChar(chr, x + xOffset, y, size);
 
     // Increment horizontal offset by character width
     xOffset += 12 * size; // Characters are 12 units wide by design
@@ -134,8 +134,12 @@ function drawString(str, x, y, size) {
 }
 
 
-function draw(){
+function setup() {
   createCanvas(800, 240);
+}
+
+
+function draw(){
   background(0);
   stroke(255);
   strokeWeight(1); 

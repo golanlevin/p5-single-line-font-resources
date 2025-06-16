@@ -13,7 +13,7 @@ function setup() {
 function draw() {
   background(0);
   stroke(255); 
-  jsFont.drawString("ABCDEFGHIJKLM", 50, 70, 0.2); 
+  jsFont.drawString("ABCDEFGHIJKLM", 50,70, 0.2); 
   jsFont.drawString("NOPQRSTUVWXYZ", 50,110, 0.2); 
   jsFont.drawString("1234567890,.",  50,150, 0.2); 
   jsFont.drawString("Hello World",   50,190, 0.2); 
@@ -332,12 +332,12 @@ class JaredSchiffmanFont {
     };
   }
 
-  drawLetter(char, xOffset, yOffset, scale) {
+  drawLetter(chr, xOffset, yOffset, scale) {
     // Convert input character to uppercase
-    const charCode = char.toUpperCase().charCodeAt(0);
+    const charCode = chr.toUpperCase().charCodeAt(0);
 
     if (!this.letters[charCode]) {
-      console.error(`Letter '${char}' not defined in font.`);
+      console.error(`Letter '${chr}' not defined in font.`);
       return;
     }
 
@@ -363,12 +363,12 @@ class JaredSchiffmanFont {
     const spacing = 30 * sca; // Adjust spacing between letters
 
     for (let i = 0; i < str.length; i++) {
-        const char = str[i];
-        const charCode = char.toUpperCase().charCodeAt(0);
+        const chr = str[i];
+        const charCode = chr.toUpperCase().charCodeAt(0);
 
         if (this.letters[charCode]) {
             // Draw the character
-            this.drawLetter(char, xOffset, y, sca);
+            this.drawLetter(chr, xOffset, y, sca);
             xOffset += this.letters[charCode].letterWidth * sca + spacing;
         } else {
             // Leave a space for unrecognized characters

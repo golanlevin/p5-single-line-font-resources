@@ -239,8 +239,8 @@ class SvgFont {
       let cursorX = x;
       const scaleFactor = sca / this.unitsPerEm;
 
-      for (const char of str) {
-        const glyph = this.glyphs[char];
+      for (const chr of str) {
+        const glyph = this.glyphs[chr];
         if (glyph) {
           // Only draw if there's path data
           if (glyph.d) {
@@ -250,7 +250,7 @@ class SvgFont {
           cursorX += glyph.horizAdvX * scaleFactor;
           
         } else {
-          console.warn(`Missing glyph: '${char}' (Unicode: ${char.charCodeAt(0)})`);
+          console.warn(`Missing glyph: '${chr}' (Unicode: ${chr.charCodeAt(0)})`);
           cursorX += 300 * scaleFactor; // Fallback spacing for missing glyphs
         }
       }
