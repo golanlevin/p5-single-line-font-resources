@@ -69,7 +69,7 @@ Some additional resources for SVG 1.1 Fonts are:
 
 [Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The coordinate data for 1,377 Hershey font characters was published by NIST in 1976, in [*A Contribution to Computer Typesetting Techniques: Tables of Coordinates for Hershey's Repertory of Occidental Type Fonts and Graphic Symbols*](https://books.google.de/books?id=8DOGhKjPAyEC&redir_esc=y). Type designer/historian Frank Grießhammer has published a terrific [video lecture about The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) in 2015.
 
-The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
+The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/); a [live demo is here](https://lingdong-.github.io/p5-hershey-js/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
 #### hershey-font-demo-svg
 
@@ -93,10 +93,19 @@ This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.o
 
 [![pointwise-hershey-to-svg](Hershey/pointwise-hershey-to-svg/pointwise_hershey_screenshot.png)](Hershey/pointwise-hershey-to-svg/)
 
-Also noteworthy are these additional Hershey+p5 resources:
+These additional Hershey+p5 resources by Lingdong Huang are noteworthy: 
 
-* Lingdong Huang has made a helpful [Hershey Font Editor](https://hfedit.glitch.me/). A backup of this project has been archived [here](lingdong_hfedit/index.html).
-* [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font), also by Lingdong Huang.
+* [Hershey Font Editor](https://hfedit.glitch.me/). A backup of this project has been archived [here](lingdong_hfedit/index.html).
+* [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font) with a [live demo here](https://lingdong-.github.io/chinese-hershey-font/)
+* [legumes](https://github.com/LingDong-/legumes) Sheet music in polylines using Hershey text
+* [hfmath](https://github.com/LingDong-/hfmath) Render LaTeX math with Hershey Fonts
+* [ttf2hershey](https://github.com/LingDong-/ttf2hershey) TTF-to-Hershey Converter
+
+Also see: 
+
+* [cnc-text-tool](https://msurguy.github.io/cnc-text-tool/) Browser-based SVG editor with Hershey text overlayer
+* [Hershey Font Inkscape plugin](https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Hershey_Text) 
+
 
 ---
 
