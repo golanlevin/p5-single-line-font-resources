@@ -198,6 +198,8 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 * In [this repository](kielm_spacetypefont/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/On-RBvfqR)
 
+*Note that this sketch requires p5.js v.2.x, and the p5.js 1.x Compatibility Add-on Library for Shapes, to render certain glyphs correctly.*
+
 ---
 
 ### p5.js port of Moebio's *Typode* Font
