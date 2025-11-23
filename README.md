@@ -288,4 +288,4 @@ Here are some inspirational works that make use of single-line fonts.
 
 ### Keywords
 
-*Single line font, single stroke font, monoline font, vector font, CNC engraving font, skeleton font, procedural font, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
+*Single line font, single stroke font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
