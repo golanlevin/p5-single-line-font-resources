@@ -400,8 +400,6 @@ class KielmFont {
     line(tx/2+sx/2,ty/4,tx+sx,ty/4);
   }
 
-  
-  
   _H() {
     const tx=this.tx,ty=this.ty,sx=this.sx,sy=this.sy;
     line(0,0,0,ty+sy);
@@ -897,19 +895,32 @@ class KielmFont {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     line(0,ty+sy,tx+sx,0);
   }
-
+  
+  
   _amp() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
     vertex(tx+sx,ty+sy);
-    quadraticVertex(tx/8,ty/4,tx/8,ty/8);
-    quadraticVertex(tx/8,0,3*tx/8,0);
+    bezierVertex(
+      (2*tx/3)+sx/3, (2*ty/3)+(2*sy/3),
+      (tx/8)+(tx/12) - (sx/12), ty/6 + sy/6,
+      tx/8, ty/8
+    );
+    bezierVertex(
+      tx/8, ty/12,
+      (3*tx/8)-(tx/12)+(sx/12), 0,
+      3*tx/8, 0
+    );
     vertex(3*tx/8+sx,0);
-    bezierVertex(5*tx/8+sx,0,5*tx/8+sx,ty/8,5*tx/8+sx,ty/8);
-    bezierVertex(5*tx/8+sx,ty/4,0,ty/2+sy,0,3*ty/4+sy);
-    quadraticVertex(0,ty+sy,tx/2,ty+sy);
+    bezierVertex(5*tx/8+sx,0, 5*tx/8+sx,ty/8, 5*tx/8+sx,ty/8);
+    bezierVertex(5*tx/8+sx,ty/4, 0,ty/2+sy, 0,3*ty/4+sy);
+    bezierVertex(
+      0, (5*ty/6)+(5*sy/6),
+      tx/6 + sx/3, ty+sy,
+      tx/2, ty+sy
+    );
     vertex(tx/2+sx,ty+sy);
-    bezierVertex(tx+sx,ty+sy,tx+sx,ty/2+sy/2,tx+sx,ty/2+sy/2);
+    bezierVertex(tx+sx,ty+sy, tx+sx,ty/2+sy/2, tx+sx,ty/2+sy/2);
     vertex(3*tx/4+sx,ty/2+sy/2);
     endShape();
   }
@@ -927,31 +938,31 @@ class KielmFont {
     endShape();
     line(0,ty+sy,tx+sx,ty+sy);
   }
-
+  
   _two() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
     vertex(0,ty/3);
-    quadraticVertex(0,0,tx/2,0);
+    bezierVertex(0,ty/9, tx/6,0, tx/2,0);
     vertex(tx/2+sx,0);
-    quadraticVertex(tx+sx,0,tx+sx,ty/3);
+    bezierVertex(5*tx/6+sx,0, tx+sx,ty/9, tx+sx,ty/3);
     vertex(tx+sx,ty/3+sy);
-    bezierVertex(tx+sx,2*ty/3+sy,0,2*ty/3+sy,0,ty+sy);
+    bezierVertex(tx+sx,2*ty/3+sy, 0,2*ty/3+sy, 0,ty+sy);
     vertex(tx+sx,ty+sy);
     endShape();
   }
-
+  
   _three() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
     vertex(0,0);
     vertex(tx+sx,0);
     vertex(tx/2+sx/2,ty/3);
-    quadraticVertex(tx+sx,ty/3,tx+sx,2*ty/3);
+    bezierVertex(5*(tx+sx)/6,ty/3, tx+sx,4*ty/9, tx+sx,2*ty/3);
     vertex(tx+sx,2*ty/3+sy);
-    quadraticVertex(tx+sx,ty+sy,tx/2+sx,ty+sy);
+    bezierVertex(tx+sx,8*ty/9+sy, 5*tx/6+sx,ty+sy, tx/2+sx,ty+sy);
     vertex(tx/2,ty+sy);
-    bezierVertex(0,ty+sy,0,2*ty/3+sy,0,2*ty/3+sy);
+    bezierVertex(0,ty+sy, 0,2*ty/3+sy, 0,2*ty/3+sy);
     endShape();
   }
 
@@ -964,7 +975,7 @@ class KielmFont {
     endShape();
     line(2*tx/3+sx,0,2*tx/3+sx,ty+sy);
   }
-
+  
   _five() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
@@ -972,29 +983,29 @@ class KielmFont {
     vertex(0,0);
     vertex(0,ty/3);
     vertex(tx/2+sx,ty/3);
-    quadraticVertex(tx+sx,ty/3,tx+sx,2*ty/3);
+    bezierVertex((4*tx+5*sx)/6,ty/3, tx+sx,4*ty/9, tx+sx,2*ty/3);
     vertex(tx+sx,2*ty/3+sy);
-    quadraticVertex(tx+sx,ty+sy,tx/2+sx,ty+sy);
-    bezierVertex(0,ty+sy,0,2*ty/3+sy,0,2*ty/3+sy);
+    bezierVertex(tx+sx,8*ty/9+sy, 5*tx/6+sx,ty+sy, tx/2+sx,ty+sy);
+    bezierVertex(0,ty+sy, 0,2*ty/3+sy, 0,2*ty/3+sy);
     endShape();
   }
-
+  
   _six() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
     vertex(tx+sx,2*ty/3+sy);
-    quadraticVertex(tx+sx,ty+sy,tx/2+sx,ty+sy);
+    bezierVertex(tx+sx,8*ty/9+sy, 5*tx/6+sx,ty+sy, tx/2+sx,ty+sy);
     vertex(tx/2,ty+sy);
-    bezierVertex(0,ty+sy,0,2*ty/3+sy,0,2*ty/3+sy);
+    bezierVertex(0,ty+sy, 0,2*ty/3+sy, 0,2*ty/3+sy);
     vertex(0,2*ty/3);
-    quadraticVertex(0,ty/3,tx/2,ty/3);
+    bezierVertex(0,4*ty/9, tx/6,ty/3, tx/2,ty/3);
     vertex(tx/2+sx,ty/3);
-    bezierVertex(tx+sx,ty/3,tx+sx,2*ty/3,tx+sx,2*ty/3);
+    bezierVertex(tx+sx,ty/3, tx+sx,2*ty/3, tx+sx,2*ty/3);
     vertex(tx+sx,2*ty/3+sy);
     endShape();
     beginShape();
     vertex(0,2*ty/3);
-    quadraticVertex(0,0,2*tx/3,0);
+    bezierVertex(0,2*ty/9, 2*tx/9,0, 2*tx/3,0);
     endShape();
   }
 
@@ -1006,51 +1017,65 @@ class KielmFont {
     vertex(tx/2+sx/2,ty+sy);
     endShape();
   }
-
+  
+  
   _eight() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
-    // top loop
     beginShape();
     vertex(0,ty/4);
-    quadraticVertex(0,0,tx/2,0);
+    bezierVertex(0,ty/12, tx/6,0, tx/2,0);
     vertex(tx/2+sx,0);
-    bezierVertex(tx+sx,0,tx+sx,ty/4,tx+sx,ty/4);
+    bezierVertex(tx+sx,0, tx+sx,ty/4, tx+sx,ty/4);
     vertex(tx+sx,ty/4+sy/2);
-    quadraticVertex(tx+sx,ty/2+sy/2,tx/2+sx,ty/2+sy/2);
+    bezierVertex(tx+sx,5*ty/12+sy/2, 
+                 5*tx/6+sx,ty/2+sy/2, tx/2+sx,ty/2+sy/2);
     vertex(tx/2,ty/2+sy/2);
-    bezierVertex(0,ty/2+sy/2,0,ty/4+sy/2,0,ty/4+sy/2);
+    bezierVertex(0,ty/2+sy/2, 
+                 0,ty/4+sy/2, 0,ty/4+sy/2);
     vertex(0,ty/4);
     endShape();
-    // bottom loop (translate removed)
-    const yoff = ty/2 + sy/2;
+
+    const yoff=ty/2+sy/2;
     beginShape();
     vertex(0,yoff+ty/4);
-    quadraticVertex(0,yoff,tx/2,yoff);
+    bezierVertex(0,yoff+ty/12, tx/6,yoff, tx/2,yoff);
     vertex(tx/2+sx,yoff);
-    bezierVertex(tx+sx,yoff,tx+sx,yoff+ty/4,tx+sx,yoff+ty/4);
+    bezierVertex(tx+sx,yoff, tx+sx,yoff+ty/4, tx+sx,yoff+ty/4);
     vertex(tx+sx,yoff+ty/4+sy/2);
-    quadraticVertex(tx+sx,yoff+ty/2+sy/2,tx/2+sx,yoff+ty/2+sy/2);
+    bezierVertex(tx+sx,yoff+5*ty/12+sy/2, 
+                 5*tx/6+sx,yoff+ty/2+sy/2, tx/2+sx,yoff+ty/2+sy/2);
     vertex(tx/2,yoff+ty/2+sy/2);
-    bezierVertex(0,yoff+ty/2+sy/2,0,yoff+ty/4+sy/2,0,yoff+ty/4+sy/2);
+    bezierVertex(0,yoff+ty/2+sy/2, 
+                 0,yoff+ty/4+sy/2, 0,yoff+ty/4+sy/2);
     vertex(0,yoff+ty/4);
     endShape();
   }
-
+  
+  
   _nine() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
     beginShape();
     vertex(0,ty/3);
-    quadraticVertex(0,0,tx/2,0);
+    bezierVertex(
+      0,ty/9,
+      tx/6,0,
+      tx/2,0
+    );
     vertex(tx/2+sx,0);
-    bezierVertex(tx+sx,0,tx+sx,ty/3,tx+sx,ty/3);
+    bezierVertex(tx+sx,0, tx+sx,ty/3, tx+sx,ty/3);
     vertex(tx+sx,ty/3+sy);
-    quadraticVertex(tx+sx,2*ty/3+sy,tx/2+sx,2*ty/3+sy);
+    bezierVertex(
+      tx+sx, 5*ty/9+sy,
+      5*tx/6+sx, 2*ty/3+sy,
+      tx/2+sx, 2*ty/3+sy
+    );
     vertex(tx/2,2*ty/3+sy);
-    bezierVertex(0,2*ty/3+sy,0,ty/3+sy,0,ty/3+sy);
+    bezierVertex(0,2*ty/3+sy, 0,ty/3+sy, 0,ty/3+sy);
     vertex(0,ty/3);
     endShape();
-    line(tx+sx,ty/3+sy,tx+sx,ty+sy);
+    line(tx+sx,ty/3+sy, tx+sx,ty+sy);
   }
+
 
   _zero() {
     const tx=this.tx, ty=this.ty, sx=this.sx, sy=this.sy;
