@@ -4,7 +4,7 @@
 
 *This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) from a wide range of creative projects, obsolete technologies, and other sources.*
 
-*Single-line fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.8](https://cdn.jsdelivr.net/npm/p5@1.11.8/lib/p5.js).*
+*Single-line fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.10](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
 
 ---
 
@@ -19,9 +19,10 @@
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
-* [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
+* [Kielm's p5.js *Space Type Generator* Font](#kielms-p5js-space-type-generator-font)
 * [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
+* [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
 * [*minf*, an ultra-minimal procedural monoline font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional resources](#additional-resources)
 * [Some inspirational artworks](#some-inspirational-artworks)
@@ -188,15 +189,14 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ---
 
-### p5.js port of Jared Schiffman's Font
+### Kielm's p5.js *Space Type Generator* Font
 
-Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
+![](kielm_spacetypefont/kielm_spacetypefont.gif)
 
-* In [this repository](JaredSchiffman/JaredSchiffman_single_line_font/sketch.js)
-* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)
-* [Processing (Java) version](JaredSchiffman/JaredSchiffman_monoline_pde/)
+This is an adaptation of an especially versatile, procedural single-stroke monospace font created in p5.js by [Kiel Mutschelknaus](https://www.kielm.com/) (@kielm). Mutschelknaus developed this typeface for his [*Space Type Generator*](https://spacetypegenerator.com/) (2019), a customizable kinetic type generator, and released it under the CC by-nc-sa 4.0 license. A special feature of this typeface is that it allows for horizontal and vertical "stretching" without affecting the shape of the characters' rounded parts. A p5.js sketch for the *Space Type Generator* font is available:
 
-![JaredSchiffman_screenshot.png](JaredSchiffman/JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
+* In [this repository](kielm_spacetypefont/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/On-RBvfqR)
 
 ---
 
@@ -223,6 +223,18 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 
 [![Anders Hoff's GridFont in p5.js](hoff_gridfont/hoff_screenshot.png)](https://editor.p5js.org/golan/sketches/EGWs_gTbR)
+
+---
+
+### p5.js port of Jared Schiffman's Font
+
+Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
+
+* In [this repository](JaredSchiffman/JaredSchiffman_single_line_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)
+* [Processing (Java) version](JaredSchiffman/JaredSchiffman_monoline_pde/)
+
+![JaredSchiffman_screenshot.png](JaredSchiffman/JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
 
 ---
 
@@ -258,11 +270,13 @@ Here are some inspirational works that make use of single-line fonts.
 
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
+* [Space Type Generator](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
 * [Typode](https://moebio.com/research/typode/) interactive demo by [Santiago Ortiz](https://moebio.com/), 2013.
 * [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by [Lingdong Huang](https://lingdong.works/), 2018.
 * [Leon Sans](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
 * [Letterform Variations](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
 * [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
+
 
 ---
 
