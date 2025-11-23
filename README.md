@@ -268,6 +268,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 Here are some inspirational works that make use of single-line fonts.
 
+* [Vib Ribbon](https://www.youtube.com/watch?v=cFXz_xKQa40) by Masaya Matsuura and NanaOn-Sha, 1999.
 * [Textension: Word Processor Variations](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
 * [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
 * [Space Type Generator](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
