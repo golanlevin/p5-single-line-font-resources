@@ -11,7 +11,6 @@ function setup() {
   createCanvas(800, 300);
   pixelDensity(2); 
   myKielmFont = new KielmFont(); 
-  // frameRate(2); 
 }
 
 function draw() {
