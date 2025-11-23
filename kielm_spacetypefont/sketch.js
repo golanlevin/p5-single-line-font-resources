@@ -9,7 +9,6 @@ let cycle = 300; // animation period
 
 function setup() {
   createCanvas(800, 300);
-  pixelDensity(2); 
   myKielmFont = new KielmFont(); 
 }
 
