@@ -2,7 +2,7 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) from a wide range of creative projects, obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
 *Single-line fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.10](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
 
@@ -15,6 +15,7 @@
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [Minimal SVG font, inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
+* [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
@@ -130,6 +131,18 @@ This single-line font is from the character generator ROM of the HP1345A digital
 * Data-inlined version (*recommended*) [here](HP1345A/HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
 
 ![hp1345a_screenshot.png](HP1345A/HP1345A_single_line_font/hp1345a_screenshot.png)
+
+---
+
+### p5.js port of Phooky's Apple 410 vector font
+
+This monospace, monoline vector font is from the [Apple 410 Color Plotter](https://en.wikipedia.org/wiki/Apple_410_Color_Plotter) (c.1983), also sold as the Yokogawa YEW PL-1000. The font was reverse-engineered and extracted from the firmware ROM by Adam Mayer (@phooky), as described in his article, "[Pulling Teeth From a Corpse: Extracting the Vector Font From the Apple 410 Color Plotter](https://www.nycresistor.com/2017/12/29/pulling-teeth-from-a-corpse-extracting-the-vector-font-from-the-apple-410-color-plotter/)". This p5.js version is adapted using the font data and extraction code Meyer released in [this repository](https://github.com/phooky/Apple-410) (MIT license). Meyer explains that the data for each character was stored in a single byte: "the high four bits of the byte indicate the X coordinate, and the low four bits indicate the Y coordinate", thus limiting the design to points on a 16×16 lattice; in other words, it is a grid-font. I have ported these coordinates into a JSON data structure embedded in the p5.js code: 
+
+* In [this repository](apple_410_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BytcG0455)
+
+![apple_410_font.png](apple_410_font/apple_410_font.png)
+
 
 ---
 
@@ -284,6 +297,8 @@ Here are some inspirational works that make use of single-line fonts.
 ### Todo 
 
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
+* Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
+* [Commodore 1520 font](https://scruss.com/blog/2016/04/23/fifteentwenty-commodore-1520-plotter-font/?utm_source=chatgpt.com)
 
 ---
 
