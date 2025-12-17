@@ -2,9 +2,9 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
-*Single-line fonts are ideally suited to creative coding, pen-plotting, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.10](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
+*Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.10](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
 
 ---
 
@@ -44,7 +44,7 @@ Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not 
 
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.org/TR/SVG11/fonts.html), which allows for single-line vector fonts. A handful of single-line SVG Fonts have been created. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts:
+[SVG 1.1 Fonts](https://www.w3.org/TR/SVG11/fonts.html) are a lesser-known open standard, which allow for entire vector fonts to be stored within a single (specially formatted) SVG file. A number of *single-line* SVG Fonts have been created. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts:
 
 * In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
@@ -53,7 +53,7 @@ SVG 1.1 Fonts are a lesser-known open standard, defined [here](https://www.w3.or
 
 Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
 
-A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. All of these fonts are supported by the p5.js project here. 
+A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. (Some of these include SVG Font versions of Hershey fonts.) All of these fonts are supported by the p5.js project here. 
 
 ![HersheySans1_svg_font.png](p5_single_line_svg_fonts/single_line_svg_fonts/samples.png)
 
@@ -117,7 +117,7 @@ Also see:
 
 The program presented [here](Hershey/Hershey_inline_font/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5) displays an *inlined* SVG font in p5.js. This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. 
 
-The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above. This code been adapted from [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
+The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above. This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
 
 ![hershey_inline_screenshot.png](Hershey/Hershey_inline_font/hershey_inline_screenshot.png)
 
@@ -125,7 +125,7 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 
 ### p5.js port of Kamp's HP1345A vector font
 
-This single-line font is from the character generator ROM of the HP1345A digital vector display (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, and ported to JavaScript by Golan Levin. This p5.js version is adapted from his work, and loads data from the original ROM binaries.
+This single-line font is from the character generator ROM of the [HP1345A digital vector display](https://archive.org/details/HP1345AOSM1985) (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, and ported to JavaScript by Golan Levin. This p5.js version is adapted from his work, and loads data from the original ROM binaries.
 
 * ROM-loading version [here](HP1345A/HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
 * Data-inlined version (*recommended*) [here](HP1345A/HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
@@ -150,10 +150,10 @@ This monospace, monoline vector font is from the [Apple 410 Color Plotter](https
 
 Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org/web/20141222010537/http://www.edge-online.com/features/making-asteroids/), c.1979, converted to C by [Trammell Hudson](https://trmm.net/Asteroids_font/), ported to p5.js by Golan Levin. Original C data [here](https://github.com/osresearch/vst/blob/master/teensyv/asteroids_font.c).
 
-* In [this repository](Asteroids_single_line_font/sketch.js)
+* In [this repository](asteroids_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/OmiU51Gdm)
 
-![asteroids_screenshot.png](Asteroids_single_line_font/asteroids_screenshot.png)
+![asteroids_screenshot.png](asteroids_font/asteroids_screenshot.png)
 
 ---
 
@@ -243,11 +243,11 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
 
-* In [this repository](JaredSchiffman/JaredSchiffman_single_line_font/sketch.js)
+* In [this repository](schiffman_font/JaredSchiffman_single_line_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)
-* [Processing (Java) version](JaredSchiffman/JaredSchiffman_monoline_pde/)
+* [Processing (Java) version](schiffman_font/JaredSchiffman_monoline_pde/)
 
-![JaredSchiffman_screenshot.png](JaredSchiffman/JaredSchiffman_single_line_font/JaredSchiffman_screenshot.png)
+![JaredSchiffman_screenshot.png](schiffman_font/schiffman_font.png)
 
 ---
 
