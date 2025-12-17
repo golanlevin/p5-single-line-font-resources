@@ -16,6 +16,7 @@
 * [Minimal SVG font, inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
+* [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
 * [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
@@ -69,7 +70,7 @@ Some additional resources for SVG 1.1 Fonts are:
 
 ### p5.js Parser/Renderer for (Classic) Hershey Fonts
 
-[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The coordinate data for 1,377 Hershey font characters was published by NIST in 1976, in [*A Contribution to Computer Typesetting Techniques: Tables of Coordinates for Hershey's Repertory of Occidental Type Fonts and Graphic Symbols*](https://books.google.de/books?id=8DOGhKjPAyEC&redir_esc=y). Type designer/historian Frank Grießhammer has published a terrific [video lecture about The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) in 2015.
+[Hershey Fonts](https://en.wikipedia.org/wiki/Hershey_fonts) are a collection of single-line vector fonts developed in 1967 by Dr. Allen V. Hershey at Dahlgren Naval Weapons Laboratory; they are some of the [earliest digital fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg). The coordinate data for 1,377 Hershey font characters was published by the National Bureau of Standards in 1976, in [*A Contribution to Computer Typesetting Techniques: Tables of Coordinates for Hershey's Repertory of Occidental Type Fonts and Graphic Symbols*](https://books.google.de/books?id=8DOGhKjPAyEC&redir_esc=y); a local copy is [here](Hershey/nbs_1976/tables_of_coordinates_for_hershey_fonts_nbs_1976.pdf) (32MB PDF). Type designer/historian Frank Grießhammer has published a terrific [video lecture about The Hershey Fonts](https://www.youtube.com/watch?v=xQNHAWrR_eg) in 2015.
 
 The authoritative p5.js interface to Hershey Fonts is the [p5-hershey-js](https://github.com/LingDong-/p5-hershey-js) library, by [Lingdong Huang](https://github.com/lingDong-/); a [live demo is here](https://lingdong-.github.io/p5-hershey-js/). (Note that the font data in Lingdong's p5-hershey-js is *not* stored in SVG format!) The p5-hershey-js library provides detailed control of Hershey typography; in this section, I provide some practical p5.js programs that use this library. 
 
@@ -130,7 +131,7 @@ This single-line font is from the character generator ROM of the [HP1345A digita
 * ROM-loading version [here](HP1345A/HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
 * Data-inlined version (*recommended*) [here](HP1345A/HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
 
-![hp1345a_screenshot.png](HP1345A/HP1345A_single_line_font/hp1345a_screenshot.png)
+![hp1345a_screenshot.png](HP1345A/hp1345a_font.png)
 
 ---
 
@@ -143,6 +144,16 @@ This monospace, monoline vector font is from the [Apple 410 Color Plotter](https
 
 ![apple_410_font.png](apple_410_font/apple_410_font.png)
 
+---
+
+### p5.js port of Scruss's Commodore 1520 vector font
+
+This is a vintage monospace, monoline vector font from the [Commodore 1520 Printer Plotter](https://www.youtube.com/watch?v=QwPTluBvKLU) (c.1982), recovered from the original ROM data by Jim Brain, Gerrit Heitsch, Silver Dream, and Stewart C Russell (scruss). More information about the recovery and provenance of this data is available [here](https://scruss.com/blog/2016/04/23/fifteentwenty-commodore-1520-plotter-font/) and [here](https://e4aws.silverdr.com/hacks/6500_1/). A p5.js port of this font by Golan Levin can be found: 
+
+* In [this repository](commodore_1520_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/XbFlU8q6k)
+
+![commodore_1520_font](commodore_1520_font/commodore_1520_font.png)
 
 ---
 
