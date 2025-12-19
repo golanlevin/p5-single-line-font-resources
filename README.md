@@ -2,18 +2,18 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, stick fonts, or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
 *Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.10](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
 
 ---
 
-#### Contents
+### Contents
 
-* [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
+* [Minimal SVG Hershey font, inlined in p5.js](#minimal-svg-hershey-font-inlined-in-p5js)
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
+* [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
-* [Minimal SVG font, inlined in p5.js](#minimal-svg-font-inlined-in-p5js)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
@@ -29,17 +29,21 @@
 * [Additional resources](#additional-resources)
 * [Some inspirational artworks](#some-inspirational-artworks)
 
+
 ---
 
-### p5.js Parser/Renderer for Single-Line TTF Fonts
+### Minimal SVG Hershey font, inlined in p5.js
 
-Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including commercial software like Adobe Illustrator, as well as p5's built-in `text()` command. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts:
+> **"I want something simple"**
 
-* An [**archive**](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, as suggested via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml). Unlike Hershey fonts, many of these TTFs are constructed from quadratic Bézier segments, and thus have real curves instead of polylines. 
-* A [**p5.js program**](p5_single_line_ttf_fonts/sketch.js) to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/), and also at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM). Note that the program makes use of [opentype.js](https://opentype.js.org/).
-* These fonts have some quirks. Don't ignore these important [**technical notes**](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5.js code!
+*This minimal program presents a SVG font inlined in p5.js, with no loading of external resources.* This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. It is available:
 
-![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
+* In [this repository](Hershey/Hershey_inline_font/sketch.js), and
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5) 
+
+The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed [below](#p5js-parserrenderer-for-single-line-svg-fonts). This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
+
+![hershey_inline_screenshot.png](Hershey/Hershey_inline_font/hershey_inline_screenshot.png)
 
 ---
 
@@ -65,6 +69,20 @@ Some additional resources for SVG 1.1 Fonts are:
 * [https://singlelinefonts.com/collections/svg-fonts](https://singlelinefonts.com/collections/svg-fonts)
 * [https://github.com/isdat-type/Relief-SingleLine](https://github.com/isdat-type/Relief-SingleLine)
 * [https://www.templatemaker.nl/singlelinetext](https://www.templatemaker.nl/singlelinetext/)
+
+
+---
+
+### p5.js Parser/Renderer for Single-Line TTF Fonts
+
+Genuine *single-line* TrueType (.TTF) fonts are comparatively rare, and are not rendered properly by most graphics tools — including commercial software like Adobe Illustrator, as well as p5's built-in `text()` command. Here, an [archive](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts is provided, as well as a p5.js [program](p5_single_line_ttf_fonts/) which is able to load, parse, display, and provide control points for those fonts:
+
+* An [**archive**](p5_single_line_ttf_fonts/single_stroke_ttf_fonts/) of single-line TTF fonts, as suggested via [imajeenyus.com](http://www.imajeenyus.com/computer/20150110_single_line_fonts/index.shtml). Unlike Hershey fonts, many of these TTFs are constructed from quadratic Bézier segments, and thus have real curves instead of polylines. 
+* A [**p5.js program**](p5_single_line_ttf_fonts/sketch.js) to load single-line TTFs in p5.js: In [this repository](p5_single_line_ttf_fonts/), and also at [editor.p5js.org](https://editor.p5js.org/golan/sketches/7kMYzCpfM). Note that the program makes use of [opentype.js](https://opentype.js.org/).
+* These fonts have some quirks. Don't ignore these important [**technical notes**](p5_single_line_ttf_fonts/README.md) about the TTF fonts and p5.js code!
+
+![all_ttf_single_stroke_fonts.png](p5_single_line_ttf_fonts/img/all_ttf_single_stroke_fonts.png)
+
 
 ---
 
@@ -112,18 +130,6 @@ Also see:
 
 ---
 
-### Minimal SVG font, inlined in p5.js
-
-*This minimal program presents a SVG font inlined in p5.js, with no loading of external resources.*
-
-The program presented [here](Hershey/Hershey_inline_font/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5) displays an *inlined* SVG font in p5.js. This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. 
-
-The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed above. This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
-
-![hershey_inline_screenshot.png](Hershey/Hershey_inline_font/hershey_inline_screenshot.png)
-
----
-
 ### p5.js port of Kamp's HP1345A vector font
 
 This single-line font is from the character generator ROM of the [HP1345A digital vector display](https://archive.org/details/HP1345AOSM1985) (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, and ported to JavaScript by Golan Levin. This p5.js version is adapted from his work, and loads data from the original ROM binaries.
@@ -154,6 +160,7 @@ This is a vintage monospace, monoline vector font from the [Commodore 1520 Print
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/XbFlU8q6k)
 
 ![commodore_1520_font](commodore_1520_font/commodore_1520_font.png)
+
 
 ---
 
@@ -309,10 +316,10 @@ Here are some inspirational works that make use of single-line fonts.
 
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
-* [Commodore 1520 font](https://scruss.com/blog/2016/04/23/fifteentwenty-commodore-1520-plotter-font/?utm_source=chatgpt.com)
+* ROM extraction of HP7596A font
 
 ---
 
 ### Keywords
 
-*Single line font, single stroke font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
+*Single line font, single stroke font, stick font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
