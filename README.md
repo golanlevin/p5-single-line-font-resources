@@ -56,9 +56,9 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 
 ![HersheySans1_svg_font.png](p5_single_line_svg_fonts/img/p5_svg_fonts_screenshot.png)
 
-Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
+Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team directed by Prof. François Chastanet at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
 
-A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Evil Mad Scientist Laboratories. (Some of these include SVG Font versions of Hershey fonts.) All of these fonts are supported by the p5.js project here. 
+A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Dr. Windell Oskay of Evil Mad Scientist Laboratories. (Some of these include SVG Font versions of Hershey fonts.) All of these fonts are supported by the p5.js project here. 
 
 ![HersheySans1_svg_font.png](p5_single_line_svg_fonts/single_line_svg_fonts/samples.png)
 
@@ -322,4 +322,4 @@ Here are some inspirational works that make use of single-line fonts.
 
 ### Keywords
 
-*Single line font, single stroke font, stick font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
+*Single line font, single stroke font, stick font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
