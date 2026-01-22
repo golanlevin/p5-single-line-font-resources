@@ -34,12 +34,13 @@
 
 ### Minimal SVG Hershey font, inlined in p5.js
 
-> **"I want something simple"**
+> **"I just want something simple"**
 
 *This minimal program presents a SVG font inlined in p5.js, with no loading of external resources.* This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. It is available:
 
 * In [this repository](Hershey/Hershey_inline_font/sketch.js), and
-* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5) 
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5)
+* A [version that saves SVG output files](https://editor.p5js.org/golan/sketches/vjQxbigFg), at editor.p5js.org.
 
 The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed [below](#p5js-parserrenderer-for-single-line-svg-fonts). This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
 
@@ -49,7 +50,7 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 
 ### p5.js Parser/Renderer for Single-Line SVG Fonts
 
-[SVG 1.1 Fonts](https://www.w3.org/TR/SVG11/fonts.html) are a lesser-known open standard, which allow for entire vector fonts to be stored within a single (specially formatted) SVG file. A number of *single-line* SVG Fonts have been created. [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts:
+[SVG 1.1 Fonts](https://www.w3.org/TR/SVG11/fonts.html) are a lesser-known open font standard, which allow for entire vector fonts to be stored within a single (specially formatted) SVG file. A number of single-line SVG Fonts have been created. *(Note that while SVG 1.1 Fonts are technically SVG files, they don't display normally in SVG viewers.)* [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts:
 
 * In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
@@ -317,6 +318,8 @@ Here are some inspirational works that make use of single-line fonts.
 * Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
+* Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
+
 
 ---
 
