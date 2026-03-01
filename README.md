@@ -21,10 +21,11 @@
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
-* [Kielm's p5.js *Space Type Generator* Font](#kielms-p5js-space-type-generator-font)
-* [p5.js port of Moebio's *Typode* Font](#p5js-port-of-moebios-typode-font)
+* [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
+* [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
-* [p5.js port of Jared Schiffman's Font](#p5js-port-of-jared-schiffmans-font)
+* [p5.js port of Abel Vincze's *GearGenerator* font](#p5js-port-of-abel-vinczes-geargenerator-font)
+* [p5.js port of Jared Schiffman's font](#p5js-port-of-jared-schiffmans-font)
 * [*minf*, an ultra-minimal procedural monoline font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional resources](#additional-resources)
 * [Some inspirational artworks](#some-inspirational-artworks)
@@ -221,7 +222,7 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ---
 
-### Kielm's p5.js *Space Type Generator* Font
+### Kielm's p5.js *Space Type Generator* font
 
 ![](kielm_spacetypefont/kielm_spacetypefont.gif)
 
@@ -232,7 +233,7 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 
 ---
 
-### p5.js port of Moebio's *Typode* Font
+### p5.js port of Moebio's *Typode* font
 
 [*Typode*](https://moebio.com/research/typode/) (2013) is a procedural, grid-based, monospace, single-stroke font by [Santiago Ortiz](https://moebio.com/) (Moebio). Ortiz created *Typode* "to be used in certain information visualization contexts, in which text needs to adapt to specific shapes". Ortiz's demo includes a collection of "transformation" functions which illustrate the computational malleability of procedural fonts. *Typode* was ported to p5.js by Golan Levin in January 2025, and is presented here with permission. A p5.js sketch to parse and display *Typode* is available: 
 
@@ -258,7 +259,18 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 ---
 
-### p5.js port of Jared Schiffman's Font
+### p5.js port of Abel Vincze's *GearGenerator* font
+
+p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenerator.com](http://geargenerator.com/) (Iparigrafika, version 1.01), in which it was used to label gears with ratio and RPM text. The font encodes 73 printable characters on a 7×9 integer grid, compressing all glyph stroke data into three strings totalling under 1 KB; ported from [here](https://www.robopenguins.com/assets/wp-content/pages/geargenerator/index.html). 
+
+* In [this repository](vincze_geargenerator_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/6wem5wbsI)
+
+![vincze geargenerator font](vincze_geargenerator_font/vincze_geargenerator_font.png)
+
+---
+
+### p5.js port of Jared Schiffman's font
 
 Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
 
