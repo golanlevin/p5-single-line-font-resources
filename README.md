@@ -22,6 +22,7 @@
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
+* [p5.js port of Jongmin Kim's *LeonSans* font](#p5js-port-of-jongmin-kims-leonsans-font)
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
@@ -235,6 +236,17 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ---
 
+### p5.js port of Jongmin Kim's *LeonSans* font
+
+![p5_leonsans_font](p5_leonsans_font/p5_leonsans_font.gif)
+
+This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/) (2019), a procedural single-stroke Latin font. *LeonSans* is distinctive in that its *weight* parameter (1–900) simultaneously controls both the rendered stroke thickness and the underlying Bézier geometry: control points morph between a thin and a bold variant — so heavier weights produce genuinely different letterforms rather than simply thicker lines. This port uses pure p5.js drawing functions. It also includes a special *roundCaps* option suited for pen-plotters; when enabled, each open stroke endpoint is pulled inward by half the stroke width, ensuring that round-ended strokes land exactly where square caps would. *LeonSans* is available:
+
+* In [this repository](p5_leonsans_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/aPH2RXnd1)
+
+---
+
 ### Kielm's p5.js *Space Type Generator* font
 
 ![](kielm_spacetypefont/kielm_spacetypefont.gif)
@@ -340,7 +352,6 @@ Here are some inspirational works that make use of single-line fonts.
 
 ### Todo 
 
-* Interface p5.js to [Leon Sans](https://github.com/cmiscm/leonsans) by Jongmin Kim, 2019
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
