@@ -14,6 +14,7 @@
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
+* [p5.js port of Saka.N's *KST32B* font, via Kitasenju](#p5js-port-of-sakans-kst32b-font-via-kitasenju)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
@@ -129,6 +130,16 @@ Also see:
 * [cnc-text-tool](https://msurguy.github.io/cnc-text-tool/) Browser-based SVG editor with Hershey text overlayer
 * [Hershey Font Inkscape plugin](https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Hershey_Text) 
 
+---
+
+### p5.js port of Saka.N's *KST32B* font, via Kitasenju
+
+[KST32B](saka_KST32B_font/sketch.js) (Kanji Stroke Table) is a comprehensive monospace single-line font originally designed (c.1992, 2017) by [Saka.N](https://www.vector.co.jp/download/file/data/writing/fh691397.html)<!-- Saka.N.06@b3.mnx.ne.jp -->, covering 4125 characters across multiple scripts: ASCII, half-width kana, hiragana and katakana, Greek, Cyrillic, ISO 8859-15, and both JIS Level 1 and Level 2 kanji. Each glyph is encoded as a compact byte stream of drawing commands on a 30×32 integer grid, using distinct opcodes for horizontal moves, horizontal strokes, and diagonal strokes. In 2014, Saka's work was [added to LibreCAD](https://forum.librecad.org/Japanese-Font-td5710456.html). Inspired by [hgsn](https://x.com/hsgn/status/1413826984413704195), [Kitasenju](https://kitasenjudesign.com/tool/01/) ported Saka.N's original binary data to p5.js, annotating each entry with its Unicode equivalent; this adaptation loads that header directly, keying each glyph by Unicode codepoint for straightforward multilingual text rendering in English, Japanese, Greek, Russian, and Chinese.
+
+* In [this repository](saka_KST32B_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/shlhouIWh)
+
+![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.gif)
 
 ---
 
@@ -296,6 +307,15 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ![minf.png](minf/minf.png)
 
+<!--
+
+---
+
+https://x.com/hsgn/status/1413826984413704195
+
+
+-->
+
 ---
 
 ### Additional resources
@@ -331,10 +351,13 @@ Here are some inspirational works that make use of single-line fonts.
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
+* [Japanese CAD Fonts](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html)
+  * https://commons.wikimedia.org/wiki/File:ISO3098.svg
+  * https://domisan.sakura.ne.jp/article/cadfont/mplus_stroke.svg
 
 
 ---
 
 ### Keywords
 
-*Single line font, single stroke font, stick font, monoline font, vector font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
+*Single line font, single stroke font, stick font, monoline font, vector font, CAD font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive.*
