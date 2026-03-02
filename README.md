@@ -130,6 +130,7 @@ Also see:
 * [cnc-text-tool](https://msurguy.github.io/cnc-text-tool/) Browser-based SVG editor with Hershey text overlayer
 * [Hershey Font Inkscape plugin](https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Hershey_Text) 
 
+
 ---
 
 ### p5.js port of Saka.N's *KST32B* font, via Kitasenju
@@ -140,6 +141,7 @@ Also see:
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/shlhouIWh)
 
 ![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.gif)
+
 
 ---
 
@@ -186,6 +188,7 @@ Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org
 
 ![asteroids_screenshot.png](asteroids_font/asteroids_screenshot.png)
 
+
 ---
 
 ### p5.js implementation of multi-segment display fonts
@@ -196,7 +199,6 @@ An implementation of 7 segment, 14 segment, and 16 segment LED displays. Based o
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/kLbqPpqwL)
 
 ![multisegment_display.png](multisegment_display_fonts/multisegment_display.png)
-
 
 
 ---
@@ -259,7 +261,7 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 
 *GridFont* is a grid-based system for designing simple symbols and fonts, designed by [Anders Hoff](https://inconvergent.net/) in 2019. It is mainly intended for plotter drawings, and uses a turtle-graphics-like method for defining stroke paths in the glyphs. This p5.js port is adapted from [his repo here](https://github.com/inconvergent/gridfont), with permission. 
 
-Hoff provides two sample fonts: one ("original") which is almost exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments, but is still poly-linear. Note that Hoff's demo fonts do not contain capital letters.
+Hoff provides two sample fonts: one ("original") which is almost exclusively composed of vertical, horizontal, and 45° angles; and another ("smooth") which has additional line segments, but is still poly-linear. *Note that Hoff's fonts do not contain capital (uppercase) letters.*
 
 * [Original Python code by Anders Hoff](https://github.com/inconvergent/gridfont)
 * [p5.js JavaScript port](hoff_gridfont/sketch.js) (in this repository)
@@ -306,15 +308,6 @@ Each of the `x` and `y` coordinate values in minf's glyph control points are sto
 A p5.js program to load, render, and edit *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
 
 ![minf.png](minf/minf.png)
-
-<!--
-
----
-
-https://x.com/hsgn/status/1413826984413704195
-
-
--->
 
 ---
 
