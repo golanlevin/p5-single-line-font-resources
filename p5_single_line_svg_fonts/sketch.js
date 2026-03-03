@@ -10,11 +10,10 @@ let mySvgFont;
 function preload() {
   //// Here are some SVG fonts to try:
   // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheySans1.svg");
+  // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheyScript1.svg");
   // mySvgFont = new SvgFont("single_line_svg_fonts/EMS/EMSReadabilityItalic.svg");
-  
   mySvgFont = new SvgFont("single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg");
 }
-
 
 function setup() {
   createCanvas(800, 400);
@@ -62,16 +61,25 @@ class SvgFont {
     const parser = new DOMParser();
     const svgDoc = parser.parseFromString(svgData, "text/xml");
 
+    // Read font-level default advance width (individual glyphs may omit horiz-adv-x)
+    const fontEl = svgDoc.querySelector("font");
+    this.defaultHorizAdvX = parseFloat(fontEl?.getAttribute("horiz-adv-x") || 0);
+
     // Parse the glyphs
     const glyphElements = svgDoc.querySelectorAll("glyph");
     glyphElements.forEach((glyph) => {
       const unicode = glyph.getAttribute("unicode");
       if (unicode !== null) { // Ensure glyph has a valid unicode attribute
         const pathData = glyph.getAttribute("d");
-        const horizAdvX = parseFloat(glyph.getAttribute("horiz-adv-x") || 0);
+        const horizAdvX = parseFloat(glyph.getAttribute("horiz-adv-x") ?? this.defaultHorizAdvX);
         this.glyphs[unicode] = { d: pathData, horizAdvX };
       }
     });
+
+    // Ensure a space glyph exists — XML parsers may drop whitespace-only attribute values
+    if (!this.glyphs[' ']) {
+      this.glyphs[' '] = { d: null, horizAdvX: this.defaultHorizAdvX };
+    }
 
     // Parse font-face for scale metrics
     const fontFace = svgDoc.querySelector("font-face");

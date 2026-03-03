@@ -1,6 +1,6 @@
 # SVG Single Line Fonts
 
-The SVG 1.1 Fonts in this directory, and all information in this README, are mirrored from [https://gitlab.com/oskay/svg-fonts](https://gitlab.com/oskay/svg-fonts). These fonts were curated, compiled, and prepared by Evil Mad Scientist. 
+The SVG 1.1 Fonts in this directory, and all information in this README, are mirrored from [https://gitlab.com/oskay/svg-fonts](https://gitlab.com/oskay/svg-fonts). The majority of these fonts were curated, compiled, and prepared by Dr. Windell Oskay of Evil Mad Scientist Labs / Bantam Tools. 
 
 ----
 
@@ -45,5 +45,6 @@ EMS Society | Mrs Saint Delafield | [Alejandro Paul, Sudtipos](http://www.sudtip
 EMS SpaceRocks | Ed Logg's Asteroids font | [Trammell Hudson](https://trmm.net/) | [Asteroids Font](https://trmm.net/Asteroids_font)
 EMS Swiss | Italianno | [Rob Leuschke, TypeSETit](http://www.typesetit.com) | [Google Font Page](https://fonts.google.com/specimen/Italianno)
 EMS Tech | Architects Daughter | [Kimberly Geswein, Kimberly Geswein Fonts](http://www.kimberlygeswein.com/) | [Google Font Page](https://fonts.google.com/specimen/Architects+Daughter)
+MPlusStroke | Japanese & Chinese scripts | [Coji Morishita, M+ Fonts Project](https://mplusfonts.github.io/) | [LibreCAD](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html)
 Twin Sans | Hershey Sans | [Keith Packard](https://keithp.com) | [GCode Text](https://keithp.com/cgit/gcode-text.git/)
 
