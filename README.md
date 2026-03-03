@@ -15,6 +15,7 @@
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [p5.js port of Saka.N's *KST32B* font, via Kitasenju](#p5js-port-of-sakans-kst32b-font-via-kitasenju)
+* [p5.js ports of LibreCAD fonts](#p5js-ports-of-librecad-fonts)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
@@ -144,6 +145,18 @@ Also see:
 
 ![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.gif)
 
+---
+
+### p5.js ports of LibreCAD fonts
+
+The following single-stroke fonts are extracted from the [LibreCAD project](https://librecad.org/), a free open source CAD application (published under GPLv2), from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
+
+*M+ Stroke Font*, designed by Coji Morishita, [M+ Fonts Project](https://mplusfonts.github.io/), specialized for East Asian scripts. The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of around 5,200 single-stroke glyphs:
+
+* In [this repository](librecad_fonts/m_plus_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/-Fcfqi5mQ)
+
+![librecad_fonts](librecad_fonts/m_plus_font/mplus_font.png)
 
 ---
 
@@ -241,7 +254,7 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ![p5_leonsans_font](p5_leonsans_font/p5_leonsans_font.gif)
 
-This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/) (2019), a procedural single-stroke Latin font. *LeonSans* is distinctive in that its *weight* parameter (1–900) simultaneously controls both the rendered stroke thickness and the underlying Bézier geometry: control points morph between a thin and a bold variant — so heavier weights produce genuinely different letterforms rather than simply thicker lines. This port uses pure p5.js drawing functions. It also includes a special *roundCaps* option suited for pen-plotters; when enabled, each open stroke endpoint is pulled inward by half the stroke width, ensuring that round-ended strokes land exactly where square caps would. *LeonSans* is available:
+This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/) (2019), a procedural single-stroke Latin font. *LeonSans* is distinctive in that it is a [*variable single-stroke font*](https://en.wikipedia.org/wiki/Variable_font): its *weight* parameter (1–900) simultaneously controls both the rendered stroke thickness and the underlying Bézier geometry: control points morph between a thin and a bold variant — so heavier weights produce genuinely different letterforms rather than simply thicker lines. This port uses pure p5.js drawing functions. It also includes a special *roundCaps* option suited for pen-plotters; when enabled, each open stroke endpoint is pulled inward by half the stroke width, ensuring that round-ended strokes land exactly where square caps would. *LeonSans* is available:
 
 * In [this repository](p5_leonsans_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/aPH2RXnd1)
