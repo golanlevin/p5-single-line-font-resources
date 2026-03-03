@@ -147,7 +147,7 @@ Also see:
 * In [this repository](saka_KST32B_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/shlhouIWh)
 
-![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.gif)
+![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.png)
 
 ---
 
