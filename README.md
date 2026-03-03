@@ -151,12 +151,13 @@ Also see:
 
 The following single-stroke fonts are extracted from the [LibreCAD project](https://librecad.org/), a free open source CAD application (published under GPLv2), from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
 
-*M+ Stroke Font*, designed by Coji Morishita, [M+ Fonts Project](https://mplusfonts.github.io/), specialized for East Asian scripts. The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of around 5,200 single-stroke glyphs:
+*M+ Stroke Font*, designed by Coji Morishita, [M+ Fonts Project](https://mplusfonts.github.io/), specialized for East Asian scripts. The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of ~5,200 single-stroke glyphs. *(Note that an [SVG 1.1 font of the M+ Stroke Font](librecad_fonts/m_plus_font/source/MPlusStrokeSVG1.1Font.svg) has also been created.)* The M+ single-stroke font has been adapted for p5.js and is available:
 
 * In [this repository](librecad_fonts/m_plus_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/-Fcfqi5mQ)
 
 ![librecad_fonts](librecad_fonts/m_plus_font/mplus_font.png)
+
 
 ---
 
