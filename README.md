@@ -57,7 +57,7 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 
 [SVG 1.1 Fonts](https://www.w3.org/TR/SVG11/fonts.html) are a lesser-known open font standard, which allow for entire vector fonts to be stored within a single (specially formatted) SVG file. A number of single-line SVG Fonts have been created. *(Note that while SVG 1.1 Fonts are technically SVG files, they don't display normally in SVG viewers.)* [Here is a p5.js program](p5_single_line_svg_fonts/sketch.js) that parses and displays SVG Fonts:
 
-* In [this repository](p5_single_line_svg_fonts/)
+* In [this repository](p5_single_line_svg_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
 
 ![relief_svg_font.png](p5_single_line_svg_fonts/img/relief_svg_font.png)
