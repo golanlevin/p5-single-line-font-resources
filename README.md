@@ -15,7 +15,7 @@
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [p5.js port of Saka.N's *KST32B* font, via Kitasenju](#p5js-port-of-sakans-kst32b-font-via-kitasenju)
-* [p5.js port of M+ kanji/hanzi font](#p5js-port-of-librecad-fonts)
+* [p5.js port of M+ kanji/hanzi font](#p5js-port-of-m-kanjihanzi-font)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
