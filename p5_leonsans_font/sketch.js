@@ -18,7 +18,7 @@ function setup() {
 
   weightSlider = createSlider(1, 900, 200, 1);
   weightSlider.position(20, height + 14);
-  weightSlider.style('width', (width - 40) + 'px');
+  weightSlider.style('width', 200 + 'px');
   weightSlider.input(() => redraw());
 }
 

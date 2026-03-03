@@ -24,6 +24,7 @@
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jongmin Kim's *LeonSans* font](#p5js-port-of-jongmin-kims-leonsans-font)
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
+* [Licia He's p5.js *DearPlotter* font](#licia-hes-p5js-dearplotter-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
 * [p5.js port of Abel Vincze's *GearGenerator* font](#p5js-port-of-abel-vinczes-geargenerator-font)
@@ -256,6 +257,20 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 * In [this repository](kielm_spacetypefont/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/On-RBvfqR)
 
+
+---
+
+### Licia He's p5.js *DearPlotter* font
+
+The [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) is a program that generates stroke-fonts, created by [Licia He](http://eyesofpanda.com/) through a commission from The Processing Foundation and the Tezos Foundation. The DearPlotter Font Generator is flexibly licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0), and the fonts created with it are licensed under The [SIL Open Font License](https://openfontlicense.org/). 
+
+The code presented here reproduces Licia He's underlying ur-font from which all of the *DearPlotter Generator* fonts are derived. He's original renderer converts each arc to a densely-sampled polyline before drawing; this p5.js adaptation instead renders each stroke in a resolution-independent way with p5's native `bezierVertex()`. The *DearPlotter* font is available:
+
+* In [this repository](licia_he_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/l-7DpKuu-)
+
+![licia_he_font](licia_he_font/licia_he_font.png)
+
 ---
 
 ### p5.js port of Moebio's *Typode* font
@@ -265,7 +280,7 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 * In [this repository](moebio_typode/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
-[![moebio_typode_screenshot.png](moebio_typode/moebio_typode_screenshot.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
+[![moebio_typode_screenshot.png](moebio_typode/moebio_typode.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
 ---
 
@@ -335,17 +350,18 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ### Some inspirational artworks
 
-Here are some inspirational works that make use of single-line fonts.
+Here are some inspirational software works that make use of single-line fonts.
 
-* [Vib Ribbon](https://www.youtube.com/watch?v=cFXz_xKQa40) by Masaya Matsuura and NanaOn-Sha, 1999.
-* [Textension: Word Processor Variations](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
-* [Viktor](https://juerglehni.com/works/viktor), [Hektor](https://juerglehni.com/works/hektor), [Otto](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
-* [Space Type Generator](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
-* [Typode](https://moebio.com/research/typode/) interactive demo by [Santiago Ortiz](https://moebio.com/), 2013.
-* [chinese-radical-vis & RRPL](https://chinese-radical-vis.glitch.me/) by [Lingdong Huang](https://lingdong.works/), 2018.
-* [Leon Sans](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
-* [Letterform Variations](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
-* [X-Y-Z](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
+* [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) by [Licia He](http://eyesofpanda.com/), 2026.
+* [*X-Y-Z*](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
+* [*Space Type Generator*](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
+* [*chinese-radical-vis* & *RRPL*](https://chinese-radical-vis.glitch.me/) by [Lingdong Huang](https://lingdong.works/), 2018.
+* [*Leon Sans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
+* [*Letterform Variations*](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
+* [*Typode*](https://moebio.com/research/typode/) by [Santiago Ortiz](https://moebio.com/), 2013.
+* [*Viktor*](https://juerglehni.com/works/viktor), [*Hektor*](https://juerglehni.com/works/hektor), and [*Otto*](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
+* [*Textension: Word Processor Variations*](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
+* [*Vib Ribbon*](https://www.youtube.com/watch?v=cFXz_xKQa40) by Masaya Matsuura and NanaOn-Sha, 1999.
 
 
 ---
