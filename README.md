@@ -388,10 +388,6 @@ Here are some inspirational software works that make use of single-line fonts.
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
-* [Japanese CAD Fonts](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html)
-  * https://commons.wikimedia.org/wiki/File:ISO3098.svg
-  * https://domisan.sakura.ne.jp/article/cadfont/mplus_stroke.svg
-
 
 ---
 
