@@ -12,11 +12,13 @@ function preload() {
   // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheySans1.svg");
   // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheyScript1.svg");
   // mySvgFont = new SvgFont("single_line_svg_fonts/EMS/EMSReadabilityItalic.svg");
+  // mySvgFont = new SvgFont("single_line_svg_fonts/ISO3098/ISO3098-Italic.svg");
+  // mySvgFont = new SvgFont("single_line_svg_fonts/ISO3098/ISO3098-Regular.svg");
   mySvgFont = new SvgFont("single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg");
 }
 
 function setup() {
-  createCanvas(800, 400);
+  createCanvas(800, 400); 
 }
 
 
@@ -24,17 +26,24 @@ function draw() {
   background("black");
   stroke("white");
   noFill();
-              
+
   let sca = 42; 
-  mySvgFont.drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 60, 80, sca);
-  mySvgFont.drawString("abcdefghijklmnopqrstuvwxyz", 60, 130, sca);
-  mySvgFont.drawString("1234567890", 60, 180, sca);
-  mySvgFont.drawString("!@#$%^&*,.?/;:'-+_", 60,230, sca); 
-  mySvgFont.drawString("()[]{}<>|\u00A9\u00AE\u20AC", 60, 280, sca);
-  mySvgFont.drawString("Hello World!", 60, 330, sca);
+  let ty = 30;
+  let dy = 50; 
+  mySvgFont.drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 60, ty+=dy, sca);
+  mySvgFont.drawString("abcdefghijklmnopqrstuvwxyz", 60, ty+=dy, sca);
+  mySvgFont.drawString("1234567890", 60, ty+=dy, sca);
+  mySvgFont.drawString("!@#$%^&*,.?/;:'-+_", 60,ty+=dy, sca); 
+  mySvgFont.drawString("()[]{}<>|\u00A9\u00AE\u20AC", 60, ty+=dy, sca);
+  mySvgFont.drawString("Hello World!", 60, ty+=dy, sca);
   noLoop(); 
 }
 
+function keyPressed(){
+  if (key == 's'){
+    save("p5_single_line_svg_font.png"); 
+  }
+}
 
 //=====================================================
 // Class to handle SVG font parsing and rendering
@@ -232,6 +241,29 @@ class SvgFont {
           prevControlY = relSmoothY3;
           break;
           
+        case "A": { // Elliptical arc (absolute)
+          // args: rx ry x-rotation large-arc-flag sweep-flag x y
+          const arcRx = Math.abs(sca * (args[0] / this.unitsPerEm));
+          const arcRy = Math.abs(sca * (args[1] / this.unitsPerEm));
+          const arcXRot = args[2];
+          const arcFA  = args[3];
+          // Invert sweep-flag: font space is Y-up, screen space is Y-down;
+          // the Y-flip reverses arc winding, so fS must be toggled.
+          const arcFS  = 1 - args[4];
+          const arcEx  = x + sca * (args[5] / this.unitsPerEm);
+          const arcEy  = y - sca * (args[6] / this.unitsPerEm);
+          const segs = this._arcToBeziers(
+            currentX, currentY, arcRx, arcRy, arcXRot, arcFA, arcFS, arcEx, arcEy);
+          for (const [bx1,by1, cx1,cy1, cx2,cy2, bx2,by2] of segs) {
+            bezier(bx1, by1, cx1, cy1, cx2, cy2, bx2, by2);
+          }
+          currentX = arcEx;
+          currentY = arcEy;
+          prevControlX = null;
+          prevControlY = null;
+          break;
+        }
+
         default:
           // console.warn(`Unsupported SVG command: ${type}`);
           break;
@@ -239,10 +271,91 @@ class SvgFont {
     }
   }
 
-  
   //---------------------------------------------------------
-  // Draw a string of text using the parsed font
-  drawString(str, x, y, sca) {
+  // Convert one SVG elliptical arc (endpoint parameterization) to an array
+  // of cubic Bézier segments — standard SVG spec algorithm (Appendix F).
+  // All coordinates are in screen/pixel space.
+  // Returns [[x1,y1, cx1,cy1, cx2,cy2, x2,y2], ...] — one entry per segment.
+  _arcToBeziers(x1, y1, rx, ry, xRotDeg, fA, fS, x2, y2) {
+    if (x1 === x2 && y1 === y2) return [];
+    if (rx === 0 || ry === 0) return [[x1,y1, x1,y1, x2,y2, x2,y2]];
+
+    const phi    = xRotDeg * Math.PI / 180;
+    const cosPhi = Math.cos(phi);
+    const sinPhi = Math.sin(phi);
+
+    // Midpoint in rotated frame
+    const dx  = (x1 - x2) / 2,  dy  = (y1 - y2) / 2;
+    const x1p =  cosPhi * dx + sinPhi * dy;
+    const y1p = -sinPhi * dx + cosPhi * dy;
+
+    // Correct radii if too small
+    let rx2 = rx * rx,  ry2 = ry * ry;
+    const x1p2 = x1p * x1p,  y1p2 = y1p * y1p;
+    const lambda = x1p2 / rx2 + y1p2 / ry2;
+    if (lambda > 1) {
+      const s = Math.sqrt(lambda);
+      rx *= s;  ry *= s;  rx2 = rx*rx;  ry2 = ry*ry;
+    }
+
+    // Center in rotated frame
+    const num  = rx2*ry2 - rx2*y1p2 - ry2*x1p2;
+    const den  = rx2*y1p2 + ry2*x1p2;
+    const sign = (fA === fS) ? -1 : 1;
+    const coef = sign * Math.sqrt(Math.max(0, num / den));
+    const cxp  =  coef * rx * y1p / ry;
+    const cyp  = -coef * ry * x1p / rx;
+
+    // Center in original frame
+    const cx = cosPhi*cxp - sinPhi*cyp + (x1+x2)/2;
+    const cy = sinPhi*cxp + cosPhi*cyp + (y1+y2)/2;
+
+    // Start angle and sweep
+    const ux = (x1p - cxp) / rx,  uy = (y1p - cyp) / ry;
+    const vx = (-x1p - cxp) / rx, vy = (-y1p - cyp) / ry;
+    const theta1 = _svgArcAngle(1, 0, ux, uy);
+    let dTheta   = _svgArcAngle(ux, uy, vx, vy);
+    if (!fS && dTheta > 0) dTheta -= 2 * Math.PI;
+    if ( fS && dTheta < 0) dTheta += 2 * Math.PI;
+
+    // Split into ≤90° segments and convert each to cubic Bézier
+    const nSegs = Math.max(1, Math.ceil(Math.abs(dTheta) / (Math.PI / 2)));
+    const dSeg  = dTheta / nSegs;
+    const alpha = Math.sin(dSeg) * (Math.sqrt(4 + 3 * Math.tan(dSeg/2) ** 2) - 1) / 3;
+
+    const curves = [];
+    let curAngle = theta1,  curX = x1,  curY = y1;
+
+    for (let i = 0; i < nSegs; i++) {
+      const nextAngle = curAngle + dSeg;
+      const cosA2 = Math.cos(nextAngle),  sinA2 = Math.sin(nextAngle);
+
+      const ex = cx + cosPhi*rx*cosA2 - sinPhi*ry*sinA2;
+      const ey = cy + sinPhi*rx*cosA2 + cosPhi*ry*sinA2;
+
+      // Tangent (dP/dθ) at start and end of this segment
+      const cosA1 = Math.cos(curAngle),  sinA1 = Math.sin(curAngle);
+      const dx1t = -(cosPhi*rx*sinA1 + sinPhi*ry*cosA1);
+      const dy1t = -(sinPhi*rx*sinA1 - cosPhi*ry*cosA1);
+      const dx2t = -(cosPhi*rx*sinA2 + sinPhi*ry*cosA2);
+      const dy2t = -(sinPhi*rx*sinA2 - cosPhi*ry*cosA2);
+
+      curves.push([
+        curX, curY,
+        curX + alpha*dx1t, curY + alpha*dy1t,
+        ex   - alpha*dx2t, ey   - alpha*dy2t,
+        ex, ey,
+      ]);
+
+      curAngle = nextAngle;  curX = ex;  curY = ey;
+    }
+    return curves;
+  }
+
+  //---------------------------------------------------------
+  // Draw a string of text using the parsed font.
+  // tracking: extra pixels added after each glyph (negative tightens spacing)
+  drawString(str, x, y, sca, tracking = 0) {
     if (this.isReady()) {
       let cursorX = x;
       const scaleFactor = sca / this.unitsPerEm;
@@ -255,13 +368,22 @@ class SvgFont {
             this.drawGlyph(glyph.d, cursorX, y, sca);
           }
           // Always advance cursorX using horiz-adv-x
-          cursorX += glyph.horizAdvX * scaleFactor;
-          
+          cursorX += glyph.horizAdvX * scaleFactor + tracking;
+
         } else {
           console.warn(`Missing glyph: '${chr}' (Unicode: ${chr.charCodeAt(0)})`);
-          cursorX += 300 * scaleFactor; // Fallback spacing for missing glyphs
+          cursorX += 300 * scaleFactor + tracking; // Fallback spacing for missing glyphs
         }
       }
     }
   }
+}
+
+// Signed angle from vector (ux,uy) to (vx,vy), in radians.
+// Used by SvgFont._arcToBeziers for SVG arc parameterization.
+function _svgArcAngle(ux, uy, vx, vy) {
+  const dot = ux*vx + uy*vy;
+  const len = Math.sqrt((ux*ux + uy*uy) * (vx*vx + vy*vy));
+  const angle = Math.acos(Math.max(-1, Math.min(1, dot / len)));
+  return (ux*vy - uy*vx < 0) ? -angle : angle;
 }

@@ -15,7 +15,7 @@
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [p5.js port of Saka.N's *KST32B* font, via Kitasenju](#p5js-port-of-sakans-kst32b-font-via-kitasenju)
-* [p5.js ports of LibreCAD fonts](#p5js-ports-of-librecad-fonts)
+* [p5.js port of M+ kanji/hanzi font](#p5js-port-of-librecad-fonts)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
@@ -60,13 +60,17 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 * In [this repository](p5_single_line_svg_fonts/)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/T-Vf4vvaR)
 
-![HersheySans1_svg_font.png](p5_single_line_svg_fonts/img/p5_svg_fonts_screenshot.png)
+![relief_svg_font.png](p5_single_line_svg_fonts/img/relief_svg_font.png)
 
 Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team directed by Prof. François Chastanet at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
 
-A large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Dr. Windell Oskay of Evil Mad Scientist Laboratories. (Some of these include SVG Font versions of Hershey fonts.) All of these fonts are supported by the p5.js project here. 
+Another useful single-stroke SVG 1.1 font presented here is [ISO 3098](https://www.southype.com/Commerce/iso-3098-standard-an-in-depth-guide-to-labeling-and-lettering/) (below), an international standard that provides guidelines for consistent and legible labeling and lettering in technical documentation and engineering drawings. This repository includes both [regular](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Regular.svg) and [italic](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Italic.svg) data in the SVG 1.1 font format, adapted using data from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
 
-![HersheySans1_svg_font.png](p5_single_line_svg_fonts/single_line_svg_fonts/samples.png)
+![iso-3098.png](p5_single_line_svg_fonts/img/iso-3098.png)
+
+Finally, a very large [archive](p5_single_line_svg_fonts/single_line_svg_fonts/README.md) of compatible SVG single-line fonts is included [here](p5_single_line_svg_fonts/single_line_svg_fonts/README.md), as a mirror of [a collection](https://gitlab.com/oskay/svg-fonts) curated by Dr. Windell Oskay of Evil Mad Scientist Laboratories. (Some of these include SVG Font versions of Hershey fonts.) All of these fonts are supported by the p5.js project here.
+
+![Archive of SVG fonts](p5_single_line_svg_fonts/single_line_svg_fonts/samples.png)
 
 Some additional resources for SVG 1.1 Fonts are:
 
@@ -147,17 +151,16 @@ Also see:
 
 ---
 
-### p5.js ports of LibreCAD fonts
+### p5.js port of M+ kanji/hanzi font
 
-The following single-stroke fonts are extracted from the [LibreCAD project](https://librecad.org/), a free open source CAD application (published under GPLv2), from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
+This is a p5.js adaptation of *M+ Stroke Font*, a single-stroke font specialized for East Asian scripts designed by Coji Morishita of [M+ Fonts Project](https://mplusfonts.github.io/). The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of ~5,200 single-stroke glyphs. *(Note that an [SVG 1.1 font of the M+ Stroke Font](m_plus_font/source/MPlusStrokeSVG1.1Font.svg) has also been created.)* *M+ Stroke Font* is available:
 
-*M+ Stroke Font*, designed by Coji Morishita, [M+ Fonts Project](https://mplusfonts.github.io/), specialized for East Asian scripts. The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of ~5,200 single-stroke glyphs. *(Note that an [SVG 1.1 font of the M+ Stroke Font](librecad_fonts/m_plus_font/source/MPlusStrokeSVG1.1Font.svg) has also been created.)* The M+ single-stroke font has been adapted for p5.js and is available:
-
-* In [this repository](librecad_fonts/m_plus_font/sketch.js)
+* In [this repository](m_plus_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/-Fcfqi5mQ)
 
-![librecad_fonts](librecad_fonts/m_plus_font/mplus_font.png)
+![M+ Stroke Font](m_plus_font/mplus_font.png)
 
+The *M+ Stroke Font* is extracted from the [LibreCAD project](https://librecad.org/), a free open source CAD application (published under GPLv2), from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
 
 ---
 
