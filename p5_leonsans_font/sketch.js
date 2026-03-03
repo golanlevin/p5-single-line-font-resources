@@ -11,13 +11,18 @@
 
 // ─── p5.js lifecycle ──────────────────────────────────────────────────────────
 let weightSlider;
+let roundCheckbox;
 
 function setup() {
   createCanvas(1400, 340);
   pixelDensity(2);
 
-  weightSlider = createSlider(1, 900, 200, 1);
-  weightSlider.position(20, height + 14);
+  roundCheckbox = createCheckbox('', true);
+  roundCheckbox.position(10, height + 12);
+  roundCheckbox.changed(() => redraw());
+
+  weightSlider = createSlider(1, 900, 400, 1);
+  weightSlider.position(35, height + 12);
   weightSlider.style('width', 200 + 'px');
   weightSlider.input(() => redraw());
 }
@@ -29,7 +34,7 @@ function draw() {
   let DISPLAY_SIZE = 56; 
   let trk = 0; // tracking
   let byp = false; // bypass weight
-  let rnd = true; // rounded
+  let rnd = roundCheckbox.checked(); // rounded endcaps
   
   stroke('white'); 
   drawLeon("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 280, 60, DISPLAY_SIZE, w, trk, byp, rnd);
@@ -41,15 +46,14 @@ function draw() {
   stroke('white');
   drawLeon("&", 50, 40, 280, w, 0, true, rnd);
 
-  /*
-  // Sample each stroke of the big '&' at e.g. 30% and draw a red dot.
-  const pts = getLeonGlyphPathPoints('&', 50, 40, 280, w, mouseY/height);
+  // Sample each stroke of the big '&' at a specified fraction, and draw a red dot.
+  let mouseFrac = mouseY/height;
+  const pts = getLeonGlyphPathPoints('&', 50, 40, 280, w, mouseFrac, rnd);
   noStroke();
   fill('red');
   for (const pt of pts) {
     circle(pt.x, pt.y, 10);
   }
-  */
 }
 
 //==============================================================================
@@ -366,21 +370,24 @@ function _leonSegSample(seg, u) {
   };
 }
 
-// Returns an array of {x, y} points — one per stroke path in the glyph —
+// Returns an array of {x, y} points — one per stroke sub-path in the glyph —
 // each sampled at `percent` (0.0–1.0) of the way along that stroke's arc length.
 // Arguments mirror drawLeon: charX/charY is the top-left cell position,
 // size and weight are the same values passed to drawLeon.
-function getLeonGlyphPathPoints(ch, charX, charY, size, weight, percent) {
+// roundCaps must match the value passed to drawLeon so that percent=0 and
+// percent=1 land at the inset endpoints of the drawn spine, not the raw endpoints.
+function getLeonGlyphPathPoints(ch, charX, charY, size, weight, percent, roundCaps = false) {
   const fontW       = getFontW(weight);
   const weightRatio = getWeightRatio(fontW);
   const circleRound = getCircleRound(fontW);
   const scale       = getLeoScale(size);
   const fontRatio   = getFontRatio(weightRatio);
+  const lineW       = getLeoLineW(fontW, scale);
+  const capInset    = roundCaps ? lineW / 2 : 0;
 
   const t = LEON_FONT[ch] || LEON_FONT['tofu'];
   const range = {
-    r:   weightRatio,
-    cr:  circleRound,
+    r:   weightRatio, cr: circleRound,
     fr1: FR_1,  fr2: FR_2,
     gx1: t.ratio.x1, gx2: t.ratio.x2,
     gy1: t.ratio.y1, gy2: t.ratio.y2,
@@ -394,12 +401,49 @@ function getLeonGlyphPathPoints(ch, charX, charY, size, weight, percent) {
   const result = [];
 
   for (const path of t.p) {
-    // Convert path vertices into screen-space segments, skipping 'a' arc caps.
-    const segs = [];
-    let prevX = 0, prevY = 0;
+    const isClosed = path.v.some(v => v.ratio.c);
+    const hasArc   = path.v.some(v => v.type === 'a');
+    const doInset  = capInset > 0 && !isClosed && !hasArc;
+
+    let segs = [], prevX = 0, prevY = 0;
+
+    // Flush the current sub-path: apply inset if needed, then sample at percent.
+    // Mirrors the flushSegs logic in drawLeonGlyph exactly.
+    const flushAndSample = () => {
+      if (segs.length === 0) return;
+      let shouldInset = doInset;
+      if (shouldInset) {
+        const last = segs[segs.length - 1];
+        const endX = last.type === 'l' ? last.x2 : last.x4;
+        const endY = last.type === 'l' ? last.y2 : last.y4;
+        if (Math.hypot(endX - segs[0].x1, endY - segs[0].y1) < 0.5) {
+          shouldInset = false; // geometrically closed loop — no inset
+        }
+      }
+      const finalSegs = shouldInset ? _insetSegs(segs, capInset) : segs;
+
+      const lens  = finalSegs.map(s => _leonSegLen(s));
+      const total = lens.reduce((a, b) => a + b, 0);
+      segs = [];
+      if (total === 0) return;
+
+      let remaining = Math.max(0, Math.min(1, percent)) * total;
+      for (let i = 0; i < finalSegs.length; i++) {
+        if (i === finalSegs.length - 1 || remaining <= lens[i]) {
+          const u = lens[i] > 0 ? Math.max(0, Math.min(1, remaining / lens[i])) : 0;
+          result.push(_leonSegSample(finalSegs[i], u));
+          break;
+        }
+        remaining -= lens[i];
+      }
+    };
+
     for (const v of path.v) {
       const rx = v.ratio.x, ry = v.ratio.y;
-      if (v.type === 'm') {
+      if (v.type === 'a') {
+        flushAndSample(); // 'a' arc caps are single-point terminals — not sampled
+      } else if (v.type === 'm') {
+        flushAndSample();
         prevX = cvtX(v.x, rx, range, scale, cx);
         prevY = cvtY(v.y, ry, range, scale, cy);
       } else if (v.type === 'l') {
@@ -408,35 +452,14 @@ function getLeonGlyphPathPoints(ch, charX, charY, size, weight, percent) {
         segs.push({ type: 'l', x1: prevX, y1: prevY, x2: lx, y2: ly });
         prevX = lx; prevY = ly;
       } else if (v.type === 'b') {
-        // Segment stored as: x1/y1 = start (anchor),
-        //   x2/y2 = cp1, x3/y3 = cp2, x4/y4 = end — matching bezierPoint() arg order.
         const bx1 = cvtX(v.x,  rx, range, scale, cx), by1 = cvtY(v.y,  ry, range, scale, cy);
         const bx2 = cvtX(v.x2, rx, range, scale, cx), by2 = cvtY(v.y2, ry, range, scale, cy);
         const bx3 = cvtX(v.x3, rx, range, scale, cx), by3 = cvtY(v.y3, ry, range, scale, cy);
         segs.push({ type: 'b', x1: prevX, y1: prevY, x2: bx1, y2: by1, x3: bx2, y3: by2, x4: bx3, y4: by3 });
         prevX = bx3; prevY = by3;
       }
-      // 'a' arc caps are single-point terminals — not traversable segments.
     }
-    if (segs.length === 0) continue;
-
-    // Compute per-segment arc-lengths and the cumulative total.
-    const lens  = segs.map(s => _leonSegLen(s));
-    const total = lens.reduce((a, b) => a + b, 0);
-    if (total === 0) continue;
-
-    // Walk `percent * total` along the segment chain.
-    let remaining = Math.max(0, Math.min(1, percent)) * total;
-    let pt = null;
-    for (let i = 0; i < segs.length; i++) {
-      if (i === segs.length - 1 || remaining <= lens[i]) {
-        const u = lens[i] > 0 ? Math.max(0, Math.min(1, remaining / lens[i])) : 0;
-        pt = _leonSegSample(segs[i], u);
-        break;
-      }
-      remaining -= lens[i];
-    }
-    if (pt) result.push(pt);
+    flushAndSample();
   }
   return result;
 }
