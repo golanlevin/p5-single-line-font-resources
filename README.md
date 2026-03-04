@@ -385,6 +385,7 @@ Here are some inspirational software works that make use of single-line fonts.
 
 ### Todo 
 
+* [*MTDBT2F*](https://kadist.org/program/dexter-sinister/) MetaFont, Dexter Sinister, 2013, [github](https://github.com/O-R-G/mtdbt2f4d/tree/main)
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
