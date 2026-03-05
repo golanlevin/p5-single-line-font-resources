@@ -19,7 +19,7 @@
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
-* [p5.js port of Logg/Hudson's *Asteroids* font](#p5js-port-of-logghudsons-asteroids-font)
+* [p5.js port of Ed Logg's *Asteroids* font](#p5js-port-of-ed-loggs-asteroids-font)
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
@@ -198,15 +198,23 @@ This is a vintage monospace, monoline vector font from the [Commodore 1520 Print
 
 ---
 
-### p5.js port of Logg/Hudson's *Asteroids* font
+### p5.js port of Ed Logg's *Asteroids* font
 
-Asteroids game vector font by [Atari programmer Ed Logg](https://web.archive.org/web/20141222010537/http://www.edge-online.com/features/making-asteroids/), c.1979, converted to C by [Trammell Hudson](https://trmm.net/Asteroids_font/), ported to p5.js by Golan Levin. Original C data [here](https://github.com/osresearch/vst/blob/master/teensyv/asteroids_font.c).
+This is a p5.js port of the authentic font used in the *Asteroids* game, developed in 1979 for Atari by Lyle Rains and Ed Logg. The font was extracted from the 6502 microprocessor assembly instructions embedded on the ROMs of an *Asteroids* (rev 4) arcade machine. Disassembly was performed by [Nick Mikstas](https://web.archive.org/web/20190917025700/https://www.nicholasmikstas.com/asteroids-fimrware), Lonnie Howell, and [Mark McDougall](http://computerarcheology.com/Arcade/Asteroids/), with reformatting and other corrective work (2021) by Andy McFadden as reported [here](https://6502disassembly.com/va-asteroids/Asteroids.html). Game data from McFadden's disassembly, including both font and shape information, has been made available:
 
-* In [this repository](asteroids_font/sketch.js)
+* In [this repository](asteroids_font/asteroids_6502_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/68mZm4yuw)
+
+![asteroids_6502_font](asteroids_font/asteroids_6502_font/asteroids_6502_font.png)
+
+![ed_logg_asteroids_font_1979.jpg](asteroids_font/asteroids_hudson_font/ed_logg_asteroids_font_1979.jpg)
+
+Another version of the *Asteroids* game vector font was transduced from the original handwritten notes (c.1979) of [Atari programmer Ed Logg](https://web.archive.org/web/20141222010537/http://www.edge-online.com/features/making-asteroids/) by [Trammell Hudson](https://trmm.net/Asteroids_font/). Hudson "modified a few of the characters to make them more distinct as well as added a strike to the 0 so that it stands out from the O", and used this font in his Arduino Asteroids clone, [*Space Rocks*](https://trmm.net/Space_Rocks/). His C-code data [here](https://github.com/osresearch/vst/blob/master/teensyv/asteroids_font.c) has been ported to p5.js and is available:
+
+* In [this repository](asteroids_font/asteroids_hudson_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/OmiU51Gdm)
 
-![asteroids_screenshot.png](asteroids_font/asteroids_screenshot.png)
-
+![asteroids_screenshot.png](asteroids_font/asteroids_hudson_font/asteroids_hudson_screenshot.png)
 
 ---
 
@@ -318,7 +326,7 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 ### p5.js port of Abel Vincze's *GearGenerator* font
 
-p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenerator.com](http://geargenerator.com/) (Iparigrafika, version 1.01), in which it was used to label gears with ratio and RPM text. The font encodes 73 printable characters on a 7×9 integer grid, compressing all glyph stroke data into three strings totalling under 1 KB; ported from [here](https://www.robopenguins.com/assets/wp-content/pages/geargenerator/index.html). 
+p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenerator.com](http://geargenerator.com/) (Iparigrafika, version 1.01), in which it was used to label gears with ratio and RPM text. The font encodes 73 printable characters on a 7×9 integer grid, compressing all glyph stroke data into three strings totalling under 1 KB; ported from [here](https://www.robopenguins.com/assets/wp-content/pages/geargenerator/index.html). The font is available:
 
 * In [this repository](vincze_geargenerator_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/6wem5wbsI)
@@ -329,7 +337,7 @@ p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenera
 
 ### p5.js port of Jared Schiffman's font
 
-Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin.
+Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin, available:
 
 * In [this repository](schiffman_font/JaredSchiffman_single_line_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)

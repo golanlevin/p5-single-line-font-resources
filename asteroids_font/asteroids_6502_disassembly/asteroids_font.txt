@@ -1,0 +1,360 @@
+                   ; Alphanumeric vector data.
+                   ; 
+                   ; Each character leaves the vector pointed a short distance to the right of the
+                   ; initial position, so that you can output multiple characters without having to
+                   ; explicitly reposition each time.
+                   ; 
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001cf0_00.gif" width="64" height="64">
+54f0: 70 fa                        .dd2    $fa70                   ;SVEC x=+0 y=+2 sc=1 b=7 &lt;&lt;&lt;
+54f2: 72 f2                        .dd2    $f272                   ;SVEC x=+2 y=+2 sc=0 b=7
+54f4: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+54f6: 70 fe                        .dd2    $fe70                   ;SVEC x=+0 y=-2 sc=1 b=7
+54f8: 06 f9                        .dd2    $f906                   ;SVEC x=-2 y=+1 sc=1 b=0
+54fa: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+54fc: 02 f6                        .dd2    $f602                   ;SVEC x=+2 y=-2 sc=0 b=0
+54fe: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d00_00.gif" width="64" height="64">
+5500: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5502: 73 f0                        .dd2    $f073                   ;SVEC x=+3 y=+0 sc=0 b=7
+5504: 71 f5                        .dd2    $f571                   ;SVEC x=+1 y=-1 sc=0 b=7
+5506: 70 f5                        .dd2    $f570                   ;SVEC x=+0 y=-1 sc=0 b=7
+5508: 75 f5                        .dd2    $f575                   ;SVEC x=-1 y=-1 sc=0 b=7
+550a: 77 f0                        .dd2    $f077                   ;SVEC x=-3 y=+0 sc=0 b=7
+550c: 03 f0                        .dd2    $f003                   ;SVEC x=+3 y=+0 sc=0 b=0
+550e: 71 f5                        .dd2    $f571                   ;SVEC x=+1 y=-1 sc=0 b=7
+5510: 70 f5                        .dd2    $f570                   ;SVEC x=+0 y=-1 sc=0 b=7
+5512: 75 f5                        .dd2    $f575                   ;SVEC x=-1 y=-1 sc=0 b=7
+5514: 77 f0                        .dd2    $f077                   ;SVEC x=-3 y=+0 sc=0 b=7
+5516: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0
+5518: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d1a_00.gif" width="64" height="64">
+551a: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+551c: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+551e: 06 ff                        .dd2    $ff06                   ;SVEC x=-2 y=-3 sc=1 b=0
+5520: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5522: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+5524: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d26_00.gif" width="64" height="64">
+5526: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5528: 72 f0                        .dd2    $f072                   ;SVEC x=+2 y=+0 sc=0 b=7
+552a: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+552c: 70 f6                        .dd2    $f670                   ;SVEC x=+0 y=-2 sc=0 b=7
+552e: 76 f6                        .dd2    $f676                   ;SVEC x=-2 y=-2 sc=0 b=7
+5530: 76 f0                        .dd2    $f076                   ;SVEC x=-2 y=+0 sc=0 b=7
+5532: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0
+5534: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d36_00.gif" width="64" height="64">
+5536: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5538: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+553a: 05 f7                        .dd2    $f705                   ;SVEC x=-1 y=-3 sc=0 b=0
+553c: 77 f0                        .dd2    $f077                   ;SVEC x=-3 y=+0 sc=0 b=7
+553e: 00 f7                        .dd2    $f700                   ;SVEC x=+0 y=-3 sc=0 b=0
+5540: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5542: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+5544: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d46_00.gif" width="64" height="64">
+5546: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5548: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+554a: 05 f7                        .dd2    $f705                   ;SVEC x=-1 y=-3 sc=0 b=0
+554c: 77 f0                        .dd2    $f077                   ;SVEC x=-3 y=+0 sc=0 b=7
+554e: 00 f7                        .dd2    $f700                   ;SVEC x=+0 y=-3 sc=0 b=0
+5550: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0
+5552: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d54_00.gif" width="64" height="64">
+5554: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5556: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5558: 70 f6                        .dd2    $f670                   ;SVEC x=+0 y=-2 sc=0 b=7
+555a: 06 f6                        .dd2    $f606                   ;SVEC x=-2 y=-2 sc=0 b=0
+555c: 72 f0                        .dd2    $f072                   ;SVEC x=+2 y=+0 sc=0 b=7
+555e: 70 f6                        .dd2    $f670                   ;SVEC x=+0 y=-2 sc=0 b=7
+5560: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+5562: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0
+5564: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d66_00.gif" width="64" height="64">
+5566: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5568: 00 f7                        .dd2    $f700                   ;SVEC x=+0 y=-3 sc=0 b=0
+556a: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+556c: 00 f3                        .dd2    $f300                   ;SVEC x=+0 y=+3 sc=0 b=0
+556e: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+5570: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+5572: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d74_00.gif" width="64" height="64">
+5574: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7 &lt;&lt;&lt;
+5576: 06 f0                        .dd2    $f006                   ;SVEC x=-2 y=+0 sc=0 b=0
+5578: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+557a: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+557c: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+557e: 03 ff                        .dd2    $ff03                   ;SVEC x=+3 y=-3 sc=1 b=0
+5580: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d82_00.gif" width="64" height="64">
+5582: 00 f2                        .dd2    $f200                   ;SVEC x=+0 y=+2 sc=0 b=0 &lt;&lt;&lt;
+5584: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+5586: 72 f0                        .dd2    $f072                   ;SVEC x=+2 y=+0 sc=0 b=7
+5588: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+558a: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+558c: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d8e_00.gif" width="64" height="64">
+558e: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5590: 03 f0                        .dd2    $f003                   ;SVEC x=+3 y=+0 sc=0 b=0
+5592: 77 f7                        .dd2    $f777                   ;SVEC x=-3 y=-3 sc=0 b=7
+5594: 73 f7                        .dd2    $f773                   ;SVEC x=+3 y=-3 sc=0 b=7
+5596: 03 f0                        .dd2    $f003                   ;SVEC x=+3 y=+0 sc=0 b=0
+5598: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001d9a_00.gif" width="64" height="64">
+559a: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+559c: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+559e: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+55a0: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+55a2: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001da4_00.gif" width="64" height="64">
+55a4: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55a6: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+55a8: 72 f2                        .dd2    $f272                   ;SVEC x=+2 y=+2 sc=0 b=7
+55aa: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+55ac: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+55ae: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001db0_00.gif" width="64" height="64">
+55b0: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55b2: 72 ff                        .dd2    $ff72                   ;SVEC x=+2 y=-3 sc=1 b=7
+55b4: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+55b6: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+55b8: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001dba_00.gif" width="64" height="64">
+55ba: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55bc: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+55be: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+55c0: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+55c2: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0
+55c4: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001dc6_00.gif" width="64" height="64">
+55c6: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55c8: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+55ca: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+55cc: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+55ce: 03 f7                        .dd2    $f703                   ;SVEC x=+3 y=-3 sc=0 b=0
+55d0: 03 f0                        .dd2    $f003                   ;SVEC x=+3 y=+0 sc=0 b=0
+55d2: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001dd4_00.gif" width="64" height="64">
+55d4: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55d6: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+55d8: 70 fe                        .dd2    $fe70                   ;SVEC x=+0 y=-2 sc=1 b=7
+55da: 76 f6                        .dd2    $f676                   ;SVEC x=-2 y=-2 sc=0 b=7
+55dc: 76 f0                        .dd2    $f076                   ;SVEC x=-2 y=+0 sc=0 b=7
+55de: 02 f2                        .dd2    $f202                   ;SVEC x=+2 y=+2 sc=0 b=0
+55e0: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+55e2: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+55e4: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001de6_00.gif" width="64" height="64">
+55e6: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7 &lt;&lt;&lt;
+55e8: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+55ea: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+55ec: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+55ee: 01 f0                        .dd2    $f001                   ;SVEC x=+1 y=+0 sc=0 b=0
+55f0: 73 f7                        .dd2    $f773                   ;SVEC x=+3 y=-3 sc=0 b=7
+55f2: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+55f4: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001df6_00.gif" width="64" height="64">
+55f6: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7 &lt;&lt;&lt;
+55f8: 70 f3                        .dd2    $f370                   ;SVEC x=+0 y=+3 sc=0 b=7
+55fa: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+55fc: 70 f3                        .dd2    $f370                   ;SVEC x=+0 y=+3 sc=0 b=7
+55fe: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5600: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+5602: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e04_00.gif" width="64" height="64">
+5604: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0 &lt;&lt;&lt;
+5606: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+5608: 06 f0                        .dd2    $f006                   ;SVEC x=-2 y=+0 sc=0 b=0
+560a: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+560c: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+560e: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e10_00.gif" width="64" height="64">
+5610: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+5612: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+5614: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5616: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+5618: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+561a: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e1c_00.gif" width="64" height="64">
+561c: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+561e: 71 ff                        .dd2    $ff71                   ;SVEC x=+1 y=-3 sc=1 b=7
+5620: 71 fb                        .dd2    $fb71                   ;SVEC x=+1 y=+3 sc=1 b=7
+5622: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+5624: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e26_00.gif" width="64" height="64">
+5626: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+5628: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+562a: 72 f2                        .dd2    $f272                   ;SVEC x=+2 y=+2 sc=0 b=7
+562c: 72 f6                        .dd2    $f672                   ;SVEC x=+2 y=-2 sc=0 b=7
+562e: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+5630: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+5632: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e34_00.gif" width="64" height="64">
+5634: 72 fb                        .dd2    $fb72                   ;SVEC x=+2 y=+3 sc=1 b=7 &lt;&lt;&lt;
+5636: 06 f8                        .dd2    $f806                   ;SVEC x=-2 y=+0 sc=1 b=0
+5638: 72 ff                        .dd2    $ff72                   ;SVEC x=+2 y=-3 sc=1 b=7
+563a: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+563c: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e3e_00.gif" width="64" height="64">
+563e: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0 &lt;&lt;&lt;
+5640: 70 fa                        .dd2    $fa70                   ;SVEC x=+0 y=+2 sc=1 b=7
+5642: 76 f2                        .dd2    $f276                   ;SVEC x=-2 y=+2 sc=0 b=7
+5644: 02 f8                        .dd2    $f802                   ;SVEC x=+2 y=+0 sc=1 b=0
+5646: 76 f6                        .dd2    $f676                   ;SVEC x=-2 y=-2 sc=0 b=7
+5648: 02 fe                        .dd2    $fe02                   ;SVEC x=+2 y=-2 sc=1 b=0
+564a: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e4c_00.gif" width="64" height="64">
+564c: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+564e: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5650: 76 ff                        .dd2    $ff76                   ;SVEC x=-2 y=-3 sc=1 b=7
+5652: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5654: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+5656: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e58_00.gif" width="64" height="64">
+5658: 03 f8                        .dd2    $f803                   ;SVEC x=+3 y=+0 sc=1 b=0 &lt;&lt;&lt;
+565a: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e5c_00.gif" width="64" height="64">
+565c: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0 &lt;&lt;&lt;
+565e: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+5660: 02 ff                        .dd2    $ff02                   ;SVEC x=+2 y=-3 sc=1 b=0
+5662: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e64_00.gif" width="64" height="64">
+5664: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+5666: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5668: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+566a: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+566c: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+566e: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5670: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+5672: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e74_00.gif" width="64" height="64">
+5674: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7 &lt;&lt;&lt;
+5676: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+5678: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+567a: 00 f7                        .dd2    $f700                   ;SVEC x=+0 y=-3 sc=0 b=0
+567c: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+567e: 02 f7                        .dd2    $f702                   ;SVEC x=+2 y=-3 sc=0 b=0
+5680: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e82_00.gif" width="64" height="64">
+5682: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+5684: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+5686: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+5688: 00 f3                        .dd2    $f300                   ;SVEC x=+0 y=+3 sc=0 b=0
+568a: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+568c: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+568e: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e90_00.gif" width="64" height="64">
+5690: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7 &lt;&lt;&lt;
+5692: 70 f3                        .dd2    $f370                   ;SVEC x=+0 y=+3 sc=0 b=7
+5694: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+5696: 70 f3                        .dd2    $f370                   ;SVEC x=+0 y=+3 sc=0 b=7
+5698: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+569a: 01 ff                        .dd2    $ff01                   ;SVEC x=+1 y=-3 sc=1 b=0
+569c: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001e9e_00.gif" width="64" height="64">
+569e: 00 f3                        .dd2    $f300                   ;SVEC x=+0 y=+3 sc=0 b=0 &lt;&lt;&lt;
+56a0: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+56a2: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+56a4: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+56a6: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+56a8: 03 ff                        .dd2    $ff03                   ;SVEC x=+3 y=-3 sc=1 b=0
+56aa: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001eac_00.gif" width="64" height="64">
+56ac: 00 fb                        .dd2    $fb00                   ;SVEC x=+0 y=+3 sc=1 b=0 &lt;&lt;&lt;
+56ae: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+56b0: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+56b2: 02 f0                        .dd2    $f002                   ;SVEC x=+2 y=+0 sc=0 b=0
+56b4: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001eb6_00.gif" width="64" height="64">
+56b6: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7 &lt;&lt;&lt;
+56b8: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+56ba: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+56bc: 70 ff                        .dd2    $ff70                   ;SVEC x=+0 y=-3 sc=1 b=7
+56be: 00 f3                        .dd2    $f300                   ;SVEC x=+0 y=+3 sc=0 b=0
+56c0: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+56c2: 02 f7                        .dd2    $f702                   ;SVEC x=+2 y=-3 sc=0 b=0
+56c4: 00 d0                        .dd2    $d000                   ;RTSL
+
+                   <img class="vis" alt="vis" src="./Asteroids Disassembly_files/vis001ec6_00.gif" width="64" height="64">
+56c6: 02 f8                        .dd2    $f802                   ;SVEC x=+2 y=+0 sc=1 b=0 &lt;&lt;&lt;
+56c8: 70 fb                        .dd2    $fb70                   ;SVEC x=+0 y=+3 sc=1 b=7
+56ca: 76 f8                        .dd2    $f876                   ;SVEC x=-2 y=+0 sc=1 b=7
+56cc: 70 f7                        .dd2    $f770                   ;SVEC x=+0 y=-3 sc=0 b=7
+56ce: 72 f8                        .dd2    $f872                   ;SVEC x=+2 y=+0 sc=1 b=7
+56d0: 02 f7                        .dd2    $f702                   ;SVEC x=+2 y=-3 sc=0 b=0
+56d2: 00 d0                        .dd2    $d000                   ;RTSL
+                   ; 
+                   ; JSRL commands to access the characters above.
+                   ; 
+56d4: 2c cb        <span id="SymCharPtrTbl">CharPtrTbl</span>      .dd2    $cb2c                   ;JSRL a=$0b2c ($5658) ' '
+56d6: dd ca                        .dd2    $cadd                   ;JSRL a=$0add ($55ba) '0'
+56d8: 2e cb                        .dd2    $cb2e                   ;JSRL a=$0b2e ($565c)
+56da: 32 cb                        .dd2    $cb32                   ;JSRL a=$0b32 ($5664)
+56dc: 3a cb                        .dd2    $cb3a                   ;JSRL a=$0b3a ($5674)
+56de: 41 cb                        .dd2    $cb41                   ;JSRL a=$0b41 ($5682)
+56e0: 48 cb                        .dd2    $cb48                   ;JSRL a=$0b48 ($5690)
+56e2: 4f cb                        .dd2    $cb4f                   ;JSRL a=$0b4f ($569e)
+56e4: 56 cb                        .dd2    $cb56                   ;JSRL a=$0b56 ($56ac)
+56e6: 5b cb                        .dd2    $cb5b                   ;JSRL a=$0b5b ($56b6)
+56e8: 63 cb                        .dd2    $cb63                   ;JSRL a=$0b63 ($56c6) '9'
+56ea: 78 ca                        .dd2    $ca78                   ;JSRL a=$0a78 ($54f0) 'A'
+56ec: 80 ca                        .dd2    $ca80                   ;JSRL a=$0a80 ($5500)
+56ee: 8d ca                        .dd2    $ca8d                   ;JSRL a=$0a8d ($551a)
+56f0: 93 ca                        .dd2    $ca93                   ;JSRL a=$0a93 ($5526)
+56f2: 9b ca                        .dd2    $ca9b                   ;JSRL a=$0a9b ($5536)
+56f4: a3 ca                        .dd2    $caa3                   ;JSRL a=$0aa3 ($5546)
+56f6: aa ca                        .dd2    $caaa                   ;JSRL a=$0aaa ($5554)
+56f8: b3 ca                        .dd2    $cab3                   ;JSRL a=$0ab3 ($5566)
+56fa: ba ca                        .dd2    $caba                   ;JSRL a=$0aba ($5574)
+56fc: c1 ca                        .dd2    $cac1                   ;JSRL a=$0ac1 ($5582)
+56fe: c7 ca                        .dd2    $cac7                   ;JSRL a=$0ac7 ($558e)
+5700: cd ca                        .dd2    $cacd                   ;JSRL a=$0acd ($559a)
+5702: d2 ca                        .dd2    $cad2                   ;JSRL a=$0ad2 ($55a4)
+5704: d8 ca                        .dd2    $cad8                   ;JSRL a=$0ad8 ($55b0)
+5706: dd ca                        .dd2    $cadd                   ;JSRL a=$0add ($55ba)
+5708: e3 ca                        .dd2    $cae3                   ;JSRL a=$0ae3 ($55c6)
+570a: ea ca                        .dd2    $caea                   ;JSRL a=$0aea ($55d4)
+570c: f3 ca                        .dd2    $caf3                   ;JSRL a=$0af3 ($55e6)
+570e: fb ca                        .dd2    $cafb                   ;JSRL a=$0afb ($55f6)
+5710: 02 cb                        .dd2    $cb02                   ;JSRL a=$0b02 ($5604)
+5712: 08 cb                        .dd2    $cb08                   ;JSRL a=$0b08 ($5610)
+5714: 0e cb                        .dd2    $cb0e                   ;JSRL a=$0b0e ($561c)
+5716: 13 cb                        .dd2    $cb13                   ;JSRL a=$0b13 ($5626)
+5718: 1a cb                        .dd2    $cb1a                   ;JSRL a=$0b1a ($5634)
+571a: 1f cb                        .dd2    $cb1f                   ;JSRL a=$0b1f ($563e)
+571c: 26 cb                        .dd2    $cb26                   ;JSRL a=$0b26 ($564c) 'Z'
+ 
