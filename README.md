@@ -2,7 +2,7 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, stick fonts, or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, stick fonts, skeleton fonts, or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
 *Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.11](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
 
@@ -14,7 +14,7 @@
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
-* [p5.js port of Saka.N's *KST32B* font, via Kitasenju](#p5js-port-of-sakans-kst32b-font-via-kitasenju)
+* [p5.js port of Saka.N's *KST32B* font, via Kitasenju Design](#p5js-port-of-sakans-kst32b-font-via-kitasenju-design)
 * [p5.js port of M+ kanji/hanzi font](#p5js-port-of-m-kanjihanzi-font)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
@@ -23,12 +23,13 @@
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
-* [p5.js port of Jongmin Kim's *LeonSans* font](#p5js-port-of-jongmin-kims-leonsans-font)
+* [p5.js port of Jongmin Kim's variable *LeonSans* font](#p5js-port-of-jongmin-kims-variable-leonsans-font)
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
 * [Licia He's p5.js *DearPlotter* font](#licia-hes-p5js-dearplotter-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
 * [p5.js port of Abel Vincze's *GearGenerator* font](#p5js-port-of-abel-vinczes-geargenerator-font)
+* [p5.js port of Tyler X. Hobbs' font](#p5js-port-of-tyler-x-hobbs-font)
 * [p5.js port of Jared Schiffman's font](#p5js-port-of-jared-schiffmans-font)
 * [*minf*, an ultra-minimal procedural monoline font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional resources](#additional-resources)
@@ -140,7 +141,7 @@ Also see:
 
 ---
 
-### p5.js port of Saka.N's *KST32B* font, via Kitasenju
+### p5.js port of Saka.N's *KST32B* font, via Kitasenju Design
 
 [KST32B](saka_KST32B_font/sketch.js) (Kanji Stroke Table) is a comprehensive monospace single-line font originally designed (c.1992, 2017) by [Saka.N](https://www.vector.co.jp/download/file/data/writing/fh691397.html)<!-- Saka.N.06@b3.mnx.ne.jp -->, covering 4125 characters across multiple scripts: ASCII, half-width kana, hiragana and katakana, Greek, Cyrillic, ISO 8859-15, and both JIS Level 1 and Level 2 kanji. Each glyph is encoded as a compact byte stream of drawing commands on a 30×32 integer grid, using distinct opcodes for horizontal moves, horizontal strokes, and diagonal strokes. In 2014, Saka's work was [added to LibreCAD](https://forum.librecad.org/Japanese-Font-td5710456.html). Inspired by [hgsn](https://x.com/hsgn/status/1413826984413704195), [Kitasenju](https://kitasenjudesign.com/tool/01/) ported Saka.N's original binary data to p5.js, annotating each entry with its Unicode equivalent; this adaptation loads that header directly, keying each glyph by Unicode codepoint for straightforward multilingual text rendering in English, Japanese, Greek, Russian, and Chinese.
 
@@ -200,7 +201,7 @@ This is a vintage monospace, monoline vector font from the [Commodore 1520 Print
 
 ### p5.js port of Ed Logg's *Asteroids* font
 
-This is a p5.js port of the authentic font used in the *Asteroids* game, developed in 1979 for Atari by Lyle Rains and Ed Logg. The font was extracted from the 6502 microprocessor assembly instructions embedded on the ROMs of an *Asteroids* (rev 4) arcade machine. Disassembly was performed by [Nick Mikstas](https://web.archive.org/web/20190917025700/https://www.nicholasmikstas.com/asteroids-fimrware), Lonnie Howell, and [Mark McDougall](http://computerarcheology.com/Arcade/Asteroids/), with reformatting and other corrective work (2021) by Andy McFadden as reported [here](https://6502disassembly.com/va-asteroids/Asteroids.html). Game data from McFadden's disassembly, including both font and shape information, has been made available:
+This is a p5.js port of the authentic font used in the *Asteroids* game, developed in 1979 for Atari by Lyle Rains and Ed Logg. The font was extracted from the 6502 microprocessor assembly instructions embedded on the ROMs of an *Asteroids* (rev 4) arcade machine. Disassembly was performed by [Nick Mikstas](https://web.archive.org/web/20190917025700/https://www.nicholasmikstas.com/asteroids-fimrware), Lonnie Howell, and [Mark McDougall](http://computerarcheology.com/Arcade/Asteroids/), with reformatting and other corrective work (2021) by Andy McFadden as reported [here](https://6502disassembly.com/va-asteroids/Asteroids.html). Game data from McFadden's disassembly, including both font and Asteroid shape information, has been made available:
 
 * In [this repository](asteroids_font/asteroids_6502_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/68mZm4yuw)
@@ -262,7 +263,7 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ---
 
-### p5.js port of Jongmin Kim's *LeonSans* font
+### p5.js port of Jongmin Kim's variable *LeonSans* font
 
 ![p5_leonsans_font](p5_leonsans_font/p5_leonsans_font.gif)
 
@@ -335,6 +336,18 @@ p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenera
 
 ---
 
+### p5.js port of Tyler X. Hobbs' font
+
+Generative artist [Tyler X. Hobbs](https://www.tylerxhobbs.com/) created this uppercase, monoline, monospace font sometime prior to 2021, when he shared it with the artists participating in the Feral File [*-GRAPH*](https://feralfile.com/explore/exhibitions/graph-eg6) exhibition of generative plotter art. It is available here, ported from Clojure to p5.js, with his permission:
+
+* In [its original Clojure code](tylerxhobbs_font/tylerxhobbs_clojure_font/tylerxhobbs_font.clj)
+* In [this repository](tylerxhobbs_font/tylerxhobbs_font/sketch.js), as JSON
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/CbCmyvpbA)
+
+![tylerxhobbs_font](tylerxhobbs_font/tylerxhobbs_font.png)
+
+---
+
 ### p5.js port of Jared Schiffman's font
 
 Procedural single-stroke monospace font developed by [Jared Schiffman](https://www.jaredschiffman.com/) at the MIT Media Laboratory Aesthetics and Computation Group, c.1999-2000. Ported from C++ to Java and p5.js by Golan Levin, available:
@@ -349,7 +362,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 
 ### *minf*, an Ultra-Minimal Procedural Monoline Font
 
-**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, grid-based, monospace, monoline vector font by Golan Levin (2024). *minf* is intended purely as a pedagogic example in type-golfing. All *minf* glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous line segments. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about the attractiveness, legibility, or utility of *minf* (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
+**minf** is an ultra-minimal [CC0](https://creativecommons.org/public-domain/cc0/) procedural, grid-based, monospace, monoline vector font for p5.js by Golan Levin (2024). *minf* is intended purely as a pedagogic experiment in [type-golfing](https://en.wikipedia.org/wiki/Code_golf). All *minf* glyphs are constructed from a single 4-point polyline: that is, each letter has exactly 4 points, connected by 3 continuous line segments. (None of the line segments have zero length, nor double back on themselves.) No claims whatsoever are made about the attractiveness, legibility, or utility of *minf* (the `M` and `W` are particularly faulty); [some code](minf/sketch.js#L73) is provided to improve it.
 
 Each of the `x` and `y` coordinate values in minf's glyph control points are stored with just 2 bits of resolution. Therefore the entire 26-character font is defined by only {26 letters * 4 points per letter * 2 dimensions per point * 2 bits per number = 416 bits =) 52 bytes of data. In practice it is convenient to store this in a base-64 encoded string, which uses standard ASCII characters; this expands the total complete storage of the *minf* font to [the 72-byte string](minf/sketch.js#L15): 
 
@@ -397,6 +410,7 @@ Here are some inspirational software works that make use of single-line fonts.
 * Vib-Ribbon [font extraction](https://romsfun.com/download/vib-ribbon-58974)
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
+* Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
 
 ---
 
