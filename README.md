@@ -20,6 +20,7 @@
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
 * [p5.js port of Ed Logg's *Asteroids* font](#p5js-port-of-ed-loggs-asteroids-font)
+* [p5.js port of Masaya Matsuura's *Vib-Ribbon* Fonts](#p5js-port-of-masaya-matsuuras-vib-ribbon-fonts)
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
 * [p5.js port of Hofstadter's *Letter Spirit* gridfonts](#p5js-port-of-hofstadters-letter-spirit-gridfonts)
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
