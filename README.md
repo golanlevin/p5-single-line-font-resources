@@ -291,7 +291,7 @@ Kyle McDonald assisted in the recovery of the Textension font data by decompilin
 
 ![p5_leonsans_font](p5_leonsans_font/p5_leonsans_font.gif)
 
-This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/) (2019), a procedural single-stroke Latin font. *LeonSans* is distinctive in that it is a [*variable single-stroke font*](https://en.wikipedia.org/wiki/Variable_font): its *weight* parameter (1–900) simultaneously controls both the rendered stroke thickness and the underlying Bézier geometry: control points morph between a thin and a bold variant — so heavier weights produce genuinely different letterforms rather than simply thicker lines. Because of its variable weight, this single-line font may be particularly well-suited to supporting plotting with thick pens. This port also includes a special *roundCaps* option suited for pen-plotters; when enabled, each open stroke endpoint is pulled inward by half the stroke width, ensuring that round-ended strokes land exactly where square caps would. *LeonSans* is available:
+This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/) (2019), a procedural single-stroke Latin font. *LeonSans* is distinctive in that it is a [*variable single-stroke font*](https://en.wikipedia.org/wiki/Variable_font): its *weight* parameter (1–900) simultaneously controls both the rendered stroke thickness and the underlying Bézier geometry: control points morph between a thin and a bold variant — so heavier weights produce genuinely different letterform shapes rather than simply thicker lines. Because of its variable weight, this single-line font may be particularly well-suited to supporting plotting with thick pens. This port also includes a special *roundCaps* option suited for pen-plotters; when enabled, each open stroke endpoint is pulled inward by half the stroke width, ensuring that round-ended strokes land exactly where square caps would. *LeonSans* is available:
 
 * In [this repository](p5_leonsans_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/aPH2RXnd1)
@@ -362,7 +362,7 @@ p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenera
 
 ### p5.js port of Tyler X. Hobbs' font
 
-Generative artist [Tyler X. Hobbs](https://www.tylerxhobbs.com/) created this uppercase, monoline, monospace font sometime prior to 2021, when he shared it with the artists participating in the Feral File [*-GRAPH*](https://feralfile.com/explore/exhibitions/graph-eg6) exhibition of generative plotter art. It is available here, ported from Clojure to p5.js, with his permission:
+Generative artist [Tyler X. Hobbs](https://www.tylerxhobbs.com/) created this uppercase, monospace, monoline font sometime prior to 2021, when he shared it with the artists participating in the Feral File [*-GRAPH*](https://feralfile.com/explore/exhibitions/graph-eg6) exhibition of generative plotter art. It is available here, ported from Clojure to p5.js, with his permission:
 
 * In [its original Clojure code](tylerxhobbs_font/tylerxhobbs_clojure_font/tylerxhobbs_font.clj)
 * In [this repository](tylerxhobbs_font/tylerxhobbs_font/sketch.js), as JSON
@@ -412,7 +412,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ### Some inspirational artworks
 
-Here are some inspirational software works that make use of single-line fonts.
+Here are some inspirational creative software projects that make use of single-line fonts.
 
 * [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) by [Licia He](http://eyesofpanda.com/), 2026.
 * [*X-Y-Z*](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
@@ -435,6 +435,7 @@ Here are some inspirational software works that make use of single-line fonts.
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
 * Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
+* Add [Consolines](https://theorangeduck.com/page/debug-draw-text-lines) by Daniel Holden
 
 ---
 
