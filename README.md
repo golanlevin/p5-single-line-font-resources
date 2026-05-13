@@ -30,6 +30,7 @@
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
 * [Licia He's p5.js *DearPlotter* font](#licia-hes-p5js-dearplotter-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
+* [p5.js port of Daniel Holden's *Consolines* font](#p5js-port-of-daniel-holdens-consolines-font)
 * [p5.js port of Anders Hoff's *GridFont*](#p5js-port-of-anders-hoffs-gridfont)
 * [p5.js port of Abel Vincze's *GearGenerator* font](#p5js-port-of-abel-vinczes-geargenerator-font)
 * [p5.js port of Tyler X. Hobbs' font](#p5js-port-of-tyler-x-hobbs-font)
@@ -331,6 +332,19 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
 [![moebio_typode_screenshot.png](moebio_typode/moebio_typode.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
+
+---
+
+### p5.js port of Daniel Holden's *Consolines* font
+
+[Daniel Holden](https://theorangeduck.com/page/about) created the monospace [*Consolines*](https://theorangeduck.com/page/debug-draw-text-lines) (2025) single-line font out of a need to present on-screen debugging information in C-like gamedev environments. The letterforms are roughly based on [Consolas](https://fonts.adobe.com/fonts/consolas) by Luc de Groot.
+
+*Consolines* contains line segments for 95 printable ASCII characters, starting with ! and ending with ~. Line segments are encoded by taking the four integer coordinates (start_x, start_y, end_x, end_y) with values ranging from 0-128, and packing them into a single 32-bit integer. The aspect ratio of characters is 1:2. *Consolines* is available: 
+
+* In [this repository](holden_consolines_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/Xo6GSXhx2)
+
+![holden_consolines_font.png](holden_consolines_font/holden_consolines_font.png)
 
 ---
 
