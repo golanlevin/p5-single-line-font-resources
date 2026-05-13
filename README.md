@@ -219,6 +219,25 @@ Another version of the *Asteroids* game vector font was transduced from the orig
 
 ---
 
+### p5.js port of Masaya Matsuura's *Vib-Ribbon* Fonts
+
+We are pleased to present Latin and Japanese single-line vector fonts extracted from the ROM of [*Vib-Ribbon*](https://en.wikipedia.org/wiki/Vib-Ribbon) (1999), a PlayStation game developed by [Masaya Matsuura](https://en.wikipedia.org/wiki/Masaya_Matsuura) (松浦 雅也) and [NanaOn-Sha](https://en.wikipedia.org/wiki/NanaOn-Sha). In the game, the [typography is procedurally animated](https://www.youtube.com/watch?v=eRbnVqTGLUc&t=60s), giving the text the same nervous, monoline quality as the main *Vibri* character and the game's obstacle graphics.
+
+This firmware-archaeology project was conducted by Golan Levin in May 2026 with the assistance of Codex GPT-5.5. The fonts were exhumed from the [Vib-Ribbon (Europe) (EnFrDeEsIt) (Redump)](https://romsfun.com/download/vib-ribbon-58974/2) version of the Vib-Ribbon PlayStation ROM [obtained from romsfun.com](https://romsfun.com/download/vib-ribbon-58974). Forensic recovery began with an inspection of the ROM's `.cue` file, in which Track 1 was identified as a `MODE2/2352` data track. A [set of small Python tools](vib_ribbon_font/python/) stripped the 2352-byte PlayStation sectors to ISO-9660 payloads, then extracted the filesystem. The game's `.PAK` files use a leading offset table; after unpacking them, the [relevant assets](vib_ribbon_font/rom_files/) appeared as `FONT/01_FONT.TMD` and `FONT/FE_FONT.TMD`. The former contains 76 Japanese glyphs, while the latter contains 113 Latin glyphs.
+
+The game's lettering is stored as compact [PlayStation TMD](http://justsolve.archiveteam.org/wiki/TMD_(PlayStation)) model data: each glyph is a small set of signed 16-bit vertices, connected by line primitives. The TMD object table gives, for each glyph, a vertex list and a primitive list; the primitive records are two-index line segments. These were decoded to JSON while preserving the authentic, unscaled numeric coordinate values from the original PlayStation ROM, with positive `Y` downward. The Latin mapping was confirmed from lookup tables in `MAIN_G.EXE`, while the Japanese mapping was refined by visual inspection: it includes digits, katakana, small kana, dakuten, and handakuten (but lacks the character `ヲ`).
+
+The *Vib-Ribbon* stroke fonts are available: 
+
+* In [vib_ribbon_latin_stroke_font.json](vib_ribbon_font/vib_ribbon_latin_stroke_font.json) (Latin font)
+* In [vib_ribbon_japanese_stroke_font.json](vib_ribbon_font/vib_ribbon_japanese_stroke_font.json) (Japanese font)
+* In [this repository](vib_ribbon_font/p5_vib_ribbon_font/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/Z5A9WVHxa)
+
+![vib_ribbon_font.gif](vib_ribbon_font/vib_ribbon_font.gif)
+
+---
+
 ### p5.js implementation of multi-segment display fonts
 
 An implementation of 7 segment, 14 segment, and 16 segment LED displays. Based on glyph encodings from Dave Madison's [Segmented LED Display - ASCII Library](https://github.com/dmadison/LED-Segment-ASCII/), under MIT license. Note that full 7-bit ASCII character sets (from codepoints 32 through 127) are supported, though legibility may vary. Designs are based on e.g. the HP/Siemens/Litronix DL-2416 17-segment alphanumeric LED display, etc.
