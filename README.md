@@ -2,9 +2,11 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, stick fonts, skeleton fonts, or monoline fonts) in a variety of formats — including TTF, SVG Font, Hershey Font, and others. The repository also includes an authoritative archive of single-line fonts (and procedural fonts) adapted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, technical lettering fonts, stick fonts, skeleton fonts, engraving fonts, or monoline fonts) in a variety of formats — including TTF, SVG 1.1 Font, Hershey Font, and others. This repository also includes an authoritative archive of single-line fonts (and procedural fonts) recovered or extracted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
-*Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with [p5.js v.1.11.11](https://cdn.jsdelivr.net/npm/p5@1.11.10/lib/p5.js).*
+*Most digital fonts are "outline fonts", which represent letterforms as shapes filled between two or more closed contours. By contrast, single-line fonts represent letters with linear skeletons, the same way we might draw or write them by hand. Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with p5.js v.1.11.13.*
+
+![single line vs outline fonts](img/single_line_vs_outline_fonts.png)<br>*Single-line (left) vs outline font (right).*
 
 ---
 
@@ -128,7 +130,7 @@ This program ([**here**](Hershey/pointwise-hershey-to-svg/) or at [editor.p5js.o
 
 These additional Hershey+p5 resources by Lingdong Huang are noteworthy: 
 
-* [Hershey Font Editor](https://hfedit.glitch.me/). A backup of this project has been archived [here](lingdong_hfedit/index.html).
+* [Hershey Font Editor](https://unglitch.netlify.app/hfedit/).
 * [chinese-hershey-font](https://github.com/LingDong-/chinese-hershey-font) with a [live demo here](https://lingdong-.github.io/chinese-hershey-font/)
 * [legumes](https://github.com/LingDong-/legumes) Sheet music in polylines using Hershey text
 * [hfmath](https://github.com/LingDong-/hfmath) Render LaTeX math with Hershey Fonts
@@ -413,7 +415,8 @@ Here are some inspirational software works that make use of single-line fonts.
 * [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) by [Licia He](http://eyesofpanda.com/), 2026.
 * [*X-Y-Z*](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
 * [*Space Type Generator*](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
-* [*chinese-radical-vis* & *RRPL*](https://chinese-radical-vis.glitch.me/) by [Lingdong Huang](https://lingdong.works/), 2018.
+* [*chinese-radical-vis* & *RRPL*](https://unglitch.netlify.app/chinese-radical-vis/) by [Lingdong Huang](https://lingdong.works/), 2018.
+* [*paramtype*](https://unglitch.netlify.app/paramtype/) by Lingdong Huang, 202x. 
 * [*Leon Sans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
 * [*Letterform Variations*](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
 * [*Typode*](https://moebio.com/research/typode/) by [Santiago Ortiz](https://moebio.com/), 2013.
