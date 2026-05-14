@@ -6,7 +6,8 @@
 
 *Most digital fonts are "outline fonts", which represent letterforms as shapes that fill closed contours. By contrast, single-line fonts represent letters with linear skeletons, the same way we might write them by hand. Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with p5.js v.1.11.13.*
 
-![single line vs outline fonts](img/single_line_vs_outline_fonts.png)<br>*Single-line (left) vs outline font (right).*
+![single line vs outline fonts](img/single_line_vs_outline_fonts.png)<br>*Single-line font (left) versus outline font (right).*
+
 
 ---
 
@@ -46,15 +47,16 @@
 
 > **"I just want something simple"**
 
-*This minimal program presents a SVG font inlined in p5.js, with no loading of external resources.* This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. It is available:
+*This minimal program presents an SVG font inlined in p5.js, with no loading of external resources.* This program may be useful in circumstances when you just need a simple single-line font, and do not wish to load external files or have any additional library dependencies. It is available:
 
 * In [this repository](Hershey/Hershey_inline_font/sketch.js), and
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/iqRjuCM-5)
 * A [version that saves SVG output files](https://editor.p5js.org/golan/sketches/vjQxbigFg), at editor.p5js.org.
 
-The typeface happens to be a Hershey (polyline) font, converted to the SVG Font format. Note that additional Hershey fonts have also been converted to SVG Font format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed [below](#p5js-parserrenderer-for-single-line-svg-fonts). This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
+The typeface happens to be a Hershey (polyline) font, converted to the SVG 1.1 Font format. Note that additional Hershey fonts have also been converted to this format and are available e.g. [here](https://gitlab.com/oskay/svg-fonts/-/tree/master/fonts/Hershey), [here](https://github.com/Shriinivas/inkscapestrokefont/tree/master/strokefontdata), and [here](https://github.com/techninja/hersheytextjs), as discussed [below](#p5js-parserrenderer-for-single-line-svg-fonts). This code has been adapted from the [hershey font json example](https://editor.p5js.org/allison.parrish/sketches/SJv2DCYpQ) by Allison Parrish.
 
 ![hershey_inline_screenshot.png](Hershey/Hershey_inline_font/hershey_inline_screenshot.png)
+
 
 ---
 
@@ -67,9 +69,9 @@ The typeface happens to be a Hershey (polyline) font, converted to the SVG Font 
 
 ![relief_svg_font.png](p5_single_line_svg_fonts/img/relief_svg_font.png)
 
-Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team directed by Prof. François Chastanet at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands.
+Shown above is the elegant [*Relief*](https://github.com/isdat-type/Relief-SingleLine/) open-source single-line SVG font (rendered by p5.js), developed by a team directed by Prof. François Chastanet at the Graphic Design Department of the Institut Supérieur des Arts et du Design de Toulouse. Note that *Relief* is not a poly-linear font, but instead uses cubic Bézier curves with the SVG `C` (curveTo) and p5.js `bezier()` commands. [Here](p5_single_line_svg_fonts/single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg) is a quick link to the *Relief* SVG font.
 
-Another useful single-stroke SVG 1.1 font presented here is [ISO 3098](https://www.southype.com/Commerce/iso-3098-standard-an-in-depth-guide-to-labeling-and-lettering/) (below), an international standard that provides guidelines for consistent and legible labeling and lettering in technical documentation and engineering drawings. This repository includes both [regular](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Regular.svg) and [italic](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Italic.svg) data in the SVG 1.1 font format, adapted using data from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html). ISO 3098 is built from straight lines and circular/elliptical arcs:
+Another useful single-stroke SVG 1.1 font presented here is [ISO 3098](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO-3098-1-1974.pdf) (below), an international standard (adopted in 1974) that provides guidelines for consistent and legible labeling and lettering in technical documentation and engineering drawings. Here are links to both [regular](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Regular.svg) and [italic](p5_single_line_svg_fonts/single_line_svg_fonts/ISO3098/ISO3098-Italic.svg) versions of ISO 3098 in the SVG 1.1 font format, adapted using data from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html). ISO 3098 is constructed from straight lines and circular/elliptical arcs:
 
 ![iso-3098.png](p5_single_line_svg_fonts/img/iso-3098.png)
 
@@ -154,6 +156,7 @@ Also see:
 
 ![saka_KST32B_font](saka_KST32B_font/saka_KST32B_font.png)
 
+
 ---
 
 ### p5.js port of M+ kanji/hanzi font
@@ -167,6 +170,7 @@ This is a p5.js adaptation of *M+ Stroke Font*, a single-stroke font specialized
 
 The *M+ Stroke Font* is extracted from the [LibreCAD project](https://librecad.org/), a free open source CAD application (published under GPLv2), from [here](https://domisan.sakura.ne.jp/article/cadfont/cadfont.html).
 
+
 ---
 
 ### p5.js port of Kamp's HP1345A vector font
@@ -178,6 +182,7 @@ This single-line font is from the character generator ROM of the [HP1345A digita
 
 ![hp1345a_screenshot.png](HP1345A/hp1345a_font.png)
 
+
 ---
 
 ### p5.js port of Phooky's Apple 410 vector font
@@ -188,6 +193,7 @@ This monospace, monoline vector font is from the [Apple 410 Color Plotter](https
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BytcG0455)
 
 ![apple_410_font.png](apple_410_font/apple_410_font.png)
+
 
 ---
 
@@ -221,6 +227,7 @@ Another version of the *Asteroids* game vector font was transduced from the orig
 
 ![asteroids_screenshot.png](asteroids_font/asteroids_hudson_font/asteroids_hudson_screenshot.png)
 
+
 ---
 
 ### p5.js port of Masaya Matsuura's *Vib-Ribbon* Fonts
@@ -241,6 +248,7 @@ Position data for the *Vib-Ribbon* stroke fonts are available:
 This firmware-archaeology project was conducted by Golan Levin in May 2026 with the assistance of Codex GPT-5.5. The fonts were exhumed from the [Vib-Ribbon (Europe) (EnFrDeEsIt) (Redump)](https://romsfun.com/download/vib-ribbon-58974/2) version of the Vib-Ribbon PlayStation ROM [obtained from romsfun.com](https://romsfun.com/download/vib-ribbon-58974). Forensic recovery began with an inspection of the ROM's `.cue` file, in which Track 1 was identified as a `MODE2/2352` data track. A [set of small Python tools](vib_ribbon_font/python/) stripped the 2352-byte PlayStation sectors to ISO-9660 payloads, then extracted the filesystem. The game's `.PAK` files use a leading offset table; after unpacking them, the [relevant assets](vib_ribbon_font/rom_files/) appeared as `FONT/01_FONT.TMD` and `FONT/FE_FONT.TMD`. The former contains 76 Japanese glyphs, while the latter contains 113 Latin glyphs.
 
 The game's lettering is stored as compact [PlayStation TMD](http://justsolve.archiveteam.org/wiki/TMD_(PlayStation)) model data: each glyph is a small set of signed 16-bit vertices, connected by line primitives. The TMD object table gives, for each glyph, a vertex list and a primitive list; the primitive records are two-index line segments. These were decoded to JSON while preserving the authentic, unscaled numeric coordinate values from the original PlayStation ROM, with positive `Y` downward. The Latin mapping was confirmed from lookup tables in `MAIN_G.EXE`, while the Japanese mapping was refined by visual inspection: it includes digits, katakana, small kana, dakuten, and handakuten (but lacks the character `ヲ`).
+
 
 ---
 
@@ -269,6 +277,7 @@ The code in this directory implements some of the *Letter Spirit* gridfonts devi
 
 Some more recent related work is [Letterform Variations](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
 
+
 ---
 
 ### p5.js port of JT Nimoy's *Textension* font
@@ -286,6 +295,7 @@ This repository presents is a p5.js recovery of the handcoded monoline font extr
 
 Kyle McDonald assisted in the recovery of the Textension font data by decompiling the [Textension.exe executable](https://acid-play.com/download/textension) with Hex-Rays. [The decompiled C++](nimoy_textension/textension_windows_app_1999/textension_decompiled.cpp) was ported to p5.js by Golan Levin.
 
+
 ---
 
 ### p5.js port of Jongmin Kim's variable *LeonSans* font
@@ -296,6 +306,7 @@ This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jon
 
 * In [this repository](p5_leonsans_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/aPH2RXnd1)
+
 
 ---
 
@@ -322,6 +333,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 
 ![licia_he_font](licia_he_font/licia_he_font.png)
 
+
 ---
 
 ### p5.js port of Moebio's *Typode* font
@@ -332,6 +344,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
 [![moebio_typode_screenshot.png](moebio_typode/moebio_typode.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
+
 
 ---
 
@@ -346,6 +359,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 
 ![holden_consolines_font.png](holden_consolines_font/holden_consolines_font.png)
 
+
 ---
 
 ### p5.js port of Anders Hoff's *GridFont*
@@ -358,8 +372,8 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 * [p5.js JavaScript port](hoff_gridfont/sketch.js) (in this repository)
 * [p5.js JavaScript port](https://editor.p5js.org/golan/sketches/EGWs_gTbR) (at editor.p5js.org)
 
-
 [![Anders Hoff's GridFont in p5.js](hoff_gridfont/hoff_screenshot.png)](https://editor.p5js.org/golan/sketches/EGWs_gTbR)
+
 
 ---
 
@@ -371,6 +385,7 @@ p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenera
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/6wem5wbsI)
 
 ![vincze geargenerator font](vincze_geargenerator_font/vincze_geargenerator_font.png)
+
 
 ---
 
@@ -384,6 +399,7 @@ Generative artist [Tyler X. Hobbs](https://www.tylerxhobbs.com/) created this up
 
 ![tylerxhobbs_font](tylerxhobbs_font/tylerxhobbs_font.png)
 
+
 ---
 
 ### p5.js port of Jared Schiffman's font
@@ -395,6 +411,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 * [Processing (Java) version](schiffman_font/JaredSchiffman_monoline_pde/)
 
 ![JaredSchiffman_screenshot.png](schiffman_font/schiffman_font.png)
+
 
 ---
 
@@ -412,6 +429,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 
 ![minf.png](minf/minf.png)
 
+
 ---
 
 ### Additional resources
@@ -421,6 +439,7 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 * [Singlelinefonts.com](https://singlelinefonts.com/), a commercial foundry for single-line fonts by [Leslie Peppers](https://www.linkedin.com/in/leslie-peppers-a80122181/).
 * [OneLineFonts.com](https://www.onelinefonts.com/), a commercial foundry for single-line fonts by [Justin Daniels](https://www.linkedin.com/in/justindaniels/).
 * [Drawingbots.net](https://drawingbots.net/resources#12), key resources for plotter enthusiasts, maintained by [Maks Surguy](https://makssurguy.com/).
+
 
 ---
 
@@ -449,10 +468,10 @@ Here are some inspirational creative software projects that make use of single-l
 * ROM extraction of HP7596A font
 * Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
 * Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
-* Add [Consolines](https://theorangeduck.com/page/debug-draw-text-lines) by Daniel Holden
+
 
 ---
 
 ### Keywords
 
-*Single line font, single stroke font, stick font, monoline font, vector font, CAD font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive, media archaeology, forensic retrocomputing.*
+*Single line font, single stroke font, stick font, monoline font, vector font, CAD font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive, media archaeology, retrocomputing.*
