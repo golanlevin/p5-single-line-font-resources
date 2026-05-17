@@ -240,7 +240,7 @@ The *Vib-Ribbon* stroke fonts are available:
 * In [vib_ribbon_japanese_stroke_font.json](vib_ribbon_font/vib_ribbon_japanese_stroke_font.json) (Japanese font)
 * In [this repository](vib_ribbon_font/p5_vib_ribbon_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/Z5A9WVHxa)
-* As an [SVG 1.1 Font](https://www.w3.org/TR/SVG11/fonts.html) file [here](vib_ribbon_font.svg)
+* As an [SVG 1.1 Font](https://www.w3.org/TR/SVG11/fonts.html) file [here](vib_ribbon_font/vib_ribbon_font.svg)
 
 *Note:* If you're doing creative coding in p5.js, it's straightforward to load these fonts and twiddle their vertices with some randomness, as I demonstrate in my included sketch. To be clear, however, the motion you see in this demo (below) is just my own attempt to reproduce the game's behavior; it is not an exact literal replication of the game's animation code.
 
