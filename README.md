@@ -466,7 +466,6 @@ Here are some inspirational creative software projects that make use of single-l
 
 * [*MTDBT2F*](https://kadist.org/program/dexter-sinister/) MetaFont, Dexter Sinister, 2013, [github](https://github.com/O-R-G/mtdbt2f4d/tree/main)
 * ROM extraction of HP7596A font
-* Fonts from [inkscapestrokefont](https://github.com/Shriinivas/etc/tree/master/inkscapestrokefont/fontsvgs) by Shriinivas
 * Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
 
 
