@@ -8,17 +8,20 @@
 
 let mySvgFont;
 function preload() {
+  
   //// Here are some SVG fonts to try:
-  // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheySans1.svg");
-  // mySvgFont = new SvgFont("single_line_svg_fonts/Hershey/HersheyScript1.svg");
-  // mySvgFont = new SvgFont("single_line_svg_fonts/EMS/EMSReadabilityItalic.svg");
-  // mySvgFont = new SvgFont("single_line_svg_fonts/ISO3098/ISO3098-Italic.svg");
-  // mySvgFont = new SvgFont("single_line_svg_fonts/ISO3098/ISO3098-Regular.svg");
-  mySvgFont = new SvgFont("single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg");
+  // let fileIn = "single_line_svg_fonts/Hershey/HersheySans1.svg";
+  // let fileIn = "single_line_svg_fonts/Hershey/HersheyScript1.svg";
+  // let fileIn = "single_line_svg_fonts/EMS/EMSReadabilityItalic.svg";
+  // let fileIn = "single_line_svg_fonts/ISO3098/ISO3098-Regular.svg";
+  let fileIn = "single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg";
+  
+  mySvgFont = new SvgFont(fileIn);
 }
 
 function setup() {
-  createCanvas(800, 400); 
+  createCanvas(800, 850); 
+  noLoop(); 
 }
 
 
@@ -27,17 +30,40 @@ function draw() {
   stroke("white");
   noFill();
 
+  let tracking = 0
   let sca = 42; 
   let ty = 30;
   let dy = 50; 
-  mySvgFont.drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 60, ty+=dy, sca);
-  mySvgFont.drawString("abcdefghijklmnopqrstuvwxyz", 60, ty+=dy, sca);
-  mySvgFont.drawString("1234567890", 60, ty+=dy, sca);
-  mySvgFont.drawString("!@#$%^&*,.?/;:'-+_", 60,ty+=dy, sca); 
-  mySvgFont.drawString("()[]{}<>|\u00A9\u00AE\u20AC", 60, ty+=dy, sca);
-  mySvgFont.drawString("Hello World!", 60, ty+=dy, sca);
-  noLoop(); 
+  mySvgFont.drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 60, ty+=dy, sca, tracking);
+  mySvgFont.drawString("abcdefghijklmnopqrstuvwxyz", 60, ty+=dy, sca, tracking);
+  mySvgFont.drawString("1234567890", 60, ty+=dy, sca, tracking);
+  mySvgFont.drawString("!@#$%^&*,.?/;:'-+_", 60,ty+=dy, sca, tracking); 
+  mySvgFont.drawString("()[]{}<>|\u00A9\u00AE\u20AC", 60, ty+=dy, sca, tracking);
+  mySvgFont.drawString("Hello World!", 60, ty+=dy, sca, tracking);
+  
+  
+  //---------------------------
+  // Plot extended ASCII characters
+  ty+=dy*1.5;
+  sca = 21; 
+  dy = 26;
+  let decoder = new TextDecoder("windows-1252");
+  for (let i = 128; i <= 255; i++) {
+    let hex = i.toString(16).toUpperCase().padStart(2, "0");
+    let bytes = new Uint8Array([i]); // Decode byte value i as Windows-1252
+    let ch = decoder.decode(bytes); // Don't use String.fromCharCode(i);
+    let str = hex + " " + ch;
+    let tx = 63+(i%8)*87;
+    stroke(102);
+    mySvgFont.drawString(hex, tx, ty, sca, tracking);
+    stroke("white");
+    mySvgFont.drawString(ch,  tx+36, ty, sca, tracking);
+    if (i%8 == 7){
+      ty+=dy;
+    }
+  }
 }
+
 
 function keyPressed(){
   if (key == 's'){
@@ -371,7 +397,7 @@ class SvgFont {
           cursorX += glyph.horizAdvX * scaleFactor + tracking;
 
         } else {
-          console.warn(`Missing glyph: '${chr}' (Unicode: ${chr.charCodeAt(0)})`);
+          // console.warn(`Missing glyph: '${chr}' (Unicode: ${chr.charCodeAt(0)})`);
           cursorX += 300 * scaleFactor + tracking; // Fallback spacing for missing glyphs
         }
       }
