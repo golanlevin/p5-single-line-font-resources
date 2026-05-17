@@ -6,6 +6,7 @@ Vib-Ribbon single-line stroke font.
 Generated from extracted PlayStation TMD line-primitive font data.
 Latin source: work/pak/GAME_02_FILES/0059_FONT/FE_FONT.TMD.
 Japanese source: work/pak/GAME_01_FILES/0059_FONT/01_FONT.TMD.
+ROM Extraction by Golan Levin, 2026.
 </metadata>
 <defs>
 <font id="VibRibbon" horiz-adv-x="322.222">

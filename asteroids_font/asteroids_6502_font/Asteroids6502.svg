@@ -1,0 +1,116 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Font name: Asteroids 6502
+Format: SVG 1.1 single-line font
+Converted to SVG 1.1 Font format from the p5.js Asteroids 6502 font archive.
+
+Source: asteroids_font/asteroids_6502_font/sketch.js
+Original font: authentic vector font used in Asteroids, developed in 1979 for Atari by Lyle Rains and Ed Logg.
+The font was extracted from 6502 microprocessor assembly instructions embedded in the ROMs of an Asteroids rev 4 arcade machine.
+
+Disassembly credits:
+Nick Mikstas, Lonnie Howell, and Mark McDougall.
+Reformatting and corrections by Andy McFadden using 6502bench SourceGen v1.8.
+
+References:
+https://6502disassembly.com/va-asteroids/Asteroids.html
+http://computerarcheology.com/Arcade/Asteroids/
+
+This conversion uses the Ed Logg / Asteroids ROM-derived font, not Trammell Hudson's handwritten-note-derived version.
+The source font contains uppercase Latin letters, digits, and space.
+</metadata>
+<defs>
+<font id="Asteroids6502" horiz-adv-x="720" >
+  <font-face
+    font-family="Asteroids 6502"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    ascent="800"
+    descent="-200"
+    cap-height="720"
+    bbox="0 0 480 720"
+    underline-thickness="40"
+    underline-position="-120"
+    unicode-range="U+0020-005A"
+  />
+    <missing-glyph horiz-adv-x="720" />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="320" 
+ />
+    <glyph glyph-name="zero" unicode="0" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 0L0 0" />
+    <glyph glyph-name="one" unicode="1" horiz-adv-x="720" 
+d="M240 0L240 720" />
+    <glyph glyph-name="two" unicode="2" horiz-adv-x="720" 
+d="M0 720L480 720L480 360L0 360L0 0L480 0" />
+    <glyph glyph-name="three" unicode="3" horiz-adv-x="720" 
+d="M0 0L480 0L480 720L0 720M0 360L480 360" />
+    <glyph glyph-name="four" unicode="4" horiz-adv-x="720" 
+d="M0 720L0 360L480 360M480 720L480 0" />
+    <glyph glyph-name="five" unicode="5" horiz-adv-x="720" 
+d="M0 0L480 0L480 360L0 360L0 720L480 720" />
+    <glyph glyph-name="six" unicode="6" horiz-adv-x="720" 
+d="M0 360L480 360L480 0L0 0L0 720" />
+    <glyph glyph-name="seven" unicode="7" horiz-adv-x="720" 
+d="M0 720L480 720L480 0" />
+    <glyph glyph-name="eight" unicode="8" horiz-adv-x="720" 
+d="M0 0L480 0L480 720L0 720L0 0M0 360L480 360" />
+    <glyph glyph-name="nine" unicode="9" horiz-adv-x="720" 
+d="M480 0L480 720L0 720L0 360L480 360" />
+    <glyph glyph-name="A" unicode="A" horiz-adv-x="720" 
+d="M0 0L0 480L240 720L480 480L480 0M0 240L480 240" />
+    <glyph glyph-name="B" unicode="B" horiz-adv-x="720" 
+d="M0 0L0 720L360 720L480 600L480 480L360 360L0 360M360 360L480 240L480 120L360 0L0 0" />
+    <glyph glyph-name="C" unicode="C" horiz-adv-x="720" 
+d="M0 0L0 720L480 720M0 0L480 0" />
+    <glyph glyph-name="D" unicode="D" horiz-adv-x="720" 
+d="M0 0L0 720L240 720L480 480L480 240L240 0L0 0" />
+    <glyph glyph-name="E" unicode="E" horiz-adv-x="720" 
+d="M0 0L0 720L480 720M360 360L0 360M0 0L480 0" />
+    <glyph glyph-name="F" unicode="F" horiz-adv-x="720" 
+d="M0 0L0 720L480 720M360 360L0 360" />
+    <glyph glyph-name="G" unicode="G" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 480M240 240L480 240L480 0L0 0" />
+    <glyph glyph-name="H" unicode="H" horiz-adv-x="720" 
+d="M0 0L0 720M0 360L480 360M480 720L480 0" />
+    <glyph glyph-name="I" unicode="I" horiz-adv-x="720" 
+d="M0 0L480 0M240 0L240 720M480 720L0 720" />
+    <glyph glyph-name="J" unicode="J" horiz-adv-x="720" 
+d="M0 240L240 0L480 0L480 720" />
+    <glyph glyph-name="K" unicode="K" horiz-adv-x="720" 
+d="M0 0L0 720M360 720L0 360L360 0" />
+    <glyph glyph-name="L" unicode="L" horiz-adv-x="720" 
+d="M0 720L0 0L480 0" />
+    <glyph glyph-name="M" unicode="M" horiz-adv-x="720" 
+d="M0 0L0 720L240 480L480 720L480 0" />
+    <glyph glyph-name="N" unicode="N" horiz-adv-x="720" 
+d="M0 0L0 720L480 0L480 720" />
+    <glyph glyph-name="O" unicode="O" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 0L0 0" />
+    <glyph glyph-name="P" unicode="P" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 360L0 360" />
+    <glyph glyph-name="Q" unicode="Q" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 240L240 0L0 0M240 240L480 0" />
+    <glyph glyph-name="R" unicode="R" horiz-adv-x="720" 
+d="M0 0L0 720L480 720L480 360L0 360M120 360L480 0" />
+    <glyph glyph-name="S" unicode="S" horiz-adv-x="720" 
+d="M0 0L480 0L480 360L0 360L0 720L480 720" />
+    <glyph glyph-name="T" unicode="T" horiz-adv-x="720" 
+d="M240 0L240 720M0 720L480 720" />
+    <glyph glyph-name="U" unicode="U" horiz-adv-x="720" 
+d="M0 720L0 0L480 0L480 720" />
+    <glyph glyph-name="V" unicode="V" horiz-adv-x="720" 
+d="M0 720L240 0L480 720" />
+    <glyph glyph-name="W" unicode="W" horiz-adv-x="720" 
+d="M0 720L0 0L240 240L480 0L480 720" />
+    <glyph glyph-name="X" unicode="X" horiz-adv-x="720" 
+d="M0 0L480 720M0 720L480 0" />
+    <glyph glyph-name="Y" unicode="Y" horiz-adv-x="720" 
+d="M240 0L240 480L0 720M480 720L240 480" />
+    <glyph glyph-name="Z" unicode="Z" horiz-adv-x="720" 
+d="M0 720L480 720L0 0L480 0" />
+</font>
+</defs>
+</svg>

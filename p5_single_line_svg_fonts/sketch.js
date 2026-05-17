@@ -14,7 +14,10 @@ function preload() {
   // let fileIn = "single_line_svg_fonts/Hershey/HersheyScript1.svg";
   // let fileIn = "single_line_svg_fonts/EMS/EMSReadabilityItalic.svg";
   // let fileIn = "single_line_svg_fonts/ISO3098/ISO3098-Regular.svg";
-  let fileIn = "single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg";
+  // let fileIn = "single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg";
+  let fileIn = "single_line_svg_fonts/minf.svg"; //hoff_gridfont_smooth
+
+
   
   mySvgFont = new SvgFont(fileIn);
 }
@@ -31,9 +34,9 @@ function draw() {
   noFill();
 
   let tracking = 0
-  let sca = 42; 
+  let sca = 42; //42
   let ty = 30;
-  let dy = 50; 
+  let dy = 50; //50
   mySvgFont.drawString("ABCDEFGHIJKLMNOPQRSTUVWXYZ", 60, ty+=dy, sca, tracking);
   mySvgFont.drawString("abcdefghijklmnopqrstuvwxyz", 60, ty+=dy, sca, tracking);
   mySvgFont.drawString("1234567890", 60, ty+=dy, sca, tracking);

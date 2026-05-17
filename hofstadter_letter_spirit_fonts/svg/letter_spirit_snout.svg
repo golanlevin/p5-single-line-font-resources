@@ -1,0 +1,94 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+<metadata>
+Font name: Letter Spirit Snout
+Format: SVG 1.1 single-line font
+Converted to SVG 1.1 Font format from the p5.js Letter Spirit gridfont archive.
+
+Source: hofstadter_letter_spirit_fonts/letter_spirit_fonts/sketch.js
+Original gridfont style: Snout
+Original project: Letter Spirit, c.1987-1996, by Douglas Hofstadter and Gary McGraw.
+
+Reference:
+Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style, 1993.
+Local copy: hofstadter_letter_spirit_fonts/1993-hofstadter.pdf
+
+Each glyph is encoded on the Letter Spirit 3 by 7 design lattice. This conversion
+preserves the source stroke order and includes lowercase Latin letters present in
+the source data, plus a space glyph.
+</metadata>
+<defs>
+<font id="letterSpirit_snout" horiz-adv-x="360" >
+  <font-face
+    font-family="Letter Spirit Snout"
+    font-weight="400"
+    font-stretch="normal"
+    units-per-em="1000"
+    ascent="800"
+    descent="-200"
+    cap-height="720"
+    x-height="360"
+    bbox="0 0 240 720"
+    underline-thickness="40"
+    underline-position="-120"
+    unicode-range="U+0020-007A"
+  />
+    <missing-glyph horiz-adv-x="360" />
+    <glyph glyph-name="space" unicode=" " horiz-adv-x="320" 
+ />
+    <glyph glyph-name="a" unicode="a" horiz-adv-x="360" 
+d="M120 480L240 480L240 240L0 240L0 480L120 360L240 360" />
+    <glyph glyph-name="b" unicode="b" horiz-adv-x="360" 
+d="M0 720L0 240L240 240L240 480L120 360L0 360" />
+    <glyph glyph-name="c" unicode="c" horiz-adv-x="360" 
+d="M240 480L120 360L0 360L0 240L240 240" />
+    <glyph glyph-name="d" unicode="d" horiz-adv-x="360" 
+d="M240 720L240 240L0 240L0 480L120 360L240 360" />
+    <glyph glyph-name="e" unicode="e" horiz-adv-x="360" 
+d="M0 360L120 360L240 240L240 480L0 480L0 240L120 240" />
+    <glyph glyph-name="f" unicode="f" horiz-adv-x="360" 
+d="M240 600L120 600L0 720L0 480L120 360L120 240M240 480L0 480" />
+    <glyph glyph-name="g" unicode="g" horiz-adv-x="360" 
+d="M240 360L120 360L0 240L0 480L240 480L240 0L120 120L0 120" />
+    <glyph glyph-name="h" unicode="h" horiz-adv-x="360" 
+d="M0 720L0 240M0 360L120 360L240 480L240 240" />
+    <glyph glyph-name="i" unicode="i" horiz-adv-x="360" 
+d="M0 360L120 360L240 480L240 240M0 480L120 480L240 600" />
+    <glyph glyph-name="j" unicode="j" horiz-adv-x="360" 
+d="M0 360L120 360L240 480L240 120L120 120L0 0M0 480L120 480L240 600" />
+    <glyph glyph-name="k" unicode="k" horiz-adv-x="360" 
+d="M0 720L0 240M240 360L240 480L120 360L0 360L120 240L240 240" />
+    <glyph glyph-name="l" unicode="l" horiz-adv-x="360" 
+d="M120 720L120 360L0 240L240 240" />
+    <glyph glyph-name="m" unicode="m" horiz-adv-x="360" 
+d="M0 240L0 480L120 360L240 360L240 240M120 360L120 240" />
+    <glyph glyph-name="n" unicode="n" horiz-adv-x="360" 
+d="M0 240L0 480L120 360L240 360L240 240" />
+    <glyph glyph-name="o" unicode="o" horiz-adv-x="360" 
+d="M0 480L120 360L240 360L240 240L0 240L0 480" />
+    <glyph glyph-name="p" unicode="p" horiz-adv-x="360" 
+d="M0 360L120 360L240 240L240 480L0 480L0 0" />
+    <glyph glyph-name="q" unicode="q" horiz-adv-x="360" 
+d="M240 360L120 360L0 240L0 480L240 480L240 0" />
+    <glyph glyph-name="r" unicode="r" horiz-adv-x="360" 
+d="M240 360L120 360L0 480L0 240" />
+    <glyph glyph-name="s" unicode="s" horiz-adv-x="360" 
+d="M120 480L0 480L0 360L120 360L240 480L240 240L0 240" />
+    <glyph glyph-name="t" unicode="t" horiz-adv-x="360" 
+d="M0 600L120 480L120 240L240 240M240 480L120 360L0 360" />
+    <glyph glyph-name="u" unicode="u" horiz-adv-x="360" 
+d="M120 480L120 360L0 240L240 240L240 480" />
+    <glyph glyph-name="v" unicode="v" horiz-adv-x="360" 
+d="M0 360L120 480L120 360L0 240L120 240L240 360L240 480" />
+    <glyph glyph-name="w" unicode="w" horiz-adv-x="360" 
+d="M0 480L0 360L120 360L240 240L240 480M120 480L120 360" />
+    <glyph glyph-name="x" unicode="x" horiz-adv-x="360" 
+d="M0 360L0 480L120 360L240 360L240 240M240 480L0 240" />
+    <glyph glyph-name="y" unicode="y" horiz-adv-x="360" 
+d="M120 480L120 360L0 240L240 240M240 480L240 0L120 120L0 120" />
+    <glyph glyph-name="z" unicode="z" horiz-adv-x="360" 
+d="M120 480L240 480L120 360L0 480L0 240L240 240" />
+</font>
+</defs>
+</svg>

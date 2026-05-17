@@ -161,10 +161,11 @@ Also see:
 
 ### p5.js port of M+ kanji/hanzi font
 
-This is a p5.js adaptation of *M+ Stroke Font*, a single-stroke font specialized for East Asian scripts designed by Coji Morishita of [M+ Fonts Project](https://mplusfonts.github.io/). The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of ~5,200 single-stroke glyphs. *(Note that an [SVG 1.1 font of the M+ Stroke Font](m_plus_font/source/MPlusStrokeSVG1.1Font.svg) has also been created.)* *M+ Stroke Font* is available:
+This is a p5.js adaptation of *M+ Stroke Font*, a single-stroke font specialized for East Asian scripts designed by Coji Morishita of [M+ Fonts Project](https://mplusfonts.github.io/). The font covers the complete hiragana and katakana syllabaries (83 and 87 glyphs respectively) and approximately 5,000 CJK unified ideographs (kanji/hanzi), for a total of ~5,200 single-stroke glyphs. The *M+ Stroke Font* is available:
 
 * In [this repository](m_plus_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/-Fcfqi5mQ)
+* In [this SVG 1.1 font](m_plus_font/source/MPlusStrokeSVG1.1Font.svg) 
 
 ![M+ Stroke Font](m_plus_font/mplus_font.png)
 
@@ -175,10 +176,11 @@ The *M+ Stroke Font* is extracted from the [LibreCAD project](https://librecad.o
 
 ### p5.js port of Kamp's HP1345A vector font
 
-This single-line font is from the character generator ROM of the [HP1345A digital vector display](https://archive.org/details/HP1345AOSM1985) (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, and ported to JavaScript by Golan Levin. This p5.js version is adapted from his work, and loads data from the original ROM binaries.
+This single-line font is from the character generator ROM of the [HP1345A digital vector display](https://archive.org/details/HP1345AOSM1985) (c.1985), [reverse-engineered](https://phk.freebsd.dk/hacks/Wargames/index.html) by Poul-Henning Kamp, and ported to JavaScript by Golan Levin. The p5.js version is adapted from his work, and loads data from the original ROM binaries. The HP1345A font is available: 
 
 * ROM-loading version [here](HP1345A/HP1345A_single_line_font/sketch.js) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/ir_bD05uZ)
 * Data-inlined version (*recommended*) [here](HP1345A/HP1345A_single_line_font_inline) or at [editor.p5js.org](https://editor.p5js.org/golan/sketches/TzKV33v9g)
+* In [this SVG 1.1 Font](HP1345A/HP1345A.svg)
 
 ![hp1345a_screenshot.png](HP1345A/hp1345a_font.png)
 
@@ -187,10 +189,11 @@ This single-line font is from the character generator ROM of the [HP1345A digita
 
 ### p5.js port of Phooky's Apple 410 vector font
 
-This monospace, monoline vector font is from the [Apple 410 Color Plotter](https://en.wikipedia.org/wiki/Apple_410_Color_Plotter) (c.1983), also sold as the Yokogawa YEW PL-1000. The font was reverse-engineered and extracted from the firmware ROM by Adam Mayer (@phooky), as described in his article, "[Pulling Teeth From a Corpse: Extracting the Vector Font From the Apple 410 Color Plotter](https://www.nycresistor.com/2017/12/29/pulling-teeth-from-a-corpse-extracting-the-vector-font-from-the-apple-410-color-plotter/)". This p5.js version is adapted using the font data and extraction code Meyer released in [this repository](https://github.com/phooky/Apple-410) (MIT license). Meyer explains that the data for each character was stored in a single byte: "the high four bits of the byte indicate the X coordinate, and the low four bits indicate the Y coordinate", thus limiting the design to points on a 16×16 lattice; in other words, it is a grid-font. I have ported these coordinates into a JSON data structure embedded in the p5.js code: 
+This monospace, monoline vector font is from the [Apple 410 Color Plotter](https://en.wikipedia.org/wiki/Apple_410_Color_Plotter) (c.1983), also sold as the Yokogawa YEW PL-1000. The font was reverse-engineered and extracted from the firmware ROM by Adam Mayer (@phooky), as described in his article, "[Pulling Teeth From a Corpse: Extracting the Vector Font From the Apple 410 Color Plotter](https://www.nycresistor.com/2017/12/29/pulling-teeth-from-a-corpse-extracting-the-vector-font-from-the-apple-410-color-plotter/)". This p5.js version is adapted using the font data and extraction code Meyer released in [this repository](https://github.com/phooky/Apple-410) (MIT license). Meyer explains that the data for each character was stored in a single byte: "the high four bits of the byte indicate the X coordinate, and the low four bits indicate the Y coordinate", thus limiting the design to points on a 16×16 lattice; in other words, it is a grid-font. For p5.js it has been encapsulated into JSON. The Apple 410 font is available: 
 
 * In [this repository](apple_410_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BytcG0455)
+* In [this SVG 1.1 font](apple_410_font/Apple410.svg)
 
 ![apple_410_font.png](apple_410_font/apple_410_font.png)
 
@@ -203,6 +206,7 @@ This is a vintage monospace, monoline vector font from the [Commodore 1520 Print
 
 * In [this repository](commodore_1520_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/XbFlU8q6k)
+* In [this SVG 1.1 font](commodore_1520_font/Commodore1520.svg)
 
 ![commodore_1520_font](commodore_1520_font/commodore_1520_font.png)
 
@@ -215,6 +219,7 @@ This is a p5.js port of the authentic font used in the *Asteroids* game, develop
 
 * In [this repository](asteroids_font/asteroids_6502_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/68mZm4yuw)
+* In [this SVG 1.1 font](asteroids_font/asteroids_6502_font/Asteroids6502.svg)
 
 ![asteroids_6502_font](asteroids_font/asteroids_6502_font/asteroids_6502_font.png)
 
@@ -240,7 +245,7 @@ The *Vib-Ribbon* stroke fonts are available:
 * In [vib_ribbon_japanese_stroke_font.json](vib_ribbon_font/vib_ribbon_japanese_stroke_font.json) (Japanese font)
 * In [this repository](vib_ribbon_font/p5_vib_ribbon_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/Z5A9WVHxa)
-* As an [SVG 1.1 Font](https://www.w3.org/TR/SVG11/fonts.html) file [here](vib_ribbon_font/vib_ribbon_font.svg)
+* In [this SVG 1.1 Font](vib_ribbon_font/vib_ribbon_font.svg)
 
 *Note:* If you're doing creative coding in p5.js, it's straightforward to load these fonts and twiddle their vertices with some randomness, as I demonstrate in my included sketch. To be clear, however, the motion you see in this demo (below) is just my own attempt to reproduce the game's behavior; it is not an exact literal replication of the game's animation code.
 
@@ -259,6 +264,7 @@ An implementation of 7 segment, 14 segment, and 16 segment LED displays. Based o
 
 * In [this repository](multisegment_display_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/kLbqPpqwL)
+* In [these SVG 1.1 fonts](multisegment_display_fonts/svg/)
 
 ![multisegment_display.png](multisegment_display_fonts/multisegment_display.png)
 
@@ -269,10 +275,11 @@ An implementation of 7 segment, 14 segment, and 16 segment LED displays. Based o
 
 Douglas Hofstadter’s *Letter Spirit* project (c.1987-1996) explores how abstract concepts like "style" and "analogy" underpin both perception and creativity. It models the human capacity to perceive coherence and invent variation within constraints, proposing that the essence of intelligence lies in fluid, context-sensitive pattern recognition rather than rigid rule-following.
 
-The code in this directory implements some of the *Letter Spirit* gridfonts devised by Hofstadter and Gary McGraw in [*Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style*](hofstadter_letter_spirit_fonts/1993-hofstadter.pdf) (1993). In these fonts, each glyph consists of an array of strokes, and each stroke connects points in a 3x7 design lattice. More information can be found [here](hofstadter_letter_spirit_fonts/readme.md), and code is available: 
+The code in this directory implements some of the *Letter Spirit* gridfonts devised by Hofstadter and Gary McGraw in [*Letter Spirit: An Emergent Model of the Perception and Creation of Alphabetic Style*](hofstadter_letter_spirit_fonts/1993-hofstadter.pdf) (1993). In these fonts, each glyph consists of an array of strokes, and each stroke connects points in a 3x7 design lattice. More information can be found [here](hofstadter_letter_spirit_fonts/readme.md), and code/fonts are available: 
 
 * In [this repository](hofstadter_letter_spirit_fonts/letter_spirit_fonts/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/_sQ_9xkI4)
+* In [these SVG 1.1 fonts](hofstadter_letter_spirit_fonts/svg/)
 
 ![Letter Spirit Gridfonts](hofstadter_letter_spirit_fonts/img/hofstadfter_letter_spirit_gridfonts.png)
 
@@ -289,6 +296,7 @@ This repository presents is a p5.js recovery of the handcoded monoline font extr
 
 * In [this repository](nimoy_textension/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/D4hUCWZk7)
+* In [this SVG 1.1 font](nimoy_textension/nimoy_textension.svg)
 
 ![nimoy_textension.png](nimoy_textension/nimoy_textension.png)
 
@@ -331,6 +339,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 
 * In [this repository](licia_he_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/l-7DpKuu-)
+* In [this SVG 1.1 font](licia_he_font/licia_he_dearplotter.svg)
 
 ![licia_he_font](licia_he_font/licia_he_font.png)
 
@@ -343,6 +352,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 
 * In [this repository](moebio_typode/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
+* In [this SVG 1.1 font](moebio_typode/moebio_typode.svg)
 
 [![moebio_typode_screenshot.png](moebio_typode/moebio_typode.png)](https://editor.p5js.org/golan/sketches/BPPwoW1FU)
 
@@ -357,6 +367,7 @@ The code presented here reproduces Licia He's underlying ur-font from which all 
 
 * In [this repository](holden_consolines_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/Xo6GSXhx2)
+* In [this SVG 1.1 font](holden_consolines_font/holden_consolines.svg)
 
 ![holden_consolines_font.png](holden_consolines_font/holden_consolines_font.png)
 
@@ -372,6 +383,7 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 * [Original Python code by Anders Hoff](https://github.com/inconvergent/gridfont)
 * [p5.js JavaScript port](hoff_gridfont/sketch.js) (in this repository)
 * [p5.js JavaScript port](https://editor.p5js.org/golan/sketches/EGWs_gTbR) (at editor.p5js.org)
+* [SVG 1.1 fonts here](hoff_gridfont/svg/)
 
 [![Anders Hoff's GridFont in p5.js](hoff_gridfont/hoff_screenshot.png)](https://editor.p5js.org/golan/sketches/EGWs_gTbR)
 
@@ -384,6 +396,7 @@ p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenera
 
 * In [this repository](vincze_geargenerator_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/6wem5wbsI)
+* In [this SVG 1.1 font](vincze_geargenerator_font/vincze_geargenerator.svg)
 
 ![vincze geargenerator font](vincze_geargenerator_font/vincze_geargenerator_font.png)
 
@@ -397,6 +410,7 @@ Generative artist [Tyler X. Hobbs](https://www.tylerxhobbs.com/) created this up
 * In [its original Clojure code](tylerxhobbs_font/tylerxhobbs_clojure_font/tylerxhobbs_font.clj)
 * In [this repository](tylerxhobbs_font/tylerxhobbs_font/sketch.js), as JSON
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/CbCmyvpbA)
+* In [this SVG 1.1 font](tylerxhobbs_font/tylerxhobbs_font.svg)
 
 ![tylerxhobbs_font](tylerxhobbs_font/tylerxhobbs_font.png)
 
@@ -410,6 +424,7 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 * In [this repository](schiffman_font/JaredSchiffman_single_line_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/QVljixLNt)
 * [Processing (Java) version](schiffman_font/JaredSchiffman_monoline_pde/)
+* In [this SVG 1.1 font](schiffman_font/schiffman_font.svg)
 
 ![JaredSchiffman_screenshot.png](schiffman_font/schiffman_font.png)
 
@@ -426,7 +441,7 @@ Each of the `x` and `y` coordinate values in minf's glyph control points are sto
 +T4D0dE+zy1tG4Mdw/oDnxm/CLLTDwR/Nd8x/R1xMNL8HhNd0vOLHRvfF50X/R/TBcMdPw==
 ```
 
-A p5.js program to load, render, and edit *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3).
+A p5.js program to load, render, and edit *minf* is available in [this repository](minf/sketch.js) and at [editor.p5js.org](https://editor.p5js.org/golan/sketches/C_Xk-gnL3). *minf* is also available in [this SVG 1.1 font](minf/minf.svg).
 
 ![minf.png](minf/minf.png)
 
