@@ -14,10 +14,7 @@ function preload() {
   // let fileIn = "single_line_svg_fonts/Hershey/HersheyScript1.svg";
   // let fileIn = "single_line_svg_fonts/EMS/EMSReadabilityItalic.svg";
   // let fileIn = "single_line_svg_fonts/ISO3098/ISO3098-Regular.svg";
-  // let fileIn = "single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg";
-  let fileIn = "single_line_svg_fonts/minf.svg"; //hoff_gridfont_smooth
-
-
+  let fileIn = "single_line_svg_fonts/Relief/ReliefSingleLine-Regular.svg";
   
   mySvgFont = new SvgFont(fileIn);
 }
