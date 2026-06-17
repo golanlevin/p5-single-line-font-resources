@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as follows."
+title: "p5-single-line-font-resources"
+type: software
+authors:
+  - family-names: Levin
+    given-names: Golan
+repository-code: "https://github.com/golanlevin/p5-single-line-font-resources"
+url: "https://github.com/golanlevin/p5-single-line-font-resources"
+abstract: >
+  A repository of p5.js programs for loading and displaying single-line
+  vector fonts, also called single-stroke fonts, technical lettering fonts,
+  stick fonts, skeleton fonts, engraving fonts, or monoline fonts, in formats
+  including TTF, SVG 1.1 Font, Hershey Font, and others.
+keywords:
+  - p5.js
+  - single-line fonts
+  - single-stroke fonts
+  - vector fonts
+  - Hershey fonts
+  - pen plotting
+  - creative coding

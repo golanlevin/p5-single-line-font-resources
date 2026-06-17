@@ -469,6 +469,7 @@ Here are some inspirational creative software projects that make use of single-l
 * [*chinese-radical-vis* & *RRPL*](https://unglitch.netlify.app/chinese-radical-vis/) by [Lingdong Huang](https://lingdong.works/), 2018.
 * [*paramtype*](https://unglitch.netlify.app/paramtype/) by Lingdong Huang, 202x. 
 * [*Leon Sans*](https://github.com/cmiscm/leonsans) by [Jongmin Kim](https://blog.cmiscm.com/), 2019.
+* [*waveform - study 3*](https://x.com/yugop/status/2062481427233685661) by Yugo Nakamura, 2026.
 * [*Letterform Variations*](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
 * [*Typode*](https://moebio.com/research/typode/) by [Santiago Ortiz](https://moebio.com/), 2013.
 * [*Viktor*](https://juerglehni.com/works/viktor), [*Hektor*](https://juerglehni.com/works/hektor), and [*Otto*](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
