@@ -2,6 +2,15 @@
 
 ![glen_kleinschmidt_fourier_characters](kleinschmidt_fourier.gif)
 
+---
+
+**Quicklink.** p5.js implementations can be found: 
+
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/NYn_eUfRH)
+* In [this repository](glenk_fourier/sketch.js)
+
+---
+
 This directory contains an adaptation of Glen Kleinschmidt's "[Fourier Synthesis Character Generator](https://glensstuff.com/fouriersynthchargen/fouriersynthchargen.htm)", which generates single-stroke vector glyphs using a custom analog circuit. In Kleinschmidt's circuit, a number of sinusoidal oscillators have frequencies set by resistor values, as depicted in his circuit diagram [`romschematic.pdf`](romschematic.pdf). Kleinschmidt's circuit only represents the sixteen characters, `0-9` and `A-F`. His circuit synthesizes each character as a 2-dimensional parametric curve, such as one would see on an oscilloscope, summing the contributions of five such oscillators in each of the X and Y dimension. 
 
 ![kleinschmidt_figure1.jpg](kleinschmidt_figure1.jpg)
@@ -83,6 +92,8 @@ y(t) = sum(Y character terms)
 ```
 
 No character is stored as a point list. The sketch samples the functions only while drawing. The bright trace covers the visible six-eighths of the waveform, and the dim trace shows the blanked return interval.
+
+
 
 ---
 
