@@ -36,6 +36,7 @@
 * [p5.js port of Abel Vincze's *GearGenerator* font](#p5js-port-of-abel-vinczes-geargenerator-font)
 * [p5.js port of Tyler X. Hobbs' font](#p5js-port-of-tyler-x-hobbs-font)
 * [p5.js port of Jared Schiffman's font](#p5js-port-of-jared-schiffmans-font)
+* [p5.js port of Glen Kleinschmidt's *Fourier Synthesis Character Generator*](#p5js-port-of-glen-kleinschmidts-fourier-synthesis-character-generator)
 * [*minf*, an ultra-minimal procedural monoline font](#minf-an-ultra-minimal-procedural-monoline-font)
 * [Additional resources](#additional-resources)
 * [Some inspirational artworks](#some-inspirational-artworks)
@@ -427,6 +428,26 @@ Procedural single-stroke monospace font developed by [Jared Schiffman](https://w
 * In [this SVG 1.1 font](schiffman_font/schiffman_font.svg)
 
 ![JaredSchiffman_screenshot.png](schiffman_font/schiffman_font.png)
+
+---
+
+### p5.js port of Glen Kleinschmidt's *Fourier Synthesis Character Generator*
+
+This is a p5.js adaptation of Glen Kleinschmidt's [*Fourier Synthesis Character Generator*](https://glensstuff.com/fouriersynthchargen/fouriersynthchargen.htm) (2014), a single-stroke vector font implemented as a real, working, analog electronic circuit. Instead of storing glyphs as a list of points, Kleinschmidt's characters are defined by the coefficients of sinusoidal basis functions. In the circuit, these coefficients control the amplitude of oscillators, in the same manner as an additive synthesizer. Each glyph is represented as a two-dimensional parametric curve, using only the first five harmonics, as defined by the equations: 
+
+![x(t)=\sum a_n\sin(nt)+b_n\cos(nt), y(t)=\sum c_n\sin(nt)+d_n\cos(nt)](kleinschmidt_fourier/equation.png)
+
+In Kleinschmidt's circuit, these coefficients were encoded as resistor values in a ROM-like hardware matrix; the selected sinusoidal signals were passively summed to drive the X and Y deflection inputs of an oscilloscope. Kleinschmidt's character set is limited to the sixteen hexadecimal symbols, `0–9` and `A–F`. 
+
+In the p5.js sketch, character shapes are stored as resistor values that encode oscillator amplitudes, and the sketch evaluates the resulting Fourier series directly. The p5.js code can be found: 
+
+* In [this repository](kleinschmidt_fourier/README.md)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/NYn_eUfRH)
+* [Original project page by Glen Kleinschmidt here](https://glensstuff.com/fouriersynthchargen/fouriersynthchargen.htm)
+
+In the GIF below, the amount of harmonic content is animated.
+
+![](kleinschmidt_fourier/kleinschmidt_fourier.gif)
 
 
 ---
