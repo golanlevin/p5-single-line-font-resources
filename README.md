@@ -2,7 +2,7 @@
 
 ![banner.png](img/banner.png)
 
-*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, technical lettering fonts, stick fonts, skeleton fonts, engraving fonts, or monoline fonts) in a variety of formats — including TTF, SVG 1.1 Font, Hershey Font, and others. This repository also includes an authoritative archive of single-line fonts (and procedural fonts) recovered or extracted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
+*This is a repository of p5.js (JavaScript) programs for loading and displaying single-line vector fonts (also called single-stroke fonts, technical lettering fonts, stick fonts, skeleton fonts, engraving fonts, or monoline fonts) in a variety of formats — including TTF, SVG 1.1 Font, Hershey Font, and others. This repository also attempts to present an authoritative archive of single-line fonts (and procedural fonts) recovered or extracted from a wide range of creative projects, vintage and obsolete technologies, and other sources.*
 
 *Most digital fonts are "outline fonts", which represent letterforms as shapes that fill closed contours. By contrast, single-line fonts represent letters with linear skeletons, the same way we might write them by hand. Single-line fonts are ideally suited to creative coding, pen-plotting, laser projection, and CNC machining. Examples in this repository are known to work with p5.js v.1.11.13.*
 
