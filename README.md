@@ -22,6 +22,7 @@
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
 * [p5.js port of Phooky's Apple 410 vector font](#p5js-port-of-phookys-apple-410-vector-font)
 * [p5.js port of Scruss's Commodore 1520 vector font](#p5js-port-of-scrusss-commodore-1520-vector-font)
+* [p5.js port of the Tektronix 7000-series readout fonts](#p5js-port-of-the-tektronix-7000-series-readout-fonts)
 * [p5.js port of Ed Logg's *Asteroids* font](#p5js-port-of-ed-loggs-asteroids-font)
 * [p5.js port of Masaya Matsuura's *Vib-Ribbon* Fonts](#p5js-port-of-masaya-matsuuras-vib-ribbon-fonts)
 * [p5.js implementation of multi-segment display fonts](#p5js-implementation-of-multi-segment-display-fonts)
@@ -210,6 +211,22 @@ This is a vintage monospace, monoline vector font from the [Commodore 1520 Print
 * In [this SVG 1.1 font](commodore_1520_font/Commodore1520.svg)
 
 ![commodore_1520_font](commodore_1520_font/commodore_1520_font.png)
+
+
+---
+
+### p5.js port of the Tektronix 7000-series readout fonts
+
+The Tektronix 7000 Series oscilloscopes "[were produced from about 1970 to 1995](https://www.tek.com/en/support/faqs/7000-series-oscilloscopes-faq)" (other sources say 1969-1992). These oscilloscopes had a built-in, EPROM-based character generator which overlaid measurement information onto the displayed signals. 
+
+Two different monoline vector fonts were used by the  character generator in the [Tektronix 7000-series oscilloscope readout systems](https://w140.com/tekwiki/wiki/7000_series_readout_system). The fonts are identified by Tektronix part numbers *160-2997-00* (1984) and *160-2997-01* (1986), and differ in several letterforms and digits. The  character sets and their associated hardware implementations were proposed and designed by English-American electrical engineer, [Barrie Gilbert](https://w140.com/tekwiki/wiki/Barrie_Gilbert). 
+
+The p5.js version presented here uses vector line segments extracted from the PDFs [`Font_160-2997-00.pdf`](https://w140.com/tekwiki/wiki/File:Font_160-2997-00.pdf) and [`Font_160-2997-01.pdf`](https://w140.com/tekwiki/wiki/File:Font_160-2997-01.pdf), posted by user Luebben to [w140.com](https://w140.com/tekwiki/wiki/7000_series_readout_system) in 2022. This presentation normalizes the page-rotated coordinates, and stores the glyphs as arrays of single-stroke line segments. The Tektronix 7000-series readout fonts are available:
+
+* In [this repository](tektronix_7000_fonts/sketch.js)
+* At [editor.p5js.org](https://editor.p5js.org/golan/sketches/7Fz0veBOZ)
+
+![tektronix_7000_fonts](tektronix_7000_fonts/tektronix_7000_fonts.png)
 
 
 ---
