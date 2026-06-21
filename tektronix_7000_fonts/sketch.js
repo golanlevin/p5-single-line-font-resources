@@ -1,16 +1,15 @@
 // Monoline vector fonts from the Tektronix 7000-series oscilloscope
 // character generator EPROM readout board. Extracted from Holger's PDFs
-// Font_160-2997-00.pdf and Font_160-2997-01.pdf, which reproduce
+// `Font_160-2997-00.pdf` and `Font_160-2997-01.pdf`, which reproduce
 // Tektronix readout fonts 160-2997-00 (1984) and 160-2997-01 (1986).
 //
-// Background: https://w140.com/tekwiki/wiki/7000_series_readout_system
+// Background: https://w140.com/tekwiki/wiki/7000_series_readout_system.
 // The source PDF streams store page-rotated line segments; the coordinates
 // below are normalized to displayed glyph coordinates with positive Y down.
 
 function setup() {
   createCanvas(1024, 720);
   pixelDensity(2);
-  noLoop();
 
   buildGlyphMap(tektronix7000Font1984);
   buildGlyphMap(tektronix7000Font1986);
@@ -22,12 +21,19 @@ function keyPressed() {
   }
 }
 
+
 function draw() {
   background('black');
-  noFill();
+  strokeWeight(1.0);
+  strokeJoin(ROUND);
+  strokeCap(ROUND);
 
-  drawFontBlock(tektronix7000Font1984, 100, 120);
-  drawFontBlock(tektronix7000Font1986, 100, 420);
+  drawFontBlock(tektronix7000Font1984, 100, 125);
+  drawFontBlock(tektronix7000Font1986, 100, 425);
+
+  stroke("white"); 
+  drawString(tektronix7000Font1984, "HELLO WORLD", 455,79,  21, 0.9);
+  drawString(tektronix7000Font1986, "HELLO WORLD", 455,379, 21, 0.9);
 }
 
 
@@ -39,9 +45,6 @@ function drawFontBlock(font, x, y) {
   text(font.title, x, y - 28);
 
   stroke('white');
-  strokeWeight(1);
-  strokeJoin(ROUND);
-  strokeCap(ROUND);
   noFill();
 
   const TEKTRONIX_7000_SUPPORTED_CHARS = [
@@ -52,8 +55,8 @@ function drawFontBlock(font, x, y) {
   ];
 
   const size = 42;
-  const spacing = 1.1;
-  const lineHeight = 1.34;
+  const spacing = 1.0
+  const lineHeight = 1.3;
   let ty = y;
   for (const row of TEKTRONIX_7000_SUPPORTED_CHARS) {
     drawString(font, row, x, ty, size, spacing);
@@ -183,7 +186,6 @@ const tektronix7000Font1984 = {
     {"char":">","strokes":[[[30,0],[120,90]],[[120,90],[30,180]],[[30,180],[120,90]],[[120,90],[30,0]],[[30,0],[120,90]],[[120,90],[30,180]]]},
     {"char":"↓","strokes":[[[30,150],[60,180]],[[60,180],[60,0]],[[60,0],[60,180]],[[60,180],[60,0]],[[90,150],[60,180]]]},
     {"char":".","strokes":[[[0,210],[0,210]],[[0,210],[0,210]],[[0,210],[0,210]]]},
-    {"char":".","strokes":[[[0,210],[0,210]],[[0,210],[0,210]],[[0,210],[0,210]]]}
   ]
 };
 
@@ -242,7 +244,6 @@ const tektronix7000Font1986 = {
     {"char":"<","strokes":[[[120,150],[0,90]],[[0,90],[120,30]],[[120,30],[0,90]],[[0,90],[120,150]],[[120,150],[0,90]],[[0,90],[120,30]]]},
     {"char":">","strokes":[[[0,150],[120,90]],[[120,90],[0,30]],[[0,30],[120,90]],[[120,90],[0,150]],[[0,150],[120,90]],[[120,90],[0,30]]]},
     {"char":"↓","strokes":[[[60,180],[60,0]],[[60,0],[60,180]],[[60,180],[0,120]],[[0,120],[60,180]],[[60,180],[120,120]],[[120,120],[60,180]],[[60,180],[60,0]],[[60,0],[60,180]]]},
-    {"char":".","strokes":[[[0,210],[0,210]],[[0,210],[0,210]],[[0,210],[0,210]]]},
     {"char":".","strokes":[[[0,210],[0,210]],[[0,210],[0,210]],[[0,210],[0,210]]]}
   ]
 };
