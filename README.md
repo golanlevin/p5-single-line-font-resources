@@ -436,7 +436,7 @@ Hoff provides two sample fonts: one ("original") which is almost exclusively com
 
 ### p5.js port of Abel Vincze's *GearGenerator* font
 
-p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenerator.com](http://geargenerator.com/) (Iparigrafika, version 1.01), in which it was used to label gears with ratio and RPM text. The font encodes 73 printable characters on a 7×9 integer grid, compressing all glyph stroke data into three strings totalling under 1 KB; ported from [here](https://www.robopenguins.com/assets/wp-content/pages/geargenerator/index.html). The font is available:
+p5.js port of the compact single-line font embedded in Abel Vincze's [GearGenerator.com](http://geargenerator.com/) (Iparigrafika, version 1.01), in which it was used to label gears with ratio and RPM text. Vincze's font appears to be the same as the `txt` AutoCAD SHX font. The font encodes 73 printable characters on a 7×9 integer grid, compressing all glyph stroke data into three strings totalling under 1 KB; ported from [here](https://www.robopenguins.com/assets/wp-content/pages/geargenerator/index.html). The font is available:
 
 * In [this repository](vincze_geargenerator_font/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/6wem5wbsI)
