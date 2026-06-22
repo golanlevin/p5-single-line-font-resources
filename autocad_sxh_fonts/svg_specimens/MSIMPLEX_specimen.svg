@@ -1,0 +1,469 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="1060" viewBox="0 0 1408 1060">
+<rect width="100%" height="100%" fill="#111"/>
+<style>text{font:10px monospace;fill:#aaa}.box{fill:none;stroke:#333}.glyph{fill:none;stroke:#f4f1e8;stroke-width:1;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.warn{stroke:#8a4;stroke-dasharray:3 3}</style>
+<rect class="box" x="4" y="4" width="80" height="98"/>
+<text x="8" y="18">0001</text>
+<rect class="box" x="24" y="34" width="40" height="48"/>
+<rect class="box" x="92" y="4" width="80" height="98"/>
+<text x="96" y="18">000A</text>
+<rect class="box" x="112" y="34" width="40" height="48"/>
+<rect class="box" x="180" y="4" width="80" height="98"/>
+<text x="184" y="18">000D</text>
+<rect class="box" x="200" y="34" width="40" height="48"/>
+<rect class="box" x="268" y="4" width="80" height="98"/>
+<text x="272" y="18">0020</text>
+<rect class="box" x="288" y="34" width="40" height="48"/>
+<rect class="box" x="356" y="4" width="80" height="98"/>
+<text x="360" y="18">0021 !</text>
+<path class="glyph" transform="translate(383.000 76.000) scale(0.667 -0.667)" d="M 30 19 L 27 54 L 30 60 L 33 54 L 30 19 M 33 3 C 33 4.656854 31.656854 6 30 6 C 28.343146 6 27 4.656854 27 3 C 27 1.343146 28.343146 0.0 30 0.0 C 31.656854 0.0 33 1.343146 33 3"/>
+<rect class="box" x="444" y="4" width="80" height="98"/>
+<text x="448" y="18">0022 &quot;</text>
+<path class="glyph" transform="translate(471.000 76.000) scale(0.667 -0.667)" d="M 35 54 L 38 57 L 41 63 L 41 69 C 41 70.656854 39.656854 72 38 72 C 36.343146 72 35 70.656854 35 69 C 35 67.343146 36.343146 66 38 66 C 39.656854 66 41 67.343146 41 69 M 17 54 L 21 57 L 24 63 L 24 69 C 24 70.656854 22.656854 72 21 72 C 19.343146 72 18 70.656854 18 69 C 18 67.343146 19.343146 66 21 66 C 22.656854 66 24 67.343146 24 69"/>
+<rect class="box" x="532" y="4" width="80" height="98"/>
+<text x="536" y="18">0023 #</text>
+<path class="glyph" transform="translate(559.000 76.000) scale(0.667 -0.667)" d="M 49 11 L 13 11 L 9 11 M 12 28 L 48 28 L 52 28 M 49 60 L 29 -20 M 12 -20 L 32 60"/>
+<rect class="box" x="620" y="4" width="80" height="98"/>
+<text x="624" y="18">0024 $</text>
+<path class="glyph" transform="translate(647.000 76.000) scale(0.667 -0.667)" d="M 24 72 L 24 -9 L 24 -12 M 36 -12 L 36 69 L 36 72 M 51 50 L 45 57 L 36 60 L 27 60 L 24 60 L 15 57 L 10 51 L 10 46 L 13 40 L 16 37 L 45 26 L 50 17 L 50 9 L 44 2 L 36 0.0 L 27 0.0 L 24 0.0 L 15 3 L 11 8"/>
+<rect class="box" x="708" y="4" width="80" height="98"/>
+<text x="712" y="18">0025 %</text>
+<path class="glyph" transform="translate(735.000 76.000) scale(0.667 -0.667)" d="M 56 10 C 56 16.075132 51.075132 21 45 21 C 38.924868 21 34 16.075132 34 10 C 34 3.924868 38.924868 -1 45 -1 C 51.075132 -1 56 3.924868 56 10 M 4 0.0 L 55 60 L 41 54 L 32 54 L 18 60 M 25 50 C 25 56.075132 20.075132 61 14 61 C 7.924868 61 3 56.075132 3 50 C 3 43.924868 7.924868 39 14 39 C 20.075132 39 25 43.924868 25 50"/>
+<rect class="box" x="796" y="4" width="80" height="98"/>
+<text x="800" y="18">0026 &amp;</text>
+<path class="glyph" transform="translate(823.000 76.000) scale(0.667 -0.667)" d="M 55 37 L 52 34 L 54 31 L 57 34 L 57 38 L 54 40 L 51 40 L 49 37 L 47 33 L 40 17 L 36 11 L 29 3 L 23 0.0 L 14 0.0 L 6 3 M 9 2 L 6 9 L 6 18 L 8 22 L 13 27 M 15 45 L 17 40 L 37 13 L 46 3 L 51 0.0 M 57 6 L 57 3 L 54 0.0 L 51 0.0 L 43 3 L 36 10 L 17 38 L 15 45 L 14 52 L 17 57 L 23 60 L 29 57 L 32 52 L 32 46 L 28 39 L 23 34 L 6 23 L 3 18 L 3 9 L 6 3"/>
+<rect class="box" x="884" y="4" width="80" height="98"/>
+<text x="888" y="18">0027 &#x27;</text>
+<path class="glyph" transform="translate(911.000 76.000) scale(0.667 -0.667)" d="M 27 54 L 30 58 L 33 63 L 33 69 C 33 70.656854 31.656854 72 30 72 C 28.343146 72 27 70.656854 27 69 C 27 67.343146 28.343146 66 30 66 C 31.656854 66 33 67.343146 33 69"/>
+<rect class="box" x="972" y="4" width="80" height="98"/>
+<text x="976" y="18">0028 (</text>
+<path class="glyph" transform="translate(999.000 76.000) scale(0.667 -0.667)" d="M 40 -20 L 30 -8 L 24 3 L 20 21 L 20 30 L 20 32 L 24 48 L 30 60 L 40 71"/>
+<rect class="box" x="1060" y="4" width="80" height="98"/>
+<text x="1064" y="18">0029 )</text>
+<path class="glyph" transform="translate(1087.000 76.000) scale(0.667 -0.667)" d="M 30 60 L 20 71 M 36 48 L 30 60 M 40 32 L 36 48 M 40 21 L 40 30 L 40 32 M 36 3 L 40 21 M 30 -8 L 36 3 M 20 -20 L 30 -8"/>
+<rect class="box" x="1148" y="4" width="80" height="98"/>
+<text x="1152" y="18">002A *</text>
+<path class="glyph" transform="translate(1175.000 76.000) scale(0.667 -0.667)" d="M 30 43 L 30 16 L 30 8 M 15 17 L 45 34 M 45 17 L 15 34"/>
+<rect class="box" x="1236" y="4" width="80" height="98"/>
+<text x="1240" y="18">002B +</text>
+<path class="glyph" transform="translate(1263.000 76.000) scale(0.667 -0.667)" d="M 56 26 L 11 26 L 4 26 M 30 0.0 L 30 45 L 30 52"/>
+<rect class="box" x="1324" y="4" width="80" height="98"/>
+<text x="1328" y="18">002C ,</text>
+<path class="glyph" transform="translate(1351.000 76.000) scale(0.667 -0.667)" d="M 27 -11 L 30 -9 L 33 -3 L 33 3 C 33 4.656854 31.656854 6 30 6 C 28.343146 6 27 4.656854 27 3 C 27 1.343146 28.343146 0.0 30 0.0 C 31.656854 0.0 33 1.343146 33 3"/>
+<rect class="box" x="4" y="110" width="80" height="98"/>
+<text x="8" y="124">002D -</text>
+<path class="glyph" transform="translate(31.000 182.000) scale(0.667 -0.667)" d="M 56 26 L 11 26 L 4 26"/>
+<rect class="box" x="92" y="110" width="80" height="98"/>
+<text x="96" y="124">002E .</text>
+<path class="glyph" transform="translate(119.000 182.000) scale(0.667 -0.667)" d="M 33 3 C 33 4.656854 31.656854 6 30 6 C 28.343146 6 27 4.656854 27 3 C 27 1.343146 28.343146 0.0 30 0.0 C 31.656854 0.0 33 1.343146 33 3"/>
+<rect class="box" x="180" y="110" width="80" height="98"/>
+<text x="184" y="124">002F /</text>
+<path class="glyph" transform="translate(207.000 182.000) scale(0.667 -0.667)" d="M 55 71 L 4 -20"/>
+<rect class="box" x="268" y="110" width="80" height="98"/>
+<text x="272" y="124">0030 0</text>
+<path class="glyph" transform="translate(295.000 182.000) scale(0.667 -0.667)" d="M 27 60 L 33 60 L 42 57 L 47 49 L 50 34 L 50 26 L 47 11 L 42 3 L 33 0.0 L 27 0.0 L 18 3 L 13 11 L 10 26 L 10 34 L 13 49 L 18 57 L 27 60"/>
+<rect class="box" x="356" y="110" width="80" height="98"/>
+<text x="360" y="124">0031 1</text>
+<path class="glyph" transform="translate(383.000 182.000) scale(0.667 -0.667)" d="M 30 0.0 L 30 54 L 30 60 L 23 52 L 16 49"/>
+<rect class="box" x="444" y="110" width="80" height="98"/>
+<text x="448" y="124">0032 2</text>
+<path class="glyph" transform="translate(471.000 182.000) scale(0.667 -0.667)" d="M 50 0.0 L 14 0.0 L 10 0.0 L 37 27 L 38 28 L 44 36 L 47 42 L 47 48 L 45 54 L 42 57 L 36 60 L 27 60 L 24 60 L 17 57 L 13 50 L 13 46"/>
+<rect class="box" x="532" y="110" width="80" height="98"/>
+<text x="536" y="124">0033 3</text>
+<path class="glyph" transform="translate(559.000 182.000) scale(0.667 -0.667)" d="M 10 11 L 13 5 L 16 3 L 24 0.0 L 33 0.0 L 41 2 L 47 8 L 50 17 L 50 23 L 47 32 L 39 37 L 30 37 L 47 60 L 20 60 L 16 60"/>
+<rect class="box" x="620" y="110" width="80" height="98"/>
+<text x="624" y="124">0034 4</text>
+<path class="glyph" transform="translate(647.000 182.000) scale(0.667 -0.667)" d="M 51 20 L 15 20 L 9 20 L 38 60 L 38 6 L 38 0.0"/>
+<rect class="box" x="708" y="110" width="80" height="98"/>
+<text x="712" y="124">0035 5</text>
+<path class="glyph" transform="translate(735.000 182.000) scale(0.667 -0.667)" d="M 10 12 L 13 6 L 16 3 L 24 0.0 L 33 0.0 L 42 3 L 47 9 L 50 17 L 50 23 L 47 32 L 42 37 L 33 40 L 24 40 L 16 37 L 13 34 L 16 60 L 43 60 L 44 60"/>
+<rect class="box" x="796" y="110" width="80" height="98"/>
+<text x="800" y="124">0036 6</text>
+<path class="glyph" transform="translate(823.000 182.000) scale(0.667 -0.667)" d="M 49 19 C 49 29.49341 40.49341 38 30 38 C 19.50659 38 11 29.49341 11 19 C 11 8.50659 19.50659 0.0 30 0.0 C 40.49341 0.0 49 8.50659 49 19 M 11 20 L 11 29 L 11 34 L 12 42 L 14 49 L 16 53 L 19 57 L 27 60 L 33 60 L 42 57 L 46 51"/>
+<rect class="box" x="884" y="110" width="80" height="98"/>
+<text x="888" y="124">0037 7</text>
+<path class="glyph" transform="translate(911.000 182.000) scale(0.667 -0.667)" d="M 21 0.0 L 50 60 L 14 60 L 10 60"/>
+<rect class="box" x="972" y="110" width="80" height="98"/>
+<text x="976" y="124">0038 8</text>
+<path class="glyph" transform="translate(999.000 182.000) scale(0.667 -0.667)" d="M 36 60 L 44 57 L 47 51 L 47 45 L 45 40 L 40 37 L 30 35 L 18 31 L 13 26 L 10 20 L 10 11 L 15 3 L 24 0.0 L 33 0.0 L 36 0.0 L 45 3 L 50 11 L 50 20 L 47 26 L 42 31 L 30 35 L 20 37 L 15 40 L 13 45 L 13 51 L 16 57 L 24 60 L 33 60 L 36 60"/>
+<rect class="box" x="1060" y="110" width="80" height="98"/>
+<text x="1064" y="124">0039 9</text>
+<path class="glyph" transform="translate(1087.000 182.000) scale(0.667 -0.667)" d="M 49 41 C 49 51.49341 40.49341 60 30 60 C 19.50659 60 11 51.49341 11 41 C 11 30.50659 19.50659 22 30 22 C 40.49341 22 49 30.50659 49 41 M 13 9 L 17 3 L 25 0.0 L 32 0.0 L 40 3 L 45 9 L 47 13 L 49 24 L 49 33 L 49 40"/>
+<rect class="box" x="1148" y="110" width="80" height="98"/>
+<text x="1152" y="124">003A :</text>
+<path class="glyph" transform="translate(1175.000 182.000) scale(0.667 -0.667)" d="M 33 3 C 33 4.656854 31.656854 6 30 6 C 28.343146 6 27 4.656854 27 3 C 27 1.343146 28.343146 0.0 30 0.0 C 31.656854 0.0 33 1.343146 33 3 M 33 37 C 33 38.656854 31.656854 40 30 40 C 28.343146 40 27 38.656854 27 37 C 27 35.343146 28.343146 34 30 34 C 31.656854 34 33 35.343146 33 37"/>
+<rect class="box" x="1236" y="110" width="80" height="98"/>
+<text x="1240" y="124">003B ;</text>
+<path class="glyph" transform="translate(1263.000 182.000) scale(0.667 -0.667)" d="M 27 -11 L 30 -9 L 33 -3 L 33 2 M 33 3 C 33 4.656854 31.656854 6 30 6 C 28.343146 6 27 4.656854 27 3 C 27 1.343146 28.343146 0.0 30 0.0 C 31.656854 0.0 33 1.343146 33 3 M 33 37 C 33 38.656854 31.656854 40 30 40 C 28.343146 40 27 38.656854 27 37 C 27 35.343146 28.343146 34 30 34 C 31.656854 34 33 35.343146 33 37"/>
+<rect class="box" x="1324" y="110" width="80" height="98"/>
+<text x="1328" y="124">003C &lt;</text>
+<path class="glyph" transform="translate(1351.000 182.000) scale(0.667 -0.667)" d="M 53 0.0 L 7 26 L 53 52"/>
+<rect class="box" x="4" y="216" width="80" height="98"/>
+<text x="8" y="230">003D =</text>
+<path class="glyph" transform="translate(31.000 288.000) scale(0.667 -0.667)" d="M 4 34 L 49 34 L 56 34 M 56 17 L 11 17 L 4 17"/>
+<rect class="box" x="92" y="216" width="80" height="98"/>
+<text x="96" y="230">003E &gt;</text>
+<path class="glyph" transform="translate(119.000 288.000) scale(0.667 -0.667)" d="M 7 0.0 L 53 26 L 7 51"/>
+<rect class="box" x="180" y="216" width="80" height="98"/>
+<text x="184" y="230">003F ?</text>
+<path class="glyph" transform="translate(207.000 288.000) scale(0.667 -0.667)" d="M 17 49 L 20 46 L 17 43 L 14 46 L 14 49 L 16 53 L 20 58 L 26 60 L 35 60 L 43 57 L 46 51 L 47 51 L 47 47 L 44 40 L 41 37 L 29 31 L 29 23 M 32 6 C 32 7.656854 30.656854 9 29 9 C 27.343146 9 26 7.656854 26 6 C 26 4.343146 27.343146 3 29 3 C 30.656854 3 32 4.343146 32 6"/>
+<rect class="box" x="268" y="216" width="80" height="98"/>
+<text x="272" y="230">0040 @</text>
+<path class="glyph" transform="translate(295.000 288.000) scale(0.667 -0.667)" d="M 23 14 L 20 17 L 17 23 L 17 32 L 20 40 L 25 46 M 42 39 L 40 43 L 35 46 L 26 46 L 25 46 L 21 44 L 18 41 L 15 32 L 15 23 L 17 17 L 23 14 L 32 14 L 38 18 L 40 22 M 46 14 L 40 17 L 40 22 L 43 46 M 46 46 L 43 19 L 46 14 L 52 14 L 57 20 L 58 27 L 58 36 L 57 44 L 52 51 L 44 57 L 36 60 L 27 60 L 23 60 L 16 57 L 10 53 L 4 47 L 2 36 L 2 27 L 2 25 L 4 14 L 10 7 L 16 3 L 23 0.0 L 32 0.0 L 36 0.0 L 45 3 L 52 9"/>
+<rect class="box" x="356" y="216" width="80" height="98"/>
+<text x="360" y="230">0041 A</text>
+<path class="glyph" transform="translate(383.000 288.000) scale(0.667 -0.667)" d="M 15 20 L 42 20 L 45 20 M 53 0.0 L 30 60 L 7 0.0"/>
+<rect class="box" x="444" y="216" width="80" height="98"/>
+<text x="448" y="230">0042 B</text>
+<path class="glyph" transform="translate(471.000 288.000) scale(0.667 -0.667)" d="M 36 31 L 44 28 L 47 26 L 50 20 L 50 12 L 48 7 L 45 3 L 36 0.0 L 18 0.0 L 10 0.0 L 10 54 L 10 60 M 10 31 L 28 31 L 36 31 L 44 34 L 47 37 L 50 43 L 50 49 L 45 57 L 35 60 L 17 60 L 10 60"/>
+<rect class="box" x="532" y="216" width="80" height="98"/>
+<text x="536" y="230">0043 C</text>
+<path class="glyph" transform="translate(559.000 288.000) scale(0.667 -0.667)" d="M 51 13 L 49 8 L 44 3 L 38 0.0 L 29 0.0 L 26 0.0 L 20 3 L 14 9 L 9 23 L 9 32 L 9 37 L 14 51 L 20 57 L 26 60 L 35 60 L 38 60 L 44 57 L 49 52 L 51 48"/>
+<rect class="box" x="620" y="216" width="80" height="98"/>
+<text x="624" y="230">0044 D</text>
+<path class="glyph" transform="translate(647.000 288.000) scale(0.667 -0.667)" d="M 10 60 L 10 6 L 10 0.0 L 28 0.0 L 29 0.0 L 38 3 L 44 8 L 47 14 L 50 23 L 50 32 L 50 37 L 47 46 L 44 51 L 38 57 L 29 60 L 11 60 L 10 60"/>
+<rect class="box" x="708" y="216" width="80" height="98"/>
+<text x="712" y="230">0045 E</text>
+<path class="glyph" transform="translate(735.000 288.000) scale(0.667 -0.667)" d="M 34 31 L 16 31 L 12 31 M 48 0.0 L 12 0.0 L 12 54 L 12 60 L 48 60"/>
+<rect class="box" x="796" y="216" width="80" height="98"/>
+<text x="800" y="230">0046 F</text>
+<path class="glyph" transform="translate(823.000 288.000) scale(0.667 -0.667)" d="M 34 31 L 16 31 L 12 31 M 48 60 L 12 60 L 12 6 L 12 0.0"/>
+<rect class="box" x="884" y="216" width="80" height="98"/>
+<text x="888" y="230">0047 G</text>
+<path class="glyph" transform="translate(911.000 288.000) scale(0.667 -0.667)" d="M 38 23 L 47 23 L 52 23 L 52 14 L 49 9 L 44 3 L 38 0.0 L 29 0.0 L 26 0.0 L 20 3 L 14 9 L 9 23 L 9 32 L 9 37 L 13 50 L 19 57 L 26 60 L 35 60 L 38 60 L 44 57 L 49 52 L 51 47"/>
+<rect class="box" x="972" y="216" width="80" height="98"/>
+<text x="976" y="230">0048 H</text>
+<path class="glyph" transform="translate(999.000 288.000) scale(0.667 -0.667)" d="M 50 0.0 L 50 54 L 50 60 M 50 31 L 14 31 L 10 31 M 10 0.0 L 10 54 L 10 60"/>
+<rect class="box" x="1060" y="216" width="80" height="98"/>
+<text x="1064" y="230">0049 I</text>
+<path class="glyph" transform="translate(1087.000 288.000) scale(0.667 -0.667)" d="M 30 0.0 L 30 54 L 30 60"/>
+<rect class="box" x="1148" y="216" width="80" height="98"/>
+<text x="1152" y="230">004A J</text>
+<path class="glyph" transform="translate(1175.000 288.000) scale(0.667 -0.667)" d="M 43 60 L 43 15 L 43 14 L 41 6 L 37 2 L 32 0.0 L 26 0.0 L 20 3 L 17 8 L 15 14 L 15 20"/>
+<rect class="box" x="1236" y="216" width="80" height="98"/>
+<text x="1240" y="230">004B K</text>
+<path class="glyph" transform="translate(1263.000 288.000) scale(0.667 -0.667)" d="M 50 0.0 L 24 34 M 50 60 L 14 24 L 10 20 M 10 0.0 L 10 54 L 10 60"/>
+<rect class="box" x="1324" y="216" width="80" height="98"/>
+<text x="1328" y="230">004C L</text>
+<path class="glyph" transform="translate(1351.000 288.000) scale(0.667 -0.667)" d="M 47 0.0 L 20 0.0 L 12 0.0 L 12 54 L 12 60"/>
+<rect class="box" x="4" y="322" width="80" height="98"/>
+<text x="8" y="336">004D M</text>
+<path class="glyph" transform="translate(31.000 394.000) scale(0.667 -0.667)" d="M 53 0.0 L 53 54 L 53 60 L 30 0.0 L 7 60 L 7 6 L 7 0.0"/>
+<rect class="box" x="92" y="322" width="80" height="98"/>
+<text x="96" y="336">004E N</text>
+<path class="glyph" transform="translate(119.000 394.000) scale(0.667 -0.667)" d="M 50 60 L 50 6 L 50 0.0 L 10 60 L 10 6 L 10 0.0"/>
+<rect class="box" x="180" y="322" width="80" height="98"/>
+<text x="184" y="336">004F O</text>
+<path class="glyph" transform="translate(207.000 394.000) scale(0.667 -0.667)" d="M 7 23 L 12 10 L 18 3 L 24 0.0 L 33 0.0 L 36 0.0 L 42 3 L 48 10 L 53 23 L 53 32 L 53 37 L 48 50 L 42 57 L 36 60 L 27 60 L 24 60 L 18 57 L 12 50 L 7 37 L 7 28 L 7 23"/>
+<rect class="box" x="268" y="322" width="80" height="98"/>
+<text x="272" y="336">0050 P</text>
+<path class="glyph" transform="translate(295.000 394.000) scale(0.667 -0.667)" d="M 10 28 L 28 28 L 36 28 L 44 30 L 48 35 L 50 40 L 50 48 L 48 53 L 44 58 L 36 60 M 10 -1 L 10 53 L 10 60 L 28 60 L 36 60"/>
+<rect class="box" x="356" y="322" width="80" height="98"/>
+<text x="360" y="336">0051 Q</text>
+<path class="glyph" transform="translate(383.000 394.000) scale(0.667 -0.667)" d="M 7 37 L 7 28 L 7 23 M 12 50 L 7 37 M 18 57 L 12 50 M 24 60 L 18 57 M 36 60 L 27 60 L 24 60 M 42 57 L 36 60 M 48 50 L 42 57 M 53 37 L 48 50 M 53 23 L 53 32 L 53 37 M 48 10 L 53 23 M 42 3 L 48 10 M 36 0.0 L 42 3 M 24 0.0 L 33 0.0 L 36 0.0 M 18 3 L 24 0.0 M 12 10 L 18 3 M 7 23 L 12 10 M 50 -6 L 41 3 L 33 11"/>
+<rect class="box" x="444" y="322" width="80" height="98"/>
+<text x="448" y="336">0052 R</text>
+<path class="glyph" transform="translate(471.000 394.000) scale(0.667 -0.667)" d="M 50 0.0 L 30 31 M 10 31 L 28 31 L 36 31 L 46 35 L 50 43 L 50 49 L 45 57 L 36 60 L 18 60 L 10 60 L 10 6 L 10 0.0"/>
+<rect class="box" x="532" y="322" width="80" height="98"/>
+<text x="536" y="336">0053 S</text>
+<path class="glyph" transform="translate(559.000 394.000) scale(0.667 -0.667)" d="M 10 9 L 16 2 L 24 0.0 L 33 0.0 L 36 0.0 L 44 2 L 50 9 L 50 17 L 48 22 L 44 26 L 16 37 L 12 41 L 10 46 L 10 51 L 15 57 L 24 60 L 33 60 L 36 60 L 44 58 L 50 51"/>
+<rect class="box" x="620" y="322" width="80" height="98"/>
+<text x="624" y="336">0054 T</text>
+<path class="glyph" transform="translate(647.000 394.000) scale(0.667 -0.667)" d="M 30 0.0 L 30 54 L 30 60 M 50 60 L 14 60 L 10 60"/>
+<rect class="box" x="708" y="322" width="80" height="98"/>
+<text x="712" y="336">0055 U</text>
+<path class="glyph" transform="translate(735.000 394.000) scale(0.667 -0.667)" d="M 50 60 L 50 24 L 50 17 L 47 9 L 41 3 L 33 0.0 L 27 0.0 L 18 3 L 13 8 L 10 17 L 10 53 L 10 60"/>
+<rect class="box" x="796" y="322" width="80" height="98"/>
+<text x="800" y="336">0056 V</text>
+<path class="glyph" transform="translate(823.000 394.000) scale(0.667 -0.667)" d="M 53 60 L 30 0.0 L 7 60"/>
+<rect class="box" x="884" y="322" width="80" height="98"/>
+<text x="888" y="336">0057 W</text>
+<path class="glyph" transform="translate(911.000 394.000) scale(0.667 -0.667)" d="M 58 60 L 44 0.0 L 30 60 L 16 0.0 L 2 60"/>
+<rect class="box" x="972" y="322" width="80" height="98"/>
+<text x="976" y="336">0058 X</text>
+<path class="glyph" transform="translate(999.000 394.000) scale(0.667 -0.667)" d="M 50 60 L 10 0.0 M 50 0.0 L 10 60"/>
+<rect class="box" x="1060" y="322" width="80" height="98"/>
+<text x="1064" y="336">0059 Y</text>
+<path class="glyph" transform="translate(1087.000 394.000) scale(0.667 -0.667)" d="M 53 60 L 30 31 L 30 4 L 30 0.0 M 30 31 L 7 60"/>
+<rect class="box" x="1148" y="322" width="80" height="98"/>
+<text x="1152" y="336">005A Z</text>
+<path class="glyph" transform="translate(1175.000 394.000) scale(0.667 -0.667)" d="M 50 0.0 L 14 0.0 L 10 0.0 L 50 60 L 14 60 L 10 60"/>
+<rect class="box" x="1236" y="322" width="80" height="98"/>
+<text x="1240" y="336">005B [</text>
+<path class="glyph" transform="translate(1263.000 394.000) scale(0.667 -0.667)" d="M 40 -20 L 22 -20 L 20 -20 L 20 70 L 20 71 L 38 71 L 40 71"/>
+<rect class="box" x="1324" y="322" width="80" height="98"/>
+<text x="1328" y="336">005C \</text>
+<path class="glyph" transform="translate(1351.000 394.000) scale(0.667 -0.667)" d="M 56 -20 L 4 71"/>
+<rect class="box" x="4" y="428" width="80" height="98"/>
+<text x="8" y="442">005D ]</text>
+<path class="glyph" transform="translate(31.000 500.000) scale(0.667 -0.667)" d="M 40 -20 L 22 -20 L 20 -20 M 20 71 L 38 71 L 40 71 L 40 -19 L 40 -20"/>
+<rect class="box" x="92" y="428" width="80" height="98"/>
+<text x="96" y="442">005E ^</text>
+<path class="glyph" transform="translate(119.000 500.000) scale(0.667 -0.667)" d="M 50 51 L 32 69 L 30 71 L 12 53 L 10 51"/>
+<rect class="box" x="180" y="428" width="80" height="98"/>
+<text x="184" y="442">005F _</text>
+<path class="glyph" transform="translate(207.000 500.000) scale(0.667 -0.667)" d="M 60 -6 L 6 -6 L 0.0 -6"/>
+<rect class="box" x="268" y="428" width="80" height="98"/>
+<text x="272" y="442">0060 `</text>
+<path class="glyph" transform="translate(295.000 500.000) scale(0.667 -0.667)" d="M 33 54 L 30 57 L 27 63 L 27 68 M 33 68 C 33 69.656854 31.656854 71 30 71 C 28.343146 71 27 69.656854 27 68 C 27 66.343146 28.343146 65 30 65 C 31.656854 65 33 66.343146 33 68"/>
+<rect class="box" x="356" y="428" width="80" height="98"/>
+<text x="360" y="442">0061 a</text>
+<path class="glyph" transform="translate(383.000 500.000) scale(0.667 -0.667)" d="M 47 0.0 L 47 36 L 47 40 M 47 9 L 42 3 L 36 0.0 L 27 0.0 L 21 3 L 16 9 L 13 17 L 13 24 L 17 32 L 20 36 L 27 40 L 36 40 L 42 37 L 47 32"/>
+<rect class="box" x="444" y="428" width="80" height="98"/>
+<text x="448" y="442">0062 b</text>
+<path class="glyph" transform="translate(471.000 500.000) scale(0.667 -0.667)" d="M 13 8 L 18 3 L 24 0.0 L 33 0.0 L 39 3 L 44 8 L 47 17 L 47 23 L 44 32 L 39 37 L 33 40 L 24 40 L 18 37 L 13 32 M 13 60 L 13 6 L 13 0.0"/>
+<rect class="box" x="532" y="428" width="80" height="98"/>
+<text x="536" y="442">0063 c</text>
+<path class="glyph" transform="translate(559.000 500.000) scale(0.667 -0.667)" d="M 47 9 L 42 3 L 36 0.0 L 27 0.0 L 26 0.0 L 20 4 L 16 9 L 13 17 L 13 23 L 16 31 L 20 36 L 26 40 L 35 40 L 36 40 L 42 37 L 47 31"/>
+<rect class="box" x="620" y="428" width="80" height="98"/>
+<text x="624" y="442">0064 d</text>
+<path class="glyph" transform="translate(647.000 500.000) scale(0.667 -0.667)" d="M 42 37 L 47 32 M 36 40 L 42 37 M 27 40 L 36 40 M 21 37 L 27 40 M 16 32 L 21 37 M 13 23 L 16 32 M 13 17 L 13 23 M 16 8 L 13 17 M 21 3 L 16 8 M 27 0.0 L 21 3 M 36 0.0 L 27 0.0 M 42 3 L 36 0.0 M 47 8 L 42 3 M 47 0.0 L 47 54 L 47 60"/>
+<rect class="box" x="708" y="428" width="80" height="98"/>
+<text x="712" y="442">0065 e</text>
+<path class="glyph" transform="translate(735.000 500.000) scale(0.667 -0.667)" d="M 13 23 L 40 23 L 47 23 L 47 28 L 45 34 M 47 8 L 42 3 L 36 0.0 L 27 0.0 L 21 3 L 16 8 L 13 17 L 13 23 L 16 32 L 21 37 L 27 40 L 36 40 L 40 38 L 45 34"/>
+<rect class="box" x="796" y="428" width="80" height="98"/>
+<text x="800" y="442">0066 f</text>
+<path class="glyph" transform="translate(823.000 500.000) scale(0.667 -0.667)" d="M 20 40 L 38 40 L 40 40 M 29 0.0 L 29 45 L 29 49 L 31 57 L 37 60"/>
+<rect class="box" x="884" y="428" width="80" height="98"/>
+<text x="888" y="442">0067 g</text>
+<path class="glyph" transform="translate(911.000 500.000) scale(0.667 -0.667)" d="M 47 9 L 42 3 L 36 0.0 L 27 0.0 L 20 4 L 16 8 L 13 17 L 13 23 L 16 31 L 20 36 L 27 40 L 36 40 L 42 37 L 47 31 M 22 -17 L 27 -20 L 36 -20 L 42 -17 L 45 -12 L 47 -6 L 47 39 L 47 40"/>
+<rect class="box" x="972" y="428" width="80" height="98"/>
+<text x="976" y="442">0068 h</text>
+<path class="glyph" transform="translate(999.000 500.000) scale(0.667 -0.667)" d="M 46 0.0 L 46 27 L 46 29 L 43 37 L 38 40 L 29 40 L 23 37 L 15 28 M 15 0.0 L 15 54 L 15 60"/>
+<rect class="box" x="1060" y="428" width="80" height="98"/>
+<text x="1064" y="442">0069 i</text>
+<path class="glyph" transform="translate(1087.000 500.000) scale(0.667 -0.667)" d="M 33 57 C 33 58.656854 31.656854 60 30 60 C 28.343146 60 27 58.656854 27 57 C 27 55.343146 28.343146 54 30 54 C 31.656854 54 33 55.343146 33 57 M 30 0.0 L 30 36 L 30 40"/>
+<rect class="box" x="1148" y="428" width="80" height="98"/>
+<text x="1152" y="442">006A j</text>
+<path class="glyph" transform="translate(1175.000 500.000) scale(0.667 -0.667)" d="M 39 57 C 39 58.656854 37.656854 60 36 60 C 34.343146 60 33 58.656854 33 57 C 33 55.343146 34.343146 54 36 54 C 37.656854 54 39 55.343146 39 57 M 22 -20 L 28 -20 L 33 -17 L 36 -9 L 36 36 L 36 40"/>
+<rect class="box" x="1236" y="428" width="80" height="98"/>
+<text x="1240" y="442">006B k</text>
+<path class="glyph" transform="translate(1263.000 500.000) scale(0.667 -0.667)" d="M 45 0.0 L 25 23 M 43 40 L 14 12 M 14 0.0 L 14 54 L 14 60"/>
+<rect class="box" x="1324" y="428" width="80" height="98"/>
+<text x="1328" y="442">006C l</text>
+<path class="glyph" transform="translate(1351.000 500.000) scale(0.667 -0.667)" d="M 30 60 L 30 6 L 30 0.0"/>
+<rect class="box" x="4" y="534" width="80" height="98"/>
+<text x="8" y="548">006D m</text>
+<path class="glyph" transform="translate(31.000 606.000) scale(0.667 -0.667)" d="M 56 0.0 L 56 27 L 56 28 L 54 34 L 47 40 L 39 40 L 34 36 L 31 31 L 30 28 L 30 1 L 30 0.0 M 30 28 L 29 31 L 26 36 L 21 40 L 13 40 L 6 34 L 4 28 M 4 0.0 L 4 36 L 4 40"/>
+<rect class="box" x="92" y="534" width="80" height="98"/>
+<text x="96" y="548">006E n</text>
+<path class="glyph" transform="translate(119.000 606.000) scale(0.667 -0.667)" d="M 46 0.0 L 46 27 L 46 29 L 43 37 L 37 40 L 29 40 L 22 37 L 18 33 L 14 28 M 14 40 L 14 4 L 14 0.0"/>
+<rect class="box" x="180" y="534" width="80" height="98"/>
+<text x="184" y="548">006F o</text>
+<path class="glyph" transform="translate(207.000 606.000) scale(0.667 -0.667)" d="M 50 20 C 50 31.045695 41.045695 40 30 40 C 18.954305 40 10 31.045695 10 20 C 10 8.954305 18.954305 0.0 30 0.0 C 41.045695 0.0 50 8.954305 50 20"/>
+<rect class="box" x="268" y="534" width="80" height="98"/>
+<text x="272" y="548">0070 p</text>
+<path class="glyph" transform="translate(295.000 606.000) scale(0.667 -0.667)" d="M 13 -20 L 13 34 L 13 40 M 13 32 L 18 37 L 24 40 L 33 40 L 39 37 L 44 32 L 47 23 L 47 17 L 44 8 L 39 3 L 33 0.0 L 24 0.0 L 18 3 L 13 8"/>
+<rect class="box" x="356" y="534" width="80" height="98"/>
+<text x="360" y="548">0071 q</text>
+<path class="glyph" transform="translate(383.000 606.000) scale(0.667 -0.667)" d="M 42 3 L 47 8 M 36 0.0 L 42 3 M 27 0.0 L 36 0.0 M 21 3 L 27 0.0 M 16 8 L 21 3 M 13 17 L 16 8 M 13 23 L 13 17 M 16 32 L 13 23 M 21 37 L 16 32 M 27 40 L 21 37 M 36 40 L 27 40 M 42 37 L 36 40 M 47 32 L 42 37 M 47 -20 L 47 34 L 47 40"/>
+<rect class="box" x="444" y="534" width="80" height="98"/>
+<text x="448" y="548">0072 r</text>
+<path class="glyph" transform="translate(471.000 606.000) scale(0.667 -0.667)" d="M 41 40 L 33 40 L 27 37 L 22 32 L 19 25 M 19 0.0 L 19 36 L 19 40"/>
+<rect class="box" x="532" y="534" width="80" height="98"/>
+<text x="536" y="548">0073 s</text>
+<path class="glyph" transform="translate(559.000 606.000) scale(0.667 -0.667)" d="M 13 9 L 16 3 L 25 0.0 L 33 0.0 L 42 3 L 45 9 L 45 11 L 42 17 L 36 20 L 22 23 L 16 26 L 13 31 L 16 37 L 24 40 L 33 40 L 42 37 L 45 31"/>
+<rect class="box" x="620" y="534" width="80" height="98"/>
+<text x="624" y="548">0074 t</text>
+<path class="glyph" transform="translate(647.000 606.000) scale(0.667 -0.667)" d="M 36 40 L 18 40 L 16 40 M 39 0.0 L 32 0.0 L 27 3 L 24 11 L 24 56 L 24 60"/>
+<rect class="box" x="708" y="534" width="80" height="98"/>
+<text x="712" y="548">0075 u</text>
+<path class="glyph" transform="translate(735.000 606.000) scale(0.667 -0.667)" d="M 46 0.0 L 46 36 L 46 40 M 46 12 L 37 3 L 36 2 L 31 0.0 L 23 0.0 L 17 3 L 14 11 L 14 38 L 14 40"/>
+<rect class="box" x="796" y="534" width="80" height="98"/>
+<text x="800" y="548">0076 v</text>
+<path class="glyph" transform="translate(823.000 606.000) scale(0.667 -0.667)" d="M 47 40 L 30 0.0 L 13 40"/>
+<rect class="box" x="884" y="534" width="80" height="98"/>
+<text x="888" y="548">0077 w</text>
+<path class="glyph" transform="translate(911.000 606.000) scale(0.667 -0.667)" d="M 53 40 L 41 0.0 L 30 40 L 18 0.0 L 7 40"/>
+<rect class="box" x="972" y="534" width="80" height="98"/>
+<text x="976" y="548">0078 x</text>
+<path class="glyph" transform="translate(999.000 606.000) scale(0.667 -0.667)" d="M 46 40 L 14 0.0 M 46 0.0 L 14 40"/>
+<rect class="box" x="1060" y="534" width="80" height="98"/>
+<text x="1064" y="548">0079 y</text>
+<path class="glyph" transform="translate(1087.000 606.000) scale(0.667 -0.667)" d="M 12 -20 L 15 -20 L 22 -16 L 26 -12 L 49 40 M 32 2 L 15 40"/>
+<rect class="box" x="1148" y="534" width="80" height="98"/>
+<text x="1152" y="548">007A z</text>
+<path class="glyph" transform="translate(1175.000 606.000) scale(0.667 -0.667)" d="M 46 0.0 L 19 0.0 L 14 0.0 L 46 40 L 19 40 L 14 40"/>
+<rect class="box" x="1236" y="534" width="80" height="98"/>
+<text x="1240" y="548">007B {</text>
+<path class="glyph" transform="translate(1263.000 606.000) scale(0.667 -0.667)" d="M 32 -17 L 37 -20 M 29 -14 L 32 -17 M 26 -8 L 29 -14 M 26 -8 L 26 -3 L 29 4 L 32 7 L 34 12 L 34 18 L 29 23 L 24 26 L 29 29 L 34 34 L 34 40 L 32 45 L 29 48 L 26 55 L 26 60 L 29 66 L 32 69 L 37 72"/>
+<rect class="box" x="1324" y="534" width="80" height="98"/>
+<text x="1328" y="548">007C |</text>
+<path class="glyph" transform="translate(1351.000 606.000) scale(0.667 -0.667)" d="M 30 71 L 30 -19 L 30 -20"/>
+<rect class="box" x="4" y="640" width="80" height="98"/>
+<text x="8" y="654">007D }</text>
+<path class="glyph" transform="translate(31.000 712.000) scale(0.667 -0.667)" d="M 28 69 L 23 72 M 31 66 L 28 69 M 34 60 L 31 66 M 34 55 L 34 60 M 31 48 L 34 55 M 28 45 L 31 48 M 26 40 L 28 45 M 26 34 L 26 40 M 31 29 L 26 34 M 36 26 L 31 29 M 31 23 L 36 26 M 26 18 L 31 23 M 26 12 L 26 18 M 28 7 L 26 12 M 31 4 L 28 7 M 34 -3 L 31 4 M 34 -8 L 34 -3 M 34 -8 L 31 -14 L 28 -17 L 23 -20"/>
+<rect class="box" x="92" y="640" width="80" height="98"/>
+<text x="96" y="654">007E ~</text>
+<path class="glyph" transform="translate(119.000 712.000) scale(0.667 -0.667)" d="M 4 23 L 7 28 L 13 31 L 19 31 L 25 28 L 35 20 L 41 17 L 47 17 L 53 20 L 56 28 L 56 34 M 56 28 L 53 23 L 47 20 L 41 20 L 35 23 L 25 31 L 19 34 L 13 34 L 7 31 L 4 23 L 4 17"/>
+<rect class="box" x="180" y="640" width="80" height="98"/>
+<text x="184" y="654">007F</text>
+<path class="glyph" transform="translate(207.000 712.000) scale(0.667 -0.667)" d="M 25 54 C 25 50.686292 27.686292 48 31 48 C 34.313708 48 37 50.686292 37 54 C 37 57.313708 34.313708 60 31 60 C 27.686292 60 25 57.313708 25 54"/>
+<rect class="box" x="268" y="640" width="80" height="98"/>
+<text x="272" y="654">0080</text>
+<path class="glyph" transform="translate(295.000 712.000) scale(0.667 -0.667)" d="M 4 3 L 49 3 L 56 3 M 56 34 L 11 34 L 4 34 M 30 8 L 30 53 L 30 60"/>
+<rect class="box" x="356" y="640" width="80" height="98"/>
+<text x="360" y="654">0081</text>
+<path class="glyph" transform="translate(383.000 712.000) scale(0.667 -0.667)" d="M 42 48 L 17 -9 M 50 20 C 50 31.045695 41.045695 40 30 40 C 18.954305 40 10 31.045695 10 20 C 10 8.954305 18.954305 0.0 30 0.0 C 41.045695 0.0 50 8.954305 50 20"/>
+<rect class="box" x="444" y="640" width="80" height="98"/>
+<text x="448" y="654">0087</text>
+<path class="glyph" transform="translate(471.000 712.000) scale(0.667 -0.667)" d="M 33 -6 C 33 -4.343146 31.656854 -3 30 -3 C 28.343146 -3 27 -4.343146 27 -6 C 27 -7.656854 28.343146 -9 30 -9 C 31.656854 -9 33 -7.656854 33 -6 M 33 38 C 33 39.656854 31.656854 41 30 41 C 28.343146 41 27 39.656854 27 38 C 27 36.343146 28.343146 35 30 35 C 31.656854 35 33 36.343146 33 38 M 56 16 L 11 16 L 4 16"/>
+<rect class="box" x="532" y="640" width="80" height="98"/>
+<text x="536" y="654">0088</text>
+<path class="glyph" transform="translate(559.000 712.000) scale(0.667 -0.667)" d="M 40 36 L 20 -2 M 56 8 L 11 8 L 4 8 M 56 25 L 11 25 L 4 25"/>
+<rect class="box" x="620" y="640" width="80" height="98"/>
+<text x="624" y="654">008A</text>
+<path class="glyph" transform="translate(647.000 712.000) scale(0.667 -0.667)" d="M 53 -4 L 8 -4 L 7 -4 M 7 8 L 53 27 L 7 46"/>
+<rect class="box" x="708" y="640" width="80" height="98"/>
+<text x="712" y="654">008B</text>
+<path class="glyph" transform="translate(735.000 712.000) scale(0.667 -0.667)" d="M 7 27 L 53 46 M 53 8 L 7 27 M 7 -4 L 52 -4 L 53 -4"/>
+<rect class="box" x="796" y="640" width="80" height="98"/>
+<text x="800" y="654">008D</text>
+<path class="glyph" transform="translate(823.000 712.000) scale(0.667 -0.667)" d="M 7 -9 L 52 -9 L 53 -9 L 30 51 L 7 -9"/>
+<rect class="box" x="884" y="640" width="80" height="98"/>
+<text x="888" y="654">0094</text>
+<path class="glyph" transform="translate(911.000 712.000) scale(0.667 -0.667)" d="M 24 36 L 16 33 L 12 29 L 10 25 L 10 16 L 12 12 L 16 8 L 24 5 L 33 5 L 36 5 L 44 8 L 48 12 L 50 16 L 50 25 L 48 29 L 44 33 L 36 36 L 27 36 L 24 36 M 30 -9 L 30 45 L 30 50"/>
+<rect class="box" x="972" y="640" width="80" height="98"/>
+<text x="976" y="654">0095</text>
+<path class="glyph" transform="translate(999.000 712.000) scale(0.667 -0.667)" d="M 30 -9 L 30 45 L 30 51 M 56 33 L 52 33 L 50 30 L 48 21 L 45 15 L 41 10 L 33 8 L 27 8 L 19 10 L 15 15 L 12 21 L 10 30 L 8 33 L 4 33"/>
+<rect class="box" x="1060" y="640" width="80" height="98"/>
+<text x="1064" y="654">0096</text>
+<path class="glyph" transform="translate(1087.000 712.000) scale(0.667 -0.667)" d="M 50 -9 L 41 -9 L 38 -9 L 47 11 L 50 21 L 50 30 L 50 33 L 47 42 L 40 48 L 33 51 L 27 51 L 20 48 L 13 42 L 10 33 L 10 24 L 10 21 L 13 11 L 22 -9 L 13 -9 L 10 -9"/>
+<rect class="box" x="1148" y="640" width="80" height="98"/>
+<text x="1152" y="654">0097</text>
+<path class="glyph" transform="translate(1175.000 712.000) scale(0.667 -0.667)" d="M 51 -9 L 48 -9 L 45 -6 L 42 0.0 L 37 21 L 34 27 L 31 30 L 25 30 L 19 27 L 13 21 L 8 8 L 8 -1 L 11 -6 L 16 -9 L 23 -9 L 30 -5 L 37 2 L 48 21 L 51 30"/>
+<rect class="box" x="1236" y="640" width="80" height="98"/>
+<text x="1240" y="654">0098</text>
+<path class="glyph" transform="translate(1263.000 712.000) scale(0.667 -0.667)" d="M 16 5 L 18 -1 L 22 -7 L 27 -9 L 34 -9 L 38 -7 L 42 -3 L 44 2 L 44 11 L 42 17 L 37 22 L 30 24 L 40 25 L 45 28 L 48 31 L 50 35 L 50 44 L 50 45 L 47 49 L 44 51 L 38 51 L 32 48 L 27 43 L 22 33 L 19 22 L 14 -8 L 11 -29"/>
+<rect class="box" x="1324" y="640" width="80" height="98"/>
+<text x="1328" y="654">0099</text>
+<path class="glyph" transform="translate(1351.000 712.000) scale(0.667 -0.667)" d="M 53 29 L 50 21 L 30 -9 L 26 -18 L 22 -28 M 30 -9 L 33 4 L 33 13 L 33 17 L 31 24 L 28 27 L 22 30 L 18 30 L 13 27 L 8 21"/>
+<rect class="box" x="4" y="746" width="80" height="98"/>
+<text x="8" y="760">009A</text>
+<path class="glyph" transform="translate(31.000 818.000) scale(0.667 -0.667)" d="M 37 30 L 28 30 L 23 28 L 18 22 L 14 14 L 14 5 L 14 4 L 17 -3 L 21 -7 L 25 -9 L 32 -9 L 36 -7 L 41 -3 L 45 3 L 46 7 L 46 16 L 46 17 L 45 21 L 42 26 L 37 30 L 31 36 L 29 41 L 29 47 L 32 51 L 37 51 L 43 48 L 48 42"/>
+<rect class="box" x="92" y="746" width="80" height="98"/>
+<text x="96" y="760">009B</text>
+<path class="glyph" transform="translate(119.000 818.000) scale(0.667 -0.667)" d="M 44 -1 L 38 -6 L 32 -9 L 23 -9 L 18 -6 L 15 -1 L 15 5 L 18 9 L 22 11 L 32 14 L 24 16 L 22 18 L 21 21 L 21 27 L 26 30 L 35 30 L 36 30 L 40 28 L 44 24"/>
+<rect class="box" x="180" y="746" width="80" height="98"/>
+<text x="184" y="760">00A0</text>
+<path class="glyph" transform="translate(207.000 818.000) scale(0.667 -0.667)" d="M 42 -6 L 39 -9 L 36 -9 L 33 -6 L 27 8 L 24 11 L 18 14 L 23 14 L 28 17 L 37 26 L 38 27 L 44 30 L 47 30 L 50 27 M 10 -9 L 22 30"/>
+<rect class="box" x="268" y="746" width="80" height="98"/>
+<text x="272" y="760">00A1 ¡</text>
+<path class="glyph" transform="translate(295.000 818.000) scale(0.667 -0.667)" d="M 13 0.0 L 30 39 M 10 60 L 16 60 L 21 57 L 24 54 L 47 0.0"/>
+<rect class="box" x="356" y="746" width="80" height="98"/>
+<text x="360" y="760">00A2 ¢</text>
+<path class="glyph" transform="translate(383.000 818.000) scale(0.667 -0.667)" d="M 56 11 L 53 6 L 48 0.0 L 42 0.0 L 39 3 L 39 9 L 48 39 M 42 19 L 37 9 L 31 3 L 26 0.0 L 20 0.0 L 14 5 L 14 14 L 20 39 L 3 -20"/>
+<rect class="box" x="444" y="746" width="80" height="98"/>
+<text x="448" y="760">00A3 £</text>
+<path class="glyph" transform="translate(471.000 818.000) scale(0.667 -0.667)" d="M 49 39 L 45 27 L 39 18 L 30 9 L 20 2 L 12 0.0 L 15 7 L 21 39 L 12 39"/>
+<rect class="box" x="532" y="746" width="80" height="98"/>
+<text x="536" y="760">00A4 ¤</text>
+<path class="glyph" transform="translate(559.000 818.000) scale(0.667 -0.667)" d="M 23 -20 L 29 -20 L 34 -16 L 34 -11 L 30 -8 L 20 -3 L 14 2 L 14 8 L 17 14 L 20 16 L 33 20 L 40 20 M 33 20 L 25 23 L 20 28 L 20 34 L 23 40 L 36 45 L 45 45 M 36 45 L 27 49 L 26 51 L 26 54 L 28 56 L 34 60"/>
+<rect class="box" x="620" y="746" width="80" height="98"/>
+<text x="624" y="760">00A5 ¥</text>
+<path class="glyph" transform="translate(647.000 818.000) scale(0.667 -0.667)" d="M 14 23 L 14 14 L 14 13 L 17 6 L 21 2 L 25 0.0 L 32 0.0 L 36 2 L 41 6 L 45 12 L 46 18 L 46 26 L 45 30 L 42 35 L 37 39 L 28 39 L 23 37 L 18 31 L 14 23"/>
+<rect class="box" x="708" y="746" width="80" height="98"/>
+<text x="712" y="760">00A6 ¦</text>
+<path class="glyph" transform="translate(735.000 818.000) scale(0.667 -0.667)" d="M 47 0.0 L 44 8 L 38 39 M 24 39 L 13 0.0 M 55 39 L 19 39 L 18 39 L 10 36 L 5 30"/>
+<rect class="box" x="796" y="746" width="80" height="98"/>
+<text x="800" y="760">00A7 §</text>
+<path class="glyph" transform="translate(823.000 818.000) scale(0.667 -0.667)" d="M 14 23 L 14 14 L 14 13 L 17 6 L 21 2 L 25 0.0 L 32 0.0 L 36 2 L 41 6 L 45 12 L 46 17 L 46 26 L 45 30 L 42 35 L 37 39 L 28 39 L 23 37 L 18 31 L 14 23 M 14 22 L 3 -20"/>
+<rect class="box" x="884" y="746" width="80" height="98"/>
+<text x="888" y="760">00A8 ¨</text>
+<path class="glyph" transform="translate(911.000 818.000) scale(0.667 -0.667)" d="M 32 39 L 37 35 L 40 30 L 41 26 L 41 18 L 40 12 L 36 6 L 31 2 L 27 0.0 L 20 0.0 L 16 2 L 12 6 L 9 13 L 9 22 L 9 23 L 13 31 L 18 37 L 23 39 L 50 39"/>
+<rect class="box" x="972" y="746" width="80" height="98"/>
+<text x="976" y="760">00A9 ©</text>
+<path class="glyph" transform="translate(999.000 818.000) scale(0.667 -0.667)" d="M 25 0.0 L 33 39 M 53 39 L 26 39 L 21 39 L 13 36 L 8 31"/>
+<rect class="box" x="1060" y="746" width="80" height="98"/>
+<text x="1064" y="760">00AA ª</text>
+<path class="glyph" transform="translate(1087.000 818.000) scale(0.667 -0.667)" d="M 52 39 L 52 30 L 49 20 L 43 8 L 37 2 L 30 0.0 L 24 0.0 L 18 6 L 18 13 L 24 30 L 24 36 L 21 39 L 15 39 L 10 34 L 7 28"/>
+<rect class="box" x="1148" y="746" width="80" height="98"/>
+<text x="1152" y="760">00AB «</text>
+<path class="glyph" transform="translate(1175.000 818.000) scale(0.667 -0.667)" d="M 16 -19 L 24 8 L 35 33 L 37 36 L 41 39 L 47 39 L 50 37 L 53 33 L 53 25 L 49 16 L 44 8 L 34 2 L 28 0.0 L 19 0.0 L 18 0.0 L 14 2 L 10 5 L 8 11 L 8 20 L 10 28 L 15 33 L 22 36"/>
+<rect class="box" x="1236" y="746" width="80" height="98"/>
+<text x="1240" y="760">00AC ¬</text>
+<path class="glyph" transform="translate(1263.000 818.000) scale(0.667 -0.667)" d="M 51 39 L 42 25 L 10 -11 L 6 -20 M 48 -20 L 42 -20 L 37 -14 L 20 34 L 14 39 L 8 39"/>
+<rect class="box" x="1324" y="746" width="80" height="98"/>
+<text x="1328" y="760">00AD</text>
+<path class="glyph" transform="translate(1351.000 818.000) scale(0.667 -0.667)" d="M 21 -20 L 44 60 M 58 39 L 49 16 L 44 8 L 37 2 L 30 0.0 L 24 0.0 L 19 2 L 16 8 L 16 17 L 16 18 L 19 30 L 19 36 L 16 39 L 10 39 L 6 36 L 2 28"/>
+<rect class="box" x="4" y="852" width="80" height="98"/>
+<text x="8" y="866">00AE ®</text>
+<path class="glyph" transform="translate(31.000 924.000) scale(0.667 -0.667)" d="M 49 39 L 52 36 L 54 28 L 54 19 L 51 11 L 46 3 L 41 0.0 L 34 0.0 L 31 3 L 29 11 L 32 23 M 29 11 L 23 2 L 18 0.0 L 12 0.0 L 9 3 L 6 11 L 6 20 L 10 29 L 15 36 L 20 39"/>
+<rect class="box" x="92" y="852" width="80" height="98"/>
+<text x="96" y="866">00AF ¯</text>
+<path class="glyph" transform="translate(119.000 924.000) scale(0.667 -0.667)" d="M 44 18 L 44 26 L 41 35 L 33 39 L 27 39 L 21 36 L 16 31 L 13 23 L 13 14 L 13 13 L 18 3 L 24 0.0 L 32 0.0 L 42 8 L 47 30 L 47 39 L 47 45 L 44 54 L 41 58 L 36 60 L 30 60 L 25 57 L 19 51"/>
+<rect class="box" x="180" y="852" width="80" height="98"/>
+<text x="184" y="866">00B0 °</text>
+<path class="glyph" transform="translate(207.000 924.000) scale(0.667 -0.667)" d="M 15 20 L 33 20 L 38 20 M 41 3 L 35 0.0 L 26 0.0 L 22 2 L 18 5 L 15 14 L 15 22 L 18 31 L 23 36 L 29 39 L 38 39 L 44 36"/>
+<rect class="box" x="268" y="852" width="80" height="98"/>
+<text x="272" y="866">00B1 ±</text>
+<path class="glyph" transform="translate(295.000 924.000) scale(0.667 -0.667)" d="M 44 30 L 17 30 L 16 30 M 14 8 L 17 2 L 20 0.0 L 26 0.0 L 31 3 L 37 11 L 41 21 L 44 30 L 46 40 L 46 49 L 46 52 L 43 58 L 40 60 L 34 60 L 29 57 L 23 49 L 19 39 L 16 30 L 14 20 L 14 11 L 14 8"/>
+<rect class="box" x="356" y="852" width="80" height="98"/>
+<text x="360" y="866">00B2 ²</text>
+<path class="glyph" transform="translate(383.000 924.000) scale(0.667 -0.667)" d="M 28 -11 L 33 -11 L 36 -8 L 36 -3 L 33 3 L 23 10 L 16 17 L 13 23 L 13 28 L 16 34 L 19 36 L 27 39 L 36 39 L 37 39 L 45 36 L 47 33"/>
+<rect class="box" x="444" y="852" width="80" height="98"/>
+<text x="448" y="866">00B3 ³</text>
+<path class="glyph" transform="translate(471.000 924.000) scale(0.667 -0.667)" d="M 23 16 L 18 14 L 11 14 L 8 15 L 5 18 L 3 23 L 3 27 L 5 32 L 8 35 L 11 36 L 18 36 L 23 34 L 37 16 L 42 14 L 49 14 L 52 15 L 55 18 L 57 23 L 57 27 L 55 32 L 52 35 L 49 36 L 42 36 L 37 34 L 23 16"/>
+<rect class="box" x="532" y="852" width="80" height="98"/>
+<text x="536" y="866">00B4 ´</text>
+<path class="glyph" transform="translate(559.000 924.000) scale(0.667 -0.667)" d="M 52 60 L 8 0.0 M 45 30 L 39 30 M 49 28 L 45 30 M 50 26 L 49 28 M 50 22 L 50 26 M 49 20 L 50 22 M 47 19 L 49 20 M 42 18 L 47 19 M 36 16 L 42 18 M 33 13 L 36 16 M 32 10 L 33 13 M 32 5 L 32 10 M 35 1 L 32 5 M 39 0.0 L 35 1 M 45 0.0 L 39 0.0 L 45 0.0 L 49 1 L 52 5 L 52 10 L 51 13 L 48 16 L 42 18 L 37 19 L 35 20 L 34 22 L 34 26 L 35 28 L 39 30 L 45 30 M 19 30 L 19 57 L 19 60 L 16 56 L 12 54"/>
+<rect class="box" x="620" y="852" width="80" height="98"/>
+<text x="624" y="866">00B5 µ</text>
+<path class="glyph" transform="translate(647.000 924.000) scale(0.667 -0.667)" d="M 44 0.0 L 44 27 L 44 30 L 30 10 L 48 10 L 51 10 M 16 56 L 12 54 M 19 60 L 16 56 M 19 30 L 19 57 L 19 60 M 52 60 L 8 0.0"/>
+<rect class="box" x="708" y="852" width="80" height="98"/>
+<text x="712" y="866">00B6 ¶</text>
+<path class="glyph" transform="translate(735.000 924.000) scale(0.667 -0.667)" d="M 9 35 L 10 33 L 13 31 L 16 30 L 21 30 L 25 31 L 28 34 L 29 38 L 29 42 L 28 46 L 24 48 L 19 48 L 28 60 L 19 60 L 12 60 M 39 30 L 45 30 M 35 28 L 39 30 M 34 26 L 35 28 M 34 22 L 34 26 M 35 20 L 34 22 M 37 19 L 35 20 M 42 18 L 37 19 M 48 16 L 42 18 M 51 13 L 48 16 M 52 10 L 51 13 M 52 5 L 52 10 M 49 1 L 52 5 M 45 0.0 L 49 1 M 39 0.0 L 45 0.0 L 39 0.0 L 35 1 L 32 5 L 32 10 L 33 13 L 36 16 L 42 18 L 47 19 L 49 20 L 50 22 L 50 26 L 49 28 L 45 30 L 39 30 M 52 60 L 8 0.0"/>
+<rect class="box" x="796" y="852" width="80" height="98"/>
+<text x="800" y="866">00B7 ·</text>
+<path class="glyph" transform="translate(823.000 924.000) scale(0.667 -0.667)" d="M 51 0.0 L 33 0.0 L 32 0.0 L 48 17 L 50 21 L 50 24 L 48 28 L 44 30 L 38 30 L 35 29 L 33 25 L 33 23 M 19 30 L 19 57 L 19 60 L 16 56 L 12 54 M 52 60 L 8 0.0"/>
+<rect class="box" x="884" y="852" width="80" height="98"/>
+<text x="888" y="866">00B8 ¸</text>
+<path class="glyph" transform="translate(911.000 924.000) scale(0.667 -0.667)" d="M 9 36 L 11 33 L 13 31 L 16 30 L 20 30 L 24 31 L 27 34 L 29 38 L 29 41 L 28 45 L 26 48 L 20 50 L 16 50 L 12 49 L 10 47 L 12 60 L 21 60 L 26 60 M 39 30 L 45 30 M 35 28 L 39 30 M 34 26 L 35 28 M 34 22 L 34 26 M 35 20 L 34 22 M 37 19 L 35 20 M 42 18 L 37 19 M 48 16 L 42 18 M 51 13 L 48 16 M 52 10 L 51 13 M 52 5 L 52 10 M 49 1 L 52 5 M 45 0.0 L 49 1 M 39 0.0 L 45 0.0 L 39 0.0 L 35 1 L 32 5 L 32 10 L 33 13 L 36 16 L 42 18 L 47 19 L 49 20 L 50 22 L 50 26 L 49 28 L 45 30 L 39 30 M 52 60 L 8 0.0"/>
+<rect class="box" x="972" y="852" width="80" height="98"/>
+<text x="976" y="866">00B9 ¹</text>
+<path class="glyph" transform="translate(999.000 924.000) scale(0.667 -0.667)" d="M 28 60 L 19 60 L 12 60 M 19 48 L 28 60 M 24 48 L 19 48 M 28 46 L 24 48 M 29 42 L 28 46 M 29 38 L 29 42 M 28 34 L 29 38 M 25 31 L 28 34 M 21 30 L 25 31 M 16 30 L 21 30 M 13 31 L 16 30 M 10 33 L 13 31 M 9 35 L 10 33 M 30 10 L 48 10 L 51 10 M 44 30 L 30 10 M 44 0.0 L 44 27 L 44 30 M 52 60 L 8 0.0"/>
+<rect class="box" x="1060" y="852" width="80" height="98"/>
+<text x="1064" y="866">00BA º</text>
+<path class="glyph" transform="translate(1087.000 924.000) scale(0.667 -0.667)" d="M 15 30 L 29 60 L 11 60 L 9 60 M 45 30 L 39 30 M 49 28 L 45 30 M 50 26 L 49 28 M 50 22 L 50 26 M 49 20 L 50 22 M 47 19 L 49 20 M 42 18 L 47 19 M 36 16 L 42 18 M 33 13 L 36 16 M 32 10 L 33 13 M 32 5 L 32 10 M 35 1 L 32 5 M 39 0.0 L 35 1 M 45 0.0 L 39 0.0 L 45 0.0 L 49 1 L 52 5 L 52 10 L 51 13 L 48 16 L 42 18 L 37 19 L 35 20 L 34 22 L 34 26 L 35 28 L 39 30 L 45 30 M 52 60 L 8 0.0"/>
+<rect class="box" x="1148" y="852" width="80" height="98"/>
+<text x="1152" y="866">00C1 Á</text>
+<path class="glyph" transform="translate(1175.000 924.000) scale(0.667 -0.667)" d="M 30 0.0 L -24 0.0 L -30 0.0 M 0.0 30 L 0.0 -24 L 0.0 -30"/>
+<rect class="box" x="1236" y="852" width="80" height="98"/>
+<text x="1240" y="866">00C2 Â</text>
+<path class="glyph" transform="translate(1263.000 924.000) scale(0.667 -0.667)" d="M 21 21 L -15 -15 L -21 -21 M -21 21 L 15 -15 L 21 -21"/>
+<rect class="box" x="1324" y="852" width="80" height="98"/>
+<text x="1328" y="866">00C3 Ã</text>
+<path class="glyph" transform="translate(1351.000 924.000) scale(0.667 -0.667)" d="M -20 0.0 C -20 -11.045695 -11.045695 -20 0.0 -20 C 11.045695 -20 20 -11.045695 20 0.0 M 0.0 30 L 0.0 -24 L 0.0 -30 M 30 0.0 L -24 0.0 L -30 0.0 M 20 0.0 C 20 11.045695 11.045695 20 0.0 20 C -11.045695 20 -20 11.045695 -20 0.0"/>
+<rect class="box" x="4" y="958" width="80" height="98"/>
+<text x="8" y="972">00C4 Ä</text>
+<path class="glyph" transform="translate(31.000 1030.000) scale(0.667 -0.667)" d="M 21 21 L -15 -15 L -21 -21 M -21 21 L 15 -15 L 21 -21 M 20 0.0 C 20 11.045695 11.045695 20 0.0 20 C -11.045695 20 -20 11.045695 -20 0.0 M -20 0.0 C -20 -11.045695 -11.045695 -20 0.0 -20 C 11.045695 -20 20 -11.045695 20 0.0"/>
+<rect class="box" x="92" y="958" width="80" height="98"/>
+<text x="96" y="972">00C5 Å</text>
+<path class="glyph" transform="translate(119.000 1030.000) scale(0.667 -0.667)" d="M -20 -20 L -20 16 L -20 20 M 30 0.0 L -24 0.0 L -30 0.0 M -20 20 L 16 20 L 20 20 M 0.0 30 L 0.0 -24 L 0.0 -30 M 20 20 L 20 -16 L 20 -20 L -16 -20 L -20 -20"/>
+<rect class="box" x="180" y="958" width="80" height="98"/>
+<text x="184" y="972">00C6 Æ</text>
+<path class="glyph" transform="translate(207.000 1030.000) scale(0.667 -0.667)" d="M 21 21 L -15 -15 L -21 -21 M -21 21 L 15 -15 L 21 -21 M -20 20 L 16 20 L 20 20 L 20 -16 L 20 -20 L -16 -20 L -20 -20 L -20 16 L -20 20"/>
+<rect class="box" x="268" y="958" width="80" height="98"/>
+<text x="272" y="972">00C7 Ç</text>
+<path class="glyph" transform="translate(295.000 1030.000) scale(0.667 -0.667)" d="M 10 0.0 L -8 0.0 L -10 0.0 M 0.0 -10 L 0.0 8 L 0.0 10 M -20 0.0 C -20 -11.045695 -11.045695 -20 0.0 -20 C 11.045695 -20 20 -11.045695 20 0.0 M 20 0.0 C 20 11.045695 11.045695 20 0.0 20 C -11.045695 20 -20 11.045695 -20 0.0"/>
+<rect class="box" x="356" y="958" width="80" height="98"/>
+<text x="360" y="972">00C8 È</text>
+<path class="glyph" transform="translate(383.000 1030.000) scale(0.667 -0.667)" d="M -20 -20 L -20 16 L -20 20 M 20 -20 L -16 -20 L -20 -20 M 20 20 L 20 -16 L 20 -20 M 0.0 -10 L 0.0 8 L 0.0 10 M 10 0.0 L -8 0.0 L -10 0.0 M -20 20 L 16 20 L 20 20"/>
+<rect class="box" x="444" y="958" width="80" height="98"/>
+<text x="448" y="972">00C9 É</text>
+<path class="glyph" transform="translate(471.000 1030.000) scale(0.667 -0.667)" d="M -20 0.0 C -20 -11.045695 -11.045695 -20 0.0 -20 C 11.045695 -20 20 -11.045695 20 0.0 M 20 0.0 C 20 11.045695 11.045695 20 0.0 20 C -11.045695 20 -20 11.045695 -20 0.0 M 0.0 0.0 L 0.0 18 L 0.0 20"/>
+<rect class="box" x="532" y="958" width="80" height="98"/>
+<text x="536" y="972">00CA Ê</text>
+<path class="glyph" transform="translate(559.000 1030.000) scale(0.667 -0.667)" d="M -20 -20 L -20 16 L -20 20 M 0.0 0.0 L 0.0 18 L 0.0 20 M -20 20 L 16 20 L 20 20 L 20 -16 L 20 -20 L -16 -20 L -20 -20"/>
+<rect class="box" x="620" y="958" width="80" height="98"/>
+<text x="624" y="972">00D1 Ñ</text>
+<path class="glyph" transform="translate(647.000 1030.000) scale(0.667 -0.667)" d="M 30 50 L 30 41 L 30 40 M 30 -10 L 30 -1 L 30 0.0 M 20 36 L 26 40 M 16 31 L 20 36 M 13 23 L 16 31 M 42 37 L 47 31 M 36 40 L 42 37 M 26 40 L 35 40 L 36 40 M 13 17 L 13 23 M 16 9 L 13 17 M 20 4 L 16 9 M 26 0.0 L 20 4 M 36 0.0 L 27 0.0 L 26 0.0 M 42 3 L 36 0.0 M 47 9 L 42 3"/>
+<rect class="box" x="708" y="958" width="80" height="98"/>
+<text x="712" y="972">00DE Þ</text>
+<path class="glyph" transform="translate(735.000 1030.000) scale(0.667 -0.667)" d="M 56 0.0 L 11 0.0 L 4 0.0 L 56 71"/>
+<rect class="box" x="796" y="958" width="80" height="98"/>
+<text x="800" y="972">00E5 å</text>
+<path class="glyph" transform="translate(823.000 1030.000) scale(0.667 -0.667)" d="M 56 -10 L 29 -10 L 21 -10 L 21 44 L 21 50 M 46 20 L 44 15 L 39 10 L 33 7 L 24 7 L 21 7 L 15 10 L 9 16 L 4 30 L 4 39 L 4 44 L 9 58 L 15 64 L 21 67 L 30 67 L 33 67 L 39 64 L 44 59 L 46 55"/>
+<rect class="box" x="884" y="958" width="80" height="98"/>
+<text x="888" y="972">00FF ÿ</text>
+<path class="glyph" transform="translate(911.000 1030.000) scale(0.667 -0.667)" d="M 1 46 L 3 44 M -3 46 L 1 46 M -5 44 L -3 46 M -5 38 L -5 44 M -3 36 L -5 38 M 1 36 L -3 36 M 3 38 L 1 36 M 7 46 L 3 36 M 11 36 L 7 46 M 9 40 L 5 40 M 13 36 L 13 45 L 13 46 M 19 36 L 13 36 M 21 38 L 19 36 M 21 44 L 21 38 M 19 46 L 21 44 M 13 46 L 19 46 M 31 38 L 29 36 L 25 36 L 23 38 L 23 44 L 25 46 L 29 46 L 31 44 M 33 46 L 33 37 L 33 36 M 39 46 L 33 46 M 41 44 L 39 46 M 41 42 L 41 44 M 39 40 L 41 42 M 33 40 L 39 40 M 41 36 L 37 40 M 49 40 L 45 40 M 51 36 L 47 46 L 43 36 M 53 36 L 53 45 L 53 46 L 59 46 M 53 42 L 57 42 M 69 46 L 61 46 M 65 36 L 65 45 L 65 46 M 26 30 L 18 30 M 22 20 L 22 29 L 22 30 M 26 20 L 18 20 M 28 30 L 28 21 L 28 20 M 34 20 L 28 30 M 34 30 L 34 21 L 34 20 M 44 22 L 42 20 L 38 20 L 36 22 L 36 28 L 38 30 L 42 30 L 44 28"/>
+</svg>

@@ -17,6 +17,7 @@
 * [p5.js Parser/Renderer for Single-Line SVG Fonts](#p5js-parserrenderer-for-single-line-svg-fonts)
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
+* [p5.js viewer for JSON-converted AutoCAD SHX fonts](#p5js-viewer-for-json-converted-autocad-shx-fonts)
 * [p5.js port of Saka.N's *KST32B* font, via Kitasenju Design](#p5js-port-of-sakans-kst32b-font-via-kitasenju-design)
 * [p5.js port of M+ kanji/hanzi font](#p5js-port-of-m-kanjihanzi-font)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
@@ -145,6 +146,31 @@ Also see:
 
 * [cnc-text-tool](https://msurguy.github.io/cnc-text-tool/) Browser-based SVG editor with Hershey text overlayer
 * [Hershey Font Inkscape plugin](https://wiki.inkscape.org/wiki/index.php/Release_notes/1.0#Hershey_Text) 
+
+
+---
+
+### p5.js viewer for JSON-converted AutoCAD SHX fonts
+
+[This directory](autocad_sxh_fonts/) contains: 
+
+* an [archive of more than 40 AutoCAD binary SHX fonts](autocad_sxh_fonts/shx/); 
+* the [Python code](autocad_sxh_fonts/python/shx_decoder.py) used to decompile the SHX files and convert them into JSON; 
+* and a [p5.js program](autocad_sxh_fonts/p5_autocad_shx_fonts/sketch.js) which loads and displays the JSON versions of those SHX fonts.
+
+Monoline `.SHX` fonts are one of the long-standing native font/shape formats used in
+AutoCAD and AutoCAD-compatible CAD workflows. They are especially common in
+technical drawings, architectural plans, and engineering documents. Many DWG/DXF files depend on specific SHX fonts for faithful text appearance.
+
+AutoCAD SHX files are **compiled binary files**. They are produced from textual
+SHP shape/font descriptions, but the distributed `.shx` files normally contain
+only bytecode-like drawing instructions rather than readable point lists. Here, they have been decompiled using provided Python code, and converted into easily-readable JSON files.
+
+![autocad_shx_all_fonts.png](autocad_sxh_fonts/autocad_shx_all_fonts.png)
+
+Several of the provided SHX fonts are distinctive and potentially quite useful in how they use line-fill techniques to achieve a *pseudo-fill* of glyph bodies — for example, in `TIMESBD`: 
+
+![autocad_shx_font_TIMESBD_magnified](autocad_sxh_fonts/screenshots/autocad_shx_font_TIMESBD_magnified2.png)
 
 
 ---
@@ -528,4 +554,4 @@ Here are some inspirational creative software projects that make use of single-l
 
 ### Keywords
 
-*Single line font, single stroke font, stick font, monoline font, vector font, CAD font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive, media archaeology, retrocomputing.*
+*Single line font, single stroke font, stick font, monoline font, vector font, CAD font, CNC engraving font, technical lettering font, pen plotter font, skeletal font, skeleton font, procedural font, procedural typeface, computational font, computational typography, SVG fonts, TTF fonts, SHX fonts, Hershey font, AxiDraw, NextDraw, pen plotting, #plotterTwitter, creative coding, typefaces, p5.js, JavaScript, Processing, archive, media archaeology, retrocomputing.*

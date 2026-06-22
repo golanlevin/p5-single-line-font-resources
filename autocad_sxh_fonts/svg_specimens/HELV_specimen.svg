@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1408" height="742" viewBox="0 0 1408 742">
+<rect width="100%" height="100%" fill="#111"/>
+<style>text{font:10px monospace;fill:#aaa}.box{fill:none;stroke:#333}.glyph{fill:none;stroke:#f4f1e8;stroke-width:1;vector-effect:non-scaling-stroke;stroke-linecap:round;stroke-linejoin:round}.warn{stroke:#8a4;stroke-dasharray:3 3}</style>
+<rect class="box" x="4" y="4" width="80" height="98"/>
+<text x="8" y="18">0001</text>
+<rect class="box" x="24" y="34" width="40" height="48"/>
+<rect class="box" x="92" y="4" width="80" height="98"/>
+<text x="96" y="18">000A</text>
+<rect class="box" x="112" y="34" width="40" height="48"/>
+<rect class="box" x="180" y="4" width="80" height="98"/>
+<text x="184" y="18">000D</text>
+<rect class="box" x="200" y="34" width="40" height="48"/>
+<rect class="box" x="268" y="4" width="80" height="98"/>
+<text x="272" y="18">0020</text>
+<rect class="box" x="288" y="34" width="40" height="48"/>
+<rect class="box" x="356" y="4" width="80" height="98"/>
+<text x="360" y="18">0021 !</text>
+<path class="glyph" transform="translate(362.523 82.923) scale(0.523 -0.523)" d="M 15 3 L 15 15 L 2 15 L 2 2 L 15 2 M 11 6 L 11 11 L 6 11 L 6 6 L 11 6 M 11 30 L 15 75 L 15 98 L 2 98 L 2 75 L 6 30 L 11 30 M 9 33 L 11 74 L 11 95 L 6 95 L 7 73 L 9 33"/>
+<rect class="box" x="444" y="4" width="80" height="98"/>
+<text x="448" y="18">0022 &quot;</text>
+<path class="glyph" transform="translate(450.523 82.923) scale(0.523 -0.523)" d="M 15 85 L 15 98 L 2 98 L 2 85 L 15 85 M 11 89 L 11 94 L 6 94 L 6 89 L 11 89 M 11 85 L 11 81 L 10 76 L 7 71 L 5 69 L 2 68 L 3 65 L 6 66 L 10 69 L 14 75 L 15 81 L 15 85 M 43 85 L 43 98 L 30 98 L 30 85 L 43 85 M 39 89 L 39 94 L 34 94 L 34 89 L 39 89 M 39 85 L 38 81 L 38 76 L 34 71 L 32 69 L 30 68 L 30 65 L 33 66 L 37 69 L 41 75 L 42 81 L 43 85"/>
+<rect class="box" x="532" y="4" width="80" height="98"/>
+<text x="536" y="18">0023 #</text>
+<path class="glyph" transform="translate(538.523 82.923) scale(0.523 -0.523)" d="M 17 19 L 22 19 L 29 18 L 35 16 L 42 15 L 49 15 L 56 15 L 63 19 L 69 7 L 67 5 L 61 3 L 55 2 L 48 2 L 39 4 L 32 7 L 26 9 L 20 9 L 14 8 L 9 4 L 4 12 L 8 16 L 11 21 L 12 25 L 13 34 L 12 43 L 10 51 L 7 58 L 4 65 L 3 73 L 4 80 L 10 90 L 21 96 L 35 99 L 48 96 L 60 90 L 67 80 L 68 72 L 55 73 L 54 79 L 49 85 L 43 89 L 35 90 L 27 89 L 21 85 L 17 79 L 15 73 L 16 65 L 20 55 L 21 47 L 23 38 L 22 30 L 20 25 L 18 19 M 14 16 L 19 28 L 19 39 L 15 58 L 11 72 L 13 81 L 21 90 L 35 93 L 48 90 L 57 82 L 59 76 L 64 76 L 62 81 L 58 86 L 50 93 L 35 96 L 20 93 L 10 84 L 7 72 L 11 57 L 15 46 L 16 33 L 14 20 L 8 12 L 10 8 L 19 12 L 29 12 L 41 7 L 50 6 L 60 6 L 65 8 L 62 13 L 56 11 L 48 11 L 38 12 L 30 15 L 22 16 L 16 15 L 11 13 M 0.0 54 L 48 54 L 48 46 L 0.0 46 L 0.0 54 M 3 50 L 45 50"/>
+<rect class="box" x="620" y="4" width="80" height="98"/>
+<text x="624" y="18">0024 $</text>
+<path class="glyph" transform="translate(626.523 82.923) scale(0.523 -0.523)" d="M 3 30 L 3 26 L 4 21 L 6 15 L 13 9 L 18 5 L 24 3 L 31 1 L 40 0.0 L 50 0.0 L 59 2 L 67 6 L 75 12 L 80 18 L 82 28 L 81 36 L 79 41 L 75 47 L 68 51 L 60 54 L 28 61 L 22 64 L 19 69 L 19 74 L 20 79 L 23 83 L 27 86 L 32 89 L 40 90 L 47 90 L 53 88 L 60 84 L 64 78 L 65 72 L 80 72 L 79 79 L 76 86 L 72 91 L 65 95 L 56 98 L 44 100 L 36 100 L 26 98 L 19 95 L 13 91 L 7 85 L 5 76 L 5 68 L 6 62 L 10 57 L 16 52 L 26 48 L 56 41 L 64 37 L 67 30 L 66 21 L 60 14 L 52 11 L 44 10 L 36 10 L 28 13 L 21 18 L 18 26 L 17 30 L 2 30 M 7 27 L 8 22 L 10 17 L 15 12 L 20 8 L 26 6 L 32 4 L 41 4 L 50 4 L 58 6 L 65 9 L 73 15 L 75 20 L 77 28 L 75 38 L 71 43 L 65 47 L 27 56 L 19 61 L 15 68 L 14 75 L 16 81 L 19 86 L 24 90 L 31 92 L 39 94 L 47 94 L 55 92 L 63 87 L 68 80 L 70 75 M 75 75 L 72 83 L 68 87 L 63 92 L 55 95 L 44 96 L 35 96 L 27 94 L 20 91 L 15 87 L 12 83 L 9 76 L 10 69 L 11 64 L 13 60 L 18 56 L 27 52 L 57 46 L 67 40 L 72 30 L 70 20 L 62 11 L 53 7 L 43 6 L 34 6 L 25 9 L 17 16 L 14 21 L 12 28 M 41 -7 L 41 105 L 44 105 L 44 -7 L 41 -7"/>
+<rect class="box" x="708" y="4" width="80" height="98"/>
+<text x="712" y="18">0025 %</text>
+<path class="glyph" transform="translate(714.523 82.923) scale(0.523 -0.523)" d="M 10 79 L 11 84 L 13 88 L 16 90 L 20 91 L 24 90 L 27 87 L 29 84 L 30 79 L 29 75 L 27 71 L 24 69 L 20 68 L 16 69 L 13 71 L 11 75 L 10 79 M 6 79 L 7 85 L 10 90 L 15 93 L 20 95 L 25 93 L 30 90 L 33 85 L 34 79 L 33 74 L 30 69 L 25 65 L 20 64 L 15 65 L 10 69 L 7 74 L 6 79 M 70 21 L 71 25 L 73 29 L 76 31 L 80 32 L 84 31 L 87 29 L 89 25 L 90 21 L 89 16 L 87 13 L 84 10 L 80 9 L 76 10 L 73 12 L 71 16 L 70 21 M 66 21 L 67 26 L 70 31 L 75 35 L 80 36 L 85 35 L 90 31 L 93 26 L 94 21 L 93 15 L 90 10 L 85 7 L 80 5 L 75 7 L 70 10 L 67 15 L 66 21 M 2 79 L 3 86 L 7 92 L 13 96 L 20 98 L 27 96 L 33 92 L 37 86 L 38 79 L 37 72 L 33 67 L 27 63 L 20 61 L 13 63 L 7 66 L 3 72 L 2 79 M 62 21 L 63 28 L 67 34 L 73 37 L 80 39 L 87 37 L 93 33 L 97 28 L 98 21 L 97 14 L 93 8 L 87 4 L 80 2 L 73 4 L 67 8 L 63 14 L 61 21 M 18 1 L 78 101 L 82 99 L 22 -1 L 18 1"/>
+<rect class="box" x="796" y="4" width="80" height="98"/>
+<text x="800" y="18">0026 &amp;</text>
+<path class="glyph" transform="translate(802.523 82.923) scale(0.523 -0.523)" d="M 73 48 L 82 48 L 82 47 L 80 41 L 78 33 L 76 26 L 71 19 L 85 2 L 74 2 L 65 13 L 59 7 L 54 4 L 47 2 L 39 0.0 L 31 1 L 21 4 L 15 7 L 8 13 L 5 17 L 3 24 L 3 32 L 4 37 L 8 42 L 13 48 L 27 59 L 18 69 L 14 76 L 13 83 L 15 89 L 20 94 L 25 97 L 32 99 L 39 100 L 46 98 L 53 95 L 58 90 L 60 85 L 60 79 L 59 74 L 54 68 L 40 57 L 65 27 L 69 35 L 71 41 L 71 43 L 73 48 M 20 43 L 32 52 L 59 19 L 54 15 L 48 12 L 43 10 L 38 9 L 32 9 L 25 12 L 19 15 L 14 21 L 13 26 L 13 33 L 16 38 L 20 42 M 25 74 L 23 79 L 23 85 L 26 90 L 31 91 L 36 92 L 43 92 L 49 88 L 51 83 L 50 77 L 46 72 L 34 64 L 25 74 M 76 45 L 74 36 L 69 25 L 61 15 L 51 8 L 38 4 L 25 7 L 13 14 L 9 22 L 8 29 L 10 37 L 15 44 L 26 53 L 49 70 L 55 78 L 54 88 L 47 94 L 40 96 L 31 95 L 23 92 L 19 86 L 18 78 L 23 70 L 78 4"/>
+<rect class="box" x="884" y="4" width="80" height="98"/>
+<text x="888" y="18">0027 &#x27;</text>
+<path class="glyph" transform="translate(890.523 82.923) scale(0.523 -0.523)" d="M 15 85 L 15 98 L 2 98 L 2 85 L 15 85 M 11 89 L 11 94 L 6 94 L 6 89 L 11 89 M 11 85 L 11 81 L 10 76 L 7 71 L 5 69 L 2 68 L 3 65 L 6 66 L 10 69 L 14 75 L 15 81 L 15 85"/>
+<rect class="box" x="972" y="4" width="80" height="98"/>
+<text x="976" y="18">0028 (</text>
+<path class="glyph" transform="translate(978.523 82.923) scale(0.523 -0.523)" d="M 18 -5 L 14 1 L 9 13 L 5 26 L 3 37 L 3 50 L 3 62 L 5 75 L 9 87 L 14 99 L 18 105 L 27 105 L 25 99 L 22 87 L 19 75 L 18 62 L 17 50 L 18 37 L 19 26 L 22 13 L 25 1 L 27 -5 L 17 -5 M 19 -2 L 13 14 L 8 36 L 7 50 L 7 62 L 12 87 L 19 102 L 22 102 L 17 87 L 13 62 L 13 37 L 17 13 L 22 -2 L 19 -1"/>
+<rect class="box" x="1060" y="4" width="80" height="98"/>
+<text x="1064" y="18">0029 )</text>
+<path class="glyph" transform="translate(1066.523 82.923) scale(0.523 -0.523)" d="M 12 -5 L 16 1 L 21 13 L 25 26 L 27 37 L 27 50 L 27 62 L 25 75 L 21 87 L 16 99 L 12 105 L 3 105 L 5 99 L 8 87 L 11 75 L 12 62 L 13 50 L 12 37 L 11 26 L 8 13 L 5 1 L 3 -5 L 12 -5 M 11 -2 L 17 14 L 22 36 L 23 50 L 23 62 L 18 87 L 11 102 L 7 102 L 13 87 L 17 62 L 17 37 L 13 13 L 7 -2 L 11 -1"/>
+<rect class="box" x="1148" y="4" width="80" height="98"/>
+<text x="1152" y="18">002A *</text>
+<path class="glyph" transform="translate(1154.523 82.923) scale(0.523 -0.523)" d="M 30 29 L 8 7 L 2 13 L 24 35 L 2 57 L 8 63 L 30 41 L 52 63 L 58 57 L 36 35 L 58 13 L 52 7 L 30 29 M 5 60 L 55 10 M 55 60 L 5 10"/>
+<rect class="box" x="1236" y="4" width="80" height="98"/>
+<text x="1240" y="18">002B +</text>
+<path class="glyph" transform="translate(1242.523 82.923) scale(0.523 -0.523)" d="M 5 35 L 65 35 M 35 65 L 35 5 M 30 31 L 3 31 L 3 40 L 31 40 L 31 67 L 40 67 L 40 39 L 67 39 L 67 30 L 39 30 L 39 3 L 30 3 L 30 31"/>
+<rect class="box" x="1324" y="4" width="80" height="98"/>
+<text x="1328" y="18">002C ,</text>
+<path class="glyph" transform="translate(1330.523 82.923) scale(0.523 -0.523)" d="M 15 3 L 15 15 L 2 15 L 2 2 L 15 2 M 11 6 L 11 11 L 6 11 L 6 6 L 11 6 M 11 2 L 11 -1 L 10 -6 L 7 -12 L 5 -13 L 2 -15 L 3 -18 L 6 -17 L 10 -14 L 14 -8 L 15 -2 L 15 3"/>
+<rect class="box" x="4" y="110" width="80" height="98"/>
+<text x="8" y="124">002D -</text>
+<path class="glyph" transform="translate(10.523 188.923) scale(0.523 -0.523)" d="M 3 38 L 38 38 L 38 29 L 3 29 L 3 38 M 5 33 L 35 33"/>
+<rect class="box" x="92" y="110" width="80" height="98"/>
+<text x="96" y="124">002E .</text>
+<path class="glyph" transform="translate(98.523 188.923) scale(0.523 -0.523)" d="M 15 3 L 15 16 L 2 16 L 2 3 L 15 3 M 11 7 L 11 12 L 6 12 L 6 7 L 11 7"/>
+<rect class="box" x="180" y="110" width="80" height="98"/>
+<text x="184" y="124">002F /</text>
+<path class="glyph" transform="translate(186.523 188.923) scale(0.523 -0.523)" d="M 8 -5 L 3 -5 L 60 105 L 65 105 L 7 -5"/>
+<rect class="box" x="268" y="110" width="80" height="98"/>
+<text x="272" y="124">0030 0</text>
+<path class="glyph" transform="translate(274.523 188.923) scale(0.523 -0.523)" d="M 65 60 L 63 71 L 58 80 L 50 87 L 40 89 L 30 87 L 22 81 L 17 71 L 15 60 L 15 40 L 17 29 L 22 20 L 30 13 L 40 11 L 50 13 L 58 20 L 63 29 L 65 40 L 65 60 M 73 54 L 71 70 L 64 82 L 53 91 L 40 94 L 27 91 L 16 83 L 9 70 L 7 54 L 7 46 L 9 30 L 16 18 L 27 9 L 40 6 L 53 9 L 64 18 L 71 30 L 73 46 L 73 55 M 17 79 L 11 65 L 11 35 L 17 21 M 63 79 L 69 65 L 69 35 L 63 21 M 78 55 L 76 66 L 72 77 L 67 86 L 59 93 L 50 97 L 40 99 L 30 97 L 21 93 L 13 86 L 8 77 L 4 66 L 2 55 L 2 45 L 4 34 L 8 23 L 13 14 L 21 7 L 30 3 L 40 1 L 50 3 L 59 7 L 67 14 L 72 23 L 76 34 L 78 45 L 78 55"/>
+<rect class="box" x="356" y="110" width="80" height="98"/>
+<text x="360" y="124">0031 1</text>
+<path class="glyph" transform="translate(362.523 188.923) scale(0.523 -0.523)" d="M 28 73 L 3 73 L 3 80 L 7 80 L 15 83 L 23 88 L 26 93 L 28 98 L 43 98 L 43 3 L 28 3 L 28 73 M 33 90 L 33 5 L 38 5 L 37 94 L 30 94 L 26 86 L 17 80 L 6 78 L 6 76 L 33 76 M 20 79 L 30 86 L 30 79 L 23 79"/>
+<rect class="box" x="444" y="110" width="80" height="98"/>
+<text x="448" y="124">0032 2</text>
+<path class="glyph" transform="translate(450.523 188.923) scale(0.523 -0.523)" d="M 18 13 L 73 13 L 73 3 L 3 3 L 3 10 L 5 15 L 6 18 L 10 22 L 14 26 L 52 55 L 56 61 L 57 69 L 56 76 L 52 83 L 45 87 L 37 89 L 30 87 L 23 83 L 19 76 L 17 69 L 4 69 L 6 77 L 13 89 L 24 96 L 38 99 L 51 96 L 63 89 L 69 77 L 70 69 L 69 60 L 63 49 L 20 18 L 18 15 L 17 12 M 12 9 L 69 9 L 69 5 L 7 5 L 7 9 L 8 13 L 10 16 L 13 20 L 17 24 L 54 52 L 60 60 L 61 69 L 60 78 L 54 85 L 46 90 L 38 92 L 28 90 L 20 86 L 15 78 L 14 73 L 9 73 L 9 76 L 15 86 L 25 93 L 38 96 L 50 93 L 60 86 L 65 76 L 66 69 L 65 62 L 60 52 L 18 21 L 15 17 L 12 9"/>
+<rect class="box" x="532" y="110" width="80" height="98"/>
+<text x="536" y="124">0033 3</text>
+<path class="glyph" transform="translate(538.523 188.923) scale(0.523 -0.523)" d="M 52 51 L 66 46 L 73 38 L 75 29 L 73 21 L 66 11 L 53 4 L 39 1 L 25 4 L 12 11 L 4 21 L 2 31 L 16 31 L 18 22 L 23 16 L 30 13 L 39 11 L 48 13 L 55 16 L 60 22 L 62 29 L 60 35 L 55 41 L 48 45 L 39 46 L 36 46 L 36 56 L 39 56 L 46 57 L 51 61 L 55 66 L 57 73 L 55 79 L 51 84 L 46 88 L 39 89 L 32 88 L 27 84 L 23 79 L 21 71 L 7 71 L 9 79 L 16 89 L 27 96 L 39 99 L 51 96 L 62 89 L 68 79 L 70 71 L 68 62 L 62 54 L 52 51 M 60 45 L 63 43 L 69 36 L 71 29 L 69 21 L 63 13 L 52 6 L 39 4 L 25 7 L 14 13 L 8 23 L 7 27 L 13 27 L 15 21 L 21 14 L 29 9 L 39 8 L 49 9 L 57 14 L 63 20 L 66 29 L 63 37 L 57 44 L 49 49 L 40 50 L 40 52 L 47 54 L 54 58 L 59 65 L 61 73 L 59 80 L 54 87 L 47 91 L 39 93 L 30 90 L 24 86 L 19 80 L 18 75 L 12 75 L 14 80 L 18 87 L 28 93 L 39 96 L 50 93 L 60 86 L 64 79 L 66 71 L 64 64 L 60 57 L 48 52"/>
+<rect class="box" x="620" y="110" width="80" height="98"/>
+<text x="624" y="124">0034 4</text>
+<path class="glyph" transform="translate(626.523 188.923) scale(0.523 -0.523)" d="M 48 23 L 3 23 L 3 38 L 48 98 L 63 98 L 63 3 L 48 3 L 48 80 L 13 32 L 78 32 L 78 22 L 63 22 M 75 27 L 7 27 L 7 35 L 51 93 L 57 93 L 58 5 L 53 5 L 53 85"/>
+<rect class="box" x="708" y="110" width="80" height="98"/>
+<text x="712" y="124">0035 5</text>
+<path class="glyph" transform="translate(714.523 188.923) scale(0.523 -0.523)" d="M 22 57 L 28 88 L 73 88 L 73 98 L 16 98 L 7 48 L 23 48 L 24 50 L 31 55 L 40 56 L 49 55 L 56 50 L 61 42 L 63 34 L 61 25 L 56 18 L 49 13 L 40 11 L 31 13 L 24 18 L 19 25 L 4 25 L 5 21 L 13 11 L 26 4 L 40 1 L 54 4 L 67 11 L 75 21 L 78 34 L 75 46 L 68 57 L 57 64 L 45 66 L 32 64 L 22 57 M 17 56 L 23 91 L 69 91 L 69 94 L 19 94 L 12 51 L 21 51 L 21 52 L 30 58 L 40 60 L 52 58 L 60 53 L 66 44 L 67 34 L 65 23 L 59 14 L 50 10 L 40 8 L 30 10 L 21 15 L 16 21 L 10 21 L 16 13 L 27 7 L 40 5 L 53 7 L 64 13 L 70 23 L 73 34 L 71 45 L 65 54 L 56 60 L 45 63 L 36 61 L 30 59"/>
+<rect class="box" x="796" y="110" width="80" height="98"/>
+<text x="800" y="124">0036 6</text>
+<path class="glyph" transform="translate(802.523 188.923) scale(0.523 -0.523)" d="M 16 34 L 18 42 L 22 50 L 30 55 L 39 56 L 47 55 L 54 50 L 59 42 L 61 34 L 59 25 L 54 18 L 47 13 L 38 11 L 30 13 L 22 18 L 18 25 L 16 34 M 16 56 L 16 66 L 18 75 L 22 82 L 30 87 L 39 89 L 47 87 L 54 82 L 56 79 L 71 79 L 69 84 L 65 89 L 53 96 L 38 99 L 24 96 L 12 89 L 5 79 L 2 64 L 2 36 L 5 21 L 12 11 L 24 4 L 39 1 L 53 4 L 65 11 L 73 21 L 75 34 L 73 46 L 66 57 L 55 64 L 41 66 L 28 64 L 16 56 M 11 35 L 13 44 L 19 53 L 28 59 L 39 61 L 49 59 L 58 53 L 64 44 L 66 34 L 64 23 L 58 14 L 49 8 L 38 6 L 28 8 L 19 14 L 13 23 L 11 33 M 49 91 L 58 85 L 59 82 L 65 82 L 62 87 L 51 92 L 38 94 L 25 91 L 15 87 L 9 77 L 6 64 L 6 37 L 9 23 L 15 14 L 27 8 M 29 90 L 18 85 L 13 77 L 11 67 L 10 40 M 40 64 L 54 60 L 63 53 L 70 42 L 70 27 L 66 16 L 58 10 L 48 5"/>
+<rect class="box" x="884" y="110" width="80" height="98"/>
+<text x="888" y="124">0037 7</text>
+<path class="glyph" transform="translate(890.523 188.923) scale(0.523 -0.523)" d="M 58 88 L 45 74 L 36 62 L 27 47 L 20 32 L 17 21 L 12 2 L 27 2 L 31 17 L 35 31 L 41 45 L 48 58 L 57 73 L 68 88 L 68 98 L 3 98 L 3 88 L 57 87 M 5 93 L 63 93 L 63 88 L 56 79 L 52 75 L 44 61 L 37 48 L 32 34 L 26 19 L 24 6 L 18 6 L 21 20 L 26 32 L 32 47 L 40 61 L 53 79"/>
+<rect class="box" x="972" y="110" width="80" height="98"/>
+<text x="976" y="124">0038 8</text>
+<path class="glyph" transform="translate(978.523 188.923) scale(0.523 -0.523)" d="M 37 56 L 45 58 L 52 61 L 56 67 L 57 74 L 56 80 L 52 86 L 45 90 L 37 91 L 30 90 L 23 86 L 19 80 L 17 74 L 19 67 L 23 61 L 30 58 L 37 56 M 38 9 L 46 10 L 53 15 L 58 21 L 60 29 L 58 36 L 53 43 L 46 47 L 37 49 L 29 47 L 21 43 L 17 36 L 15 29 L 17 21 L 22 15 L 29 10 L 38 9 M 50 53 L 60 57 L 68 65 L 70 74 L 68 83 L 60 91 L 50 97 L 37 99 L 25 97 L 14 92 L 7 83 L 5 74 L 7 65 L 14 57 L 25 52 L 13 47 L 5 38 L 2 29 L 5 18 L 13 9 L 24 3 L 38 1 L 51 3 L 62 9 L 70 18 L 73 29 L 70 38 L 62 47 L 50 53 M 41 53 L 58 61 L 64 67 L 66 74 L 64 81 L 58 88 L 49 93 L 37 95 L 26 93 L 17 88 L 11 81 L 9 74 L 11 67 L 17 61 L 35 53 L 15 43 L 9 36 L 7 29 L 9 20 L 15 12 L 25 7 L 38 5 L 50 7 L 60 12 L 66 20 L 68 29 L 66 36 L 60 43 L 42 52 M 55 87 L 60 78 L 60 70 L 56 62 M 61 38 L 64 30 L 62 21 L 57 15 M 14 38 L 11 30 L 13 21 L 18 15 M 20 87 L 15 78 L 15 70 L 19 62"/>
+<rect class="box" x="1060" y="110" width="80" height="98"/>
+<text x="1064" y="124">0039 9</text>
+<path class="glyph" transform="translate(1066.523 188.923) scale(0.523 -0.523)" d="M 62 66 L 60 58 L 56 50 L 48 46 L 40 44 L 31 46 L 24 50 L 19 58 L 17 66 L 19 75 L 24 82 L 31 87 L 40 89 L 48 87 L 56 82 L 60 75 L 62 66 M 62 44 L 62 34 L 60 25 L 56 18 L 48 13 L 40 11 L 31 13 L 24 18 L 22 21 L 7 21 L 9 16 L 13 11 L 25 4 L 40 1 L 54 4 L 66 11 L 73 21 L 76 36 L 76 64 L 73 79 L 66 90 L 54 96 L 40 99 L 25 96 L 13 89 L 6 79 L 3 66 L 5 54 L 12 43 L 23 36 L 37 34 L 50 36 L 62 44 M 67 65 L 65 56 L 59 47 L 50 41 L 40 39 L 29 41 L 20 47 L 14 56 L 12 66 L 14 77 L 20 86 L 29 92 L 40 94 L 50 92 L 59 86 L 65 77 L 67 67 M 29 9 L 20 15 L 19 18 L 14 18 L 16 13 L 27 8 L 40 6 L 53 9 L 63 14 L 69 23 L 72 36 L 72 63 L 69 77 L 63 86 L 52 92 M 50 10 L 60 15 L 65 24 L 67 33 L 68 60 M 38 36 L 24 40 L 15 47 L 9 58 L 8 73 L 12 84 L 20 90 L 30 95"/>
+<rect class="box" x="1148" y="110" width="80" height="98"/>
+<text x="1152" y="124">003A :</text>
+<path class="glyph" transform="translate(1154.523 188.923) scale(0.523 -0.523)" d="M 15 3 L 15 16 L 2 16 L 2 3 L 15 3 M 11 7 L 11 12 L 6 12 L 6 7 L 11 7 M 15 52 L 15 65 L 2 65 L 2 52 L 15 52 M 11 56 L 11 61 L 6 61 L 6 56 L 11 56"/>
+<rect class="box" x="1236" y="110" width="80" height="98"/>
+<text x="1240" y="124">003B ;</text>
+<path class="glyph" transform="translate(1242.523 188.923) scale(0.523 -0.523)" d="M 15 3 L 15 16 L 2 16 L 2 3 L 15 3 M 11 7 L 11 12 L 6 12 L 6 7 L 11 7 M 11 3 L 11 0.0 L 10 -5 L 7 -11 L 5 -12 L 2 -14 L 3 -17 L 6 -16 L 10 -13 L 14 -7 L 15 -1 L 15 3 M 15 53 L 15 66 L 2 66 L 2 53 L 15 53 M 11 57 L 11 62 L 6 62 L 6 57 L 11 57"/>
+<rect class="box" x="1324" y="110" width="80" height="98"/>
+<text x="1328" y="124">003C &lt;</text>
+<rect class="box" x="1344" y="140" width="40" height="48"/>
+<rect class="box" x="4" y="216" width="80" height="98"/>
+<text x="8" y="230">003D =</text>
+<path class="glyph" transform="translate(10.523 294.923) scale(0.523 -0.523)" d="M 3 53 L 38 53 L 38 44 L 3 44 L 3 53 M 5 48 L 35 48 M 2 22 L 37 22 L 37 13 L 2 13 L 2 22 M 5 18 L 35 18"/>
+<rect class="box" x="92" y="216" width="80" height="98"/>
+<text x="96" y="230">003E &gt;</text>
+<rect class="box" x="112" y="246" width="40" height="48"/>
+<rect class="box" x="180" y="216" width="80" height="98"/>
+<text x="184" y="230">003F ?</text>
+<path class="glyph" transform="translate(186.523 294.923) scale(0.523 -0.523)" d="M 38 3 L 38 15 L 25 15 L 25 2 L 38 2 M 34 6 L 34 11 L 29 11 L 29 6 L 34 6 M 25 30 L 25 35 L 26 40 L 28 44 L 33 48 L 52 60 L 56 66 L 57 73 L 56 79 L 52 85 L 45 89 L 37 90 L 30 89 L 23 85 L 19 79 L 17 73 L 4 72 L 6 80 L 13 90 L 24 96 L 38 99 L 51 96 L 62 90 L 68 80 L 69 73 L 68 65 L 62 55 L 41 41 L 39 40 L 38 38 L 37 34 L 37 30 L 25 30 M 29 34 L 29 35 L 30 39 L 31 42 L 35 45 L 53 57 L 60 64 L 61 73 L 60 81 L 54 87 L 46 91 L 38 93 L 29 91 L 21 87 L 15 81 L 14 77 L 9 76 L 9 78 L 16 87 L 26 94 L 38 96 L 50 94 L 60 87 L 65 79 L 65 73 L 65 66 L 60 57 L 40 45 L 38 43 L 35 39 L 34 34 L 29 34"/>
+<rect class="box" x="268" y="216" width="80" height="98"/>
+<text x="272" y="230">0040 @</text>
+<path class="glyph" transform="translate(274.523 294.923) scale(0.523 -0.523)" d="M 88 79 L 93 78 L 74 32 L 72 25 L 75 20 L 82 19 L 90 23 L 100 32 L 109 45 L 113 60 L 112 74 L 106 86 L 97 94 L 84 100 L 70 102 L 58 101 L 45 98 L 28 91 L 16 81 L 8 68 L 4 55 L 4 41 L 7 28 L 13 17 L 20 9 L 30 3 L 41 1 L 53 0.0 L 68 0.0 L 85 4 L 96 9 L 103 14 M 88 79 L 69 32 L 62 24 L 56 19 L 48 17 L 39 19 L 33 27 L 31 39 L 33 51 L 41 66 L 48 74 L 57 79 L 67 81 L 75 79 L 79 74 L 81 68 L 80 60 M 39 19 L 36 27 L 36 39 L 38 50 L 44 61 L 51 71 L 59 77 L 68 79 L 75 79"/>
+<rect class="box" x="356" y="216" width="80" height="98"/>
+<text x="360" y="230">0041 A</text>
+<path class="glyph" transform="translate(362.523 294.923) scale(0.523 -0.523)" d="M 30 33 L 65 33 M 68 28 L 28 28 M 26 23 L 69 23 M 47 81 L 18 2 L 3 2 L 39 97 L 56 97 L 92 2 L 77 2 L 43 95 L 9 5 L 14 5 L 48 95 L 52 95 L 86 5 L 81 5 L 48 95"/>
+<rect class="box" x="444" y="216" width="80" height="98"/>
+<text x="448" y="230">0042 B</text>
+<path class="glyph" transform="translate(450.523 294.923) scale(0.523 -0.523)" d="M 50 53 L 59 54 L 66 59 L 71 66 L 73 75 L 71 84 L 66 91 L 59 96 L 50 98 L 2 98 L 2 3 L 52 3 L 62 4 L 70 10 L 76 18 L 78 28 L 76 37 L 70 45 L 62 51 L 53 53 L 17 53 M 49 57 L 57 59 L 62 63 L 66 68 L 67 75 L 66 82 L 62 87 L 57 91 L 50 93 L 7 93 L 7 8 L 52 8 L 60 9 L 67 13 L 71 20 L 72 28 L 71 35 L 67 42 L 60 46 L 52 48 L 17 48 M 17 58 L 40 58 L 48 59 L 53 62 L 56 67 L 57 73 L 56 78 L 53 83 L 48 86 L 42 88 L 17 88 L 17 13 L 45 13 L 52 14 L 57 18 L 61 23 L 62 30 L 61 37 L 57 42 L 52 46 L 45 48 M 57 58 L 61 65 L 62 73 L 61 80 L 57 87 L 50 91 L 42 93 M 45 8 L 54 9 L 61 14 L 66 21 L 68 30 L 66 39 L 61 46 M 12 90 L 12 10"/>
+<rect class="box" x="532" y="216" width="80" height="98"/>
+<text x="536" y="230">0043 C</text>
+<path class="glyph" transform="translate(538.523 294.923) scale(0.523 -0.523)" d="M 20 80 L 12 65 L 12 35 L 20 20 M 83 73 L 76 83 L 63 92 L 47 95 L 32 92 L 19 83 L 11 70 L 7 55 L 7 45 L 11 30 L 19 17 L 32 8 L 48 5 L 63 8 L 76 17 L 84 30 L 85 33 M 77 75 L 72 83 M 80 30 L 72 17 M 75 72 L 89 72 L 86 77 L 79 87 L 70 94 L 59 98 L 47 100 L 36 98 L 25 94 L 16 87 L 9 77 L 4 67 L 2 55 L 2 45 L 4 33 L 9 23 L 16 13 L 25 6 L 36 2 L 48 0.0 L 59 2 L 70 6 L 79 13 L 86 23 L 90 33 L 76 33 L 75 29 L 69 19 L 59 12 L 47 10 L 36 12 L 26 19 L 20 29 L 17 40 L 17 60 L 20 71 L 26 81 L 36 88 L 48 90 L 59 88 L 69 81 L 75 72"/>
+<rect class="box" x="620" y="216" width="80" height="98"/>
+<text x="624" y="230">0044 D</text>
+<path class="glyph" transform="translate(626.523 294.923) scale(0.523 -0.523)" d="M 64 79 L 71 64 L 71 36 L 64 21 M 37 87 L 17 87 L 17 12 L 37 12 L 48 14 L 58 20 L 64 30 L 66 41 L 66 60 L 64 70 L 58 80 L 48 86 L 37 88 M 37 93 L 7 93 L 7 8 L 37 8 L 52 10 L 64 19 L 72 31 L 75 46 L 75 54 L 72 69 L 64 81 L 51 90 L 37 93 M 12 90 L 12 10 M 37 98 L 48 96 L 59 92 L 68 85 L 74 76 L 79 66 L 80 55 L 80 45 L 79 34 L 74 24 L 68 15 L 59 8 L 48 4 L 37 2 L 2 2 L 2 97 L 37 97"/>
+<rect class="box" x="708" y="216" width="80" height="98"/>
+<text x="712" y="230">0045 E</text>
+<path class="glyph" transform="translate(714.523 294.923) scale(0.523 -0.523)" d="M 18 88 L 70 88 L 70 98 L 2 98 L 2 3 L 70 3 L 70 13 L 17 13 L 17 48 L 65 48 L 65 58 L 17 58 L 17 88 M 67 93 L 7 93 L 7 8 L 67 8 M 12 90 L 12 10 M 62 53 L 12 53"/>
+<rect class="box" x="796" y="216" width="80" height="98"/>
+<text x="800" y="230">0046 F</text>
+<path class="glyph" transform="translate(802.523 294.923) scale(0.523 -0.523)" d="M 18 88 L 70 88 L 70 98 L 2 98 L 2 3 L 17 3 L 17 45 L 65 45 L 65 55 L 17 55 L 17 88 M 67 93 L 7 93 L 7 5 M 12 5 L 12 90 M 12 50 L 62 50"/>
+<rect class="box" x="884" y="216" width="80" height="98"/>
+<text x="888" y="230">0047 G</text>
+<path class="glyph" transform="translate(890.523 294.923) scale(0.523 -0.523)" d="M 23 80 L 15 65 L 15 35 L 23 20 M 85 73 L 78 83 L 65 92 L 50 95 L 35 92 L 22 83 L 13 70 L 10 55 L 10 45 L 13 30 L 22 17 L 35 8 L 50 5 L 65 8 L 75 18 L 83 30 L 85 38 M 80 75 L 75 83 M 57 43 L 85 43 L 85 5 L 80 25 M 77 73 L 91 73 L 89 77 L 82 87 L 72 94 L 62 98 L 50 100 L 38 98 L 28 94 L 18 87 L 11 77 L 7 67 L 5 55 L 5 45 L 7 33 L 11 23 L 18 13 L 28 6 L 38 2 L 50 0.0 L 61 2 L 72 8 L 79 16 L 83 2 L 90 2 L 90 47 L 55 47 L 55 37 L 80 37 L 78 29 L 71 19 L 61 12 L 50 10 L 39 12 L 29 19 L 22 29 L 20 40 L 20 60 L 22 71 L 29 81 L 39 88 L 50 90 L 61 88 L 71 81 L 77 73"/>
+<rect class="box" x="972" y="216" width="80" height="98"/>
+<text x="976" y="230">0048 H</text>
+<path class="glyph" transform="translate(978.523 294.923) scale(0.523 -0.523)" d="M 18 58 L 18 98 L 3 98 L 3 3 L 18 3 L 18 48 L 63 48 L 63 3 L 78 3 L 78 98 L 63 98 L 63 58 L 18 58 M 15 53 L 65 53 M 68 5 L 68 95 L 73 95 L 73 5 M 13 5 L 13 95 L 8 95 L 8 5"/>
+<rect class="box" x="1060" y="216" width="80" height="98"/>
+<text x="1064" y="230">0049 I</text>
+<path class="glyph" transform="translate(1066.523 294.923) scale(0.523 -0.523)" d="M 3 3 L 3 98 L 18 98 L 18 3 L 3 3 M 8 5 L 8 95 L 13 95 L 13 5"/>
+<rect class="box" x="1148" y="216" width="80" height="98"/>
+<text x="1152" y="230">004A J</text>
+<path class="glyph" transform="translate(1154.523 294.923) scale(0.523 -0.523)" d="M 15 25 L 15 35 L 2 35 L 2 25 L 5 15 L 11 7 L 21 2 L 33 0.0 L 44 2 L 54 7 L 60 15 L 63 25 L 63 98 L 48 98 L 48 25 L 46 19 L 43 14 L 37 10 L 31 9 L 25 10 L 20 14 L 16 19 L 15 25 M 6 32 L 6 25 L 9 17 L 15 10 L 23 5 L 31 3 L 43 5 L 51 10 L 56 17 L 57 25 L 57 94 L 53 94 L 52 25 L 50 17 L 46 10 L 39 7 L 31 5 L 24 7 L 18 10 L 13 18 L 11 25 L 11 32"/>
+<rect class="box" x="1236" y="216" width="80" height="98"/>
+<text x="1240" y="230">004B K</text>
+<path class="glyph" transform="translate(1242.523 294.923) scale(0.523 -0.523)" d="M 18 34 L 18 3 L 3 3 L 3 98 L 18 98 L 18 53 L 65 98 L 85 98 L 40 55 L 88 2 L 68 2 L 30 45 L 17 33 M 12 35 L 12 5 L 7 5 L 7 95 L 12 95 L 12 41 L 68 95 L 76 95 L 33 55 L 80 4 L 72 5 L 31 52 L 12 35"/>
+<rect class="box" x="1324" y="216" width="80" height="98"/>
+<text x="1328" y="230">004C L</text>
+<path class="glyph" transform="translate(1330.523 294.923) scale(0.523 -0.523)" d="M 18 12 L 18 97 L 3 97 L 3 2 L 68 2 L 68 12 L 13 12 L 13 94 L 8 94 L 8 7 L 65 7"/>
+<rect class="box" x="4" y="322" width="80" height="98"/>
+<text x="8" y="336">004D M</text>
+<path class="glyph" transform="translate(10.523 400.923) scale(0.523 -0.523)" d="M 15 88 L 15 3 L 2 3 L 2 98 L 25 98 L 50 20 L 75 98 L 98 98 L 98 3 L 85 3 L 85 88 L 57 3 L 42 3 L 15 88 M 11 90 L 11 6 L 6 6 L 6 93 L 22 93 L 48 13 L 52 13 L 78 94 L 94 94 L 94 7 L 89 7 L 89 91 L 81 90 L 55 6 L 45 6 L 18 90 L 11 90"/>
+<rect class="box" x="92" y="322" width="80" height="98"/>
+<text x="96" y="336">004E N</text>
+<path class="glyph" transform="translate(98.523 400.923) scale(0.523 -0.523)" d="M 18 78 L 18 3 L 3 3 L 3 98 L 18 98 L 63 23 L 63 98 L 78 98 L 78 3 L 63 3 L 18 78 M 73 95 L 73 5 L 68 5 L 13 95 L 8 95 L 8 5 M 13 5 L 13 93 M 68 95 L 68 7"/>
+<rect class="box" x="180" y="322" width="80" height="98"/>
+<text x="184" y="336">004F O</text>
+<path class="glyph" transform="translate(186.523 400.923) scale(0.523 -0.523)" d="M 78 60 L 75 71 L 69 81 L 59 88 L 47 90 L 36 88 L 26 81 L 20 71 L 17 60 L 17 40 L 20 29 L 26 19 L 36 12 L 48 10 L 59 12 L 69 19 L 75 29 L 78 40 L 78 60 M 88 54 L 84 70 L 76 83 L 63 92 L 47 95 L 32 92 L 19 83 L 11 70 L 7 55 L 7 45 L 11 30 L 19 17 L 32 8 L 48 5 L 63 8 L 76 17 L 84 30 L 88 45 L 88 54 M 20 80 L 12 65 L 12 35 L 20 20 M 75 80 L 83 65 L 83 35 L 75 20 M 93 55 L 91 67 L 86 77 L 79 87 L 70 94 L 59 98 L 47 100 L 36 98 L 25 94 L 16 87 L 9 77 L 4 67 L 2 55 L 2 45 L 4 33 L 9 23 L 16 13 L 25 6 L 36 2 L 48 0.0 L 59 2 L 70 6 L 79 13 L 86 23 L 91 33 L 93 45 L 93 55"/>
+<rect class="box" x="268" y="322" width="80" height="98"/>
+<text x="272" y="336">0050 P</text>
+<path class="glyph" transform="translate(274.523 400.923) scale(0.523 -0.523)" d="M 18 38 L 45 38 L 56 40 L 66 46 L 72 56 L 74 68 L 72 79 L 66 89 L 56 95 L 45 98 L 2 98 L 2 3 L 17 3 L 17 38 M 17 88 L 17 48 L 40 48 L 48 49 L 54 53 L 59 60 L 60 68 L 59 75 L 54 82 L 48 86 L 40 88 L 17 88 M 12 43 L 45 43 L 54 44 L 62 50 L 67 58 L 69 68 L 67 77 L 62 85 L 54 91 L 45 93 L 7 93 L 7 8 L 12 8 L 12 90 M 41 92 L 50 91 L 58 85 L 63 77 L 65 67 L 63 58 L 58 50 L 50 44 L 41 43"/>
+<rect class="box" x="356" y="322" width="80" height="98"/>
+<text x="360" y="336">0051 Q</text>
+<path class="glyph" transform="translate(362.523 400.923) scale(0.523 -0.523)" d="M 78 60 L 75 71 L 69 81 L 59 88 L 47 90 L 36 88 L 26 81 L 20 71 L 17 60 L 17 40 L 20 29 L 26 19 L 36 12 L 48 10 L 59 12 L 69 19 L 75 29 L 78 40 L 78 60 M 88 54 L 84 70 L 76 83 L 63 92 L 47 95 L 32 92 L 19 83 L 11 70 L 7 55 L 7 45 L 11 30 L 19 17 L 32 8 L 48 5 L 63 8 L 76 17 L 84 30 L 88 45 L 88 55 M 18 75 L 13 65 L 13 35 L 18 25 M 78 75 L 83 65 L 83 35 L 78 25 M 86 1 L 59 29 M 62 32 L 55 25 L 83 -2 L 90 5 L 62 32 M 93 55 L 91 67 L 86 77 L 79 87 L 70 94 L 59 98 L 47 100 L 36 98 L 25 94 L 16 87 L 9 77 L 4 67 L 2 55 L 2 45 L 4 33 L 9 23 L 16 13 L 25 6 L 36 2 L 48 0.0 L 59 2 L 70 6 L 79 13 L 86 23 L 91 33 L 93 45 L 93 55"/>
+<rect class="box" x="444" y="322" width="80" height="98"/>
+<text x="448" y="336">0052 R</text>
+<path class="glyph" transform="translate(450.523 400.923) scale(0.523 -0.523)" d="M 18 88 L 18 53 L 42 53 L 49 54 L 55 58 L 59 63 L 60 70 L 59 77 L 55 82 L 49 86 L 42 88 L 18 88 M 13 48 L 43 48 L 51 49 L 60 52 L 67 57 L 72 65 L 74 74 L 72 83 L 67 91 L 60 96 L 50 98 L 3 98 L 3 3 L 18 3 L 18 43 L 36 43 L 42 41 L 48 37 L 52 31 L 54 27 L 55 11 L 56 7 L 58 4 L 61 2 L 76 2 L 73 4 L 71 7 L 70 11 L 69 27 L 67 34 L 63 39 L 57 43 L 50 46 L 43 48 M 43 92 L 51 91 L 59 86 L 64 79 L 65 70 L 64 61 L 55 54 L 44 50 M 64 5 L 62 8 L 60 12 L 59 28 L 57 33 L 52 41 L 44 46 L 37 47 M 53 41 L 60 36 L 63 32 L 64 26 L 65 10 L 68 5 M 58 54 L 65 59 L 68 66 L 69 74 L 68 81 L 64 87 L 58 91 L 50 93 L 8 93 L 8 5 L 13 5 L 13 90"/>
+<rect class="box" x="532" y="322" width="80" height="98"/>
+<text x="536" y="336">0053 S</text>
+<path class="glyph" transform="translate(538.523 400.923) scale(0.523 -0.523)" d="M 3 30 L 4 26 L 5 21 L 7 15 L 14 9 L 19 5 L 25 3 L 32 1 L 41 0.0 L 51 0.0 L 60 2 L 68 6 L 76 12 L 81 18 L 83 28 L 82 36 L 80 41 L 76 47 L 69 51 L 61 54 L 29 61 L 23 64 L 20 69 L 20 74 L 21 79 L 24 83 L 28 86 L 33 89 L 41 90 L 48 90 L 54 88 L 61 84 L 65 78 L 66 72 L 81 72 L 80 79 L 77 86 L 73 91 L 66 95 L 57 98 L 45 100 L 37 100 L 27 98 L 20 95 L 14 91 L 8 85 L 6 76 L 6 68 L 7 62 L 11 57 L 17 52 L 27 48 L 57 41 L 65 37 L 68 30 L 67 21 L 61 14 L 53 11 L 45 10 L 37 10 L 29 13 L 22 18 L 19 26 L 18 30 L 3 30 M 8 27 L 9 22 L 11 17 L 16 12 L 21 8 L 27 6 L 33 4 L 42 4 L 51 4 L 59 6 L 66 9 L 74 15 L 76 20 L 78 28 L 76 38 L 72 43 L 66 47 L 28 56 L 20 61 L 16 68 L 15 75 L 17 81 L 20 86 L 25 90 L 32 92 L 40 94 L 48 94 L 56 92 L 64 87 L 69 80 L 71 75 M 76 75 L 73 83 L 69 87 L 64 92 L 56 95 L 45 96 L 36 96 L 28 94 L 21 91 L 16 87 L 13 83 L 10 76 L 11 69 L 12 64 L 14 60 L 19 56 L 28 52 L 58 46 L 68 40 L 73 30 L 71 20 L 63 11 L 54 7 L 44 6 L 35 6 L 26 9 L 18 16 L 15 21 L 13 28"/>
+<rect class="box" x="620" y="322" width="80" height="98"/>
+<text x="624" y="336">0054 T</text>
+<path class="glyph" transform="translate(626.523 400.923) scale(0.523 -0.523)" d="M 33 88 L 33 3 L 48 3 L 48 88 L 78 88 L 78 98 L 3 98 L 3 88 L 38 88 L 38 5 L 43 5 L 43 90 M 5 93 L 75 93"/>
+<rect class="box" x="708" y="322" width="80" height="98"/>
+<text x="712" y="336">0055 U</text>
+<path class="glyph" transform="translate(714.523 400.923) scale(0.523 -0.523)" d="M 18 30 L 18 98 L 3 98 L 3 30 L 6 19 L 14 9 L 27 2 L 41 0.0 L 55 2 L 68 9 L 76 19 L 79 30 L 79 98 L 64 98 L 64 30 L 62 22 L 57 16 L 50 12 L 41 10 L 32 12 L 25 16 L 20 22 L 18 30 M 13 30 L 13 95 L 8 95 L 8 30 L 11 20 L 18 11 L 28 5 L 41 3 L 54 5 L 65 12 L 71 20 L 74 30 L 74 95 L 69 95 L 69 30 L 66 20 L 60 13 L 50 8 L 41 7 L 32 8 L 23 13 L 16 21 L 13 29"/>
+<rect class="box" x="796" y="322" width="80" height="98"/>
+<text x="800" y="336">0056 V</text>
+<path class="glyph" transform="translate(802.523 400.923) scale(0.523 -0.523)" d="M 45 23 L 17 98 L 2 98 L 37 3 L 52 3 L 87 98 L 72 98 L 45 23 M 48 15 L 42 15 L 13 94 L 9 94 L 41 7 L 49 7 L 81 94 L 76 94 L 48 15"/>
+<rect class="box" x="884" y="322" width="80" height="98"/>
+<text x="888" y="336">0057 W</text>
+<path class="glyph" transform="translate(890.523 400.923) scale(0.523 -0.523)" d="M 38 20 L 15 98 L 2 98 L 30 3 L 45 3 L 65 80 L 85 2 L 100 2 L 128 97 L 115 97 L 92 20 L 72 98 L 57 98 L 37 20 M 35 14 L 11 94 L 8 94 L 33 7 L 42 6 L 63 88 L 67 88 L 88 6 L 97 6 L 122 94 L 118 94 L 95 13 L 90 13 L 69 94 L 60 93 L 39 13 L 35 13"/>
+<rect class="box" x="972" y="322" width="80" height="98"/>
+<text x="976" y="336">0058 X</text>
+<path class="glyph" transform="translate(978.523 400.923) scale(0.523 -0.523)" d="M 18 3 L 3 3 L 68 98 L 83 98 L 18 3 M 15 6 L 10 7 L 70 94 L 75 94 L 15 6 M 73 2 L 8 97 L 23 97 L 88 2 L 73 2 M 74 6 L 15 94 L 20 94 L 80 7 L 74 6"/>
+<rect class="box" x="1060" y="322" width="80" height="98"/>
+<text x="1064" y="336">0059 Y</text>
+<path class="glyph" transform="translate(1066.523 400.923) scale(0.523 -0.523)" d="M 35 40 L 2 98 L 17 98 L 42 53 L 67 98 L 82 98 L 50 40 L 50 2 L 35 2 L 35 40 M 40 40 L 40 5 L 45 5 L 45 40 L 76 95 L 70 94 L 42 45 L 14 94 L 10 94 L 40 40"/>
+<rect class="box" x="1148" y="322" width="80" height="98"/>
+<text x="1152" y="336">005A Z</text>
+<path class="glyph" transform="translate(1154.523 400.923) scale(0.523 -0.523)" d="M 19 13 L 75 86 L 75 98 L 5 98 L 5 88 L 59 88 L 3 14 L 3 2 L 78 2 L 78 12 L 19 12 M 7 93 L 70 93 L 70 88 L 12 13 L 12 6 L 75 6 M 65 89 L 7 11 L 7 5"/>
+<rect class="box" x="1236" y="322" width="80" height="98"/>
+<text x="1240" y="336">005B [</text>
+<path class="glyph" transform="translate(1242.523 400.923) scale(0.523 -0.523)" d="M 10 93 L 10 8 L 11 5 L 13 3 L 15 2 L 15 -5 L 12 -5 L 9 -4 L 5 -2 L 3 1 L 2 5 L 2 95 L 3 99 L 5 102 L 9 104 L 13 105 L 15 105 L 15 97 L 13 97 L 11 95 L 10 92 M 13 101 L 9 100 L 7 95 L 6 92 L 6 9 L 7 3 L 10 0.0 L 13 -1"/>
+<rect class="box" x="1324" y="322" width="80" height="98"/>
+<text x="1328" y="336">005C \</text>
+<path class="glyph" transform="translate(1330.523 400.923) scale(0.523 -0.523)" d="M 60 -5 L 65 -5 L 7 105 L 2 105 L 60 -5"/>
+<rect class="box" x="4" y="428" width="80" height="98"/>
+<text x="8" y="442">005D ]</text>
+<path class="glyph" transform="translate(10.523 506.923) scale(0.523 -0.523)" d="M 8 93 L 8 8 L 7 5 L 5 3 L 2 2 L 2 -5 L 5 -5 L 9 -4 L 12 -2 L 14 1 L 15 5 L 15 95 L 14 99 L 12 102 L 9 104 L 5 105 L 2 105 L 2 97 L 5 97 L 7 95 L 8 92 M 5 101 L 8 100 L 11 95 L 11 92 L 11 9 L 11 3 L 7 0.0 L 4 -1"/>
+<rect class="box" x="92" y="428" width="80" height="98"/>
+<text x="96" y="442">005E ^</text>
+<path class="glyph" transform="translate(98.523 506.923) scale(0.523 -0.523)" d="M 8 83 L 8 87 L 10 91 L 14 93 L 18 93 L 21 93 L 25 90 L 27 87 L 28 83 L 27 80 L 25 76 L 21 74 L 17 73 L 14 74 L 10 76 L 8 80 L 7 83 M 3 83 L 4 89 L 8 93 L 12 96 L 18 98 L 23 96 L 27 93 L 31 89 L 32 83 L 31 78 L 27 73 L 23 70 L 17 69 L 12 70 L 7 73 L 4 78 L 3 83"/>
+<rect class="box" x="180" y="428" width="80" height="98"/>
+<text x="184" y="442">005F _</text>
+<rect class="box" x="200" y="458" width="40" height="48"/>
+<rect class="box" x="268" y="428" width="80" height="98"/>
+<text x="272" y="442">0060 `</text>
+<rect class="box" x="288" y="458" width="40" height="48"/>
+<rect class="box" x="356" y="428" width="80" height="98"/>
+<text x="360" y="442">0061 a</text>
+<path class="glyph" transform="translate(362.523 506.923) scale(0.523 -0.523)" d="M 49 42 L 45 38 L 42 37 L 36 35 L 31 34 L 26 32 L 22 31 L 19 28 L 17 25 L 16 21 L 17 17 L 19 14 L 21 12 L 24 11 L 28 10 L 32 10 L 37 11 L 41 13 L 46 16 L 48 21 L 49 27 L 49 31 L 49 42 M 66 3 L 64 4 L 63 7 L 63 47 L 62 54 L 61 59 L 57 64 L 51 68 L 41 71 L 31 71 L 22 70 L 16 67 L 12 64 L 8 59 L 7 54 L 6 52 L 19 52 L 19 53 L 20 56 L 23 59 L 28 62 L 33 62 L 36 62 L 40 61 L 45 60 L 47 57 L 48 53 L 48 49 L 46 45 L 42 44 L 38 43 L 30 41 L 24 40 L 18 39 L 13 36 L 8 33 L 5 30 L 3 26 L 2 23 L 2 18 L 3 13 L 6 9 L 10 5 L 13 3 L 18 2 L 22 1 L 30 1 L 35 2 L 40 4 L 42 6 L 48 15 L 51 3 L 66 3 M 60 4 L 59 7 L 58 53 L 54 61 L 48 66 L 40 68 L 30 68 L 22 67 L 16 63 L 11 55 L 16 54 L 19 60 L 24 64 L 31 66 L 39 65 L 46 63 L 51 58 L 53 53 L 52 48 L 47 43 L 40 40 L 31 38 L 21 35 L 12 31 L 7 25 L 6 19 L 9 11 L 16 6 L 24 5 L 35 6 L 47 16 L 54 19 L 54 50 M 19 32 L 13 28 L 11 21 L 13 13 L 19 9 L 28 7 L 34 8 M 51 23 L 54 4 L 56 19"/>
+<rect class="box" x="444" y="428" width="80" height="98"/>
+<text x="448" y="442">0062 b</text>
+<path class="glyph" transform="translate(450.523 506.923) scale(0.523 -0.523)" d="M 3 3 L 3 98 L 15 98 L 15 3 L 2 3 M 7 5 L 6 95 L 11 95 L 11 5 L 7 5 M 15 54 L 21 63 L 29 69 L 40 71 L 51 69 L 59 63 L 65 54 L 68 44 L 68 29 L 65 18 L 59 9 L 51 3 L 40 1 L 29 3 L 21 9 L 15 18 M 21 12 L 31 6 L 40 5 L 48 7 L 56 12 L 61 20 L 63 29 L 63 43 L 61 53 L 56 61 L 49 65 L 40 67 L 30 66 L 22 61 M 40 65 L 48 63 L 55 57 L 59 46 L 59 26 L 54 16 L 48 10 L 40 7 M 15 29 L 15 44 L 17 51 L 21 58 L 27 62 L 35 64 L 43 62 L 49 58 L 53 51 L 55 44 L 55 29 L 53 21 L 49 15 L 43 10 L 35 9 L 27 10 L 21 15 L 17 21 L 15 29"/>
+<rect class="box" x="532" y="428" width="80" height="98"/>
+<text x="536" y="442">0063 c</text>
+<path class="glyph" transform="translate(538.523 506.923) scale(0.523 -0.523)" d="M 19 60 L 11 48 L 11 26 L 18 13 M 50 60 L 56 53 L 61 53 L 55 60 L 46 65 L 35 67 L 24 65 L 15 60 L 9 52 L 6 43 L 6 30 L 9 20 L 15 12 L 24 7 L 35 5 L 46 7 L 55 12 L 61 21 L 56 21 L 50 12 M 15 44 L 17 51 L 21 58 L 27 62 L 35 64 L 43 62 L 49 58 L 54 51 L 66 51 L 65 54 L 58 63 L 47 69 L 35 71 L 23 69 L 12 63 L 5 54 L 2 44 L 2 29 L 5 18 L 12 9 L 23 3 L 35 1 L 47 3 L 58 9 L 65 18 L 66 24 L 54 24 L 53 21 L 49 15 L 43 10 L 35 9 L 27 10 L 21 15 L 17 21 L 15 29 L 15 44"/>
+<rect class="box" x="620" y="428" width="80" height="98"/>
+<text x="624" y="442">0064 d</text>
+<path class="glyph" transform="translate(626.523 506.923) scale(0.523 -0.523)" d="M 65 3 L 65 98 L 52 98 L 52 3 L 65 3 M 61 5 L 61 95 L 56 95 L 56 5 L 61 5 M 53 54 L 47 63 L 38 69 L 27 71 L 17 69 L 8 63 L 2 54 L 0.0 44 L 0.0 29 L 2 18 L 8 9 L 17 3 L 28 1 L 38 3 L 47 9 L 53 18 M 46 12 L 36 6 L 28 5 L 19 7 L 11 12 L 6 20 L 4 29 L 4 43 L 6 53 L 11 61 L 19 65 L 28 67 L 38 66 L 46 61 M 28 65 L 20 63 L 13 57 L 8 46 L 8 26 L 13 16 L 20 10 L 28 7 M 53 29 L 53 44 L 51 51 L 47 58 L 40 62 L 33 64 L 25 62 L 18 58 L 14 51 L 12 44 L 12 29 L 14 21 L 18 15 L 25 10 L 33 9 L 40 10 L 47 15 L 51 21 L 53 29"/>
+<rect class="box" x="708" y="428" width="80" height="98"/>
+<text x="712" y="442">0065 e</text>
+<path class="glyph" transform="translate(714.523 506.923) scale(0.523 -0.523)" d="M 19 60 L 11 48 L 11 26 L 18 13 M 15 34 L 68 34 L 68 44 L 65 54 L 58 63 L 47 69 L 35 71 L 23 69 L 12 63 L 5 54 L 2 44 L 2 29 L 5 18 L 12 9 L 23 3 L 35 1 L 47 3 L 58 9 L 65 19 L 52 19 L 49 15 L 43 10 L 35 9 L 27 10 L 21 15 L 17 21 L 15 29 L 15 44 L 17 51 L 21 58 L 27 62 L 35 64 L 43 62 L 49 58 L 53 51 L 55 44 L 55 42 L 15 42 M 15 38 L 63 38 L 64 43 L 61 53 L 55 60 L 46 65 L 35 67 L 24 65 L 15 60 L 9 52 L 6 43 L 6 29 L 9 20 L 15 12 L 24 7 L 35 5 L 46 7 L 55 12 L 58 16 L 54 16 L 50 11 M 51 60 L 58 49 L 59 42"/>
+<rect class="box" x="796" y="428" width="80" height="98"/>
+<text x="800" y="442">0066 f</text>
+<path class="glyph" transform="translate(802.523 506.923) scale(0.523 -0.523)" d="M 25 78 L 26 81 L 28 85 L 31 87 L 35 88 L 38 88 L 38 98 L 30 98 L 23 96 L 18 92 L 14 87 L 12 80 L 13 2 L 25 2 L 25 77 M 21 80 L 22 85 L 26 88 L 30 90 L 35 91 L 35 94 L 27 93 L 20 89 L 18 85 L 16 80 L 17 6 L 21 6 L 21 80 M 38 70 L 3 70 L 3 62 L 38 62 L 38 70 M 5 66 L 35 66"/>
+<rect class="box" x="884" y="428" width="80" height="98"/>
+<text x="888" y="442">0067 g</text>
+<path class="glyph" transform="translate(890.523 506.923) scale(0.523 -0.523)" d="M 55 44 L 53 51 L 49 58 L 43 62 L 35 64 L 27 62 L 21 58 L 17 51 L 15 44 L 15 36 L 17 29 L 21 22 L 27 18 L 35 16 L 43 18 L 49 22 L 53 29 L 55 36 L 55 44 M 55 54 L 49 63 L 41 69 L 30 71 L 19 69 L 11 63 L 5 54 L 2 44 L 2 36 L 5 26 L 11 17 L 19 11 L 30 9 L 41 11 L 49 17 L 55 26 M 55 0.0 L 53 -5 L 49 -9 L 43 -12 L 35 -12 L 27 -12 L 21 -9 L 17 -5 L 16 -2 M 68 0.0 L 65 -8 L 58 -14 L 47 -18 L 35 -20 L 23 -18 L 12 -14 L 5 -8 L 3 -2 M 16 -2 L 3 -2 L 5 -8 L 12 -14 L 23 -18 L 35 -20 L 47 -18 L 58 -14 L 65 -8 L 68 0.0 L 68 70 L 55 70 L 55 0.0 L 53 -5 L 49 -9 L 43 -12 L 35 -12 L 27 -12 L 21 -9 L 17 -5 L 16 -2 M 49 60 L 40 66 L 30 67 L 21 66 L 13 60 L 8 53 L 6 41 L 8 27 L 13 20 L 21 14 L 30 12 L 39 14 L 48 19 M 32 65 L 23 63 L 14 56 L 11 48 L 11 34 L 15 23 L 22 17 L 30 15 M 52 -12 L 57 -7 L 59 -1 L 59 67 L 63 67 L 63 1 L 61 -5 L 55 -11 L 45 -15 L 35 -16 L 24 -15 L 14 -11 L 8 -5 L 13 -6 L 19 -11"/>
+<rect class="box" x="972" y="428" width="80" height="98"/>
+<text x="976" y="442">0068 h</text>
+<path class="glyph" transform="translate(978.523 506.923) scale(0.523 -0.523)" d="M 3 3 L 3 98 L 15 98 L 15 3 L 2 3 M 7 5 L 6 95 L 11 95 L 11 5 L 7 5 M 15 54 L 20 63 L 28 69 L 38 71 L 47 69 L 55 63 L 61 54 L 63 42 L 63 2 L 51 2 L 51 44 L 50 51 L 46 58 L 40 62 L 33 64 L 26 62 L 20 58 L 16 51 L 15 44 M 21 61 L 28 66 L 38 67 L 46 65 L 53 61 L 57 53 L 59 43 L 59 5 L 55 5 L 55 46 L 51 57 L 45 63 L 38 65"/>
+<rect class="box" x="1060" y="428" width="80" height="98"/>
+<text x="1064" y="442">0069 i</text>
+<path class="glyph" transform="translate(1066.523 506.923) scale(0.523 -0.523)" d="M 15 85 L 15 98 L 2 98 L 2 85 L 15 85 M 11 89 L 11 94 L 6 94 L 6 89 L 11 89 M 2 2 L 2 70 L 15 70 L 15 2 L 2 2 M 7 5 L 6 67 L 11 67 L 11 5 L 7 5"/>
+<rect class="box" x="1148" y="428" width="80" height="98"/>
+<text x="1152" y="442">006A j</text>
+<path class="glyph" transform="translate(1154.523 506.923) scale(0.523 -0.523)" d="M 15 0.0 L 14 -4 L 12 -7 L 9 -9 L 5 -10 L 2 -10 L 2 -20 L 10 -20 L 17 -19 L 22 -15 L 26 -9 L 28 -2 L 27 70 L 15 70 L 15 0.0 M 19 -2 L 18 -7 L 14 -11 L 10 -13 L 5 -13 L 5 -17 L 13 -16 L 20 -12 L 22 -8 L 24 -2 L 23 66 L 19 66 L 19 -3 M 28 85 L 28 98 L 15 98 L 15 85 L 28 85 M 24 89 L 24 94 L 19 94 L 19 89 L 24 89"/>
+<rect class="box" x="1236" y="428" width="80" height="98"/>
+<text x="1240" y="442">006B k</text>
+<path class="glyph" transform="translate(1242.523 506.923) scale(0.523 -0.523)" d="M 3 3 L 3 98 L 15 98 L 15 3 L 2 3 M 7 5 L 6 95 L 11 95 L 11 5 L 7 5 M 15 37 L 48 70 L 63 70 L 38 45 L 66 2 L 51 2 L 29 36 L 15 23 M 15 33 L 50 67 L 55 67 L 33 46 L 58 6 L 53 6 L 29 42 L 15 29"/>
+<rect class="box" x="1324" y="428" width="80" height="98"/>
+<text x="1328" y="442">006C l</text>
+<path class="glyph" transform="translate(1330.523 506.923) scale(0.523 -0.523)" d="M 3 3 L 3 98 L 15 98 L 15 3 L 2 3 M 7 5 L 6 95 L 11 95 L 11 5 L 7 5"/>
+<rect class="box" x="4" y="534" width="80" height="98"/>
+<text x="8" y="548">006D m</text>
+<path class="glyph" transform="translate(10.523 612.923) scale(0.523 -0.523)" d="M 3 3 L 3 70 L 15 70 L 15 2 L 2 2 M 7 5 L 6 67 L 11 67 L 11 5 L 7 5 M 15 54 L 20 63 L 27 69 L 35 71 L 44 69 L 51 63 L 56 54 L 58 42 L 58 2 L 48 2 L 48 44 L 46 51 L 43 58 L 38 62 L 31 64 L 25 62 L 20 58 L 16 51 L 15 44 M 21 61 L 27 66 L 35 67 L 43 65 L 49 61 L 53 53 L 55 43 L 55 5 L 51 5 L 51 46 L 47 57 L 42 63 L 35 65 M 57 54 L 62 63 L 69 69 L 78 71 L 87 69 L 94 63 L 99 54 L 100 42 L 100 2 L 90 2 L 90 44 L 89 51 L 85 58 L 80 62 L 74 64 L 68 62 L 62 58 L 59 51 L 57 44 M 63 61 L 69 66 L 78 67 L 85 65 L 91 61 L 95 53 L 97 43 L 97 5 L 94 5 L 94 46 L 90 57 L 84 63 L 78 65"/>
+<rect class="box" x="92" y="534" width="80" height="98"/>
+<text x="96" y="548">006E n</text>
+<path class="glyph" transform="translate(98.523 612.923) scale(0.523 -0.523)" d="M 3 3 L 3 70 L 15 70 L 15 2 L 2 2 M 7 5 L 6 67 L 11 67 L 11 5 L 7 5 M 15 54 L 20 63 L 27 69 L 35 71 L 44 69 L 51 63 L 56 54 L 58 42 L 58 2 L 48 2 L 48 44 L 46 51 L 43 58 L 38 62 L 31 64 L 25 62 L 20 58 L 16 51 L 15 44 M 21 61 L 27 66 L 35 67 L 43 65 L 49 61 L 53 53 L 55 43 L 55 5 L 51 5 L 51 46 L 47 57 L 42 63 L 35 65"/>
+<rect class="box" x="180" y="534" width="80" height="98"/>
+<text x="184" y="548">006F o</text>
+<path class="glyph" transform="translate(186.523 612.923) scale(0.523 -0.523)" d="M 3 29 L 3 44 L 6 54 L 13 63 L 24 69 L 36 71 L 48 69 L 59 63 L 66 54 L 69 44 L 69 29 L 66 18 L 59 9 L 48 3 L 36 1 L 24 3 L 13 9 L 6 18 L 3 29 M 16 29 L 16 44 L 18 51 L 22 58 L 28 62 L 36 64 L 44 62 L 50 58 L 54 51 L 56 44 L 56 29 L 54 21 L 50 15 L 44 10 L 36 9 L 28 10 L 22 15 L 18 21 L 16 29 M 7 29 L 7 43 L 10 53 L 16 60 L 25 65 L 36 67 L 47 65 L 56 60 L 62 52 L 65 43 L 65 29 L 62 20 L 56 12 L 47 7 L 36 5 L 25 7 L 16 12 L 10 20 L 7 30 M 20 60 L 12 48 L 12 26 L 19 13 M 52 60 L 60 48 L 60 26 L 53 13"/>
+<rect class="box" x="268" y="534" width="80" height="98"/>
+<text x="272" y="548">0070 p</text>
+<path class="glyph" transform="translate(274.523 612.923) scale(0.523 -0.523)" d="M 3 70 L 3 -25 L 16 -25 L 16 70 L 3 70 M 8 67 L 8 -22 L 12 -22 L 12 67 L 8 67 M 16 18 L 22 9 L 30 3 L 41 1 L 52 3 L 60 9 L 66 18 L 69 29 L 69 44 L 66 54 L 60 63 L 52 69 L 41 71 L 30 69 L 22 63 L 16 54 M 22 61 L 32 66 L 41 67 L 49 66 L 57 60 L 62 53 L 64 43 L 64 29 L 62 20 L 57 12 L 50 7 L 41 5 L 31 6 L 23 11 M 41 8 L 49 10 L 56 16 L 60 27 L 60 46 L 55 57 L 49 63 L 41 65 M 16 29 L 16 44 L 18 51 L 22 58 L 28 62 L 36 64 L 44 62 L 50 58 L 54 51 L 56 44 L 56 29 L 54 21 L 50 15 L 44 10 L 36 9 L 28 10 L 22 15 L 18 21 L 16 29"/>
+<rect class="box" x="356" y="534" width="80" height="98"/>
+<text x="360" y="548">0071 q</text>
+<path class="glyph" transform="translate(362.523 612.923) scale(0.523 -0.523)" d="M 65 70 L 65 -25 L 52 -25 L 52 70 L 65 70 M 61 67 L 61 -22 L 56 -22 L 56 67 L 61 67 M 53 18 L 47 9 L 38 3 L 27 1 L 17 3 L 8 9 L 2 18 L 0.0 29 L 0.0 44 L 2 54 L 8 63 L 17 69 L 28 71 L 38 69 L 47 63 L 53 54 M 46 61 L 36 66 L 28 67 L 19 66 L 11 60 L 6 53 L 4 43 L 4 29 L 6 20 L 11 12 L 19 7 L 28 5 L 38 6 L 46 11 M 28 8 L 20 10 L 13 16 L 8 27 L 8 46 L 13 57 L 20 63 L 28 65 M 53 29 L 53 44 L 51 51 L 47 58 L 40 62 L 33 64 L 25 62 L 18 58 L 14 51 L 12 44 L 12 29 L 14 21 L 18 15 L 25 10 L 33 9 L 40 10 L 47 15 L 51 21 L 53 29"/>
+<rect class="box" x="444" y="534" width="80" height="98"/>
+<text x="448" y="548">0072 r</text>
+<path class="glyph" transform="translate(450.523 612.923) scale(0.523 -0.523)" d="M 3 3 L 3 70 L 16 70 L 16 2 L 3 2 M 8 5 L 8 67 L 12 67 L 12 5 L 8 5 M 16 54 L 20 63 L 28 69 L 36 71 L 41 71 L 41 62 L 36 62 L 30 61 L 22 56 L 18 48 L 16 40 M 16 50 L 22 60 L 29 65 L 38 67"/>
+<rect class="box" x="532" y="534" width="80" height="98"/>
+<text x="536" y="548">0073 s</text>
+<path class="glyph" transform="translate(538.523 612.923) scale(0.523 -0.523)" d="M 2 22 L 2 19 L 3 16 L 5 12 L 10 7 L 14 5 L 18 3 L 23 2 L 30 1 L 38 1 L 45 3 L 51 5 L 57 9 L 60 14 L 62 21 L 61 27 L 60 30 L 59 30 L 56 34 L 51 37 L 45 39 L 21 44 L 17 46 L 15 49 L 14 53 L 15 56 L 17 59 L 20 61 L 24 63 L 30 64 L 35 64 L 40 63 L 45 60 L 48 56 L 49 52 L 60 52 L 60 57 L 58 61 L 54 65 L 49 68 L 43 70 L 34 71 L 27 71 L 20 70 L 14 68 L 10 65 L 6 61 L 4 55 L 4 49 L 5 45 L 8 41 L 12 38 L 19 35 L 42 30 L 48 27 L 51 22 L 50 16 L 45 11 L 40 9 L 33 8 L 27 8 L 21 10 L 16 14 L 14 19 L 13 22 L 2 22 M 6 20 L 6 17 L 8 13 L 12 9 L 15 7 L 19 5 L 24 4 L 31 4 L 38 4 L 44 6 L 49 8 L 55 12 L 57 15 L 58 21 L 57 28 L 54 32 L 49 34 L 20 41 L 15 44 L 11 49 L 11 54 L 12 58 L 15 61 L 19 64 L 24 66 L 30 67 L 36 67 L 41 66 L 47 62 L 51 57 L 53 54 M 56 54 L 54 59 L 51 62 L 47 65 L 41 68 L 33 69 L 27 68 L 21 67 L 16 65 L 12 62 L 9 59 L 7 54 L 8 49 L 8 46 L 10 43 L 14 40 L 20 38 L 43 33 L 51 29 L 55 22 L 53 15 L 47 9 L 40 6 L 33 5 L 26 5 L 19 8 L 13 12 L 10 16 L 10 21"/>
+<rect class="box" x="620" y="534" width="80" height="98"/>
+<text x="624" y="548">0074 t</text>
+<path class="glyph" transform="translate(626.523 612.923) scale(0.523 -0.523)" d="M 25 23 L 26 19 L 28 15 L 31 13 L 35 12 L 38 12 L 38 2 L 30 2 L 23 4 L 18 8 L 14 13 L 12 20 L 13 98 L 25 98 L 25 23 M 21 20 L 22 15 L 26 12 L 30 10 L 35 9 L 35 6 L 27 7 L 20 11 L 18 15 L 16 20 L 17 94 L 21 94 L 21 20 M 38 60 L 3 60 L 3 68 L 38 68 L 38 60 M 5 64 L 35 64"/>
+<rect class="box" x="708" y="534" width="80" height="98"/>
+<text x="712" y="548">0075 u</text>
+<path class="glyph" transform="translate(714.523 612.923) scale(0.523 -0.523)" d="M 63 70 L 63 2 L 50 2 L 50 70 L 63 70 M 58 67 L 59 5 L 54 5 L 54 67 L 58 67 M 50 18 L 45 9 L 37 3 L 27 1 L 18 3 L 10 9 L 4 18 L 2 30 L 2 70 L 14 70 L 14 29 L 15 21 L 19 15 L 25 10 L 32 9 L 39 10 L 45 15 L 49 21 L 50 29 M 44 11 L 37 6 L 27 5 L 19 7 L 12 12 L 8 20 L 6 29 L 6 68 L 10 68 L 10 27 L 14 16 L 20 10 L 27 8"/>
+<rect class="box" x="796" y="534" width="80" height="98"/>
+<text x="800" y="548">0076 v</text>
+<path class="glyph" transform="translate(802.523 612.923) scale(0.523 -0.523)" d="M 32 15 L 15 70 L 2 70 L 25 2 L 40 2 L 63 70 L 50 70 L 32 15 M 30 10 L 12 66 L 8 66 L 27 6 L 38 7 L 57 66 L 53 66 L 34 10 L 30 10"/>
+<rect class="box" x="884" y="534" width="80" height="98"/>
+<text x="888" y="548">0077 w</text>
+<path class="glyph" transform="translate(890.523 612.923) scale(0.523 -0.523)" d="M 49 52 L 34 2 L 22 2 L 2 70 L 13 70 L 28 15 L 43 70 L 54 70 L 69 15 L 84 70 L 95 70 L 75 2 L 63 2 L 49 52 M 50 59 L 47 59 L 31 6 L 24 6 L 6 67 L 11 67 L 26 10 L 30 10 L 46 66 L 51 66 L 67 10 L 71 11 L 87 67 L 91 67 L 72 6 L 66 6 L 50 59"/>
+<rect class="box" x="972" y="534" width="80" height="98"/>
+<text x="976" y="548">0078 x</text>
+<path class="glyph" transform="translate(978.523 612.923) scale(0.523 -0.523)" d="M 18 68 L 5 68 L 55 3 L 68 3 L 18 68 M 53 68 L 3 3 L 16 3 L 66 68 L 53 68 M 54 64 L 9 5 L 14 5 L 59 64 L 54 64 M 16 64 L 11 64 L 56 5 L 61 5 L 16 64"/>
+<rect class="box" x="1060" y="534" width="80" height="98"/>
+<text x="1064" y="548">0079 y</text>
+<path class="glyph" transform="translate(1066.523 612.923) scale(0.523 -0.523)" d="M 25 3 L 2 70 L 15 70 L 32 15 L 50 70 L 63 70 L 40 2 L 38 -3 L 36 -9 L 32 -14 L 27 -18 L 20 -20 L 8 -20 L 8 -10 L 15 -10 L 19 -9 L 23 -7 L 25 -4 L 25 -1 L 25 3 M 30 10 L 12 66 L 8 66 L 29 1 L 29 -6 L 24 -10 L 19 -12 L 12 -13 L 12 -17 L 22 -16 L 30 -12 L 33 -5 L 57 66 L 53 66 L 32 4 L 30 10"/>
+<rect class="box" x="1148" y="534" width="80" height="98"/>
+<text x="1152" y="548">007A z</text>
+<path class="glyph" transform="translate(1154.523 612.923) scale(0.523 -0.523)" d="M 15 10 L 58 10 L 58 2 L 3 2 L 3 10 L 43 63 L 5 63 L 5 70 L 55 70 L 55 62 L 15 10 M 7 66 L 46 66 L 46 61 L 6 9 L 6 6 L 55 6 M 51 68 L 51 62 L 11 10 L 11 7"/>
+<rect class="box" x="1236" y="534" width="80" height="98"/>
+<text x="1240" y="548">00C8 È</text>
+<rect class="box" x="1256" y="564" width="40" height="48"/>
+<rect class="box" x="1324" y="534" width="80" height="98"/>
+<text x="1328" y="548">00C9 É</text>
+<rect class="box" x="1344" y="564" width="40" height="48"/>
+<rect class="box" x="4" y="640" width="80" height="98"/>
+<text x="8" y="654">00CA Ê</text>
+<rect class="box" x="24" y="670" width="40" height="48"/>
+</svg>
