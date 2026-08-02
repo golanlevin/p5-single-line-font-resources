@@ -1,4 +1,4 @@
-## Jono Brandel's AniType
+## Recovery of Jono Brandel's *AniType*
 
 ![anitype.gif](anitype.gif)
 
@@ -16,7 +16,7 @@ The original *AniType* website and its submission database are no longer online.
 # AniType Recovery
 
 
-This directory contains three small browser apps made while recovering parts of Jono Brandel's AniType project for a single-line font archive. The main goals were:
+This directory contains three small browser apps made while recovering parts of Jono Brandel's *AniType* project. The main goals were:
 
 - preserve the original glyph endpoint data with as little format churn as possible;
 - display the recovered single-stroke AniType font in p5.js;
@@ -87,11 +87,10 @@ Files:
 - `index.html` loads the legacy runtime pieces and the relic player.
 - `two.js`, `tween.js`, `anitype.js`, and `backbone.js` are legacy support files used by the original AniType-style code.
 - `student_anitype_letters.js` contains the recovered student submissions. It has been beautified for readability but is otherwise kept close to the pasted source.
-- `letters_2014.js` contains an additional recovered 2014 batch. Its pasted syntax was repaired and beautified, then its registrations were merged into `student_anitype_letters.js`.
 - `relics.js` collects the registered submissions, sorts them, lays them out, restarts each animation on a synchronized loop, and adds mouseover author labels.
 - `style.css` contains the black-canvas/white-line display styling and tooltip styling.
 
-The relic player lays out the combined collection alphabetically in 12 columns and computes the SVG/stage height from the number of rows needed. With the current collection, this produces five rows on a 900x660 stage.
+The relic player lays out the combined collection alphabetically in 13 columns and computes the SVG/stage height from the number of rows needed. 
 
 The compatibility layer in `relics.js` reimplements the subset of AniType behavior needed by these submissions:
 
