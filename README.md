@@ -31,7 +31,7 @@
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jongmin Kim's variable *LeonSans* font](#p5js-port-of-jongmin-kims-variable-leonsans-font)
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
-* [Recovery of Jono Brandel's *AniType*](#recovery-of-jono-brandels-anitype)
+* [Recovery of Jono Brandel's *Anitype*](#recovery-of-jono-brandels-anitype)
 * [Licia He's p5.js *DearPlotter* font](#licia-hes-p5js-dearplotter-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Daniel Holden's *Consolines* font](#p5js-port-of-daniel-holdens-consolines-font)
@@ -376,17 +376,17 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 
 ---
 
-### Recovery of Jono Brandel's *AniType*
+### Recovery of Jono Brandel's *Anitype*
 
 ![anitype.gif](brandel_anitype/anitype.gif)
 
-*AniType* was a participatory online platform for dynamic typography in which users could contribute short JavaScript programs to produce looping, procedurally animated letterforms. The *AniType* website provided an alphabet of computationally malleable Bézier skeletons, an in-browser code editor, a lightweight animation API built on [two.js](https://two.js.org/), and a public gallery in which contributors could publish and remix their animated letters. Created by [Jono Brandel](https://www.jono.fyi/) ([@jonobr1](https://github.com/jonobr1)) in 2013 while at Google's Creative Lab Data Arts Team, Brandel envisioned these animations eventually becoming reusable components for expressive web typography.
+*Anitype* was a participatory online platform for dynamic typography in which users could contribute short JavaScript programs to produce looping, procedurally animated letterforms. The *Anitype* website provided an alphabet of computationally malleable Bézier skeletons, an in-browser code editor, a lightweight animation API built on [two.js](https://two.js.org/), and a public gallery in which contributors could publish and remix their animated letters. Created by [Jono Brandel](https://www.jono.fyi/) ([@jonobr1](https://github.com/jonobr1)) in 2013 while at Google's Creative Lab Data Arts Team, Brandel envisioned these animations eventually becoming reusable components for expressive web typography.
 
-The original *AniType* website and its submission database are no longer online. Although portions of the source code survive in the Internet Archive, the project's gallery of contributed animations may have been lost. [This directory](brandel_anitype/README.md) presents a partial software archaeology and recovery of the project. Three related applications are included:
+The original *Anitype* website and its submission database are no longer online. Although portions of the source code survive in the Internet Archive, the project's gallery of contributed animations may have been lost. [This directory](brandel_anitype/README.md) presents a partial software archaeology and recovery of the project. Three related applications are included:
 
 * [`anitype_p5/`](brandel_anitype/README.md#anitype_p5) — a p5.js renderer for the recovered font data, preserving Brandel's original single-stroke glyph representations while providing a modern, dependency-light display and animation environment.
-* [`anitype_two/`](brandel_anitype/README.md#anitype_two) — a modern two.js implementation of the same recovered font, demonstrating the original endpoint representation using current versions of the library on which *AniType* was based.
-* [`anitype_relics/`](brandel_anitype/README.md#anitype_relics) — a compatibility-layer player for surviving *AniType* animations. This recreates the subset of the original *AniType* runtime needed to execute legacy submissions using modern browsers. The collection includes 51 displayed student-authored *AniType* animations from my *Creative Coding* courses (2014–2015), salvaged from archived class websites.
+* [`anitype_two/`](brandel_anitype/README.md#anitype_two) — a modern two.js implementation of the same recovered font, demonstrating the original endpoint representation using current versions of the library on which *Anitype* was based.
+* [`anitype_relics/`](brandel_anitype/README.md#anitype_relics) — a compatibility-layer player for surviving *Anitype* animations. This recreates the subset of the original *Anitype* runtime needed to execute legacy submissions using modern browsers. The collection includes 51 displayed student-authored *Anitype* animations from my *Creative Coding* courses (2014–2015), salvaged from archived class websites.
 
 ---
 

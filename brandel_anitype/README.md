@@ -1,22 +1,22 @@
-## Recovery of Jono Brandel's *AniType*
+## Recovery of Jono Brandel's *Anitype*
 
 ![anitype.gif](anitype.gif)
 
-*AniType* was a participatory online platform for dynamic typography in which users could contribute short JavaScript programs to produce looping, procedurally animated letterforms. The *AniType* website provided an alphabet of computationally malleable Bézier skeletons, an in-browser code editor, a lightweight animation API built on [two.js](https://two.js.org/), and a public gallery in which contributors could publish and remix their animated letters. Created by [Jono Brandel](https://www.jono.fyi/) in 2013 while at Google's Creative Lab Data Arts Team, Brandel envisioned these animations eventually becoming reusable components for expressive web typography.
+*Anitype* was a participatory online platform for dynamic typography in which users could contribute short JavaScript programs to produce looping, procedurally animated letterforms. The *Anitype* website provided an alphabet of computationally malleable Bézier skeletons, an in-browser code editor, a lightweight animation API built on [two.js](https://two.js.org/), and a public gallery in which contributors could publish and remix their animated letters. Created by [Jono Brandel](https://www.jono.fyi/) in 2013 while at Google's Creative Lab Data Arts Team, Brandel envisioned these animations eventually becoming reusable components for expressive web typography.
 
-The original *AniType* website and its submission database are no longer online. Although portions of the source code survive in the Internet Archive, the project's gallery of contributed animations appears to have been lost. This directory presents a partial software archaeology and recovery of the project. Three related applications are included:
+The original *Anitype* website and its submission database are no longer online. Although portions of the source code survive in the Internet Archive, the project's gallery of contributed animations appears to have been lost. This directory presents a partial software archaeology and recovery of the project. Three related applications are included:
 
 * [`anitype_p5/`](anitype_p5/) — a p5.js renderer for the recovered font data, preserving Brandel's original single-stroke glyph representations while providing a modern, dependency-light display and animation environment.
-* [`anitype_two/`](anitype_two/) — a modern two.js implementation of the same recovered font, demonstrating the original endpoint representation using current versions of the library on which *AniType* was based.
-* [`anitype_relics/`](anitype_relics/) — a compatibility-layer player for surviving *AniType* animations. This recreates the subset of the original *AniType* runtime needed to execute legacy submissions using modern browsers. The collection includes 51 displayed student-authored *AniType* animations from my *Creative Coding* courses (2014–2015), salvaged from archived class websites.
+* [`anitype_two/`](anitype_two/) — a modern two.js implementation of the same recovered font, demonstrating the original endpoint representation using current versions of the library on which *Anitype* was based.
+* [`anitype_relics/`](anitype_relics/) — a compatibility-layer player for surviving *Anitype* animations. This recreates the subset of the original *Anitype* runtime needed to execute legacy submissions using modern browsers. The collection includes 51 displayed student-authored *Anitype* animations from my *Creative Coding* courses (2014–2015), salvaged from archived class websites.
 
 
 ---
 
-# AniType Recovery
+# *Anitype* Recovery
 
 
-This directory contains three small browser apps made while recovering parts of Jono Brandel's *AniType* project. The main goals were:
+This directory contains three small browser apps made while recovering parts of Jono Brandel's *Anitype* project. The main goals were:
 
 - preserve the original glyph endpoint data with as little format churn as possible;
 - display the recovered single-stroke AniType font in p5.js;
@@ -40,7 +40,7 @@ anitype_recovery/
 
 ![anitype.gif](anitype.gif)
 
-This is the p5.js version of the recovered AniType font display.
+This is the p5.js version of the recovered Anitype font display.
 
 Files:
 
@@ -71,7 +71,7 @@ Files:
 - `sketch.js` builds two.js paths from the endpoints and animates path reveal with each path's `beginning` / `ending` controls.
 - `style.css` contains the page styling.
 
-This app is useful as a bridge between the original AniType/two.js model and the p5.js archive display. It renders the static font data, not the student-authored AniType animation hooks.
+This app is useful as a bridge between the original Anitype/two.js model and the p5.js archive display. It renders the static font data, not the student-authored AniType animation hooks.
 
 
 ---
@@ -80,7 +80,7 @@ This app is useful as a bridge between the original AniType/two.js model and the
 
 ![anitype_relics.gif](anitype_relics.gif)
 
-This app plays the recovered student AniType animations using a local compatibility layer around the older AniType API.
+This app plays the recovered student Anitype animations using a local compatibility layer around the older AniType API.
 
 Files:
 
