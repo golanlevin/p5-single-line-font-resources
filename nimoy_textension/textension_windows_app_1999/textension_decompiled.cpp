@@ -4727,7 +4727,7 @@ int sub_402FA0()
   char Buffer[256]; // [esp+1Ch] [ebp-100h] BYREF
 
   TickCount = GetTickCount();
-  sprintf(Buffer, "txtnsn%010i.ai", TickCount);
+  snprintf(Buffer, sizeof(Buffer), "txtnsn%010i.ai", TickCount);
   ofstream::open((ofstream *)&unk_FAF930, Buffer, 2, 420);
   ostream::operator<<((ostream *)&unk_FAF930, aPsAdobe10Creat);
   v7 = 0.001;
@@ -5059,7 +5059,7 @@ int __thiscall sub_4037C0(int this)
       return result;
   }
   v8 = this + 65564 * result;
-  strcpy((char *)(v8 + 65548), (const char *)(this + 12));
+  strncpy((char *)(v8 + 65548), (const char *)(this + 12), 255); ((char *)(v8 + 65548))[255] = '\0';
   result = 0;
   *(float *)(v8 + 131084) = 90.0 - (double)*(int *)(this + 8) * 1.5;
   *(_DWORD *)(v8 + 131088) = 1077936128;
@@ -5254,7 +5254,7 @@ LABEL_12:
         if ( !v7 )
         {
 LABEL_17:
-          sprintf(Buffer, "word %02i \"", v3 + 1);
+          snprintf(Buffer, sizeof(Buffer), "word %02i \"", v3 + 1);
           v8 = 8;
           if ( *(_BYTE *)(this + v5 + 8) != 32 )
           {
@@ -5282,7 +5282,7 @@ LABEL_23:
         sub_402E60();
         sub_402AD0(-1082130432, 0, 0, -1054867456, 0, 0);
         sub_402D40(-1047003136, 0, 0);
-        sprintf(Buffer, "character %02i", v22);
+        snprintf(Buffer, sizeof(Buffer), "character %02i", v22);
         sub_4011D0(Buffer);
         sub_402F00();
         goto LABEL_24;
