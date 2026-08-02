@@ -543,8 +543,6 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 Here are some inspirational creative software projects that make use of single-line fonts.
 
 * [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) by [Licia He](http://eyesofpanda.com/), 2026.
-* [*TYPEFACE 2*](https://vimeo.com/9587564) by [Mary Huang](https://mary-huang.com/), 2010.
-* [*Computed Type*](https://vimeo.com/60651938) by Christoph Knoth, 2013.
 * [*X-Y-Z*](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
 * [*Space Type Generator*](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
 * [*chinese-radical-vis* & *RRPL*](https://unglitch.netlify.app/chinese-radical-vis/) by [Lingdong Huang](https://lingdong.works/), 2018.
@@ -553,6 +551,8 @@ Here are some inspirational creative software projects that make use of single-l
 * [*waveform - study 3*](https://x.com/yugop/status/2062481427233685661) by Yugo Nakamura, 2026.
 * [*Letterform Variations*](https://letterformvariations.com/book/) by [Nigel Cottier](https://process-pattern.com/), 2021.
 * [*Typode*](https://moebio.com/research/typode/) by [Santiago Ortiz](https://moebio.com/), 2013.
+* [*Computed Type*](https://vimeo.com/60651938) by Christoph Knoth, 2013.
+* [*TYPEFACE 2*](https://vimeo.com/9587564) by [Mary Huang](https://mary-huang.com/), 2010.
 * [*Viktor*](https://juerglehni.com/works/viktor), [*Hektor*](https://juerglehni.com/works/hektor), and [*Otto*](https://juerglehni.com/works/otto) by [Jürg Lehni](https://juerglehni.com/), 2002-2014.
 * [*Textension: Word Processor Variations*](https://vimeo.com/6121230) by [JT Nimoy](https://jtnimoy.cc/), 1999.
 * [*Vib Ribbon*](https://www.youtube.com/watch?v=cFXz_xKQa40) by Masaya Matsuura and NanaOn-Sha, 1999.
@@ -564,7 +564,6 @@ Here are some inspirational creative software projects that make use of single-l
 
 * [*MTDBT2F*](https://kadist.org/program/dexter-sinister/) MetaFont, Dexter Sinister, 2013, [github](https://github.com/O-R-G/mtdbt2f4d/tree/main)
 * ROM extraction of HP7596A font
-* [*AniType* by Jono Brandel](https://web.archive.org/web/20160304012115/http://www.anitype.com/)
 * Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
 
 
