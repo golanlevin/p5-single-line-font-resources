@@ -98,3 +98,9 @@ The compatibility layer in `relics.js` reimplements the subset of AniType behavi
 - `makePolygon(...)`, `addTween(...)`, and `addTick(...)` are mapped onto two.js and tween.js.
 - Each relic is rebuilt at the start of every loop, which gives the old one-shot tween code a clean state.
 - Mouseover hit zones sit above the SVG, and tooltip movement is throttled through `requestAnimationFrame()`.
+
+---
+
+<!-- 
+codex resume 019fc023-903f-7a22-8b1e-459dc8360741
+-->
