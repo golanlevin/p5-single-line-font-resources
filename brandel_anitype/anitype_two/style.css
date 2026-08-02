@@ -1,0 +1,11 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+main,
+svg {
+  display: block;
+}

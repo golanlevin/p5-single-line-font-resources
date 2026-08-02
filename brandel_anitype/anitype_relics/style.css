@@ -1,0 +1,43 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+main,
+canvas,
+svg {
+  display: block;
+}
+
+main {
+  position: relative;
+  width: 900px;
+  height: 535px;
+}
+
+.hit-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.relic-hit {
+  position: absolute;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 2;
+  padding: 4px 7px;
+  top: 0;
+  left: 0;
+  background: white;
+  color: black;
+  border: 1px solid #777;
+  font: 12px/1.2 sans-serif;
+  pointer-events: none;
+  white-space: nowrap;
+  will-change: transform;
+}

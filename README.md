@@ -31,6 +31,7 @@
 * [p5.js port of JT Nimoy's *Textension* font](#p5js-port-of-jt-nimoys-textension-font)
 * [p5.js port of Jongmin Kim's variable *LeonSans* font](#p5js-port-of-jongmin-kims-variable-leonsans-font)
 * [Kielm's p5.js *Space Type Generator* font](#kielms-p5js-space-type-generator-font)
+* [Recovery of Jono Brandel's *AniType*](#recovery-of-jono-brandels-anitype)
 * [Licia He's p5.js *DearPlotter* font](#licia-hes-p5js-dearplotter-font)
 * [p5.js port of Moebio's *Typode* font](#p5js-port-of-moebios-typode-font)
 * [p5.js port of Daniel Holden's *Consolines* font](#p5js-port-of-daniel-holdens-consolines-font)
@@ -375,6 +376,20 @@ This is an adaptation of an especially versatile, procedural single-stroke monos
 
 ---
 
+### Recovery of Jono Brandel's *AniType*
+
+![anitype.gif](brandel_anitype/anitype.gif)
+
+*AniType* was a participatory online platform for dynamic typography in which users could contribute short JavaScript programs to produce looping, procedurally animated letterforms. The *AniType* website provided an alphabet of computationally malleable Bézier skeletons, an in-browser code editor, a lightweight animation API built on [two.js](https://two.js.org/), and a public gallery in which contributors could publish and remix their animated letters. Created by [Jono Brandel](https://www.jono.fyi/) ([@jonobr1](https://github.com/jonobr1)) in 2013 while at Google's Creative Lab Data Arts Team, Brandel envisioned these animations eventually becoming reusable components for expressive web typography.
+
+The original *AniType* website and its submission database are no longer online. Although portions of the source code survive in the Internet Archive, the project's gallery of contributed animations may have been lost. [This directory](brandel_anitype/README.md) presents a partial software archaeology and recovery of the project. Three related applications are included:
+
+* [`anitype_p5/`](brandel_anitype/README.md#anitype_p5) — a p5.js renderer for the recovered font data, preserving Brandel's original single-stroke glyph representations while providing a modern, dependency-light display and animation environment.
+* [`anitype_two/`](brandel_anitype/README.md#anitype_two) — a modern two.js implementation of the same recovered font, demonstrating the original endpoint representation using current versions of the library on which *AniType* was based.
+* [`anitype_relics/`](brandel_anitype/README.md#anitype_relics) — a compatibility-layer player for surviving *AniType* animations. This recreates the subset of the original *AniType* runtime needed to execute legacy submissions using modern browsers. The collection includes 51 displayed student-authored *AniType* animations from my *Creative Coding* courses (2014–2015), salvaged from archived class websites.
+
+---
+
 ### Licia He's p5.js *DearPlotter* font
 
 The [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) is a program that generates stroke-fonts, created by [Licia He](http://eyesofpanda.com/) through a commission from The Processing Foundation and the Tezos Foundation. The DearPlotter Font Generator is flexibly licensed under [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/) (CC BY-SA 4.0), and the fonts created with it are licensed under The [SIL Open Font License](https://openfontlicense.org/). 
@@ -528,6 +543,8 @@ A p5.js program to load, render, and edit *minf* is available in [this repositor
 Here are some inspirational creative software projects that make use of single-line fonts.
 
 * [*DearPlotter Generator*](https://www.eyesofpanda.com/project/dearplotter_font/) by [Licia He](http://eyesofpanda.com/), 2026.
+* [*TYPEFACE 2*](https://vimeo.com/9587564) by [Mary Huang](https://mary-huang.com/), 2010.
+* [*Computed Type*](https://vimeo.com/60651938) by Christoph Knoth, 2013.
 * [*X-Y-Z*](https://opensea.io/collection/x-y-z-by-andreas-gysin) by [Andreas Gysin](https://ertdfgcvb.xyz/), 2024.
 * [*Space Type Generator*](https://spacetypegenerator.com) by [Kiel Mutschelknaus](https://www.kielm.com/), 2019.
 * [*chinese-radical-vis* & *RRPL*](https://unglitch.netlify.app/chinese-radical-vis/) by [Lingdong Huang](https://lingdong.works/), 2018.
@@ -547,6 +564,7 @@ Here are some inspirational creative software projects that make use of single-l
 
 * [*MTDBT2F*](https://kadist.org/program/dexter-sinister/) MetaFont, Dexter Sinister, 2013, [github](https://github.com/O-R-G/mtdbt2f4d/tree/main)
 * ROM extraction of HP7596A font
+* [*AniType* by Jono Brandel](https://web.archive.org/web/20160304012115/http://www.anitype.com/)
 * Add [Inkscape Extension](https://www.evilmadscientist.com/2011/hershey-text-an-inkscape-extension-for-engraving-fonts/) and [more](https://www.evilmadscientist.com/2015/inkscape-v-0-91/)
 
 
