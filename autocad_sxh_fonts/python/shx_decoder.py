@@ -115,7 +115,19 @@ class ShapeRecord:
     def unicode_char(self, likely_font: bool) -> Optional[str]:
         if not likely_font:
             return None
-        if 0 <= self.code <= 0x10FFFF:
+        # AutoCAD bigfonts often store CJK glyph ids as encoded two-byte
+        # character codes, not as Unicode scalar values. The Korean SHX fonts
+        # examined here use EUC-KR/CP949-style codes; decoding those first maps
+        # records such as 0xB0A1 to "가" instead of treating them as unrelated
+        # Unicode codepoints.
+        if 0x8080 <= self.code <= 0xFFFF:
+            encoded = bytes([(self.code >> 8) & 0xFF, self.code & 0xFF])
+            for encoding in ("euc_kr", "cp949"):
+                try:
+                    return encoded.decode(encoding)
+                except UnicodeDecodeError:
+                    pass
+        if 0 <= self.code <= 0x10FFFF and not (0xD800 <= self.code <= 0xDFFF):
             try:
                 return chr(self.code)
             except ValueError:
@@ -268,9 +280,7 @@ class SHXParser:
             elif format_kind == "shapes":
                 records, header_info = self._parse_shapes(marker + 1)
             elif format_kind == "bigfont":
-                header_info = self._parse_bigfont_header(marker + 1)
-                unsupported_format = True
-                self.errors.append("bigfont index/data layout is recognized but not decoded in this pass")
+                records, header_info = self._parse_bigfont(marker + 1)
             else:
                 unsupported_format = True
                 self.errors.append(f"unsupported AutoCAD SHX signature: {signature!r}")
@@ -362,15 +372,64 @@ class SHXParser:
             "record_layout": "indexed",
         }
 
-    def _parse_bigfont_header(self, pos: int) -> Dict[str, Any]:
-        vals = []
-        for off in range(pos, min(pos + 16, len(self.data)), 2):
-            if off + 2 <= len(self.data):
-                vals.append(u16le(self.data, off))
-        return {
-            "record_layout": "bigfont-unsupported",
-            "first_header_words": vals,
-            "file_size": len(self.data),
+    def _parse_bigfont(self, pos: int) -> Tuple[List[ShapeRecord], Dict[str, Any]]:
+        """Parse AutoCAD-86 bigfont 1.0 files.
+
+        The bigfont layout starts with a compact header, followed by an index of
+        8-byte entries: uint16 code, uint16 byte_count, uint32 body_offset.
+        These bigfonts are where most of the Korean/Chinese SHX files live; the
+        earlier decoder only recognized the header and therefore could not reach
+        the 2350 Wansung Hangul glyphs or the CJK preview fonts.
+        """
+        index_entry_size = u16le(self.data, pos)
+        declared_count = u16le(self.data, pos + 2)
+        range_count = u16le(self.data, pos + 4)
+        ranges = []
+        range_pos = pos + 6
+        for _ in range(range_count):
+            if range_pos + 4 > len(self.data):
+                self.errors.append("bigfont range table extends beyond file")
+                break
+            ranges.append({
+                "first_byte": u16le(self.data, range_pos),
+                "last_byte": u16le(self.data, range_pos + 2),
+            })
+            range_pos += 4
+
+        records: List[ShapeRecord] = []
+        if index_entry_size != 8:
+            self.errors.append(f"unexpected bigfont index entry size {index_entry_size}; expected 8")
+            return records, {
+                "index_entry_size": index_entry_size,
+                "declared_record_count": declared_count,
+                "range_count": range_count,
+                "ranges": ranges,
+                "record_layout": "indexed-offset",
+            }
+
+        table_start = range_pos
+        for i in range(declared_count):
+            entry = table_start + i * index_entry_size
+            if entry + index_entry_size > len(self.data):
+                self.errors.append(f"bigfont index entry {i} extends beyond file")
+                break
+            code = u16le(self.data, entry)
+            byte_count = u16le(self.data, entry + 2)
+            body_offset = int.from_bytes(self.data[entry + 4 : entry + 8], "little")
+            if body_offset + byte_count > len(self.data):
+                self.errors.append(f"bigfont record {code} exceeds file bounds at offset {body_offset}")
+                body = self.data[body_offset:] if body_offset < len(self.data) else b""
+            else:
+                body = self.data[body_offset : body_offset + byte_count]
+            records.append(ShapeRecord(code=code, byte_count=byte_count, body=body))
+
+        return records, {
+            "index_entry_size": index_entry_size,
+            "declared_record_count": declared_count,
+            "range_count": range_count,
+            "ranges": ranges,
+            "record_layout": "indexed-offset",
+            "index_offset": table_start,
         }
 
     def _decode_records(self, doc: SHXDocument) -> None:
@@ -380,17 +439,37 @@ class SHXParser:
                 continue
             if not record.opcode_bytes:
                 continue
-            decoder = OpcodeDecoder(record_map, subshape_width=1 if doc.format_kind == "shapes" else 2)
+            # Opcode 7 references a reusable shape by a one-byte shape number in
+            # the SHX/SHP streams seen here, including AutoCAD-86 bigfont files.
+            # Treating bigfont references as two bytes consumes the following
+            # opcode and turns many Hangul glyphs into short zigzag fragments;
+            # HBM1W/HBB7W were the clearest examples of that failure.
+            #
+            # The initial pen state is format-specific. Legacy shape-library
+            # text fonts such as HANDLETR expect drawing to begin immediately,
+            # while bigfont/unifont glyphs commonly begin with setup moves and
+            # lower the pen explicitly. Starting bigfonts with the pen down
+            # produced bogus diagonals from the origin in HSS, HBB7W, and HZACE;
+            # starting old shape fonts with the pen up removed legitimate first
+            # strokes from HANDLETR/HANDLTR.
+            initial_pen_down = doc.format_kind == "shapes"
+            decoder = OpcodeDecoder(record_map, subshape_width=1, initial_pen_down=initial_pen_down)
             decoder.decode(record, record.opcode_bytes)
 
 
 class OpcodeDecoder:
-    def __init__(self, record_map: Dict[int, ShapeRecord], subshape_width: int = 2):
+    def __init__(
+        self,
+        record_map: Dict[int, ShapeRecord],
+        subshape_width: int = 2,
+        initial_pen_down: bool = False,
+    ):
         self.record_map = record_map
         self.subshape_width = subshape_width
+        self.initial_pen_down = initial_pen_down
 
     def decode(self, record: ShapeRecord, data: bytes) -> None:
-        state = GeometryState()
+        state = GeometryState(pen_down=self.initial_pen_down)
         commands = self._execute(data, state, record, depth=0)
         record.raw_commands = commands
         record.paths = normalize_paths(state.paths)
@@ -597,7 +676,10 @@ class GeometryState:
     x: float = 0.0
     y: float = 0.0
     scale: float = 1.0
-    pen_down: bool = True
+    # Bigfont/unifont glyphs usually begin with setup moves and explicitly lower
+    # the pen before drawing. Legacy shape-library text fonts often expect the
+    # opposite, so OpcodeDecoder overrides this default from the file format.
+    pen_down: bool = False
     stack: List[Tuple[float, float]] = field(default_factory=list)
     paths: List[List[Dict[str, Any]]] = field(default_factory=list)
     current_path: Optional[List[Dict[str, Any]]] = None
@@ -763,6 +845,8 @@ def compute_bbox(paths: List[List[Dict[str, Any]]]) -> Optional[Dict[str, float]
 def classify_document(format_kind: str, records: List[ShapeRecord], unsupported_format: bool) -> str:
     if unsupported_format and format_kind == "bigfont":
         return "bigfont text/symbol font (layout not decoded)"
+    if format_kind == "bigfont":
+        return "bigfont text font"
     if format_kind == "unifont":
         return "text font"
     if format_kind == "shapes":

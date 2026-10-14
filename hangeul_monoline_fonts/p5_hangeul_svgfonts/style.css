@@ -1,0 +1,79 @@
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+  background: #000000;
+  color: #171717;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: minmax(210px, 280px) 350px;
+  gap: 12px;
+  align-items: end;
+  padding: 14px 16px;
+  border-bottom: 1px solid #d8d1c4;
+  background: #fffdf8;
+}
+
+label {
+  display: grid;
+  gap: 5px;
+  font-size: 12px;
+  font-weight: 650;
+  letter-spacing: 0;
+  color: #4b4a45;
+}
+
+.text-control {
+  width: 350px;
+}
+
+select,
+textarea {
+  width: 100%;
+  border: 1px solid #bdb6a9;
+  border-radius: 4px;
+  background: #ffffff;
+  color: #171717;
+  font: inherit;
+}
+
+select {
+  height: 36px;
+  padding: 0 10px;
+}
+
+textarea {
+  min-height: 54px;
+  padding: 9px 10px;
+  resize: vertical;
+  line-height: 1.35;
+}
+
+.canvas-wrap {
+  min-height: 0;
+  overflow: hidden;
+  background: #000000;
+}
+
+.canvas-wrap canvas {
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .controls {
+    grid-template-columns: 1fr;
+  }
+}

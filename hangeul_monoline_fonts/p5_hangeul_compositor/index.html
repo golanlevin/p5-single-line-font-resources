@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>p5 Hangeul Jamo Compositor</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="controls" aria-label="Controls">
+        <label>
+          Source
+          <select id="fontSelect"></select>
+        </label>
+        <label class="text-control">
+          Text
+          <textarea id="textInput" rows="7"></textarea>
+        </label>
+        <label>
+          Guides
+          <input id="guideInput" type="checkbox" />
+        </label>
+      </section>
+      <section id="canvasWrap" class="canvas-wrap" aria-label="Compositor canvas"></section>
+    </main>
+    <script src="jamo_fonts.js"></script>
+    <script src="sketch.js"></script>
+  </body>
+</html>

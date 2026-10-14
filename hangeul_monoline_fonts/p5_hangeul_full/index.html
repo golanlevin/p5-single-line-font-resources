@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>p5 Hangeul Full SHX Viewer</title>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.11/lib/p5.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/p5.plotsvg@latest/lib/p5.plotSvg.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="controls" aria-label="Controls">
+        <label>
+          Source
+          <select id="fontSelect"></select>
+        </label>
+        <label class="text-control">
+          Text
+          <textarea id="textInput" rows="2"></textarea>
+        </label>
+        <label class="range-control">
+          Size
+          <input id="sizeInput" type="range" min="12" max="200" value="40" />
+        </label>
+        <div class="guide-export-control">
+          <label>
+            Guides
+            <input id="guideInput" type="checkbox" />
+          </label>
+          <button id="exportSvgButton" type="button">Export SVG</button>
+        </div>
+      </section>
+      <section id="canvasWrap" class="canvas-wrap" aria-label="Full Hangeul canvas"></section>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>

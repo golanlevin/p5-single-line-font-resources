@@ -1,0 +1,80 @@
+{
+  "description": "Wansung SVG 1.1 single-line Hangeul fonts copied for p5_hangeul_specimens.",
+  "units_per_em": 1000,
+  "ascent": 900,
+  "descent": -100,
+  "fonts": [
+    {
+      "name": "HANGEUL WANSUNG",
+      "source": "HANGEUL.SHX",
+      "kind": "wansung",
+      "file": "data/HANGEUL_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 94
+    },
+    {
+      "name": "HG_S WANSUNG",
+      "source": "HG_S.SHX",
+      "kind": "wansung",
+      "file": "data/HG_S_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "HL_WIN WANSUNG",
+      "source": "HL_WIN.SHX",
+      "kind": "wansung",
+      "file": "data/HL_WIN_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 113
+    },
+    {
+      "name": "KORBOX WANSUNG",
+      "source": "KORBOX.SHX",
+      "kind": "wansung",
+      "file": "data/KORBOX_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORDANSUN WANSUNG",
+      "source": "KORDANSUN.SHX",
+      "kind": "wansung",
+      "file": "data/KORDANSUN_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORFAST WANSUNG",
+      "source": "KORFAST.SHX",
+      "kind": "wansung",
+      "file": "data/KORFAST_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORSIMPLE_1 WANSUNG",
+      "source": "KORSIMPLE_1.SHX",
+      "kind": "wansung",
+      "file": "data/KORSIMPLE_1_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KOSDICHS WANSUNG",
+      "source": "KOSDICHS.shx",
+      "kind": "wansung",
+      "file": "data/KOSDICHS_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KSW WANSUNG",
+      "source": "KSW.SHX",
+      "kind": "wansung",
+      "file": "data/KSW_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 134
+    }
+  ]
+}

@@ -176,6 +176,18 @@ Several of the provided SHX fonts are distinctive and potentially quite useful i
 
 ---
 
+### Monoline Hangeul Fonts, Recovered from Korean SHX Files
+
+[This directory](hangeul_monoline_fonts/README.md) presents a collection of Korean single-stroke Hangeul fonts recovered from vintage AutoCAD SHX files, including examples dating to the late 1980s and 1990s. 
+
+The original fonts generally contain the 2,350 precomposed Hangeul syllables standardized in the 1987 revision of KS C 5601, rather than the full set of 11,172 modern Unicode syllables. Here, the original SHX files have been decoded and converted into JSON and SVG 1.1 font formats, preserving their single-stroke geometry. 
+
+The directory also includes several p5.js programs for displaying and typesetting Korean text, including a jamo compositor that algorithmically assembles Hangeul syllable blocks from their constituent consonants and vowels. Using this approach, the project generates extended versions of several recovered fonts that support all 11,172 modern Hangeul syllables, combining the original 2,350 pre-composed glyphs with automatically composed ones.
+
+![hangeul specimens](hangeul_monoline_fonts/img/hangeul_specimens.png)
+
+---
+
 ### p5.js port of Saka.N's *KST32B* font, via Kitasenju Design
 
 [KST32B](saka_KST32B_font/sketch.js) (Kanji Stroke Table) is a comprehensive monospace single-line font originally designed (c.1992, 2017) by [Saka.N](https://www.vector.co.jp/download/file/data/writing/fh691397.html)<!-- Saka.N.06@b3.mnx.ne.jp -->, covering 4125 characters across multiple scripts: ASCII, half-width kana, hiragana and katakana, Greek, Cyrillic, ISO 8859-15, and both JIS Level 1 and Level 2 kanji. Each glyph is encoded as a compact byte stream of drawing commands on a 30×32 integer grid, using distinct opcodes for horizontal moves, horizontal strokes, and diagonal strokes. In 2014, Saka's work was [added to LibreCAD](https://forum.librecad.org/Japanese-Font-td5710456.html). Inspired by [hgsn](https://x.com/hsgn/status/1413826984413704195), [Kitasenju](https://kitasenjudesign.com/tool/01/) ported Saka.N's original binary data to p5.js, annotating each entry with its Unicode equivalent; this adaptation loads that header directly, keying each glyph by Unicode codepoint for straightforward multilingual text rendering in English, Japanese, Greek, Russian, and Chinese.

@@ -1,0 +1,150 @@
+{
+  "description": "SVG 1.1 single-line Hangeul fonts exported from SHX sources.",
+  "units_per_em": 1000,
+  "ascent": 900,
+  "descent": -100,
+  "fonts": [
+    {
+      "name": "HANGEUL WANSUNG",
+      "source": "HANGEUL.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/HANGEUL_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 94
+    },
+    {
+      "name": "HG_S WANSUNG",
+      "source": "HG_S.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/HG_S_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "HG_S JOHAB",
+      "source": "HG_S.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/HG_S_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "HL_WIN WANSUNG",
+      "source": "HL_WIN.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/HL_WIN_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 113
+    },
+    {
+      "name": "KORBOX WANSUNG",
+      "source": "KORBOX.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/KORBOX_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORBOX JOHAB",
+      "source": "KORBOX.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/KORBOX_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORDANSUN WANSUNG",
+      "source": "KORDANSUN.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/KORDANSUN_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORDANSUN JOHAB",
+      "source": "KORDANSUN.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/KORDANSUN_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORFAST WANSUNG",
+      "source": "KORFAST.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/KORFAST_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORFAST JOHAB",
+      "source": "KORFAST.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/KORFAST_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORSIMPLE_1 WANSUNG",
+      "source": "KORSIMPLE_1.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/KORSIMPLE_1_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KORSIMPLE_1 JOHAB",
+      "source": "KORSIMPLE_1.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/KORSIMPLE_1_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KOSDICHS WANSUNG",
+      "source": "KOSDICHS.shx",
+      "kind": "wansung",
+      "file": "svg_fonts/KOSDICHS_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KOSDICHS JOHAB",
+      "source": "KOSDICHS.shx",
+      "kind": "johab",
+      "file": "svg_fonts/KOSDICHS_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 145
+    },
+    {
+      "name": "KSW WANSUNG",
+      "source": "KSW.SHX",
+      "kind": "wansung",
+      "file": "svg_fonts/KSW_wansung_svgfont.svg",
+      "hangul_glyphs": 2350,
+      "supplemental_glyphs": 134
+    },
+    {
+      "name": "KSW JOHAB",
+      "source": "KSW.SHX",
+      "kind": "johab",
+      "file": "svg_fonts/KSW_johab_svgfont.svg",
+      "hangul_glyphs": 11172,
+      "supplemental_glyphs": 134
+    }
+  ],
+  "skipped_johab": [
+    {
+      "name": "HANGEUL",
+      "source": "HANGEUL.SHX",
+      "reason": "missing basic composition jamo",
+      "missing_jamo": "ㄱㄲㄴㄷㄸㄹㅁㅂㅃㅅㅆㅇㅈㅉㅊㅋㅌㅍㅎㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ"
+    },
+    {
+      "name": "HL_WIN",
+      "source": "HL_WIN.SHX",
+      "reason": "missing basic composition jamo",
+      "missing_jamo": "ㅏㅐㅑㅒㅓㅔㅕㅖㅗㅘㅙㅚㅛㅜㅝㅞㅟㅠㅡㅢㅣ"
+    }
+  ]
+}
