@@ -1,6 +1,6 @@
 # Hangeul Monoline Fonts
 
-*This directory collects monoline Hangeul fonts and the conversion tools used to inspect, compose, display and export them. The canonical source files were originally in AutoCAD SHX format, and are maintained in [`shx_sources/`](shx_sources/). Generated JSON and SVG 1.1 font files have been derived from those SHX files. The directory includes p5.js programs for constructing Hangeul characters from their jamo components.*
+*This directory presents a collection of monoline Hangeul fonts and the tools used to inspect, compose, and export them. Most of the source files were originally developed in the 1980s-1990s for CAD programs; the canonical versions of these fonts are in AutoCAD SHX format, and are maintained in [`shx_sources/`](shx_sources/). These have also been converted into JSON and SVG 1.1 font formats. The directory includes p5.js programs for constructing Hangeul characters from their jamo components.*
 
 ![hangeul_demo](img/hangeul_demo.png)
 
@@ -14,7 +14,7 @@ Hangeul is built from **jamo**, the individual consonant and vowel letters of th
 
 Unicode assigns **11,172 code points** to precomposed modern Hangeul syllables (`U+AC00` through `U+D7A3`). This number comes from a combinatorial enumeration: `19 initials × 21 vowels × 28 final configurations = 11,172 syllables`. The 28 final configurations include the absence of a final consonant. Many of the resulting syllables are uncommon or absent from ordinary Korean vocabulary, but all are structurally possible in the modern writing system.
 
-Older Korean computer fonts often contain a smaller **Wansung** (완성형, *completed-form*) repertoire of 2,350 precomposed syllables. This set was standardized in the 1987 revision of KS C 5601 (originally established in 1974 and later renamed KS X 1001), for practical Korean computing when memory, storage, and encoding space were limited. An SHX font containing these 2,350 syllables can therefore be complete with respect to that historical repertoire, even though it does not cover every possible Unicode syllable.
+Older Korean computer fonts often contain a smaller **Wansung** (완성형, *completed-form*) repertoire of 2,350 precomposed syllables. This set was standardized in the 1987 revision of KS C 5601 (originally established in 1974 and later renamed KS X 1001), for practical Korean computing when memory and storage space were limited. An SHX font containing these 2,350 syllables can therefore be considered complete with respect to that historical repertoire, even though it does not cover every possible Unicode syllable.
 
 An alternative approach is **Johab** (조합형, *compositional form*), which encodes a syllable in terms of its initial consonant, vowel, and final consonant. Strictly speaking, Johab is an encoding strategy, not necessarily a rendering strategy: a Johab-encoded syllable can still be drawn using a precomposed glyph, while a Unicode precomposed syllable can be rendered by dynamically composing jamo.
 
