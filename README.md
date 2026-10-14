@@ -368,7 +368,7 @@ This is a p5.js port of [*LeonSans*](https://github.com/cmiscm/leonsans) by [Jon
 
 ![](kielm_spacetypefont/kielm_spacetypefont.gif)
 
-This is an adaptation of an especially versatile, procedural single-stroke monospace font created in p5.js by [Kiel Mutschelknaus](https://www.kielm.com/) (@kielm). Mutschelknaus developed this typeface for his [*Space Type Generator*](https://spacetypegenerator.com/) (2019), a customizable kinetic type generator, and released it under the CC by-nc-sa 4.0 license. A special feature of this typeface is that it allows for horizontal and vertical "stretching" without affecting the shape of the characters' rounded parts. A p5.js sketch for the *Space Type Generator* font is available:
+This is an adaptation of an especially versatile, procedural single-stroke monospace font created in p5.js by [Kiel D. Mutschelknaus](https://www.kielm.com/) (@kielm). Mutschelknaus developed this typeface for his [*Space Type Generator*](https://spacetypegenerator.com/) (2019), a customizable kinetic type generator, and released it under the CC by-nc-sa 4.0 license. A special feature of this typeface is that it allows for horizontal and vertical "stretching" without affecting the shape of the characters' rounded parts. A p5.js sketch for the *Space Type Generator* font is available:
 
 * In [this repository](kielm_spacetypefont/sketch.js)
 * At [editor.p5js.org](https://editor.p5js.org/golan/sketches/On-RBvfqR)
