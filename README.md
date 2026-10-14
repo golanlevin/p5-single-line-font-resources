@@ -18,6 +18,7 @@
 * [p5.js Parser/Renderer for Single-Line TTF Fonts](#p5js-parserrenderer-for-single-line-ttf-fonts)
 * [p5.js Parser/Renderer for (Classic) Hershey Fonts](#p5js-parserrenderer-for-classic-hershey-fonts)
 * [p5.js viewer for JSON-converted AutoCAD SHX fonts](#p5js-viewer-for-json-converted-autocad-shx-fonts)
+* [Monoline Hangeul Fonts, Recovered from Korean SHX Files](#monoline-hangeul-fonts-recovered-from-korean-shx-files)
 * [p5.js port of Saka.N's *KST32B* font, via Kitasenju Design](#p5js-port-of-sakans-kst32b-font-via-kitasenju-design)
 * [p5.js port of M+ kanji/hanzi font](#p5js-port-of-m-kanjihanzi-font)
 * [p5.js port of Kamp's HP1345A vector font](#p5js-port-of-kamps-hp1345a-vector-font)
@@ -178,11 +179,11 @@ Several of the provided SHX fonts are distinctive and potentially quite useful i
 
 ### Monoline Hangeul Fonts, Recovered from Korean SHX Files
 
-[This directory](hangeul_monoline_fonts/README.md) presents a collection of Korean single-stroke Hangeul fonts recovered from vintage AutoCAD SHX files, including examples dating to the late 1980s and 1990s. 
+[This directory](hangeul_monoline_fonts/README.md) presents a collection of Korean single-stroke Hangeul/Hangul fonts recovered from vintage AutoCAD SHX files, including examples dating to the late 1980s and 1990s. 
 
-The original fonts generally contain the 2,350 precomposed Hangeul syllables standardized in the 1987 revision of KS C 5601, rather than the full set of 11,172 modern Unicode syllables. Here, the original SHX files have been decoded and converted into JSON and SVG 1.1 font formats, preserving their single-stroke geometry. 
+The original SHX fonts generally contain the 2,350 precomposed Hangeul syllables standardized in the 1987 revision of KS C 5601, rather than the full set of 11,172 modern Unicode syllables. Here, the original SHX files have been decoded and converted into JSON and SVG 1.1 font formats, preserving their single-stroke geometry. 
 
-The directory also includes several p5.js programs for displaying and typesetting Korean text, including a jamo compositor that algorithmically assembles Hangeul syllable blocks from their constituent consonants and vowels. Using this approach, the project generates extended versions of several recovered fonts that support all 11,172 modern Hangeul syllables, combining the original 2,350 pre-composed glyphs with automatically composed ones.
+The directory also includes several p5.js programs for displaying and typesetting Korean text, including a jamo compositor that algorithmically assembles Hangeul syllable blocks from their constituent consonants and vowels. Using this approach, the project generates extended versions of several recovered fonts that support all 11,172 modern Hangeul syllables, combining the original 2,350 pre-composed glyphs with automatically-assembled ones.
 
 ![hangeul specimens](hangeul_monoline_fonts/img/hangeul_specimens.png)
 
