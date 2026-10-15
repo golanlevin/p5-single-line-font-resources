@@ -84,8 +84,7 @@ Available exports:
 The table below records the source SHX files kept in `shx_sources/`. `153lab.com`
 means the file came from the large AutoCAD SHX archive at
 <https://153lab.com/149>; `KOSDIC` means the file came from the KOSDIC (Korean Standard for the Exchange of Drawing Information in Construction) download mirrored at <https://autoc.tistory.com/82> (dated Feb. 16, 2011), which attributes the original source
-to the Construction CALS Portal System. The embedded credit column is transcribed
-from ASCII strings found inside the SHX files themselves.
+to the Construction CALS Portal System. The embedded credit column is transcribed from ASCII strings found inside the SHX files themselves. Many of these fonts were designed by computational designer Choi Samrak (최삼락), who has [published extensively in CAD research](https://www.riss.kr/search/Search.do?queryText=znCreator,%EC%B5%9C%EC%82%BC%EB%9D%BD%28Samrak+Choi%29&searchGubun=true&colName=re_a_kor&isDetailSearch=Y).
 
 | File | Embedded credit / title | Source |
 | --- | --- | --- |
@@ -110,8 +109,7 @@ The original SHX files were recovered from publicly accessible archives. Their o
 
 ## Python Tools
 
-The scripts in [`python_tools/`](python_tools/) regenerate derived data and
-inspection previews:
+The scripts in [`python_tools/`](python_tools/) regenerate derived data and inspection previews:
 
 * **`extract_full_json.py`** reads the canonical SHX files in `shx_sources/`, keeps
   fonts with at least the 2,350 Wansung syllables, adds ASCII helper glyphs from
