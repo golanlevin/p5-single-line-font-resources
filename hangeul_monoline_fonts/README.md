@@ -32,12 +32,12 @@ This project uses both precomposed glyphs and algorithmic jamo composition to pr
 
 ![p5_hangeul_full_screenshot.png](img/p5_hangeul_full_screenshot.png)
 
-* [**`p5_hangeul_compositor`**](p5_hangeul_compositor/sketch.js): a jamo-only test
+* [**`p5_hangeul_full`**](p5_hangeul_full/sketch.js): a hybrid Hangeul viewer. It renders pre-composed Wansung glyphs when a source font has them, and falls back to jamo composition for unrepresented syllables. The app includes a simple SVG generator for quick typesetting of monoline Hangeul text in 9 different fonts. An interactive, browser-based version of this program can be found [online here](https://golanlevin.github.io/hangeul/).
+* [`p5_hangeul_compositor`](p5_hangeul_compositor/sketch.js): a jamo-only test
   sketch. It accepts input from converted SHX files and always composes syllables from jamo.
-* [**`p5_hangeul_full`**](p5_hangeul_full/sketch.js): a hybrid Hangeul viewer. It renders pre-composed Wansung glyphs when a source font has them, and falls back to jamo composition for unrepresented syllables. This sketch includes a simple SVG generator for quick typesetting of monoline Hangeul text in 9 different fonts.
-* [**`p5_hangeul_specimens`**](p5_hangeul_specimens/sketch.js): a compact specimen
+* [`p5_hangeul_specimens`](p5_hangeul_specimens/sketch.js): a compact specimen
   sheet that loads local SVG 1.1 fonts.
-* [**`p5_hangeul_svgfonts`**](p5_hangeul_svgfonts/sketch.js): an SVG 1.1 font viewer
+* [`p5_hangeul_svgfonts`](p5_hangeul_svgfonts/sketch.js): an SVG 1.1 font viewer
   that displays Hangeul from finished SVG 1.1 font files, without running the jamo
   compositor.
 
