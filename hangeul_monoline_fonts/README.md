@@ -1,8 +1,9 @@
 # Hangeul Monoline Fonts
 
-*This directory presents a collection of monoline Hangeul fonts and the tools used to inspect, compose, and export them. Most of the source files were originally developed in the 1980s-1990s for CAD programs; the canonical versions of these fonts are in AutoCAD SHX format, and are maintained in [`shx_sources/`](shx_sources/). These have also been converted into JSON and SVG 1.1 font formats. The directory includes p5.js programs for constructing Hangeul characters from their jamo components.*
+*This directory presents a collection of monoline [Hangeul](https://en.wikipedia.org/wiki/Hangul) fonts and the tools used to inspect, compose, and export them. Most of the source files were originally developed in the 1980s-1990s for CAD programs; the canonical versions of these fonts are in AutoCAD SHX format, and are maintained in [`shx_sources/`](shx_sources/). These have also been converted into JSON and SVG 1.1 font formats. The directory includes p5.js programs for constructing Hangeul characters from their jamo components.*
 
 ![hangeul_demo](img/hangeul_demo.png)
+
 
 ---
 
@@ -10,7 +11,7 @@
 
 <!-- ![hangeul_structure.png](img/hangeul_structure.png) -->
 
-Hangeul is built from **jamo**, the individual consonant and vowel letters of the Korean writing system. Modern Hangeul has 24 basic letters (14 consonants and 10 vowels), conventionally expanded to 40 forms (19 consonants and 21 vowels) when doubled consonants and compound vowels are included. In ordinary Korean writing, these letters are arranged into approximately square blocks representing syllables, rather than written in a linear sequence. A modern Hangeul syllable block consists of an initial consonant (*choseong*, 초성), a medial vowel (*jungseong*, 중성), and an optional final consonant or consonant cluster (*jongseong*, 종성).
+Hangeul (or Hangul) is built from **jamo**, the individual consonant and vowel letters of the Korean writing system. Modern Hangeul has 24 basic letters (14 consonants and 10 vowels), conventionally expanded to 40 forms (19 consonants and 21 vowels) when doubled consonants and compound vowels are included. In ordinary Korean writing, these letters are arranged into approximately square blocks representing syllables, rather than written in a linear sequence. A modern Hangeul syllable block consists of an initial consonant (*choseong*, 초성), a medial vowel (*jungseong*, 중성), and an optional final consonant or consonant cluster (*jongseong*, 종성).
 
 Unicode assigns **11,172 code points** to precomposed modern Hangeul syllables (`U+AC00` through `U+D7A3`). This number comes from a combinatorial enumeration: `19 initials × 21 vowels × 28 final configurations = 11,172 syllables`. The 28 final configurations include the absence of a final consonant. Many of the resulting syllables are uncommon or absent from ordinary Korean vocabulary, but all are structurally possible in the modern writing system.
 
@@ -24,19 +25,21 @@ This project uses both precomposed glyphs and algorithmic jamo composition to pr
 * **Johab-derived fonts** provide all 11,172 modern syllables. They preserve the source font's native Wansung glyphs when available and generate the remaining syllables by composing jamo. Here, "Johab" describes the project's compositional approach, rather than a particular character encoding.
 * **The jamo compositor** is an economical stroke-based experiment that constructs all 11,172 modern syllables from a comparatively small set of reusable stroke components.
 
+
 ---
 
 ## p5.js Programs
 
+![p5_hangeul_full_screenshot.png](img/p5_hangeul_full_screenshot.png)
+
 * [**`p5_hangeul_compositor`**](p5_hangeul_compositor/sketch.js): a jamo-only test
   sketch. It accepts input from converted SHX files and always composes syllables from jamo.
-* [**`p5_hangeul_full`**](p5_hangeul_full/sketch.js): a hybrid Hangeul viewer. It renders pre-composed Wansung glyphs when a source font has them, and falls back to jamo composition for unrepresented syllables. This sketch includes a simple SVG generator for quick typesetting of monoline Hangeul text. 
+* [**`p5_hangeul_full`**](p5_hangeul_full/sketch.js): a hybrid Hangeul viewer. It renders pre-composed Wansung glyphs when a source font has them, and falls back to jamo composition for unrepresented syllables. This sketch includes a simple SVG generator for quick typesetting of monoline Hangeul text in 9 different fonts.
 * [**`p5_hangeul_specimens`**](p5_hangeul_specimens/sketch.js): a compact specimen
   sheet that loads local SVG 1.1 fonts.
 * [**`p5_hangeul_svgfonts`**](p5_hangeul_svgfonts/sketch.js): an SVG 1.1 font viewer
   that displays Hangeul from finished SVG 1.1 font files, without running the jamo
   compositor.
-
 
 
 ---
@@ -45,11 +48,10 @@ This project uses both precomposed glyphs and algorithmic jamo composition to pr
 
 ![hangeul_specimens.png](img/hangeul_specimens.png)
 
-A collection of generated SVG 1.1 monoline Hangeul fonts can be found in
-[`p5_hangeul_svgfonts/svg_fonts/`](p5_hangeul_svgfonts/svg_fonts/). They preserve Unicode code points, allowing Korean text to be rendered by software that supports the [SVG 1.1 font specification](https://www.w3.org/TR/SVG11/fonts.html). These SVG 1.1 font files represent two kinds of Hangeul typefaces:
+A collection of nine generated SVG 1.1 monoline Hangeul fonts can be found in [`p5_hangeul_svgfonts/svg_fonts/`](p5_hangeul_svgfonts/svg_fonts/). They preserve Unicode code points, allowing Korean text to be rendered by software that supports the [SVG 1.1 font specification](https://www.w3.org/TR/SVG11/fonts.html). These SVG 1.1 font files represent two kinds of Hangeul typefaces:
 
 * **Wansung (완성형):** 2,350 native completed-form syllables from the source SHX files. These are useful for much ordinary Korean text, but technically incomplete for modern Unicode coverage.
-* **Johab-derived (조합형):** A complete set of 11,172 modern Hangeul syllables. The 2,350 native Wansung glyphs are preserved when present; the remaining syllables are automatically composed from source jamo. Owing to the simplicity of the composition algorithm, automatically-composed glyphs may differ in proportions, spacing, and stroke placement from the source font's native syllables. Johab export is skipped for fonts that do not contain the necessary jamo. 
+* **Johab-derived (조합형):** A complete set of 11,172 modern Hangeul syllables. The 2,350 native Wansung glyphs are preserved when present; the remaining syllables are automatically composed from source jamo. Owing to the simplicity of the composition algorithm, automatically-composed glyphs may differ in proportions, spacing, and stroke placement from the same font's Wansung syllables. Johab export has been skipped for fonts that do not contain the necessary jamo. 
 
 Available exports:
 
@@ -73,15 +75,15 @@ Available exports:
   [11K Johab](p5_hangeul_svgfonts/svg_fonts/KOSDICHS_johab_svgfont.svg)
 * KSW: [2K Wansung](p5_hangeul_svgfonts/svg_fonts/KSW_wansung_svgfont.svg) |
   [11K Johab](p5_hangeul_svgfonts/svg_fonts/KSW_johab_svgfont.svg)
-  
+
+
 ---
 
 ## Source Provenance
 
 The table below records the source SHX files kept in `shx_sources/`. `153lab.com`
 means the file came from the large AutoCAD SHX archive at
-<https://153lab.com/149>; `KOSDIC` means the file came from the KOSDIC (Korean Standard for the Exchange of Drawing Information in Construction) download
-mirrored at <https://autoc.tistory.com/82> (dated Feb. 16, 2011), which attributes the original source
+<https://153lab.com/149>; `KOSDIC` means the file came from the KOSDIC (Korean Standard for the Exchange of Drawing Information in Construction) download mirrored at <https://autoc.tistory.com/82> (dated Feb. 16, 2011), which attributes the original source
 to the Construction CALS Portal System. The embedded credit column is transcribed
 from ASCII strings found inside the SHX files themselves.
 
@@ -94,10 +96,10 @@ from ASCII strings found inside the SHX files themselves.
 | `KORDANSUN.SHX` | `KORdansun.vf` | 153lab.com |
 | `KORFAST.SHX` | `Sehangul wansung fast font SHT 98/5/25 (C) Choi Samrak` | 153lab.com |
 | `KORSIMPLE_1.SHX` | `Sehangul wansung simple font SHS 98/5/25 (C) Choi Samrak` | 153lab.com |
+| `KSW.SHX` | `Hangul font By BAI NAK HYUN` | 153lab.com |
 | `KOSDICHS.shx` | `Hangul Hnaja Special character Simplex font for KOSDIC designed by Choi Samrak 2006 V1.0.001` | KOSDIC |
 | `KOSDICES.shx` | `Simple English for KOSDIC Designed By Choi Samrak in 2006 V1.0.001` | KOSDIC |
-| `KSW.SHX` | `Hangul font By BAI NAK HYUN` | 153lab.com |
-| `simplex.shx` | `SIMPLEX Copyright 1996 by Autodesk, Inc.` | From Allen Hershey. |
+| `simplex.shx` | `SIMPLEX Copyright 1996 by Autodesk, Inc.` | From Allen V. Hershey. |
 
 ### Licensing
 
@@ -126,3 +128,4 @@ inspection previews:
   specimens plus a JSON summary; these previews are not inputs to the p5 apps or
   SVG font export pipeline.
   
+<!-- codex resume 01a137e6-34e1-7c11-9c49-ef5f06341e90 -->
